@@ -32,5 +32,17 @@ def save_cache(cache_file: str, results: list):
     """Save results to cache file with timestamp."""
     p = Path(cache_file)
     p.parent.mkdir(parents=True, exist_ok=True)
-    payload = {'_cached_at': time.time(), 'results': results}
+    # strip any large/unwanted keys from results before saving (e.g. raw aigc_attributes)
+    try:
+        sanitized = []
+        for r in results:
+            if not isinstance(r, dict):
+                sanitized.append(r)
+                continue
+            clean = {k: v for k, v in r.items() if k != 'aigc_attributes'}
+            sanitized.append(clean)
+    except Exception:
+        sanitized = results
+
+    payload = {'_cached_at': time.time(), 'results': sanitized}
     p.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')

@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 from .download import sanitize_filename
-import fetch_top_models as fetch_module
+from . import fetcher as fetch_module
 
 
 def run_cli(argv=None):
@@ -19,7 +19,7 @@ def run_cli(argv=None):
     parser.add_argument('--max-pages', type=int, default=5, help='Maximum pages to fetch when aggregating results')
     parser.add_argument('--ttl', type=int, default=300, help='Cache TTL in seconds')
     parser.add_argument('--force-refresh', action='store_true')
-    parser.add_argument('--no-images', action='store_true', help='Do not download cover images')
+    # images are downloaded by default and are required for cover_local to be populated
     parser.add_argument('--debug', action='store_true')
     args = parser.parse_args(argv)
 
@@ -32,7 +32,7 @@ def run_cli(argv=None):
             fetch_module.fetch_top_loras(limit=args.limit, tag=args.tag, debug=args.debug,
                                          cache_file=str(cache_file), images_dir=str(images_dir),
                                          ttl=args.ttl, force_refresh=args.force_refresh,
-                                         download_images=not args.no_images, task=task_val,
+                                         download_images=True, task=task_val,
                                          page_size=args.page_size, max_pages=args.max_pages,
                                          per_task_cache=args.per_task_cache)
         return
@@ -40,7 +40,7 @@ def run_cli(argv=None):
     top_loras = fetch_module.fetch_top_loras(limit=args.limit, tag=args.tag, debug=args.debug,
                                              cache_file=args.cache_file, images_dir=args.images_dir,
                                              ttl=args.ttl, force_refresh=args.force_refresh,
-                                             download_images=not args.no_images, task=args.task,
+                                             download_images=True, task=args.task,
                                              page_size=args.page_size, max_pages=args.max_pages,
                                              per_task_cache=args.per_task_cache)
 

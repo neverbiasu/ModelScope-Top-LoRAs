@@ -184,17 +184,6 @@ def parse_model_entry(item):
             modelscope_url = 'https://modelscope.cn/' + raw_modelscope[len('modelscope://'):]
         else:
             modelscope_url = raw_modelscope
-    # parse AigcAttributes if present (may be JSON string)
-    aigc_attrs = None
-    raw_aigc = item.get('AigcAttributes') or item.get('aigc_attributes')
-    if isinstance(raw_aigc, str):
-        try:
-            aigc_attrs = json.loads(raw_aigc)
-        except Exception:
-            aigc_attrs = None
-    elif isinstance(raw_aigc, dict):
-        aigc_attrs = raw_aigc
-
     return {
         'id': model_id,
         'title_cn': title_cn,
@@ -208,7 +197,7 @@ def parse_model_entry(item):
         'downloads': extract_downloads(item),
         'likes': extract_likes(item),
         'license': item.get('License'),
-    'aigc_attributes': aigc_attrs,
+        # NOTE: intentionally omit raw `aigc_attributes` to keep cache small and privacy-safe
         'tags_cn': tags_cn,
         'tags_en': tags_en,
         'base_models': base_models,
