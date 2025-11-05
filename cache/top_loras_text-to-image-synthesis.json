@@ -1,0 +1,613 @@
+{
+  "_cached_at": 1762291049.773358,
+  "results": [
+    {
+      "id": "FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
+      "title_cn": "苏-FLUX抖音小红书极致真实_苏-FLUX小红书极致真实V2",
+      "title_en": "FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
+      "author": "yiwanji",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "yiwanji",
+      "user_profile": "https://modelscope.cn/profile/527727",
+      "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
+      "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
+      "downloads": 61060,
+      "likes": 222,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "AI-ModelScope/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0"
+    },
+    {
+      "id": "ArtAug-lora-FLUX.1dev-v1",
+      "title_cn": "ArtAug FLUX 增强 LoRA",
+      "title_en": "ArtAug-lora-FLUX.1dev-v1",
+      "author": "Artiprocher",
+      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
+      "user_name": "DiffSynth-Studio",
+      "user_profile": "https://modelscope.cn/profile/987294",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
+      "downloads": 38450,
+      "likes": 71,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "CG幻想",
+        "男生",
+        "角色加强"
+      ],
+      "tags_en": [
+        "CG Fantasy",
+        "Man",
+        "Character Strong"
+      ],
+      "base_models": [
+        "AI-ModelScope/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:03Z",
+      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
+    },
+    {
+      "id": "MAJICFLUS-photo",
+      "title_cn": "MAJICFLUS-麦橘光影约拍",
+      "title_en": "MAJICFLUS-photo",
+      "author": "WANGMOON",
+      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
+      "user_name": "WANGMOON",
+      "user_profile": "https://modelscope.cn/profile/1148327",
+      "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
+      "downloads": 16431,
+      "likes": 79,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "AI-ModelScope/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "girl"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0"
+    },
+    {
+      "id": "AWPortraitCN",
+      "title_cn": null,
+      "title_en": "AWPortraitCN",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
+      "user_name": "哩布哩布AI",
+      "user_profile": "https://modelscope.cn/profile/1004206",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
+      "downloads": 15781,
+      "likes": 43,
+      "license": "other",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:03Z",
+      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
+    },
+    {
+      "id": "Flux-Ultimate-LoRA-Collection",
+      "title_cn": null,
+      "title_en": "Flux-Ultimate-LoRA-Collection",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/9d0e8cab-8084-4ee9-86f0-84c21e874a62.png",
+      "user_name": " Stranger Zone",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 7678,
+      "likes": 4,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "black-forest-labs/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-22T15:40:41Z",
+      "modelscope_url": "https://modelscope.cn/strangerzone/Flux-Ultimate-LoRA-Collection"
+    },
+    {
+      "id": "Hyper-SD",
+      "title_cn": null,
+      "title_en": "Hyper-SD",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/b6509fc6-ab2e-4848-864f-97ac0203185d.png",
+      "user_name": "字节跳动",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 4198,
+      "likes": 32,
+      "license": "",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "black-forest-labs/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-02-26T08:32:37Z",
+      "modelscope_url": "https://modelscope.cn/ByteDance/Hyper-SD"
+    },
+    {
+      "id": "pretty-girl",
+      "title_cn": "AImissyou富家千金（一丹一世界）",
+      "title_en": "pretty-girl",
+      "author": "AImissyou",
+      "avatar": "https://resouces.modelscope.cn/avatar/ba16de9a-7b5c-4916-bc2e-229ccb7fa286.png",
+      "user_name": "AImissyou",
+      "user_profile": "https://modelscope.cn/profile/1204128",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/0a6e5abf-2024-4bf8-b2c7-b84055c82656.png",
+      "cover_local": "cache/images/text-to-image-synthesis/pretty-girl.png",
+      "downloads": 3330,
+      "likes": 46,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MAILAND/majicflus_v1@v1.0"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-06-18T10:16:19Z",
+      "modelscope_url": "https://modelscope.cn/AImissyou/pretty-girl?revision=ckpt-12"
+    },
+    {
+      "id": "bigBreastsAdpterV1",
+      "title_cn": "胸部调整",
+      "title_en": "bigBreastsAdpterV1",
+      "author": "yiwanji",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "yiwanji",
+      "user_profile": "https://modelscope.cn/profile/527727",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
+      "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
+      "downloads": 2341,
+      "likes": 58,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "black-forest-labs/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:20Z",
+      "modelscope_url": "https://modelscope.cn/yiwanji/bigBreastsAdpterV1?revision=20250307104624"
+    },
+    {
+      "id": "Qwen-Image-Edit-F2P",
+      "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
+      "title_en": "Qwen-Image-Edit-F2P",
+      "author": "Artiprocher",
+      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
+      "user_name": "DiffSynth-Studio",
+      "user_profile": "https://modelscope.cn/profile/987294",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
+      "downloads": 2190,
+      "likes": 55,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "Qwen/Qwen-Image-Edit"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        "摄影"
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-10-17T10:14:57Z",
+      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1"
+    },
+    {
+      "id": "MV001",
+      "title_cn": "爆粉美女-万物有灵（一丹一世界）",
+      "title_en": "MV001",
+      "author": "happy976666666",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "happy976666666",
+      "user_profile": "https://modelscope.cn/profile/467646",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/943342ba-8c5a-43e5-bc75-ffc196328715.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MV001.png",
+      "downloads": 2153,
+      "likes": 64,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MAILAND/majicflus_v1@v1.0"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:19Z",
+      "modelscope_url": "https://modelscope.cn/happy976666666/MV001?revision=ckpt-20"
+    },
+    {
+      "id": "MAJICFLUS_ambertime",
+      "title_cn": "MAJICFLUS_琥珀时光",
+      "title_en": "MAJICFLUS_ambertime",
+      "author": "WANGMOON",
+      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
+      "user_name": "WANGMOON",
+      "user_profile": "https://modelscope.cn/profile/1148327",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/ee165b56-df77-4583-93cf-f050aff5ceb9.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS_ambertime.png",
+      "downloads": 2051,
+      "likes": 45,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "black-forest-labs/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "rich"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-22T06:40:07Z",
+      "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS_ambertime?revision=20250322143958"
+    },
+    {
+      "id": "FLUX.1-Kontext-dev-lora-SuperOutpainting",
+      "title_cn": "图像外扩 - Kontext 图像编辑 LoRA",
+      "title_en": "FLUX.1-Kontext-dev-lora-SuperOutpainting",
+      "author": "mibei0804",
+      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
+      "user_name": "DiffSynth-Studio",
+      "user_profile": "https://modelscope.cn/profile/987294",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
+      "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
+      "downloads": 1723,
+      "likes": 31,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "3d立体",
+        "动物",
+        "角色加强"
+      ],
+      "tags_en": [
+        "3D",
+        "Animal",
+        "Character Strong"
+      ],
+      "base_models": [
+        "MusePublic/FLUX.1-Kontext-Dev@v1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-07-08T07:48:20Z",
+      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting?revision=v1.2"
+    },
+    {
+      "id": "majicbeauty-qwen1",
+      "title_cn": "麦橘千问美人",
+      "title_en": "majicbeauty-qwen1",
+      "author": "merjic",
+      "avatar": "https://resouces.modelscope.cn/avatar/5f8a4f4b-7169-43fe-ad86-df8ef521e71d.jpg",
+      "user_name": "merjic",
+      "user_profile": "https://modelscope.cn/profile/1148307",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
+      "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
+      "downloads": 1644,
+      "likes": 176,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image@v1"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-08-24T15:03:17Z",
+      "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
+    },
+    {
+      "id": "FLUX.1-Kontext-dev-lora-highresfix",
+      "title_cn": "高分辨率修复 - Kontext 图像编辑 LoRA",
+      "title_en": "FLUX.1-Kontext-dev-lora-highresfix",
+      "author": "Artiprocher",
+      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
+      "user_name": "DiffSynth-Studio",
+      "user_profile": "https://modelscope.cn/profile/987294",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
+      "downloads": 1477,
+      "likes": 60,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/FLUX.1-Kontext-Dev@v1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-07-07T07:30:04Z",
+      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-highresfix?revision=v1.0"
+    },
+    {
+      "id": "MAJICFLUS_SuperChinesestyleheongsam",
+      "title_cn": "MAJICFLUS_麦橘超国风旗袍",
+      "title_en": "MAJICFLUS_SuperChinesestyleheongsam",
+      "author": "DonRat",
+      "avatar": "https://resouces.modelscope.cn/avatar/5bacce66-3ffc-4721-ae15-527cea330e32.jpg",
+      "user_name": "DonRat",
+      "user_profile": "https://modelscope.cn/profile/1148323",
+      "cover_url": "https://www.modelscope.cn/models/DonRat/MAJICFLUS_SuperChinesestyleheongsam/resolve/master/_cover_images_/342508f8-1302-46f2-bbcd-08b703c19954.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS_SuperChinesestyleheongsam.png",
+      "downloads": 1244,
+      "likes": 30,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "AI-ModelScope/FLUX.1-dev"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "qipao"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/DonRat/MAJICFLUS_SuperChinesestyleheongsam?revision=v1.0"
+    },
+    {
+      "id": "FLUX.1-Kontext-dev-lora-ArtAug",
+      "title_cn": "美学提升 - Kontext 图像编辑 LoRA",
+      "title_en": "FLUX.1-Kontext-dev-lora-ArtAug",
+      "author": "Artiprocher",
+      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
+      "user_name": "DiffSynth-Studio",
+      "user_profile": "https://modelscope.cn/profile/987294",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
+      "downloads": 793,
+      "likes": 25,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/FLUX.1-Kontext-Dev@v1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-07-04T09:55:50Z",
+      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug?revision=v1.0"
+    },
+    {
+      "id": "83_lora_SD_1_5",
+      "title_cn": "Lineart——照片线稿提取",
+      "title_en": "83_lora_SD_1_5",
+      "author": "Tenderness",
+      "avatar": "https://resouces.modelscope.cn/avatar/a222355e-8c3e-4008-ab61-49e6a872f4a7.jpg",
+      "user_name": "MusePublic",
+      "user_profile": "https://modelscope.cn/profile/1011887",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/96395057-0949-401b-9e6d-b5585247644c.png",
+      "cover_local": "cache/images/text-to-image-synthesis/83_lora_SD_1_5.png",
+      "downloads": 769,
+      "likes": 6,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "插画设计",
+        "建筑物",
+        "主体加强"
+      ],
+      "tags_en": [
+        "Illustration Design",
+        "Construction",
+        "Main Strong"
+      ],
+      "base_models": [
+        "langboat/Guohua-Diffusion"
+      ],
+      "stable_diffusion_version": "SD_1_5",
+      "trigger_words": null,
+      "vision_foundation": "SD_1_5",
+      "updated_at": "2025-03-07T08:19:01Z",
+      "modelscope_url": "https://modelscope.cn/MusePublic/83_lora_SD_1_5?revision=525"
+    },
+    {
+      "id": "Kook_xieshi_Kook_Qwen",
+      "title_cn": "Kook_千问写实_Kook_Qwen",
+      "title_en": "Kook_xieshi_Kook_Qwen",
+      "author": "KookYan",
+      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
+      "user_name": "KookYan",
+      "user_profile": "https://modelscope.cn/profile/1326437",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
+      "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
+      "downloads": 541,
+      "likes": 36,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Qwen/Qwen-Image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-08-13T16:40:43Z",
+      "modelscope_url": "https://modelscope.cn/KookYan/Kook_xieshi_Kook_Qwen?revision=20250814004023"
+    },
+    {
+      "id": "DouBaoFlux",
+      "title_cn": "豆包Flux",
+      "title_en": "DouBaoFlux",
+      "author": "Rainwyu",
+      "avatar": "https://resouces.modelscope.cn/avatar/f8600173-d07b-4685-9e22-64842a541672.png",
+      "user_name": "Rainwyu",
+      "user_profile": "https://modelscope.cn/profile/1333906",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/3c191cce-24f5-4593-9562-709b3a24481d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/DouBaoFlux.png",
+      "downloads": 408,
+      "likes": 3,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "3d立体",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "3D",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1@2172"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-05-14T17:25:12Z",
+      "modelscope_url": "https://modelscope.cn/Rainwyu/DouBaoFlux?revision=ckpt-10"
+    },
+    {
+      "id": "majicbeauty",
+      "title_cn": "麦橘超美",
+      "title_en": "majicbeauty",
+      "author": "merjic",
+      "avatar": "https://resouces.modelscope.cn/avatar/5f8a4f4b-7169-43fe-ad86-df8ef521e71d.jpg",
+      "user_name": "merjic",
+      "user_profile": "https://modelscope.cn/profile/1148307",
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 364,
+      "likes": 3,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "merjic/majicbeauty"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "mj"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-08-01T07:18:47Z",
+      "modelscope_url": "https://modelscope.cn/merjic/majicbeauty?revision=ckpt-20"
+    }
+  ]
+}
