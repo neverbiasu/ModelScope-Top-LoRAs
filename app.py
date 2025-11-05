@@ -16,13 +16,14 @@ import json
 
 from top_loras import cache as tl_cache
 import fetch_top_models as fetch_module
+from top_loras.download import sanitize_filename
 
 
 def get_cache_path(task: str | None, per_task_cache: bool = True):
     default = fetch_module.DEFAULT_CACHE_FILE
     images_dir = fetch_module.DEFAULT_IMAGES_DIR
     if per_task_cache and task:
-        safe = fetch_module.sanitize_filename(task)
+        safe = sanitize_filename(task)
         return f"cache/top_loras_{safe}.json"
     return default
 
@@ -59,44 +60,54 @@ def render_markdown_for_models(models):
         return "<div class='empty'>No cached results found. Try <b>Refresh</b> to fetch data.</div>"
 
     # header + cards style inspired by modelscope-studio, using Catppuccin Mocha-like palette
-        css = """
-        <style>
-        :root{
-            /* Catppuccin Mocha-ish palette (mantle/crust/surface/text/accents) */
-            --bg:#1f1d2e;      /* mantle */
-            --surface:#292c3c; /* surface1 */
-            --muted:#a6adc8;   /* subtext */
-            --text:#cdd6f4;    /* text */
-            --accent:#f5c2e7;  /* pink */
-            --accent-2:#89b4fa;/* blue */
-            --card:#232634;    /* surface2 */
-            --glass: rgba(255,255,255,0.03);
-        }
-        body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-    .tl-header{display:flex; align-items:center; gap:12px; padding:14px; border-bottom:1px solid rgba(255,255,255,0.03);}
-    .tl-title-main{font-size:20px; font-weight:700}
-    .tl-controls{margin-left:auto; display:flex; gap:8px; align-items:center}
-    .tl-container{padding:18px;}
-    .tl-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; margin-top:12px}
-    .tl-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.04)); border-radius:12px; padding:12px; box-shadow:0 8px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03); transition:transform .15s ease, box-shadow .15s ease}
-    .tl-card:hover{transform:translateY(-6px); box-shadow:0 18px 30px rgba(0,0,0,0.7)}
-    .tl-cover{width:100%; height:180px; object-fit:cover; border-radius:8px; background:var(--glass); display:block}
-    .tl-title{font-weight:700; margin-top:10px; color:var(--text); font-size:15px}
-    .tl-meta{font-size:13px; color:var(--muted); margin-top:6px}
-    .tl-row{display:flex; gap:8px; align-items:center;}
-    .tl-badge{background:var(--accent-2); color:#0b1020; padding:4px 8px; border-radius:999px; font-weight:600; font-size:12px}
-    .tl-link{color:var(--accent-2); text-decoration:underline}
-    .tl-tags{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap}
-    .tl-tag{background:rgba(255,255,255,0.02); color:var(--muted); padding:4px 8px; border-radius:6px; font-size:12px}
-    .empty{color:var(--muted); padding:20px}
-    .tl-footer{font-size:12px; color:var(--muted); text-align:center; padding:12px}
-    </style>
-    """
+    css = """
+<style>
+:root{
+    /* Catppuccin Mocha-ish palette (mantle/crust/surface/text/accents) */
+    --bg:#1f1d2e;      /* mantle */
+    --surface:#292c3c; /* surface1 */
+    --muted:#a6adc8;   /* subtext */
+    --text:#cdd6f4;    /* text */
+    --accent:#f5c2e7;  /* pink */
+    --accent-2:#89b4fa;/* blue */
+    --card:#232634;    /* surface2 */
+    --glass: rgba(255,255,255,0.03);
+}
+body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.tl-header{display:flex; align-items:center; gap:12px; padding:14px; border-bottom:1px solid rgba(255,255,255,0.03);}
+.tl-title-main{font-size:20px; font-weight:700}
+.tl-controls{margin-left:auto; display:flex; gap:8px; align-items:center}
+.tl-container{padding:18px;}
+.tl-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; margin-top:12px}
+.tl-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.04)); border-radius:12px; padding:12px; box-shadow:0 8px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03); transition:transform .15s ease, box-shadow .15s ease}
+.tl-card:hover{transform:translateY(-6px); box-shadow:0 18px 30px rgba(0,0,0,0.7)}
+.tl-cover{width:100%; height:180px; object-fit:cover; border-radius:8px; background:var(--glass); display:block}
+.tl-title{font-weight:700; margin-top:10px; color:var(--text); font-size:15px}
+.tl-meta{font-size:13px; color:var(--muted); margin-top:6px}
+.tl-row{display:flex; gap:8px; align-items:center;}
+.tl-badge{background:var(--accent-2); color:#0b1020; padding:4px 8px; border-radius:999px; font-weight:600; font-size:12px}
+.tl-link{color:var(--accent-2); text-decoration:underline}
+.tl-tags{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap}
+.tl-tag{background:rgba(255,255,255,0.02); color:var(--muted); padding:4px 8px; border-radius:6px; font-size:12px}
+.empty{color:var(--muted); padding:20px}
+.tl-footer{font-size:12px; color:var(--muted); text-align:center; padding:12px}
+</style>
+"""
 
     cards = [css, "<div class='tl-container'><div class='tl-grid'>"]
     for i, m in enumerate(models, 1):
         title = (m.get('title_cn') or m.get('title_en') or m.get('id') or '').replace('<', '&lt;')
-        url = m.get('cover_local') or m.get('cover_url') or ''
+        # Prefer local cover if available; convert relative local paths to file:// URIs
+        raw_url = m.get('cover_local') or m.get('cover_url') or ''
+        url = raw_url
+        try:
+            from pathlib import Path
+            if raw_url and not (raw_url.startswith('http://') or raw_url.startswith('https://') or raw_url.startswith('file://')):
+                p = Path(raw_url)
+                if p.exists():
+                    url = p.resolve().as_uri()
+        except Exception:
+            url = raw_url
         author = m.get('author') or ''
         downloads = m.get('downloads') or 0
         likes = m.get('likes') or 0
