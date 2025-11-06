@@ -197,7 +197,6 @@ def parse_model_entry(item):
         'downloads': extract_downloads(item),
         'likes': extract_likes(item),
         'license': item.get('License'),
-        # NOTE: intentionally omit raw `aigc_attributes` to keep cache small and privacy-safe
         'tags_cn': tags_cn,
         'tags_en': tags_en,
         'base_models': base_models,

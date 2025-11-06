@@ -94,7 +94,6 @@ def test_extract_model_info_user_and_tags():
 
     info = tl_parser.parse_model_entry(item)
     assert info['title_cn'] == '示例Muse名'
-    assert info['aigc_attributes'] == {"foo": "bar"}
     assert info['avatar'] == 'https://example.com/avatar.png'
     assert info['user_name'] == 'opname'
     assert info['user_profile'] == 'https://modelscope.cn/profile/12345'
