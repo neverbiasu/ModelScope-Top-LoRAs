@@ -42,14 +42,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install requests python-dotenv pillow
+          python -m pip install requests python-dotenv pillow modelscope
       - name: Run fetch (may use MODELSCOPE_API_TOKEN secret)
         env:
           MODELSCOPE_API_TOKEN: ${{ secrets.MODELSCOPE_API_TOKEN }}
         run: |
-          python fetch_top_models.py --limit 20 --task text-to-image-synthesis --force-refresh --no-images
+          python fetch_top_models.py --limit 20 --task text-to-image-synthesis --force-refresh
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
         with:
           name: top-loras-cache
-          path: cache/*.json
+          path: |
+            cache/*.json
+            cache/images/**
