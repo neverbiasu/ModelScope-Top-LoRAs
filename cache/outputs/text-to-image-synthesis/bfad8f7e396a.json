@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "job_id": "bfad8f7e396a",
+    "task": "text-to-image-synthesis",
+    "model_id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
+    "created_at": "2025-11-12T17:39:32Z"
+  },
+  "status": "succeeded",
+  "result": {
+    "task_id": "3612732",
+    "images": [
+      "https://muse-ai.oss-cn-hangzhou.aliyuncs.com/img/a162b815-991f-4844-ac6d-392b93423560.png"
+    ],
+    "model_id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
+    "prompt": "A sexy girl laying on the beach",
+    "images_local": [
+      "cache/outputs/images/gen_95edf99ccd.jpg"
+    ]
+  },
+  "remote": true
+}
