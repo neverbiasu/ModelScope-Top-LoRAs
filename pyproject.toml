@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "modelscope-top-loras"
+version = "0.1.0"
+description = "A small browser for Top LoRAs with ModelScope integration and Gradio UI"
+authors = ["nev4rb14su <1751162157@qq.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [ { include = "top_loras" } ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+modelscope = "*"
+gradio = "*"
+requests = "*"
+python-dotenv = "*"
+Pillow = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+
+[tool.poetry.scripts]
+# CLI entrypoint: allows `poetry run top-loras ...`
+top-loras = "top_loras.cli:run_cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
