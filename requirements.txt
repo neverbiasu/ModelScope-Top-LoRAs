@@ -1,2 +1,5 @@
 modelscope
 gradio
+requests
+python-dotenv
+pillow

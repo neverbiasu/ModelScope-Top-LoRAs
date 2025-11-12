@@ -1,388 +1,329 @@
-"""Gradio read-only UI for Top-LoRAs cache
-
-Features:
-- Select a task or use global cache, load cached Top-LoRAs and render cover+metadata
-- Refresh button to run fetch_top_loras (uses local fetch implementation) and update cache
-
-Usage:
-- Install: pip install gradio
-- Run: python app.py
-
-If gradio is not installed the script will print instructions instead of failing.
-"""
+"""Gradio read-only UI for Top-LoRAs cache."""
 
 from pathlib import Path
+import base64
 import json
+import os
+from typing import Any, Iterable, Optional
+import uuid
 
 from top_loras import cache as tl_cache
 import fetch_top_models as fetch_module
 from top_loras.download import sanitize_filename
-import os
+
+try:
+    import gradio as gr
+except Exception:  # pragma: no cover - optional UI dependency
+    gr = None
 
 
-def get_cache_path(task: str | None, per_task_cache: bool = True):
+_PLACEHOLDER_DATA_URI = (
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
+)
+
+
+def get_cache_path(task: Optional[str], per_task_cache: bool = True) -> str:
     default = fetch_module.DEFAULT_CACHE_FILE
-    images_dir = fetch_module.DEFAULT_IMAGES_DIR
     if per_task_cache and task:
         safe = sanitize_filename(task)
         return f"cache/top_loras_{safe}.json"
     return default
 
 
-def load_results_from_cache(cache_file: str):
-    # Prefer using the cache helper which validates _cached_at and returns the
-    # `results` list. Use a very large TTL here so the UI will show the cache even
-    # if it is older than the CLI's default TTL; the user can Refresh to force an update.
+def load_results_from_cache(cache_file: str) -> list[dict[str, Any]]:
     try:
         results = tl_cache.load_cache(cache_file, ttl=60 * 60 * 24 * 365)
         return results or []
     except Exception:
-        # fallback to manual read for unexpected formats
-        p = Path(cache_file)
-        if not p.exists():
+        path = Path(cache_file)
+        if not path.exists():
             return []
         try:
-            data = json.loads(p.read_text(encoding='utf-8'))
-            return data.get('results') or []
+            data = json.loads(path.read_text(encoding="utf-8"))
         except Exception:
             return []
+        results = data.get("results")
+        return results or []
 
 
-# Try to import gradio lazily
-try:
-    import gradio as gr
-except Exception:
-    gr = None
+def _resolve_cover_uri(raw_cover: Optional[str]) -> Optional[str]:
+    if not raw_cover:
+        return None
+    candidate = Path(raw_cover)
+    if candidate.exists():
+        return str(candidate)
+    return raw_cover
 
 
-def render_markdown_for_models(models):
-    # Generate a responsive HTML card grid using Catppuccin Mocha palette
+def sanitize_models(models: Iterable[dict[str, Any]] | None) -> tuple[list[dict[str, Any]], list[tuple[Optional[str], str]]]:
+    normalized: list[dict[str, Any]] = []
+    gallery_items: list[tuple[Optional[str], str]] = []
+
+    for idx, model in enumerate(models or []):
+        if not isinstance(model, dict):
+            continue
+
+        cover_uri = _resolve_cover_uri(
+            model.get("cover_local")
+            or model.get("cover")
+            or model.get("cover_url")
+        )
+
+        title = (
+            model.get("title_cn")
+            or model.get("title_en")
+            or model.get("title")
+            or model.get("id")
+            or f"Model {idx + 1}"
+        )
+
+        normalized_model = {
+            **model,
+            "title": title,
+            "cover": cover_uri,
+        }
+
+        normalized.append(normalized_model)
+        gallery_items.append((cover_uri or _PLACEHOLDER_DATA_URI, title))
+
+    return normalized, gallery_items
+
+
+def render_markdown_for_models(models: Iterable[dict[str, Any]] | None) -> str:
     if not models:
         return "<div class='empty'>No cached results found. Try <b>Refresh</b> to fetch data.</div>"
 
-    # header + cards style inspired by modelscope-studio, using Catppuccin Mocha-like palette
+    cards: list[str] = []
+
+    for model in models:
+        if not isinstance(model, dict):
+            continue
+
+        title = (
+            model.get("title_cn")
+            or model.get("title_en")
+            or model.get("title")
+            or model.get("id")
+            or "Unknown model"
+        )
+        cover_uri = (
+            _resolve_cover_uri(model.get("cover"))
+            or _resolve_cover_uri(model.get("cover_local"))
+            or _resolve_cover_uri(model.get("cover_url"))
+        )
+        author = model.get("author") or "Unknown"
+        downloads = model.get("downloads") or 0
+        likes = model.get("likes") or 0
+        description = model.get("description") or ""
+
+        if cover_uri:
+            image_html = f"<img src='{cover_uri}' alt='{title}' loading='lazy'/>"
+        else:
+            image_html = "<div class='card-placeholder'>No cover</div>"
+
+        truncated_desc = description[:160]
+        if description and len(description) > 160:
+            truncated_desc += "…"
+
+        cards.append(
+            """
+            <div class='tl-card'>
+                <div class='tl-card-image'>%s</div>
+                <div class='tl-card-body'>
+                    <div class='tl-card-title'>%s</div>
+                    <div class='tl-card-meta'>
+                        <span>ID: %s</span>
+                        <span>Author: %s</span>
+                    </div>
+                    <div class='tl-card-stats'>
+                        <span>Downloads: %s</span>
+                        <span>Likes: %s</span>
+                    </div>
+                    <div class='tl-card-desc'>%s</div>
+                </div>
+            </div>
+            """
+            % (
+                image_html,
+                title,
+                model.get("id", "n/a"),
+                author,
+                downloads,
+                likes,
+                truncated_desc,
+            )
+        )
+
     css = """
 <style>
-:root{
-    /* Catppuccin Mocha-ish palette (mantle/crust/surface/text/accents) */
-    --bg:#1f1d2e;      /* mantle */
-    --surface:#292c3c; /* surface1 */
-    --muted:#a6adc8;   /* subtext */
-    --text:#cdd6f4;    /* text */
-    --accent:#f5c2e7;  /* pink */
-    --accent-2:#89b4fa;/* blue */
-    --card:#232634;    /* surface2 */
-    --glass: rgba(255,255,255,0.03);
-}
-body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-.tl-header{display:flex; align-items:center; gap:12px; padding:14px; border-bottom:1px solid rgba(255,255,255,0.03);}
-.tl-title-main{font-size:20px; font-weight:700}
-.tl-controls{margin-left:auto; display:flex; gap:8px; align-items:center}
-    .tl-container{padding:18px; max-width:1400px; margin:0 auto}
-    /* Responsive grid: min column width 320px, with explicit breakpoints for desktop */
-    .tl-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; margin-top:12px; align-items:start; grid-auto-rows:1fr}
-    @media (min-width:700px){ .tl-grid{grid-template-columns:repeat(2,1fr);} }
-    @media (min-width:1000px){ .tl-grid{grid-template-columns:repeat(3,1fr);} }
-    @media (min-width:1400px){ .tl-grid{grid-template-columns:repeat(4,1fr);} }
-    .tl-grid > .tl-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.04)); border-radius:12px; padding:12px; box-shadow:0 8px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03); transition:transform .15s ease, box-shadow .15s ease; display:flex; flex-direction:column; height:100%; overflow:hidden; aspect-ratio:1/1}
-    .tl-grid > .tl-card:hover{transform:translateY(-6px); box-shadow:0 18px 30px rgba(0,0,0,0.7)}
-    /* force a consistent cover aspect ratio so cards have uniform image sizes */
-    .tl-cover{width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; background:var(--glass); display:block; flex:0 0 auto}
-.tl-body{display:flex; flex-direction:column; flex:1; overflow:visible}
-.tl-title{font-weight:700; margin-top:6px; color:var(--text); font-size:14px; line-height:1.2}
-.tl-meta{font-size:12px; color:var(--muted); margin-top:4px; white-space:normal; text-overflow:initial; overflow:visible}
-.tl-tags{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; max-height:3.6em; overflow:hidden}
-.tl-title{font-weight:700; margin-top:10px; color:var(--text); font-size:15px}
-.tl-meta{font-size:13px; color:var(--muted); margin-top:6px}
-.tl-row{display:flex; gap:8px; align-items:center;}
-.tl-badge{background:var(--accent-2); color:#0b1020; padding:4px 8px; border-radius:999px; font-weight:600; font-size:12px}
-.tl-link{color:var(--accent-2); text-decoration:underline}
-.tl-tags{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap}
-.tl-tag{background:rgba(255,255,255,0.02); color:var(--muted); padding:4px 8px; border-radius:6px; font-size:12px}
-.tl-open-btn{background:var(--accent); color:#0b1020; border:none; padding:6px 8px; border-radius:8px; font-weight:700; cursor:pointer}
-.empty{color:var(--muted); padding:20px}
-.tl-footer{font-size:12px; color:var(--muted); text-align:center; padding:12px}
+body { background-color: #111322; color: #d9e0ee; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.tl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 12px; }
+.tl-card { background: rgba(255,255,255,0.04); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.04); display: flex; flex-direction: column; min-height: 320px; }
+.tl-card-image { position: relative; width: 100%; padding-top: 62%; background: rgba(255,255,255,0.06); }
+.tl-card-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; color: rgba(255,255,255,0.5); }
+.tl-card-body { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.tl-card-title { font-size: 15px; font-weight: 600; line-height: 1.3; color: #f8f8f2; }
+.tl-card-meta, .tl-card-stats { display: flex; gap: 12px; font-size: 12px; color: rgba(231,229,250,0.78); }
+.tl-card-desc { font-size: 12px; line-height: 1.4; color: rgba(231,229,250,0.65); }
+.empty { padding: 42px; text-align: center; border: 1px dashed rgba(255,255,255,0.12); border-radius: 16px; background: rgba(255,255,255,0.03); }
 </style>
 """
 
-    from pathlib import Path
-    import base64
-    import imghdr
+    body = """
+<div class='tl-grid'>
+%s
+</div>
+""" % ("\n".join(cards))
 
-    # placeholder 1x1 transparent PNG
-    placeholder = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
-
-    def to_data_uri(path_or_url):
-        if not path_or_url:
-            return None
-        s = str(path_or_url)
-        if s.startswith('http://') or s.startswith('https://'):
-            return s
-        # treat as local path
-        p = Path(s)
-        if not p.exists():
-            return None
-        try:
-            data = p.read_bytes()
-            # try to determine image type from header or extension
-            kind = imghdr.what(None, h=data)
-            if not kind:
-                ext = p.suffix.lower().lstrip('.')
-                kind = ext or 'png'
-            mime = f'image/{"jpeg" if kind=="jpg" else kind}'
-            b64 = base64.b64encode(data).decode('ascii')
-            return f'data:{mime};base64,{b64}'
-        except Exception:
-            return None
-
-    cards = [css, "<div class='tl-container'><div class='tl-grid'>"]
-    for i, m in enumerate(models, 1):
-        title = (m.get('title_cn') or m.get('title_en') or m.get('id') or '').replace('<', '&lt;')
-        cover_src = to_data_uri(m.get('cover_local') or m.get('cover_url') or '') or placeholder
-        avatar_src = to_data_uri(m.get('avatar') or '') or placeholder
-        author = m.get('author') or ''
-        downloads = m.get('downloads') or 0
-        likes = m.get('likes') or 0
-        updated = m.get('updated_at') or ''
-        model_url = m.get('modelscope_url') or '#'
-        tags = m.get('tags_en') or m.get('tags_cn') or []
-        tags_html = ''.join([f"<div class='tl-tag'>{t}</div>" for t in tags[:6]])
-
-        card_html = f"""
-    <div class='tl-card' onclick="selectModel({i})">
-            <div class='tl-body'>
-                <div style='display:flex; gap:12px; align-items:flex-start'>
-                    <img src='{avatar_src}' alt='avatar' style='width:32px; height:32px; border-radius:50%; object-fit:cover; flex:0 0 32px; background:var(--glass);' onerror="this.style.display='none'" />
-                    <div style='flex:1'>
-                        <div class='tl-title'>{i}. {title}</div>
-                        <div class='tl-meta'>{author} · Downloads: {downloads} · Likes: {likes}</div>
-                    </div>
-                </div>
-                <div style='margin-top:10px'>
-                    <img class='tl-cover' src='{cover_src}' alt='cover' onerror="this.style.display='none'" />
-                </div>
-                <div class='tl-row' style='margin-top:8px'>
-                    <div class='tl-badge'>#{i}</div>
-                    <div style='flex:1'></div>
-                            <a class='tl-link' href='{model_url}' target='_blank'>Model Page</a>
-                </div>
-                <div class='tl-tags'>{tags_html}</div>
-                <div class='tl-meta' style='margin-top:8px'>Updated: {updated}</div>
-            </div> <!-- .tl-body -->
-        </div> <!-- .tl-card -->
-        """
-        cards.append(card_html)
-
-    cards.append("</div></div>")
-    # small JS bridge: call selectModel(i) to write into hidden textbox with id 'tl_select_box'
-    cards.append("""
-    <script>
-    function selectModel(i){
-        try{
-            // try exact id then fallback to selectors (some Gradio builds prefix ids)
-            var el = document.getElementById('tl_select_box') || document.querySelector("[id$='tl_select_box']") || document.querySelector("input[aria-label='_tl_select_box']");
-            if(!el){ console.warn('tl_select_box not found'); return; }
-            el.value = String(i);
-            // dispatch both input and change to satisfy different listeners
-            el.dispatchEvent(new Event('input', {bubbles:true}));
-            el.dispatchEvent(new Event('change', {bubbles:true}));
-        }catch(e){console.warn(e)}
-    }
-    </script>
-    """)
-    return '\n'.join(cards)
+    return css + body
 
 
-def build_ui():
-    if gr is None:
-        print("Gradio is not installed. Install with: pip install gradio")
-        return
-
-    # build task list from presets (no global option)
-    tasks = []
+def _tasks_from_presets() -> list[str]:
     try:
         presets = fetch_module.TASK_PRESETS
-        tasks = list(presets.values())
     except Exception:
-        tasks = []
+        return []
 
-    # Build an improved header + Tabs layout (Selection -> Generate)
+    if isinstance(presets, dict):
+        values = list(presets.values())
+        return values or list(presets.keys())
+
+    try:
+        return list(presets)  # type: ignore[arg-type]
+    except TypeError:
+        return []
+
+
+def build_ui() -> None:
+    if gr is None:
+        print("Gradio is not installed. Run `pip install gradio` to launch the UI.")
+        return
+
+    tasks = _tasks_from_presets()
+    default_task = "text-to-image-synthesis"
+    if default_task in tasks:
+        initial_task = default_task
+    elif tasks:
+        initial_task = tasks[0]
+    else:
+        initial_task = default_task
+
+    cache_file = get_cache_path(initial_task, per_task_cache=True)
+    initial_models = load_results_from_cache(cache_file)
+    initial_norm, initial_gallery = sanitize_models(initial_models)
+
     with gr.Blocks(css="body { background: #0f1117; }") as demo:
-        # Header (compact)
-        # Simplified header: single title as requested
         with gr.Row(elem_id="tl-header", variant="panel"):
-            gr.Markdown("# Top-LoRAs")
+            gr.Markdown(
+                "<div style='display:flex;align-items:center;gap:8px'>"
+                "<img src='' alt='' style='width:28px;height:28px;border-radius:6px;background:#fff20;'/>"
+                "<span style='font-size:18px;font-weight:700'>Top‑LoRAs</span>"
+                "</div>"
+            )
 
-        # Tabs: Selection (cards + controls) and Generate (parameters)
-        with gr.Tabs() as tabs:
+        with gr.Tabs():
             with gr.TabItem("Selection"):
-                    with gr.Row():
-                        with gr.Column(scale=3):
-                            task_dd = gr.Dropdown(tasks or [], value=None, label="Task (select)")
-                            per_task_cb = gr.Checkbox(value=True, label='Per-task cache')
-                            refresh_btn = gr.Button("Refresh Cache")
-                            refresh_help = gr.Markdown("Refresh will re-fetch the selected task from ModelScope, (re)download covers and update the local cache (session token used if provided).")
-                            # Selected model area (single-select)
-                            selected_md = gr.Markdown("**Selected model:** None")
-                            selected_state = gr.State(value=None)
-                        with gr.Column(scale=9):
-                            # use Gradio Gallery for cards (click to select)
-                            gallery = gr.Gallery(label="Top LoRAs", value=[], columns=3, show_label=False, elem_id="tl_gallery", height=520)
-                            # keep a state holding the current list of models (dicts)
-                            models_state = gr.State(value=[])
+                with gr.Row():
+                    with gr.Column(scale=3):
+                        task_dd = gr.Dropdown(
+                            choices=tasks,
+                            value=initial_task if tasks else None,
+                            label="Task (select)",
+                        )
+                        per_task_cb = gr.Checkbox(value=True, label="Per-task cache")
+                        refresh_btn = gr.Button("Refresh Cache")
+                        gr.Markdown(
+                            "Refresh fetches the selected task from ModelScope, updates the "
+                            "local cache, and downloads covers when available."
+                        )
+                        selected_md = gr.HTML("<div><strong>Selected model:</strong> None</div>")
+                        selected_state = gr.State(value=None)
+                    with gr.Column(scale=9):
+                        gallery = gr.Gallery(
+                            label="Top LoRAs",
+                            value=initial_gallery or None,
+                            columns=3,
+                            show_label=False,
+                            elem_id="tl_gallery",
+                            height=520,
+                        )
+                        models_state = gr.State(value=initial_norm)
 
             with gr.TabItem("Generate"):
                 with gr.Row():
                     with gr.Column(scale=8):
                         gen_model_info = gr.Markdown("No model selected")
+                        # Visible field to confirm the selected model ID is propagated
+                        selected_id_display = gr.Textbox(label="Selected Model ID", value="None", interactive=False)
                         prompt = gr.Textbox(label="Prompt", placeholder="Describe the image to generate")
+                        neg_prompt = gr.Textbox(label="Negative Prompt", placeholder="Optional negative prompt")
+                        size_text = gr.Textbox(label="Size (e.g., 1024x1024)", placeholder="Optional size like 1024x1024")
                         steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label="Steps")
                         guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label="Guidance Scale")
                         seed = gr.Number(value=42, label="Seed (0=random)")
+                        api_model_override = gr.Textbox(label="API Model (override)", placeholder="e.g. black-forest-labs/FLUX.1-Krea-dev")
                         generate_btn = gr.Button("Generate")
-                        # token input moved here (Generate page)
                         token_input = gr.Textbox(label="ModelScope API Token", placeholder="Paste token here (session)", type="password")
                         token_save = gr.Button("Save Token")
                         token_clear = gr.Button("Clear Token")
                         auth_md = gr.Markdown("**Auth:** Not provided")
                         token_state = gr.State(value=None)
                     with gr.Column(scale=4):
-                        out_image = gr.Image(label="Output", visible=False)
+                        # Keep the image component visible but do NOT pre-fill it with a placeholder value
+                        out_image = gr.Image(label="Output", value=None, visible=True)
+                        # A small gallery/history area to show generated outputs (persisted)
+                        results_gallery = gr.Gallery(label="Generated outputs", value=None, columns=2, show_label=True, elem_id="gen_results", visible=False)
                         job_status = gr.Markdown("")
+                        last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
 
-    # Default task logic (pick a sensible initial task)
-        default_task = "text-to-image-synthesis"
-        try:
-            presets_values = list(fetch_module.TASK_PRESETS.values())
-        except Exception:
-            presets_values = []
-        if default_task in (presets_values or tasks):
-            initial_task_value = default_task
-        elif tasks:
-            initial_task_value = tasks[0]
-        else:
-            initial_task_value = default_task
-
-        # load initial models
-        init_task = initial_task_value
-        cache_file = get_cache_path(init_task, per_task_cache=True)
-        initial_models = load_results_from_cache(cache_file)
-        def sanitize_models(raw_models):
-            """Return (normalized_models, gallery_items).
-            normalized_models: list of dicts (only valid models)
-            gallery_items: list of (img_str, caption)
-            
-            Gallery expects (img_uri, caption) where img_uri is:
-            - HTTP(S) URL
-            - data: URI (base64 embedded)
-            NOT relative paths (which cause 'Cannot read properties of undefined (reading url)')
-            """
-            import base64
-            import imghdr
-            
-            placeholder = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
-            norm = []
-            gallery_items = []
-            from pathlib import Path as _Path
-            
-            def path_to_data_uri(path_str):
-                """Convert local path to data URI, fallback to placeholder on error."""
-                if not path_str:
-                    return placeholder
-                path_str = str(path_str)
-                # if already HTTP URL, use it
-                if path_str.startswith('http://') or path_str.startswith('https://'):
-                    return path_str
-                # if data URI, use it
-                if path_str.startswith('data:'):
-                    return path_str
-                # treat as local file path
-                try:
-                    p = _Path(path_str)
-                    if not p.exists():
-                        return placeholder
-                    data = p.read_bytes()
-                    # detect mime type
-                    kind = imghdr.what(None, h=data)
-                    if not kind:
-                        ext = p.suffix.lower().lstrip('.')
-                        kind = ext if ext else 'png'
-                    mime = f'image/{"jpeg" if kind in ("jpg", "jpeg") else kind}'
-                    b64 = base64.b64encode(data).decode('ascii')
-                    return f'data:{mime};base64,{b64}'
-                except Exception as e:
-                    print(f"[DEBUG] Failed to convert {path_str} to data URI: {e}")
-                    return placeholder
-            
-            for m in (raw_models or []):
-                if not isinstance(m, dict):
-                    continue
-                # pick image (prefer cover_local to use cached image, fallback to URL)
-                img_path = m.get('cover_local') or m.get('cover_url')
-                img_uri = path_to_data_uri(img_path) if img_path else placeholder
-                
-                # caption
-                title = (m.get('title_cn') or m.get('title_en') or m.get('id') or '')
-                
-                # minimal model shape
-                nm = {
-                    'id': m.get('id'),
-                    'title': title,
-                    'author': m.get('author'),
-                    'downloads': m.get('downloads'),
-                    'likes': m.get('likes'),
-                    'cover': img_uri,
-                    **{k: v for k, v in m.items() if k not in ('cover_local', 'cover_url')}
-                }
-                norm.append(nm)
-                gallery_items.append({'image': img_uri, 'caption': title})
-            
-            return norm, gallery_items
-
-        # sanitize initial models and populate gallery + state
-        norm, gallery_items = sanitize_models(initial_models)
-        gallery.value = gallery_items
-        models_state.value = norm
-
-
-        # helper to load models for a task and update gallery + internal state
         def _models_for_dropdown(task_value, per_task_enabled, token):
-            sel = None if (not task_value) else task_value
+            sel = task_value or None
             cache_file = get_cache_path(sel, per_task_cache=per_task_enabled)
             models = load_results_from_cache(cache_file)
             norm, gallery_items = sanitize_models(models)
-            return gr.Gallery.update(value=gallery_items), norm
+            return gr.update(value=gallery_items), norm
 
-        task_dd.change(fn=_models_for_dropdown, inputs=[task_dd, per_task_cb, token_state], outputs=[gallery, models_state])
+        task_dd.change(
+            fn=_models_for_dropdown,
+            inputs=[task_dd, per_task_cb, token_state],
+            outputs=[gallery, models_state],
+        )
 
-        # Refresh cache: force re-fetch from ModelScope and update the view
         def _refresh_cache(task_value, per_task_enabled, token):
-            # if a token was provided in the UI, inject it into environment for the fetcher
             if token:
-                os.environ['MODELSCOPE_API_TOKEN'] = token
+                os.environ["MODELSCOPE_API_TOKEN"] = token
             try:
-                # call package fetcher to refresh cache; force_refresh=True to skip cached copy
-                results = fetch_module.fetch_top_loras(force_refresh=True, task=task_value, per_task_cache=per_task_enabled, download_images=True, debug=False)
-            except Exception as e:
-                return f"<div class='empty'>Refresh failed: {e}</div>"
-            # render
-            html = render_markdown_for_models(results)
-            return html
+                results = fetch_module.fetch_top_loras(
+                    force_refresh=True,
+                    task=task_value,
+                    per_task_cache=per_task_enabled,
+                    download_images=True,
+                    debug=False,
+                )
+            except Exception as exc:  # pragma: no cover - UI message only
+                return f"<div class='empty'>Refresh failed: {exc}</div>"
+            return render_markdown_for_models(results)
 
-        # Refresh should update the gallery and internal models state
         def _refresh_and_update(task_value, per_task_enabled, token):
-            html_or_err = _refresh_cache(task_value, per_task_enabled, token)
-            # _refresh_cache returns HTML string; but we want models list instead.
-            # Re-load cache and update gallery
-            sel = None if (not task_value) else task_value
+            _refresh_cache(task_value, per_task_enabled, token)
+            sel = task_value or None
             cache_file = get_cache_path(sel, per_task_cache=per_task_enabled)
             models = load_results_from_cache(cache_file)
             norm, gallery_items = sanitize_models(models)
-            return gr.Gallery.update(value=gallery_items), norm
+            return gr.update(value=gallery_items), norm
 
-        refresh_btn.click(fn=_refresh_and_update, inputs=[task_dd, per_task_cb, token_state], outputs=[gallery, models_state])
+        refresh_btn.click(
+            fn=_refresh_and_update,
+            inputs=[task_dd, per_task_cb, token_state],
+            outputs=[gallery, models_state],
+        )
 
-        # Token callbacks
+        def _load_initial():
+            return initial_gallery
+
+        demo.load(fn=_load_initial, inputs=None, outputs=gallery)
+
         def _save_token(token, _state):
             if not token:
                 return "**Auth:** Not provided", None
@@ -394,26 +335,313 @@ def build_ui():
         token_save.click(fn=_save_token, inputs=[token_input, token_state], outputs=[auth_md, token_state])
         token_clear.click(fn=_clear_token, inputs=[token_state], outputs=[auth_md, token_state])
 
-        # Gallery selection handler: set the selected model (single select)
-        def _on_gallery_select(evt, models_list):
-            # evt.index is the selected index in the gallery
-            try:
-                idx = int(evt.index)
-            except Exception:
-                return "**Selected model:** None", None
-            models = models_list or []
-            if idx < 0 or idx >= len(models):
-                return "**Selected model:** None", None
-            m = models[idx]
-            title = (m.get('title_cn') or m.get('title_en') or m.get('id') or '')
-            md = f"**Selected model:** {title}  \n\n- ID: {m.get('id')}  \n- Author: {m.get('author')}  \n- Downloads: {m.get('downloads')}  \n- Likes: {m.get('likes')}"
-            # set selected_state to the selected model dict
-            return md, m
+        from top_loras.inference import submit_job
 
-        gallery.select(fn=_on_gallery_select, inputs=[models_state], outputs=[selected_md, selected_state], queue=False)
+        def _on_gallery_select(evt, models=None, **kwargs):
+            # Accept kwargs to be tolerant of extra arguments Gradio may pass
+            models = models or []
+            # Log the full event payload (trimmed to 1000 chars to avoid huge dumps)
+            evt_repr = repr(evt)
+            print(f"[DBG] gallery.select evt type: {type(evt).__name__} evt repr: {evt_repr[:1000]}")
+
+            def find_by_id(identifier):
+                for item in models:
+                    if str(item.get("id")) == str(identifier):
+                        return item
+                return None
+
+            def find_by_title(name):
+                for item in models:
+                    if str(item.get("title")) == str(name):
+                        return item
+                return None
+
+            def find_by_cover(uri):
+                for item in models:
+                    if item.get("cover") == uri or item.get("cover_local") == uri or item.get("cover_url") == uri:
+                        return item
+                return None
+
+            def match_candidate(candidate):
+                if candidate is None:
+                    return None
+                if isinstance(candidate, dict):
+                    # If the candidate already looks like a full model dict (contains id + metadata),
+                    # accept it directly rather than requiring it to be found in `models`.
+                    if candidate.get("id") and any(
+                        k in candidate for k in ("downloads", "likes", "author", "modelscope_url", "cover_url", "cover_local")
+                    ):
+                        return candidate
+
+                    # Otherwise try matching by common identifier keys (id/model_id/value)
+                    for key in ("id", "model_id", "value"):
+                        if candidate.get(key) is not None:
+                            match = find_by_id(candidate.get(key))
+                            if match:
+                                return match
+
+                    # Try matching by title-like keys
+                    for key in ("title", "caption", "label"):
+                        if candidate.get(key):
+                            match = find_by_title(candidate.get(key))
+                            if match:
+                                return match
+
+                    # Try matching by cover/image uri
+                    cover = candidate.get("cover") or candidate.get("image") or candidate.get("src") or candidate.get("cover_url") or candidate.get("cover_local")
+                    if cover:
+                        found = find_by_cover(cover)
+                        if found:
+                            return found
+
+                    return None
+                if isinstance(candidate, int):
+                    if 0 <= candidate < len(models):
+                        return models[candidate]
+                    return None
+                if isinstance(candidate, str):
+                    if candidate.isdigit():
+                        idx = int(candidate)
+                        if 0 <= idx < len(models):
+                            return models[idx]
+                    match = find_by_id(candidate)
+                    if match:
+                        return match
+                    return find_by_title(candidate)
+                if isinstance(candidate, (list, tuple)):
+                    for item in candidate:
+                        match = match_candidate(item)
+                        if match:
+                            return match
+                    return None
+                if hasattr(candidate, "value"):
+                    return match_candidate(getattr(candidate, "value"))
+                if hasattr(candidate, "index"):
+                    try:
+                        idx = int(getattr(candidate, "index"))
+                    except Exception:
+                        idx = None
+                    if idx is not None and 0 <= idx < len(models):
+                        return models[idx]
+                return None
+
+            candidates = [evt]
+            if hasattr(evt, "value"):
+                candidates.append(getattr(evt, "value"))
+            if hasattr(evt, "data"):
+                candidates.append(getattr(evt, "data"))
+            if hasattr(evt, "index"):
+                candidates.append(getattr(evt, "index"))
+
+            selected = None
+            for candidate in candidates:
+                selected = match_candidate(candidate)
+                if selected:
+                    break
+
+            if not selected:
+                # Ensure we always return 4 outputs: html, state, markdown, selected_id
+                print("[DBG] No matching model found for candidates:\n", candidates[:3])
+                return "<div><strong>Selected model:</strong> None</div>", None, "No model selected", ""
+
+            title = (
+                selected.get("title_cn")
+                or selected.get("title_en")
+                or selected.get("title")
+                or selected.get("id")
+                or "Unknown model"
+            )
+
+            summary_html = (
+                f"<div><strong>Selected model:</strong> {title}</div>"
+                f"<div style='margin-top:8px; font-size:13px; color:#a6adc8'>ID: {selected.get('id')} · "
+                f"Author: {selected.get('author')} · Downloads: {selected.get('downloads')} · "
+                f"Likes: {selected.get('likes')}</div>"
+            )
+
+            generate_md = (
+                f"### {title}\n\n"
+                f"- **ID:** {selected.get('id')}  \n"
+                f"- **Author:** {selected.get('author')}  \n"
+                f"- **Downloads:** {selected.get('downloads')}  \n"
+                f"- **Likes:** {selected.get('likes')}  \n"
+                f"- **Updated:** {selected.get('updated_at') or ''}  \n"
+                f"- **URL:** [{selected.get('modelscope_url')}]({selected.get('modelscope_url')})"
+            )
+
+            canonical = find_by_id(selected.get("id")) or selected
+
+            print(f"[DBG] Matched selected id: {selected.get('id')} -> canonical id: {canonical.get('id')}")
+
+            # return (selected_md_html, selected_state_obj, generate_md, selected_id_str)
+            return summary_html, canonical, generate_md, str(canonical.get("id"))
+
+        gallery.select(
+            fn=_on_gallery_select,
+            inputs=[models_state],
+            outputs=[selected_md, selected_state, gen_model_info, selected_id_display],
+            queue=False,
+        )
+
+        def _do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token):
+            """Submit a job and return UI updates: (out_image_update, status_md, job_file, gallery_update).
+
+            This function is defensive: it always returns 4 outputs and uses a placeholder image
+            when no real image is available.
+            """
+            # Default updates: do NOT use a placeholder image value — leave image empty/hidden
+            default_img_update = gr.update(value=None, visible=False)
+            default_gallery_update = gr.update(value=None, visible=False)
+
+            print("[DBG] _do_generate invoked model_id=", model_id, "prompt=", (prompt_text or "")[:60], "steps=", steps_v, "guidance=", guidance_v, "seed=", seed_v, "token?", bool(token))
+
+            if not model_id or model_id == "None":
+                return default_img_update, "No model selected", "", default_gallery_update
+
+            def _derive_from_url(m: dict | None) -> str | None:
+                if not isinstance(m, dict):
+                    return None
+                url = m.get("modelscope_url") or m.get("url")
+                if not isinstance(url, str):
+                    return None
+                marker = "/models/"
+                if marker not in url:
+                    return None
+                # Extract path after /models/
+                tail = url.split(marker, 1)[-1]
+                # Remove query and trailing fragments
+                tail = tail.split("?", 1)[0].strip("/")
+                # Expect org/name[/...] -> we take first two segments as canonical ID
+                parts = tail.split("/")
+                if len(parts) >= 2:
+                    candidate = parts[0] + "/" + parts[1]
+                    return candidate
+                return None
+
+            # Determine effective model id for API: UI override > explicit api_model key > derived from modelscope_url > selected_id
+            effective_model = None
+            try:
+                if api_model:
+                    effective_model = str(api_model).strip()
+                elif isinstance(model, dict) and model.get("api_model"):
+                    effective_model = str(model.get("api_model")).strip()
+                if not effective_model:
+                    derived = _derive_from_url(model if isinstance(model, dict) else None)
+                    effective_model = derived
+            except Exception:
+                effective_model = None
+            effective_model = (effective_model or model_id or "").strip()
+
+            # Auto-warn if effective_model seems incomplete (no slash)
+            incomplete = "/" not in effective_model
+
+            params = {
+                "task": "text-to-image-synthesis",
+                "prompt": prompt_text or "",
+                "negative_prompt": (neg_text or "") if neg_text else None,
+                "size": (size_v or "").strip() if size_v else None,
+                "steps": int(steps_v),
+                "guidance": float(guidance_v),
+                "seed": int(seed_v or 0),
+            }
+            # Remove Nones from params
+            params = {k: v for k, v in params.items() if v is not None}
+
+            # Allow falling back to environment variable if token not saved in session state
+            effective_token = token or os.environ.get("MODELSCOPE_API_TOKEN")
+            try:
+                job = submit_job(effective_model, params, token=effective_token)
+            except Exception as exc:  # pragma: no cover - runtime robustness
+                status_md = f"**Job:** failed to submit  \n**Error:** {exc}"
+                return default_img_update, status_md, "", default_gallery_update
+
+            result = job.get("result") or {}
+
+            # Debug print job structure
+            try:
+                print("[DBG] job keys=", list(job.keys()))
+                print("[DBG] job.meta=", job.get("meta"))
+                print("[DBG] job.status=", job.get("status"), "remote=", job.get("remote"), "error=", job.get("error"))
+                if isinstance(result, dict):
+                    print("[DBG] result keys=", list(result.keys()))
+                else:
+                    print("[DBG] result type=", type(result), "repr=", repr(result)[:120])
+            except Exception as _dbg_exc:  # pragma: no cover
+                print("[DBG] logging error:", _dbg_exc)
+
+            # Normalize possible result shapes into a list of image URIs
+            imgs = []
+            try:
+                if isinstance(result, dict):
+                    if isinstance(result.get("images"), (list, tuple)):
+                        imgs = [i for i in result.get("images") if isinstance(i, str)]
+                    elif isinstance(result.get("image"), str):
+                        imgs = [result.get("image")]
+                    else:
+                        for v in result.values():
+                            if isinstance(v, str) and v.startswith("data:"):
+                                imgs.append(v)
+                                break
+                elif isinstance(result, (list, tuple)):
+                    imgs = [i for i in result if isinstance(i, str)]
+            except Exception:
+                imgs = []
+
+            print("[DBG] parsed imgs count=", len(imgs))
+
+            img = imgs[0] if imgs else None
+
+            # If first image is a data URI, persist to a PNG file for gr.Image compatibility
+            if isinstance(img, str) and img.startswith("data:image"):
+                try:
+                    b64 = img.split(",",1)[-1]
+                    img_bytes = base64.b64decode(b64)
+                    out_dir = Path("cache") / "outputs" / "images"
+                    out_dir.mkdir(parents=True, exist_ok=True)
+                    fpath = out_dir / f"gen_{uuid.uuid4().hex[:10]}.png"
+                    fpath.write_bytes(img_bytes)
+                    imgs[0] = str(fpath)
+                    img = imgs[0]
+                    print("[DBG] wrote data URI to file:", img)
+                except Exception as _persist_exc:
+                    print("[DBG] failed to persist data URI image:", _persist_exc)
+
+            status_md = (
+                f"**Job:** {job.get('meta', {}).get('job_id', '')}  \n"
+                f"**Status:** {job.get('status')}  \n"
+                f"**Remote:** {job.get('remote')}  \n"
+                f"**API Model:** {effective_model}"
+            )
+            if incomplete:
+                status_md += "  \n⚠️ 推理模型ID可能不完整（缺少组织前缀），已尝试自动从 URL 解析。如仍 400，请在 API Model Override 输入完整形式例如 org/name。"
+            if job.get('mock'):
+                status_md += "  \n_Mode: mock (no token detected)_"
+            if job.get('error'):
+                status_md += f"  \n**Error:** {job.get('error')}"
+
+            if imgs:
+                gallery_update = gr.update(value=imgs, visible=True)
+                img_exists = isinstance(img, str) and Path(str(img)).exists()
+                if img_exists:
+                    print("[DBG] image path exists:", img)
+                else:
+                    print("[DBG] image path does not exist or not a path:", img)
+                img_update = gr.update(value=img if img_exists else None, visible=bool(img_exists))
+            else:
+                status_md += "  \n_No image returned; using empty state_"
+                gallery_update = default_gallery_update
+                img_update = default_img_update
+
+            return img_update, status_md, job.get("file_path", ""), gallery_update
+
+        generate_btn.click(
+            fn=_do_generate,
+            inputs=[selected_state, selected_id_display, prompt, neg_prompt, size_text, steps, guidance, seed, api_model_override, token_state],
+            outputs=[out_image, job_status, last_job_file, results_gallery],
+        )
 
         demo.launch()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     build_ui()

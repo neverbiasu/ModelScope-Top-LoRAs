@@ -1,8 +1,8 @@
 {
-  "_cached_at": 1762280533.2607412,
+  "_cached_at": 1762968133.73389,
   "results": [
     {
-      "id": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
       "title_cn": null,
       "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
       "author": "Cherrytest",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 111,
+      "downloads": 115,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -26,7 +26,7 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V"
     },
     {
-      "id": "Wan2.1-Divine-Power-LoRA",
+      "id": "AI-ModelScope/Wan2.1-Divine-Power-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Divine-Power-LoRA",
       "author": "Cherrytest",
@@ -35,7 +35,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 76,
+      "downloads": 80,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -51,7 +51,32 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Divine-Power-LoRA"
     },
     {
-      "id": "wan21_i2v_480P_smoke_change_clothes_lora",
+      "id": "valiantcat/Wan2.1-Fight-LoRA",
+      "title_cn": null,
+      "title_en": "Wan2.1-Fight-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/56d9e1ec-12f1-4d2b-a749-04ade9830aba.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 42,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-08-27T05:35:03Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA"
+    },
+    {
+      "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
       "title_cn": null,
       "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
       "author": "Cherrytest",
@@ -60,7 +85,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 35,
+      "downloads": 39,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -75,7 +100,31 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
-      "id": "wan2.1_I2V480P_fenshengshu_lora",
+      "id": "CCP6/erwer-lora",
+      "title_cn": null,
+      "title_en": "erwer-lora",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/56d9e1ec-12f1-4d2b-a749-04ade9830aba.png",
+      "user_name": "CCP6",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 38,
+      "likes": 0,
+      "license": "creativeml-openrail-m",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-10-01T06:34:09Z",
+      "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
+    },
+    {
+      "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
       "title_cn": null,
       "title_en": "wan2.1_I2V480P_fenshengshu_lora",
       "author": "Cherrytest",
@@ -84,7 +133,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 27,
+      "downloads": 31,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -99,7 +148,31 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
     },
     {
-      "id": "Wan2.1-Mecha-LoRA",
+      "id": "multimodalart/plstps-lora",
+      "title_cn": null,
+      "title_en": "plstps-lora",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/56d9e1ec-12f1-4d2b-a749-04ade9830aba.png",
+      "user_name": "multimodalart",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 27,
+      "likes": 0,
+      "license": "creativeml-openrail-m",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Qwen/Qwen-Image"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-30T09:18:30Z",
+      "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
+    },
+    {
+      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Mecha-LoRA",
       "author": "Cherrytest",
@@ -108,7 +181,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 21,
+      "downloads": 25,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -124,7 +197,32 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA"
     },
     {
-      "id": "Wan2.2-frames-to-video",
+      "id": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_cn": null,
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/56d9e1ec-12f1-4d2b-a749-04ade9830aba.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 24,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-26T18:30:26Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA"
+    },
+    {
+      "id": "morphic/Wan2.2-frames-to-video",
       "title_cn": null,
       "title_en": "Wan2.2-frames-to-video",
       "author": "Cherrytest",
@@ -133,7 +231,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 7,
+      "downloads": 17,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],

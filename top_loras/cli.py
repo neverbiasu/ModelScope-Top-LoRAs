@@ -23,9 +23,18 @@ def run_cli(argv=None):
     parser.add_argument('--debug', action='store_true')
     args = parser.parse_args(argv)
 
+    # Default behavior: if neither --task nor --all-tasks is provided,
+    # run for all preset tasks so that caches and images are written
+    # per task (e.g., cache/top_loras_text-to-image-synthesis.json and
+    # cache/images/text-to-image-synthesis/).
+    if not args.all_tasks and not args.task:
+        args.all_tasks = True
+
     if args.all_tasks:
         for key, task_val in fetch_module.TASK_PRESETS.items():
-            safe = sanitize_filename(key)
+            # Use the actual task name (task_val) for cache/images naming so
+            # files reflect the real ModelScope task (e.g. text-to-image-synthesis)
+            safe = sanitize_filename(task_val)
             cache_file = Path(args.cache_file).with_name(f"top_loras_{safe}.json")
             images_dir = Path(args.images_dir) / safe
             print(f"Fetching task={task_val} -> cache={cache_file} images={images_dir}")

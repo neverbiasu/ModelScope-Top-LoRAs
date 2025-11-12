@@ -94,7 +94,22 @@ def parse_model_entry(item):
 
     This function is a direct refactor of the original `extract_model_info`.
     """
-    model_id = item.get('Name') or item.get('name') or item.get('ModelId') or item.get('Id')
+    # Prefer MuseInfo.model.modelName when available (this contains the canonical
+    # ModelScope model identifier like 'Org/Model-Name'). Fall back to older
+    # fields (Name/name/ModelId/Id) when not present.
+    muse = item.get('MuseInfo') or {}
+    muse_model = muse.get('model') if isinstance(muse, dict) else None
+    model_id = None
+    try:
+        if isinstance(muse_model, dict):
+            mn = muse_model.get('modelName') or muse_model.get('model_name') or muse_model.get('showName')
+            if isinstance(mn, str) and mn.strip():
+                model_id = mn.strip()
+    except Exception:
+        model_id = None
+
+    if not model_id:
+        model_id = item.get('Name') or item.get('name') or item.get('ModelId') or item.get('Id')
 
     def extract_likes(it):
         for k in ('LikeCount', 'Likes', 'Like', 'like_count', 'like'):
@@ -121,8 +136,7 @@ def parse_model_entry(item):
             pass
         return 0
 
-    muse = item.get('MuseInfo') or {}
-    muse_model = muse.get('model') if isinstance(muse, dict) else None
+    # `muse` and `muse_model` already extracted above for id/title extraction
 
     title_cn = item.get('ChineseName') or None
     # fallback: MuseInfo.model.showName or modelName
@@ -184,6 +198,23 @@ def parse_model_entry(item):
             modelscope_url = 'https://modelscope.cn/' + raw_modelscope[len('modelscope://'):]
         else:
             modelscope_url = raw_modelscope
+
+    # If model_id is still missing or not canonical (no org/name), try deriving from modelscope_url
+    try:
+        if (not model_id or ('/' not in str(model_id))) and isinstance(modelscope_url, str):
+            # Expected formats: https://modelscope.cn/<org>/<name>(/summary|...)? or modelscope://<org>/<name>
+            import re as _re
+            m = _re.search(r"modelscope\.cn/([^/]+)/([^/?#]+)", modelscope_url)
+            if m:
+                org, name = m.group(1), m.group(2)
+                # Only allow org and name with alphanumerics, underscores, hyphens, and dots
+                if (_re.fullmatch(r"[A-Za-z0-9_.-]+", org) and _re.fullmatch(r"[A-Za-z0-9_.-]+", name)):
+                    derived = f"{org}/{name}"
+                    if derived and derived.strip():
+                        model_id = derived.strip()
+    except Exception:
+        # Ignore errors in model_id extraction from modelscope_url; fallback to original model_id if extraction fails.
+        pass
     return {
         'id': model_id,
         'title_cn': title_cn,
