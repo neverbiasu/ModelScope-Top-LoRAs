@@ -55,7 +55,7 @@ Open http://127.0.0.1:7860 in your browser.
 python fetch_top_models.py --limit 20 --task text-to-image-synthesis --force-refresh
 ```
 
-The CLI supports flags like `--limit`, `--page-size`, `--max-pages`, `--no-images`, `--no-per-task-cache`, and `--cache-file`.
+Images are downloaded from each record's `cover_url` (HTTP/HTTPS) by default; in typical cases these are public URLs and do not require a ModelScope API token. The CLI supports flags like `--limit`, `--page-size`, `--max-pages`, `--no-per-task-cache`, and `--cache-file`. If a specific resource is protected (returns 401/403), you can provide `MODELSCOPE_API_TOKEN` in the environment or let CI inject it as a secret — but note that tokens are primarily used for generation workflows and are not required for normal image downloads.
 
 ## Cache schema (short)
 
@@ -94,7 +94,7 @@ Run tests locally with:
 pytest -q
 ```
 
-CI (GitHub Actions) is included and can be configured to run tests and optionally run scheduled fetches. To let CI access ModelScope, add the appropriate secrets (API token or SSH key) in GitHub repository settings.
+CI (GitHub Actions) is included and can be configured to run tests and optionally run scheduled fetches. In most cases CI does not need a ModelScope token because images are downloaded via public `cover_url` links; only add `MODELSCOPE_API_TOKEN` as a secret if you need to access protected resources or to run generation steps that require authentication.
 
 ## Notes
 

@@ -255,9 +255,12 @@ def build_ui() -> None:
                         # Visible field to confirm the selected model ID is propagated
                         selected_id_display = gr.Textbox(label="Selected Model ID", value="None", interactive=False)
                         prompt = gr.Textbox(label="Prompt", placeholder="Describe the image to generate")
+                        neg_prompt = gr.Textbox(label="Negative Prompt", placeholder="Optional negative prompt")
+                        size_text = gr.Textbox(label="Size (e.g., 1024x1024)", placeholder="Optional size like 1024x1024")
                         steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label="Steps")
                         guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label="Guidance Scale")
                         seed = gr.Number(value=42, label="Seed (0=random)")
+                        api_model_override = gr.Textbox(label="API Model (override)", placeholder="e.g. black-forest-labs/FLUX.1-Krea-dev")
                         generate_btn = gr.Button("Generate")
                         token_input = gr.Textbox(label="ModelScope API Token", placeholder="Paste token here (session)", type="password")
                         token_save = gr.Button("Save Token")
@@ -265,7 +268,10 @@ def build_ui() -> None:
                         auth_md = gr.Markdown("**Auth:** Not provided")
                         token_state = gr.State(value=None)
                     with gr.Column(scale=4):
-                        out_image = gr.Image(label="Output", visible=False)
+                        # Keep the image component visible but do NOT pre-fill it with a placeholder value
+                        out_image = gr.Image(label="Output", value=None, visible=True)
+                        # A small gallery/history area to show generated outputs (persisted)
+                        results_gallery = gr.Gallery(label="Generated outputs", value=None, columns=2, show_label=True, elem_id="gen_results", visible=False)
                         job_status = gr.Markdown("")
                         last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
 
@@ -475,28 +481,162 @@ def build_ui() -> None:
             queue=False,
         )
 
-        def _do_generate(model, model_id, prompt_text, steps_v, guidance_v, seed_v, token):
+        def _do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token):
+            """Submit a job and return UI updates: (out_image_update, status_md, job_file, gallery_update).
+
+            This function is defensive: it always returns 4 outputs and uses a placeholder image
+            when no real image is available.
+            """
+            # Default updates: do NOT use a placeholder image value — leave image empty/hidden
+            default_img_update = gr.update(value=None, visible=False)
+            default_gallery_update = gr.update(value=None, visible=False)
+
+            print("[DBG] _do_generate invoked model_id=", model_id, "prompt=", (prompt_text or "")[:60], "steps=", steps_v, "guidance=", guidance_v, "seed=", seed_v, "token?", bool(token))
+
             if not model_id or model_id == "None":
-                return gr.update(visible=False), "No model selected", ""
+                return default_img_update, "No model selected", "", default_gallery_update
+
+            def _derive_from_url(m: dict | None) -> str | None:
+                if not isinstance(m, dict):
+                    return None
+                url = m.get("modelscope_url") or m.get("url")
+                if not isinstance(url, str):
+                    return None
+                marker = "/models/"
+                if marker not in url:
+                    return None
+                # Extract path after /models/
+                tail = url.split(marker, 1)[-1]
+                # Remove query and trailing fragments
+                tail = tail.split("?", 1)[0].strip("/")
+                # Expect org/name[/...] -> we take first two segments as canonical ID
+                parts = tail.split("/")
+                if len(parts) >= 2:
+                    candidate = parts[0] + "/" + parts[1]
+                    return candidate
+                return None
+
+            # Determine effective model id for API: UI override > explicit api_model key > derived from modelscope_url > selected_id
+            effective_model = None
+            try:
+                if api_model:
+                    effective_model = str(api_model).strip()
+                elif isinstance(model, dict) and model.get("api_model"):
+                    effective_model = str(model.get("api_model")).strip()
+                if not effective_model:
+                    derived = _derive_from_url(model if isinstance(model, dict) else None)
+                    effective_model = derived
+            except Exception:
+                effective_model = None
+            effective_model = (effective_model or model_id or "").strip()
+
+            # Auto-warn if effective_model seems incomplete (no slash)
+            incomplete = "/" not in effective_model
+
             params = {
                 "task": "text-to-image-synthesis",
                 "prompt": prompt_text or "",
+                "negative_prompt": (neg_text or "") if neg_text else None,
+                "size": (size_v or "").strip() if size_v else None,
                 "steps": int(steps_v),
                 "guidance": float(guidance_v),
                 "seed": int(seed_v or 0),
             }
-            job = submit_job(model_id, params, token=token)
+            # Remove Nones from params
+            params = {k: v for k, v in params.items() if v is not None}
+
+            # Allow falling back to environment variable if token not saved in session state
+            effective_token = token or os.environ.get("MODELSCOPE_API_TOKEN")
+            try:
+                job = submit_job(effective_model, params, token=effective_token)
+            except Exception as exc:  # pragma: no cover - runtime robustness
+                status_md = f"**Job:** failed to submit  \n**Error:** {exc}"
+                return default_img_update, status_md, "", default_gallery_update
+
             result = job.get("result") or {}
-            img = result.get("image")
-            status_md = f"**Job:** {job['meta']['job_id']}  \n**Status:** {job.get('status')}  \n**Remote:** {job.get('remote')}"
+
+            # Debug print job structure
+            try:
+                print("[DBG] job keys=", list(job.keys()))
+                print("[DBG] job.meta=", job.get("meta"))
+                print("[DBG] job.status=", job.get("status"), "remote=", job.get("remote"), "error=", job.get("error"))
+                if isinstance(result, dict):
+                    print("[DBG] result keys=", list(result.keys()))
+                else:
+                    print("[DBG] result type=", type(result), "repr=", repr(result)[:120])
+            except Exception as _dbg_exc:  # pragma: no cover
+                print("[DBG] logging error:", _dbg_exc)
+
+            # Normalize possible result shapes into a list of image URIs
+            imgs = []
+            try:
+                if isinstance(result, dict):
+                    if isinstance(result.get("images"), (list, tuple)):
+                        imgs = [i for i in result.get("images") if isinstance(i, str)]
+                    elif isinstance(result.get("image"), str):
+                        imgs = [result.get("image")]
+                    else:
+                        for v in result.values():
+                            if isinstance(v, str) and v.startswith("data:"):
+                                imgs.append(v)
+                                break
+                elif isinstance(result, (list, tuple)):
+                    imgs = [i for i in result if isinstance(i, str)]
+            except Exception:
+                imgs = []
+
+            print("[DBG] parsed imgs count=", len(imgs))
+
+            img = imgs[0] if imgs else None
+
+            # If first image is a data URI, persist to a PNG file for gr.Image compatibility
+            if isinstance(img, str) and img.startswith("data:image"):
+                import base64, uuid
+                try:
+                    b64 = img.split(",",1)[-1]
+                    img_bytes = base64.b64decode(b64)
+                    out_dir = Path("cache") / "outputs" / "images"
+                    out_dir.mkdir(parents=True, exist_ok=True)
+                    fpath = out_dir / f"gen_{uuid.uuid4().hex[:10]}.png"
+                    fpath.write_bytes(img_bytes)
+                    imgs[0] = str(fpath)
+                    img = imgs[0]
+                    print("[DBG] wrote data URI to file:", img)
+                except Exception as _persist_exc:
+                    print("[DBG] failed to persist data URI image:", _persist_exc)
+
+            status_md = (
+                f"**Job:** {job.get('meta', {}).get('job_id', '')}  \n"
+                f"**Status:** {job.get('status')}  \n"
+                f"**Remote:** {job.get('remote')}  \n"
+                f"**API Model:** {effective_model}"
+            )
+            if incomplete:
+                status_md += "  \n⚠️ 推理模型ID可能不完整（缺少组织前缀），已尝试自动从 URL 解析。如仍 400，请在 API Model Override 输入完整形式例如 org/name。"
+            if job.get('mock'):
+                status_md += "  \n_Mode: mock (no token detected)_"
             if job.get('error'):
-                status_md += f"  \n**Error:** {job['error']}"
-            return (gr.update(value=img, visible=bool(img))), status_md, job.get("file_path", "")
+                status_md += f"  \n**Error:** {job.get('error')}"
+
+            if imgs:
+                gallery_update = gr.update(value=imgs, visible=True)
+                img_exists = isinstance(img, str) and Path(str(img)).exists()
+                if img_exists:
+                    print("[DBG] image path exists:", img)
+                else:
+                    print("[DBG] image path does not exist or not a path:", img)
+                img_update = gr.update(value=img if img_exists else None, visible=bool(img_exists))
+            else:
+                status_md += "  \n_No image returned; using empty state_"
+                gallery_update = default_gallery_update
+                img_update = default_img_update
+
+            return img_update, status_md, job.get("file_path", ""), gallery_update
 
         generate_btn.click(
             fn=_do_generate,
-            inputs=[selected_state, selected_id_display, prompt, steps, guidance, seed, token_state],
-            outputs=[out_image, job_status, last_job_file],
+            inputs=[selected_state, selected_id_display, prompt, neg_prompt, size_text, steps, guidance, seed, api_model_override, token_state],
+            outputs=[out_image, job_status, last_job_file, results_gallery],
         )
 
         demo.launch()
