@@ -267,6 +267,7 @@ def build_ui() -> None:
                     with gr.Column(scale=4):
                         out_image = gr.Image(label="Output", visible=False)
                         job_status = gr.Markdown("")
+                        last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
 
         def _models_for_dropdown(task_value, per_task_enabled, token):
             sel = task_value or None
@@ -325,6 +326,8 @@ def build_ui() -> None:
 
         token_save.click(fn=_save_token, inputs=[token_input, token_state], outputs=[auth_md, token_state])
         token_clear.click(fn=_clear_token, inputs=[token_state], outputs=[auth_md, token_state])
+
+        from top_loras.inference import submit_job
 
         def _on_gallery_select(evt, models=None, **kwargs):
             # Accept kwargs to be tolerant of extra arguments Gradio may pass
@@ -470,6 +473,30 @@ def build_ui() -> None:
             inputs=[models_state],
             outputs=[selected_md, selected_state, gen_model_info, selected_id_display],
             queue=False,
+        )
+
+        def _do_generate(model, model_id, prompt_text, steps_v, guidance_v, seed_v, token):
+            if not model_id or model_id == "None":
+                return gr.update(visible=False), "No model selected", ""
+            params = {
+                "task": "text-to-image-synthesis",
+                "prompt": prompt_text or "",
+                "steps": int(steps_v),
+                "guidance": float(guidance_v),
+                "seed": int(seed_v or 0),
+            }
+            job = submit_job(model_id, params, token=token)
+            result = job.get("result") or {}
+            img = result.get("image")
+            status_md = f"**Job:** {job['meta']['job_id']}  \n**Status:** {job.get('status')}  \n**Remote:** {job.get('remote')}"
+            if job.get('error'):
+                status_md += f"  \n**Error:** {job['error']}"
+            return (gr.update(value=img, visible=bool(img))), status_md, job.get("file_path", "")
+
+        generate_btn.click(
+            fn=_do_generate,
+            inputs=[selected_state, selected_id_display, prompt, steps, guidance, seed, token_state],
+            outputs=[out_image, job_status, last_job_file],
         )
 
         demo.launch()
