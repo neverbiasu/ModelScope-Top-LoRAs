@@ -139,6 +139,9 @@ def _remote_infer_image(model_id: str, params: Dict[str, Any], token: str) -> Di
         if status == "FAILED":
             err = data.get("error") or data
             raise RuntimeError(f"Image generation failed: {err}")
+        else:
+            # Log intermediate or unknown statuses for debugging and clarity
+            print(f"[{_now_iso()}] Polling task {task_id}: status={status!r}")
         time.sleep(IMAGE_POLL_INTERVAL)
     raise RuntimeError(f"Image generation timeout after {IMAGE_POLL_MAX_SECONDS}s; last data={last_data}")
 

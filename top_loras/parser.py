@@ -206,10 +206,14 @@ def parse_model_entry(item):
             import re as _re
             m = _re.search(r"modelscope\.cn/([^/]+)/([^/?#]+)", modelscope_url)
             if m:
-                derived = f"{m.group(1)}/{m.group(2)}"
-                if derived and derived.strip():
-                    model_id = derived.strip()
+                org, name = m.group(1), m.group(2)
+                # Only allow org and name with alphanumerics, underscores, hyphens, and dots
+                if (_re.fullmatch(r"[A-Za-z0-9_.-]+", org) and _re.fullmatch(r"[A-Za-z0-9_.-]+", name)):
+                    derived = f"{org}/{name}"
+                    if derived and derived.strip():
+                        model_id = derived.strip()
     except Exception:
+        # Ignore errors in model_id extraction from modelscope_url; fallback to original model_id if extraction fails.
         pass
     return {
         'id': model_id,
