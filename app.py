@@ -1,9 +1,11 @@
 """Gradio read-only UI for Top-LoRAs cache."""
 
 from pathlib import Path
+import base64
 import json
 import os
 from typing import Any, Iterable, Optional
+import uuid
 
 from top_loras import cache as tl_cache
 import fetch_top_models as fetch_module
@@ -591,7 +593,6 @@ def build_ui() -> None:
 
             # If first image is a data URI, persist to a PNG file for gr.Image compatibility
             if isinstance(img, str) and img.startswith("data:image"):
-                import base64, uuid
                 try:
                     b64 = img.split(",",1)[-1]
                     img_bytes = base64.b64decode(b64)
