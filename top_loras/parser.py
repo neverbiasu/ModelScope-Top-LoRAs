@@ -1,6 +1,7 @@
 import time
 import time as _time
 import json
+import re as _re
 
 def extract_downloads(item):
     d_raw = item.get('Downloads')
@@ -203,7 +204,6 @@ def parse_model_entry(item):
     try:
         if (not model_id or ('/' not in str(model_id))) and isinstance(modelscope_url, str):
             # Expected formats: https://modelscope.cn/<org>/<name>(/summary|...)? or modelscope://<org>/<name>
-            import re as _re
             m = _re.search(r"modelscope\.cn/([^/]+)/([^/?#]+)", modelscope_url)
             if m:
                 org, name = m.group(1), m.group(2)

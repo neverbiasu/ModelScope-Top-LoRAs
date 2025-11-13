@@ -21,6 +21,40 @@ def _ensure_dir(path: str) -> None:
     Path(path).mkdir(parents=True, exist_ok=True)
 
 
+def _requests_with_retries(method: str, url: str, max_retries: int = MAX_RETRIES, **kwargs):
+    """Simple requests wrapper with retry on network errors, 429 and 5xx responses.
+
+    Returns the requests.Response object or raises the last exception.
+    """
+    try:
+        import requests
+    except Exception as e:  # pragma: no cover - network optional
+        raise RuntimeError(f"requests not available: {e}")
+
+    backoff = 1.0
+    for attempt in range(1, max_retries + 1):
+        try:
+            func = getattr(requests, method.lower())
+            resp = func(url, **kwargs)
+            # Retry on rate limit or server errors
+            if resp.status_code == 429 or resp.status_code >= 500:
+                if attempt == max_retries:
+                    return resp
+                print(f"[{_now_iso()}] Request {method.upper()} {url} returned {resp.status_code}; retry {attempt}/{max_retries}")
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            return resp
+        except Exception as exc:
+            # Network-level errors (ConnectionError, Timeout, etc.) -> retry
+            if attempt == max_retries:
+                raise
+            print(f"[{_now_iso()}] Request exception for {method.upper()} {url}: {exc}; retry {attempt}/{max_retries}")
+            time.sleep(backoff)
+            backoff *= 2
+    raise RuntimeError("Request retries exhausted")
+
+
 def _now_iso() -> str:
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
@@ -72,7 +106,7 @@ def _remote_infer_image(model_id: str, params: Dict[str, Any], token: str) -> Di
         body["guidance"] = params.get("guidance")
 
     # Submit generation task
-    submit_resp = requests.post(gen_url, json=body, headers=headers, timeout=DEFAULT_TIMEOUT)
+    submit_resp = _requests_with_retries("post", gen_url, json=body, headers=headers, timeout=DEFAULT_TIMEOUT)
     if submit_resp.status_code == 401:
         raise RuntimeError("Unauthorized (401) image generation")
     if submit_resp.status_code >= 400:
@@ -97,7 +131,7 @@ def _remote_infer_image(model_id: str, params: Dict[str, Any], token: str) -> Di
     deadline = time.time() + IMAGE_POLL_MAX_SECONDS
     last_data = None
     while time.time() < deadline:
-        poll_resp = requests.get(task_url, headers=poll_headers, timeout=DEFAULT_TIMEOUT)
+        poll_resp = _requests_with_retries("get", task_url, headers=poll_headers, timeout=DEFAULT_TIMEOUT)
         if poll_resp.status_code == 401:
             raise RuntimeError("Unauthorized (401) while polling task")
         if poll_resp.status_code >= 400:
@@ -124,9 +158,11 @@ def _remote_infer_image(model_id: str, params: Dict[str, Any], token: str) -> Di
                 if output_images:
                     first = output_images[0]
                     if isinstance(first, str) and first.startswith("http"):
-                        import requests as _rq
-                        img_resp = _rq.get(first, timeout=DEFAULT_TIMEOUT)
-                        img_resp.raise_for_status()
+                        img_resp = _requests_with_retries("get", first, timeout=DEFAULT_TIMEOUT)
+                        try:
+                            img_resp.raise_for_status()
+                        except Exception:
+                            raise
                         img_dir = Path("cache") / "outputs" / "images"
                         img_dir.mkdir(parents=True, exist_ok=True)
                         file_path = img_dir / f"gen_{uuid.uuid4().hex[:10]}.jpg"
