@@ -1,4 +1,5 @@
 from pathlib import Path
+from base64 import b64decode
 import json
 import os
 from typing import Any, Iterable, Optional
@@ -11,6 +12,7 @@ from top_loras.download import sanitize_filename
 _PLACEHOLDER_DATA_URI = (
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
 )
+_PLACEHOLDER_PATH: Optional[str] = None
 
 
 def get_cache_path(task: Optional[str], per_task_cache: bool = True) -> str:
@@ -46,18 +48,43 @@ def _resolve_cover_uri(raw_cover: Optional[str]) -> Optional[str]:
     return raw_cover
 
 
-def sanitize_models(models: Iterable[dict[str, Any]] | None) -> tuple[list[dict[str, Any]], list[tuple[Optional[str], str]]]:
+def _ensure_placeholder_image() -> str:
+    global _PLACEHOLDER_PATH
+    if _PLACEHOLDER_PATH is not None:
+        return _PLACEHOLDER_PATH
+
+    placeholder_path = Path("cache").joinpath("placeholder.png")
+    placeholder_path.parent.mkdir(parents=True, exist_ok=True)
+    if not placeholder_path.exists():
+        payload = _PLACEHOLDER_DATA_URI.split("base64,")[-1]
+        try:
+            placeholder_path.write_bytes(b64decode(payload))
+        except Exception:
+            placeholder_path.write_text("", encoding="utf-8")
+    _PLACEHOLDER_PATH = str(placeholder_path)
+    return _PLACEHOLDER_PATH
+
+
+def sanitize_models(models: Iterable[dict[str, Any]] | None) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Normalize raw model dicts and build gallery items.
+
+    Returns (normalized_models, gallery_items) where each gallery item is a
+    small dict carrying enough information for selection callbacks without
+    depending on Gradio's internal event types.
+    """
+
     normalized: list[dict[str, Any]] = []
-    gallery_items: list[tuple[Optional[str], str]] = []
+    gallery_items: list[dict[str, Any]] = []
 
     for idx, model in enumerate(models or []):
         if not isinstance(model, dict):
             continue
 
-        cover_uri = _resolve_cover_uri(
-            model.get("cover_local")
-            or model.get("cover")
-            or model.get("cover_url")
+        cover_uri = (
+            _resolve_cover_uri(model.get("cover_local"))
+            or _resolve_cover_uri(model.get("cover"))
+            or _resolve_cover_uri(model.get("cover_url"))
+            or _ensure_placeholder_image()
         )
 
         title = (
@@ -75,7 +102,14 @@ def sanitize_models(models: Iterable[dict[str, Any]] | None) -> tuple[list[dict[
         }
 
         normalized.append(normalized_model)
-        gallery_items.append((cover_uri or _PLACEHOLDER_DATA_URI, title))
+        gallery_items.append(
+            {
+                "idx": idx,
+                "id": normalized_model.get("id"),
+                "title": title,
+                "cover": cover_uri or _ensure_placeholder_image(),
+            }
+        )
 
     return normalized, gallery_items
 
@@ -101,6 +135,7 @@ def render_markdown_for_models(models: Iterable[dict[str, Any]] | None) -> str:
             _resolve_cover_uri(model.get("cover"))
             or _resolve_cover_uri(model.get("cover_local"))
             or _resolve_cover_uri(model.get("cover_url"))
+            or _ensure_placeholder_image()
         )
         author = model.get("author") or "Unknown"
         downloads = model.get("downloads") or 0
