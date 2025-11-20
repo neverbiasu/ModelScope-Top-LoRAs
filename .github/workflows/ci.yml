@@ -47,7 +47,7 @@ jobs:
         env:
           MODELSCOPE_API_TOKEN: ${{ secrets.MODELSCOPE_API_TOKEN }}
         run: |
-          python fetch_top_models.py --limit 20 --task text-to-image-synthesis --force-refresh
+          python -m top_loras --limit 20 --task text-to-image-synthesis --force-refresh
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
         with:
