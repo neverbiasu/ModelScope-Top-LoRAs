@@ -8,7 +8,7 @@ from typing import Any, Iterable, Optional
 import uuid
 
 from top_loras import cache as tl_cache
-import fetch_top_models as fetch_module
+from top_loras import fetcher as fetch_module
 from top_loras.download import sanitize_filename
 from ui.loaders import (
     get_cache_path,

@@ -5,7 +5,7 @@ import os
 from typing import Any, Iterable, Optional
 
 from top_loras import cache as tl_cache
-import fetch_top_models as fetch_module
+from top_loras import fetcher as fetch_module
 from top_loras.download import sanitize_filename
 
 # Tiny transparent PNG data URI as fallback placeholder used by the UI

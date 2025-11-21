@@ -28,7 +28,7 @@ This repository provides a pipeline and a small read-only Gradio UI to build a "
 - Fetches the ModelScope frontend JSON and extracts model metadata.
 - Applies conservative LoRA detection and filtering rules to avoid false positives.
 - Caches a compact JSON file (no raw blobs) and optionally downloads cover images to `cache/`.
-- Exposes a CLI (`fetch_top_models.py`) to refresh caches and tune paging/limits.
+- Exposes a CLI (via `python -m top_loras`) to refresh caches and tune paging/limits.
 - Includes a lightweight Gradio app (`app.py`) that reads the cache and renders a styled card grid.
 
 ## Quick start
@@ -52,7 +52,7 @@ Open http://127.0.0.1:7860 in your browser.
 3. Refresh the cache from ModelScope (optional):
 
 ```bash
-python fetch_top_models.py --limit 20 --task text-to-image-synthesis --force-refresh
+python -m top_loras --limit 20 --task text-to-image-synthesis --force-refresh
 ```
 
 Images are downloaded from each record's `cover_url` (HTTP/HTTPS) by default; in typical cases these are public URLs and do not require a ModelScope API token. The CLI supports flags like `--limit`, `--page-size`, `--max-pages`, `--no-per-task-cache`, and `--cache-file`. If a specific resource is protected (returns 401/403), you can provide `MODELSCOPE_API_TOKEN` in the environment or let CI inject it as a secret — but note that tokens are primarily used for generation workflows and are not required for normal image downloads.
