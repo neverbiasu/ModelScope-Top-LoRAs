@@ -38,7 +38,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -59,12 +58,12 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Commit and push changes
         run: |
-          git add cache/*.json cache/images/
+          git add cache/ || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "chore: update cache and images from scheduled fetch"
-            git push origin master
+            git push origin HEAD
           fi
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
