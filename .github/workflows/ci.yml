@@ -58,12 +58,14 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Commit and push changes
         run: |
-          git add cache/ || true
+          if [ -d "cache" ]; then
+            git add cache/
+          fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "chore: update cache and images from scheduled fetch"
-            git push origin HEAD
+            git push origin ${{ github.ref_name }}
           fi
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
