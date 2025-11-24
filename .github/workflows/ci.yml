@@ -33,8 +33,12 @@ jobs:
     runs-on: ubuntu-latest
     # only run fetch job on scheduled runs or manual dispatch
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -47,7 +51,22 @@ jobs:
         env:
           MODELSCOPE_API_TOKEN: ${{ secrets.MODELSCOPE_API_TOKEN }}
         run: |
-          python -m top_loras --limit 20 --task text-to-image-synthesis --force-refresh
+          python -m top_loras --limit 20 --force-refresh
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Commit and push changes
+        run: |
+          if [ -d "cache" ]; then
+            git add cache/
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update cache and images from scheduled fetch"
+            git push origin ${{ github.ref_name }}
+          fi
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
         with:
