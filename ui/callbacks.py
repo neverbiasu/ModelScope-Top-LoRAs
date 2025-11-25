@@ -2,11 +2,22 @@
 
 from __future__ import annotations
 
-from typing import Iterable, Any
+from typing import Iterable, Any, Optional
 import os
 from pathlib import Path
 from base64 import b64decode
 import uuid
+
+try:
+    from gradio.events import SelectData as _SelectData
+except ImportError:  # pragma: no cover - optional runtime dependency
+    _SelectData = None
+
+if _SelectData is None:  # pragma: no cover - fallback stub used only if Gradio is absent
+    class SelectData:  # type: ignore[no-redef]
+        pass
+else:
+    SelectData = _SelectData
 
 try:
     import gradio as gr
@@ -15,93 +26,68 @@ except Exception:  # pragma: no cover - optional UI dependency
 
 from top_loras.inference import submit_job
 
+# Import SelectData for type hint - this is how Gradio 5 injects event data
+if gr is not None:
+    SelectData = gr.SelectData
+else:
+    SelectData = None
 
-def on_gallery_select(evt: Any = None, models: Iterable[dict[str, Any]] | None = None, **kwargs):
-    """Handle gallery selection and return model details.
+# Module-level cache so the app can keep a current copy of models_state.
+_CACHED_MODELS: list[dict] = []
 
-    ``SelectData`` exposes ``index`` and ``value``, so we can map the
-    selected card directly to the normalized ``models`` list without
-    depending on arbitrary event payloads.
+
+def set_models_cache(models: list[dict] | None) -> None:
+    """Update the module-level models cache from `app.py`.
+
+    The UI will call this whenever it refreshes the model list so
+    `on_gallery_select` can reliably look up full model metadata.
     """
+    global _CACHED_MODELS
+    _CACHED_MODELS = list(models or [])
 
-    model_list = list(models or [])
 
-    print("[DBG] gallery.select triggered evt type:", type(evt).__name__)
-    print("[DBG] gallery.select index:", getattr(evt, "index", None))
-    print("[DBG] gallery.select value repr:", repr(getattr(evt, "value", None))[:200])
-    if kwargs:
-        print("[DBG] gallery.select kwargs:", {k: type(v).__name__ for k, v in kwargs.items()})
+def on_gallery_select(evt: "gr.SelectData"):
+    """Handle gallery selection using Gradio 5's SelectData event.
 
-    selected = None
-    idx_candidate = None
-    idx_value = getattr(evt, "index", None)
-    if isinstance(idx_value, (int, float)):
-        idx_candidate = int(idx_value)
-    elif isinstance(idx_value, (tuple, list)) and idx_value:
-        try:
-            idx_candidate = int(idx_value[0])
-        except Exception:
-            idx_candidate = None
+    When using type hint `gr.SelectData`, Gradio automatically passes:
+      - evt.index: int index of the clicked item
+      - evt.value: the value of the clicked item (cover, title) tuple
+    """
+    global _CACHED_MODELS
+    model_list = _CACHED_MODELS
+    models_len = len(model_list)
 
-    if idx_candidate is not None and 0 <= idx_candidate < len(model_list):
-        selected = model_list[idx_candidate]
-    else:
-        candidate_value = getattr(evt, "value", None)
-        candidate_title: str | None = None
-        if isinstance(candidate_value, (list, tuple)) and len(candidate_value) == 2:
-            _, maybe_title = candidate_value
-            if isinstance(maybe_title, str):
-                candidate_title = maybe_title
-        elif isinstance(candidate_value, dict):
-            candidate_title = candidate_value.get("title")
-        if candidate_title is not None:
-            for m in model_list:
-                if str(m.get("title")) == candidate_title:
-                    selected = m
-                    break
+    idx = evt.index
 
-    if selected is None and model_list:
-        selected = model_list[0]
+    # Validate index
+    if not isinstance(idx, int) or idx < 0 or idx >= models_len:
+        return "No model selected.", None, "No model selected", ""
 
-    if selected is None:
-        summary_html = "<div><strong>Selected model:</strong> None</div>"
-        generate_md = "No model selected"
-        return summary_html, None, generate_md, ""
+    selected = model_list[idx]
 
-    title = (
-        selected.get("title_cn")
-        or selected.get("title_en")
-        or selected.get("title")
-        or selected.get("id")
-        or "Unknown model"
-    )
+    title = selected.get("title_en") or selected.get("title") or selected.get("title_cn") or ""
+    model_id = str(selected.get("id") or "")
+    author = selected.get("author") or ""
+    downloads = selected.get("downloads") or 0
+    likes = selected.get("likes") or 0
 
-    summary_html = (
-        f"<div><strong>Selected model:</strong> {title}</div>"
-        f"<div style='margin-top:8px; font-size:13px; color:#a6adc8'>ID: {selected.get('id')} · "
-        f"Author: {selected.get('author')} · Downloads: {selected.get('downloads')} · "
-        f"Likes: {selected.get('likes')}</div>"
-    )
+    summary_html = f"""
+<div style="padding: 12px; border-radius: 8px; background: #1a1a2e;">
+    <h3 style="margin: 0 0 8px 0; color: #fff;">Selected Model</h3>
+    <p style="margin: 4px 0; color: #ccc;"><strong>Name:</strong> {title}</p>
+    <p style="margin: 4px 0; color: #ccc;"><strong>Author:</strong> {author}</p>
+    <p style="margin: 4px 0; color: #888;">Downloads: {downloads} · Likes: {likes}</p>
+</div>
+"""
+    gen_md = f"Selected: {title}"
 
-    generate_md = (
-        f"### {title}\n\n"
-        f"- **ID:** {selected.get('id')}  \n"
-        f"- **Author:** {selected.get('author')}  \n"
-        f"- **Downloads:** {selected.get('downloads')}  \n"
-        f"- **Likes:** {selected.get('likes')}  \n"
-        f"- **Updated:** {selected.get('updated_at') or ''}  \n"
-        f"- **URL:** [{selected.get('modelscope_url')}]({selected.get('modelscope_url')})"
-    )
-
-    return summary_html, selected, generate_md, str(selected.get("id"))
+    return summary_html, selected, gen_md, model_id
 
 
 def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token):
     # Default updates: do NOT use a placeholder image value — leave image empty/hidden
     default_img_update = gr.update(value=None, visible=False) if gr else None
     default_gallery_update = gr.update(value=None, visible=False) if gr else None
-
-    print("[DBG] _do_generate invoked model_id=", model_id, "prompt=", (prompt_text or "")[:60], "steps=", steps_v, "guidance=", guidance_v, "seed=", seed_v, "token?", bool(token))
 
     if not model_id or model_id == "None":
         return default_img_update, "No model selected", "", default_gallery_update
@@ -158,17 +144,6 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
 
     result = job.get("result") or {}
 
-    try:
-        print("[DBG] job keys=", list(job.keys()))
-        print("[DBG] job.meta=", job.get("meta"))
-        print("[DBG] job.status=", job.get("status"), "remote=", job.get("remote"), "error=", job.get("error"))
-        if isinstance(result, dict):
-            print("[DBG] result keys=", list(result.keys()))
-        else:
-            print("[DBG] result type=", type(result), "repr=", repr(result)[:120])
-    except Exception as _dbg_exc:
-        print("[DBG] logging error:", _dbg_exc)
-
     imgs = []
     try:
         if isinstance(result, dict):
@@ -186,8 +161,6 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
             imgs = [i for i in result if isinstance(i, str)]
     except Exception:
         imgs = []
-
-    print("[DBG] parsed imgs count=", len(imgs))
 
     img = imgs[0] if imgs else None
 
@@ -215,10 +188,6 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
             img_exists = True
         else:
             img_exists = False
-        if img_exists:
-            print("[DBG] image available for display:", img)
-        else:
-            print("[DBG] image not available as path; may be remote URL or invalid:", img)
         img_update = gr.update(value=img if img_exists else (img if isinstance(img, str) and img.startswith("http") else None), visible=bool(img)) if gr else None
     else:
         status_md += "  \n_No image returned; using empty state_"

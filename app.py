@@ -55,6 +55,7 @@ def build_ui() -> None:
     cache_file = get_cache_path(initial_task, per_task_cache=True)
     initial_models = load_results_from_cache(cache_file)
     initial_norm, initial_gallery = sanitize_models(initial_models)
+    # Gallery expects items like (cover, title); keep UI values as tuples
     initial_gallery_ui = [(item.get("cover"), item.get("title")) for item in initial_gallery]
 
     with gr.Blocks(css="body { background: #0f1117; }") as demo:
@@ -129,7 +130,14 @@ def build_ui() -> None:
             # Gallery now expects a list of dicts with keys
             # {"cover": ..., "title": ...}. We only expose these two
             # to the UI; idx/id 仍保留在 item 中供回调使用。
+            # gallery_items is list[dict]; Gallery expects (cover, title) tuples
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
+            # update module cache in callbacks for robust selection handling
+            try:
+                from ui.callbacks import set_models_cache
+                set_models_cache(norm)
+            except Exception:
+                pass
             return _safe_update(value=ui_items), norm
 
         task_dd.change(
@@ -160,6 +168,11 @@ def build_ui() -> None:
             models = load_results_from_cache(cache_file)
             norm, gallery_items = sanitize_models(models)
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
+            try:
+                from ui.callbacks import set_models_cache
+                set_models_cache(norm)
+            except Exception:
+                pass
             return _safe_update(value=ui_items), norm
 
         refresh_btn.click(
@@ -185,16 +198,20 @@ def build_ui() -> None:
         token_clear.click(fn=_clear_token, inputs=[token_state], outputs=[auth_md, token_state])
 
         from top_loras.inference import submit_job
-        from ui.callbacks import on_gallery_select, do_generate
+        from ui.callbacks import on_gallery_select, do_generate, set_models_cache
 
-        # When a gallery item is selected, Gradio passes the selected
-        # item value, which we configured as [cover, title]. We only use
-        # the title here to look up the full model from models_state.
+        # ensure initial cache is populated
+        try:
+            set_models_cache(initial_norm)
+        except Exception:
+            pass
+
+        # Gradio 5 pattern: use inputs=None and type hint gr.SelectData
+        # in the callback to receive the selection event data.
         gallery.select(
             fn=on_gallery_select,
-            inputs=[models_state],
+            inputs=None,
             outputs=[selected_md, selected_state, gen_model_info, selected_id_display],
-            queue=False,
         )
 
         generate_btn.click(
