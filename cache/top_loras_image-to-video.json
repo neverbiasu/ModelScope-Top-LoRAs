@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1764904484.3622959,
+  "_cached_at": 1764990277.5824032,
   "results": [
     {
       "id": "morphic/Wan2.2-frames-to-video",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 246,
+      "downloads": 247,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 138,
+      "downloads": 140,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 98,
+      "downloads": 99,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 56,
+      "downloads": 57,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -109,7 +109,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 54,
+      "downloads": 55,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -133,7 +133,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 43,
+      "downloads": 44,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -157,7 +157,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 39,
+      "downloads": 40,
       "likes": 0,
       "license": "creativeml-openrail-m",
       "tags_cn": [],
@@ -170,6 +170,31 @@
       "vision_foundation": "",
       "updated_at": "2025-09-30T09:18:30Z",
       "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
+    },
+    {
+      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "title_cn": null,
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 38,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-26T18:23:18Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA"
     },
     {
       "id": "CCP6/erwer-lora",
@@ -196,12 +221,12 @@
       "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
     },
     {
-      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Mecha-LoRA",
       "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
@@ -217,33 +242,42 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2025-09-26T18:23:18Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA"
-    },
-    {
-      "id": "valiantcat/Wan2.1-Mecha-LoRA",
-      "title_cn": null,
-      "title_en": "Wan2.1-Mecha-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 36,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P",
-        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
       "updated_at": "2025-09-26T18:30:26Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA"
+    },
+    {
+      "id": "qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "title_cn": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "title_en": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "author": "qsdq2423432",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "qsdq2423432",
+      "user_profile": "https://modelscope.cn/profile/966199",
+      "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
+      "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
+      "downloads": 15,
+      "likes": 1,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "女生",
+        "画面控制"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Woman",
+        "Picture Control"
+      ],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": [
+        "l1v3w4llp4p3r"
+      ],
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2025-11-30T07:53:13Z",
+      "modelscope_url": "https://modelscope.cn/qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26?revision=20251130155256"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
@@ -294,40 +328,6 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
     },
     {
-      "id": "qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "title_cn": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "title_en": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "author": "qsdq2423432",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "qsdq2423432",
-      "user_profile": "https://modelscope.cn/profile/966199",
-      "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
-      "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 13,
-      "likes": 1,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "女生",
-        "画面控制"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Woman",
-        "Picture Control"
-      ],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": [
-        "l1v3w4llp4p3r"
-      ],
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2025-11-30T07:53:13Z",
-      "modelscope_url": "https://modelscope.cn/qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26?revision=20251130155256"
-    },
-    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
@@ -350,6 +350,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:22:28Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 13,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T19:04:28Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
@@ -422,30 +446,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T20:37:11Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 13,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T19:04:28Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-left"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
