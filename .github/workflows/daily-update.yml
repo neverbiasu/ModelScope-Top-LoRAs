@@ -1,0 +1,46 @@
+name: Daily README Update
+
+on:
+  schedule:
+    # Run every day at 00:00 UTC (08:00 Beijing Time)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install Pillow  # For image generation
+    
+    - name: Fetch latest data
+      env:
+        MODELSCOPE_API_TOKEN: ${{ secrets.MODELSCOPE_API_TOKEN }}
+      run: |
+        python -m top_loras --all-tasks --force-refresh --limit 20
+    
+    - name: Update README
+      run: |
+        python scripts/update_readme.py
+    
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add README.md docs/daily_stats.png cache/
+        git diff --staged --quiet || git commit -m "chore: update daily stats and top models [skip ci]"
+        git push
