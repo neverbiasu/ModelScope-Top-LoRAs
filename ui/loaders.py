@@ -24,19 +24,34 @@ def get_cache_path(task: Optional[str], per_task_cache: bool = True) -> str:
 
 
 def load_results_from_cache(cache_file: str) -> list[dict[str, Any]]:
+    """Load cached results with proper error handling.
+    
+    Returns an empty list if cache is missing, expired, or malformed.
+    Uses a very long TTL (365 days) for UI purposes.
+    """
     try:
         results = tl_cache.load_cache(cache_file, ttl=60 * 60 * 24 * 365)
-        return results or []
-    except Exception:
+        if isinstance(results, list):
+            return results
+        return []
+    except Exception as e:
+        # Log but don't crash - just return empty list
+        import logging
+        logging.getLogger(__name__).debug(f"Cache load failed for {cache_file}: {e}")
+        
+        # Fallback: try direct JSON read
         path = Path(cache_file)
         if not path.exists():
             return []
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
-        except Exception:
-            return []
-        results = data.get("results")
-        return results or []
+            results = data.get("results")
+            if isinstance(results, list):
+                return results
+        except Exception as json_err:
+            logging.getLogger(__name__).warning(f"Direct JSON read failed for {cache_file}: {json_err}")
+        
+        return []
 
 
 def _resolve_cover_uri(raw_cover: Optional[str]) -> Optional[str]:
@@ -116,7 +131,13 @@ def sanitize_models(models: Iterable[dict[str, Any]] | None) -> tuple[list[dict[
 
 def render_markdown_for_models(models: Iterable[dict[str, Any]] | None) -> str:
     if not models:
-        return "<div class='empty'>No cached results found. Try <b>Refresh</b> to fetch data.</div>"
+        return """
+<div class='empty'>
+    <h3 style='margin-top:0;'>📭 暂无缓存数据</h3>
+    <p>点击上方 <strong>🔄 Refresh Cache</strong> 按钮从 ModelScope 获取最新的 Top LoRA 模型数据。</p>
+    <p style='font-size:0.9em;color:rgba(255,255,255,0.6);'>首次刷新可能需要一些时间下载封面图片。</p>
+</div>
+"""
 
     cards: list[str] = []
 

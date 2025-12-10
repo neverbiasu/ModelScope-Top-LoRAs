@@ -77,12 +77,11 @@ def build_ui() -> None:
                             label="Task (select)",
                         )
                         per_task_cb = gr.Checkbox(value=True, label="Per-task cache")
-                        refresh_btn = gr.Button("Refresh Cache")
+                        refresh_btn = gr.Button("🔄 Refresh Cache", variant="secondary")
                         gr.Markdown(
-                            "Refresh fetches the selected task from ModelScope, updates the "
-                            "local cache, and downloads covers when available."
+                            "💡 **提示：** 点击 Refresh 从 ModelScope 获取最新数据并更新本地缓存。"
                         )
-                        selected_md = gr.HTML("<div><strong>Selected model:</strong> None</div>")
+                        selected_md = gr.HTML("<div style='padding:12px;background:rgba(255,255,255,0.05);border-radius:8px;'><strong>已选择模型：</strong> 无</div>")
                         selected_state = gr.State(value=None)
                     with gr.Column(scale=9):
                         gallery = gr.Gallery(
@@ -98,27 +97,41 @@ def build_ui() -> None:
             with gr.TabItem("Generate"):
                 with gr.Row():
                     with gr.Column(scale=8):
-                        gen_model_info = gr.Markdown("No model selected")
+                        gen_model_info = gr.Markdown("💡 请先在 **Selection** 标签页选择一个模型")
                         # Visible field to confirm the selected model ID is propagated
-                        selected_id_display = gr.Textbox(label="Selected Model ID", value="None", interactive=False)
-                        prompt = gr.Textbox(label="Prompt", placeholder="Describe the image to generate")
-                        neg_prompt = gr.Textbox(label="Negative Prompt", placeholder="Optional negative prompt")
-                        size_text = gr.Textbox(label="Size (e.g., 1024x1024)", placeholder="Optional size like 1024x1024")
-                        steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label="Steps")
-                        guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label="Guidance Scale")
-                        seed = gr.Number(value=42, label="Seed (0=random)")
-                        api_model_override = gr.Textbox(label="API Model (override)", placeholder="e.g. black-forest-labs/FLUX.1-Krea-dev")
-                        generate_btn = gr.Button("Generate")
-                        token_input = gr.Textbox(label="ModelScope API Token", placeholder="Paste token here (session)", type="password")
-                        token_save = gr.Button("Save Token")
-                        token_clear = gr.Button("Clear Token")
-                        auth_md = gr.Markdown("**Auth:** Not provided")
+                        selected_id_display = gr.Textbox(label="📋 当前选中模型 ID", value="无", interactive=False)
+                        prompt = gr.Textbox(label="✨ Prompt（提示词）", placeholder="描述你想生成的图像，例如：a beautiful sunset over mountains", lines=3)
+                        neg_prompt = gr.Textbox(label="🚫 Negative Prompt（负面提示词）", placeholder="不想出现的内容，例如：blurry, low quality", lines=2)
+                        
+                        with gr.Row():
+                            size_text = gr.Textbox(label="📐 尺寸", placeholder="例如 1024x1024", scale=2)
+                            steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label="🔢 Steps（步数）", scale=3)
+                        
+                        with gr.Row():
+                            guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label="🎯 Guidance Scale", scale=3)
+                            seed = gr.Number(value=42, label="🎲 Seed（种子）", info="0=随机", scale=2)
+                        
+                        api_model_override = gr.Textbox(
+                            label="🔧 API Model Override（高级）", 
+                            placeholder="完整模型路径，例如 black-forest-labs/FLUX.1-dev",
+                            info="仅在自动解析的模型 ID 不正确时使用"
+                        )
+                        
+                        generate_btn = gr.Button("🎨 Generate Image", variant="primary", size="lg")
+                        
+                        gr.Markdown("---")
+                        gr.Markdown("### 🔐 API 认证")
+                        token_input = gr.Textbox(label="ModelScope API Token", placeholder="粘贴你的 API Token（仅本次会话有效）", type="password")
+                        with gr.Row():
+                            token_save = gr.Button("💾 保存 Token", variant="secondary")
+                            token_clear = gr.Button("🗑️ 清除 Token", variant="secondary")
+                        auth_md = gr.Markdown("**状态：** 未提供 Token（将使用模拟模式）")
                         token_state = gr.State(value=None)
                     with gr.Column(scale=4):
-                        # Keep the image component visible but do NOT pre-fill it with a placeholder value
-                        out_image = gr.Image(label="Output", value=None, visible=True)
-                        # A small gallery/history area to show generated outputs (persisted)
-                        results_gallery = gr.Gallery(label="Generated outputs", value=None, columns=2, show_label=True, elem_id="gen_results", visible=False)
+                        # Image starts hidden and shows only after generation
+                        out_image = gr.Image(label="Output", value=None, visible=False)
+                        # History gallery for all generated images
+                        results_gallery = gr.Gallery(label="Generated outputs", value=None, columns=2, show_label=True, elem_id="gen_results", visible=True)
                         job_status = gr.Markdown("")
                         last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
 
@@ -132,12 +145,6 @@ def build_ui() -> None:
             # to the UI; idx/id 仍保留在 item 中供回调使用。
             # gallery_items is list[dict]; Gallery expects (cover, title) tuples
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
-            # update module cache in callbacks for robust selection handling
-            try:
-                from ui.callbacks import set_models_cache
-                set_models_cache(norm)
-            except Exception:
-                pass
             return _safe_update(value=ui_items), norm
 
         task_dd.change(
@@ -168,11 +175,6 @@ def build_ui() -> None:
             models = load_results_from_cache(cache_file)
             norm, gallery_items = sanitize_models(models)
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
-            try:
-                from ui.callbacks import set_models_cache
-                set_models_cache(norm)
-            except Exception:
-                pass
             return _safe_update(value=ui_items), norm
 
         refresh_btn.click(
@@ -187,30 +189,24 @@ def build_ui() -> None:
         demo.load(fn=_load_initial, inputs=None, outputs=gallery)
 
         def _save_token(token, _state):
-            if not token:
-                return "**Auth:** Not provided", None
-            return "**Auth:** Token saved (session only)", token
+            if not token or not token.strip():
+                return "**状态：** ❌ Token 为空，未保存", None
+            return "**状态：** ✅ Token 已保存（仅本次会话有效）", token.strip()
 
         def _clear_token(_state):
-            return "**Auth:** Not provided", None
+            return "**状态：** 未提供 Token（将使用模拟模式）", None
 
         token_save.click(fn=_save_token, inputs=[token_input, token_state], outputs=[auth_md, token_state])
         token_clear.click(fn=_clear_token, inputs=[token_state], outputs=[auth_md, token_state])
 
         from top_loras.inference import submit_job
-        from ui.callbacks import on_gallery_select, do_generate, set_models_cache
+        from ui.callbacks import on_gallery_select, do_generate
 
-        # ensure initial cache is populated
-        try:
-            set_models_cache(initial_norm)
-        except Exception:
-            pass
-
-        # Gradio 5 pattern: use inputs=None and type hint gr.SelectData
-        # in the callback to receive the selection event data.
+        # Gradio pattern: SelectData is auto-injected as first parameter,
+        # followed by inputs list. We pass models_state to enable index lookup.
         gallery.select(
             fn=on_gallery_select,
-            inputs=None,
+            inputs=[models_state],
             outputs=[selected_md, selected_state, gen_model_info, selected_id_display],
         )
 

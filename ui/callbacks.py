@@ -9,55 +9,28 @@ from base64 import b64decode
 import uuid
 
 try:
-    from gradio.events import SelectData as _SelectData
-except ImportError:  # pragma: no cover - optional runtime dependency
-    _SelectData = None
-
-if _SelectData is None:  # pragma: no cover - fallback stub used only if Gradio is absent
-    class SelectData:  # type: ignore[no-redef]
-        pass
-else:
-    SelectData = _SelectData
-
-try:
     import gradio as gr
 except Exception:  # pragma: no cover - optional UI dependency
     gr = None
 
 from top_loras.inference import submit_job
 
-# Import SelectData for type hint - this is how Gradio 5 injects event data
-if gr is not None:
-    SelectData = gr.SelectData
-else:
-    SelectData = None
 
-# Module-level cache so the app can keep a current copy of models_state.
-_CACHED_MODELS: list[dict] = []
-
-
-def set_models_cache(models: list[dict] | None) -> None:
-    """Update the module-level models cache from `app.py`.
-
-    The UI will call this whenever it refreshes the model list so
-    `on_gallery_select` can reliably look up full model metadata.
+def on_gallery_select(evt, models):
+    """Handle gallery selection.
+    
+    Args:
+        evt: SelectData event with .index attribute (auto-injected by Gradio)
+        models: models_state (list[dict]) passed from gr.State
+    
+    Returns:
+        (summary_html, selected_model_dict, generate_md, model_id)
     """
-    global _CACHED_MODELS
-    _CACHED_MODELS = list(models or [])
-
-
-def on_gallery_select(evt: "gr.SelectData"):
-    """Handle gallery selection using Gradio 5's SelectData event.
-
-    When using type hint `gr.SelectData`, Gradio automatically passes:
-      - evt.index: int index of the clicked item
-      - evt.value: the value of the clicked item (cover, title) tuple
-    """
-    global _CACHED_MODELS
-    model_list = _CACHED_MODELS
+    model_list = list(models or [])
     models_len = len(model_list)
 
-    idx = evt.index
+    # Extract index from event object
+    idx = getattr(evt, 'index', None)
 
     # Validate index
     if not isinstance(idx, int) or idx < 0 or idx >= models_len:
@@ -87,10 +60,15 @@ def on_gallery_select(evt: "gr.SelectData"):
 def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token):
     # Default updates: do NOT use a placeholder image value — leave image empty/hidden
     default_img_update = gr.update(value=None, visible=False) if gr else None
-    default_gallery_update = gr.update(value=None, visible=False) if gr else None
+    default_gallery_update = gr.update(value=None, visible=True) if gr else None
 
     if not model_id or model_id == "None":
-        return default_img_update, "No model selected", "", default_gallery_update
+        error_msg = "**错误：** 未选择模型。请先在 Selection 标签页中点击一个模型卡片。"
+        return default_img_update, error_msg, "", default_gallery_update
+    
+    if not prompt_text or not prompt_text.strip():
+        error_msg = "**错误：** Prompt 不能为空。请输入描述要生成的图像内容。"
+        return default_img_update, error_msg, "", default_gallery_update
 
     def _derive_from_url(m: dict | None) -> str | None:
         if not isinstance(m, dict):
@@ -136,10 +114,30 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
     params = {k: v for k, v in params.items() if v is not None}
 
     effective_token = token or os.environ.get("MODELSCOPE_API_TOKEN")
+    
+    # Show submitting status
+    if not effective_token:
+        status_md = "⚠️ **模拟模式：** 未提供 API Token，将返回模拟结果。\n\n如需真实推理，请在 Generate 页输入 ModelScope API Token 并点击 Save Token。"
+    else:
+        status_md = "🔄 **提交中...** 正在向 ModelScope API 提交任务，请稍候..."
+    
     try:
         job = submit_job(effective_model, params, token=effective_token)
     except Exception as exc:
-        status_md = f"**Job:** failed to submit  \n**Error:** {exc}"
+        error_detail = str(exc)
+        status_md = (
+            f"**❌ 提交失败**\n\n"
+            f"**错误信息：** {error_detail}\n\n"
+            f"**可能原因：**\n"
+            f"- 模型 ID 格式不正确（需要 `组织名/模型名` 格式）\n"
+            f"- API Token 无效或已过期\n"
+            f"- 网络连接问题\n"
+            f"- 模型不支持当前任务类型\n\n"
+            f"**建议操作：**\n"
+            f"1. 检查 'API Model (override)' 字段，确保格式为 `owner/model-name`\n"
+            f"2. 验证 API Token 是否有效\n"
+            f"3. 尝试刷新页面重新选择模型"
+        )
         return default_img_update, status_md, "", default_gallery_update
 
     result = job.get("result") or {}
@@ -167,20 +165,32 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
     if isinstance(img, str) and img.startswith("data:"):
         imgs[0] = img
 
-    status_md = (
-        f"**Job:** {job.get('meta', {}).get('job_id', '')}  \n"
-        f"**Status:** {job.get('status')}  \n"
-        f"**Remote:** {job.get('remote')}  \n"
-        f"**API Model:** {effective_model}"
-    )
+    job_id = job.get('meta', {}).get('job_id', '')
+    is_remote = job.get('remote', False)
+    is_mock = job.get('mock', False)
+    job_error = job.get('error')
+    
+    status_md = f"### 生成结果\n\n"
+    
+    if is_mock:
+        status_md += "**模式：** 🎭 模拟模式（未提供有效 Token）\n\n"
+        status_md += "_这是一个模拟结果。要获得真实的图像生成，请提供 ModelScope API Token。_\n\n"
+    else:
+        status_md += f"**模式：** {'☁️ 远程推理' if is_remote else '📦 本地模拟'}\n\n"
+    
+    status_md += f"**任务 ID：** `{job_id}`\n\n"
+    status_md += f"**使用模型：** `{effective_model}`\n\n"
+    status_md += f"**状态：** {job.get('status', 'unknown')}\n\n"
+    
     if incomplete:
-        status_md += "  \n⚠️ 推理模型ID可能不完整（缺少组织前缀），已尝试自动从 URL 解析。如仍 400，请在 API Model Override 输入完整形式例如 org/name。"
-    if job.get('mock'):
-        status_md += "  \n_Mode: mock (no token detected)_"
-    if job.get('error'):
-        status_md += f"  \n**Error:** {job.get('error')}"
+        status_md += "⚠️ **注意：** 模型 ID 可能不完整（缺少组织前缀）。如遇到 400 错误，请在 'API Model Override' 字段输入完整格式，例如 `black-forest-labs/FLUX.1-dev`\n\n"
+    
+    if job_error:
+        status_md += f"**⚠️ 警告：** {job_error}\n\n"
 
     if imgs:
+        status_md += f"**生成的图片数量：** {len(imgs)}\n\n"
+        status_md += "✅ **成功！** 图像已生成，请在右侧查看。"
         gallery_update = gr.update(value=imgs, visible=True) if gr else None
         if isinstance(img, str) and img.startswith("data:"):
             img_exists = True
@@ -190,8 +200,13 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
             img_exists = False
         img_update = gr.update(value=img if img_exists else (img if isinstance(img, str) and img.startswith("http") else None), visible=bool(img)) if gr else None
     else:
-        status_md += "  \n_No image returned; using empty state_"
+        status_md += "⚠️ **未返回图像**\n\n"
+        status_md += "可能原因：\n"
+        status_md += "- 生成任务失败\n"
+        status_md += "- API 响应格式异常\n"
+        status_md += "- 模型不支持此类任务\n\n"
+        status_md += "请检查上述错误信息或尝试其他模型。"
         gallery_update = default_gallery_update
         img_update = default_img_update
 
-    return img_update, status_md, job.get("meta", {}).get("job_id", ""), gallery_update
+    return img_update, status_md, job_id, gallery_update

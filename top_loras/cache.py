@@ -7,10 +7,10 @@ from typing import Optional
 logger = logging.getLogger(__name__)
 
 
-def load_cache(cache_file: str, ttl: int = 300) -> Optional[dict]:
+def load_cache(cache_file: str, ttl: int = 300) -> Optional[list]:
     """Load cached JSON if present and not expired.
 
-    Returns the cached dict or None if missing/expired/invalid.
+    Returns the cached list of results or None if missing/expired/invalid.
     """
     p = Path(cache_file)
     if not p.exists():
