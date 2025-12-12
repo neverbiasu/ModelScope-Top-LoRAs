@@ -17,6 +17,7 @@ from ui.loaders import (
     render_markdown_for_models,
     _tasks_from_presets,
 )
+from ui.i18n import t
 
 try:
     import gradio as gr
@@ -59,6 +60,9 @@ def build_ui() -> None:
     initial_gallery_ui = [(item.get("cover"), item.get("title")) for item in initial_gallery]
 
     with gr.Blocks(css="body { background: #0f1117; }") as demo:
+        # Language state (default to Chinese)
+        lang_state = gr.State(value="zh")
+        
         with gr.Row(elem_id="tl-header", variant="panel"):
             gr.Markdown(
                 "<div style='display:flex;align-items:center;gap:8px'>"
@@ -66,26 +70,32 @@ def build_ui() -> None:
                 "<span style='font-size:18px;font-weight:700'>Top‑LoRAs</span>"
                 "</div>"
             )
+            with gr.Column(scale=1):
+                lang_dropdown = gr.Dropdown(
+                    choices=["中文", "English"], 
+                    value="中文",
+                    label=None,
+                    show_label=False,
+                    scale=1
+                )
 
         with gr.Tabs():
-            with gr.TabItem("Selection"):
+            with gr.TabItem(label="Selection / 选择"):
                 with gr.Row():
                     with gr.Column(scale=3):
                         task_dd = gr.Dropdown(
                             choices=tasks,
                             value=initial_task if tasks else None,
-                            label="Task (select)",
+                            label=t("task_label", "zh"),
                         )
-                        per_task_cb = gr.Checkbox(value=True, label="Per-task cache")
-                        refresh_btn = gr.Button("🔄 Refresh Cache", variant="secondary")
-                        gr.Markdown(
-                            "💡 **提示：** 点击 Refresh 从 ModelScope 获取最新数据并更新本地缓存。"
-                        )
-                        selected_md = gr.HTML("<div style='padding:12px;background:rgba(255,255,255,0.05);border-radius:8px;'><strong>已选择模型：</strong> 无</div>")
+                        per_task_cb = gr.Checkbox(value=True, label=t("per_task_cache", "zh"))
+                        refresh_btn = gr.Button(t("refresh_btn", "zh"), variant="secondary")
+                        refresh_hint_md = gr.Markdown(t("refresh_hint", "zh"))
+                        selected_md = gr.HTML(f"<div style='padding:12px;background:rgba(255,255,255,0.05);border-radius:8px;'><strong>{t('selected_model', 'zh')}</strong> {t('no_model', 'zh')}</div>")
                         selected_state = gr.State(value=None)
                     with gr.Column(scale=9):
                         gallery = gr.Gallery(
-                            label="Top LoRAs",
+                            label=t("top_loras", "zh"),
                             value=initial_gallery_ui or None,
                             columns=3,
                             show_label=False,
@@ -94,46 +104,54 @@ def build_ui() -> None:
                         )
                         models_state = gr.State(value=initial_norm)
 
-            with gr.TabItem("Generate"):
+            with gr.TabItem(label="Generate / 生成"):
                 with gr.Row():
                     with gr.Column(scale=8):
-                        gen_model_info = gr.Markdown("💡 请先在 **Selection** 标签页选择一个模型")
+                        gen_model_info = gr.Markdown(t("select_first", "zh"))
                         # Visible field to confirm the selected model ID is propagated
-                        selected_id_display = gr.Textbox(label="📋 当前选中模型 ID", value="无", interactive=False)
-                        prompt = gr.Textbox(label="✨ Prompt（提示词）", placeholder="描述你想生成的图像，例如：a beautiful sunset over mountains", lines=3)
-                        neg_prompt = gr.Textbox(label="🚫 Negative Prompt（负面提示词）", placeholder="不想出现的内容，例如：blurry, low quality", lines=2)
+                        selected_id_display = gr.Textbox(label=t("model_id_label", "zh"), value=t("no_model", "zh"), interactive=False)
+                        prompt = gr.Textbox(label=t("prompt_label", "zh"), placeholder=t("prompt_placeholder", "zh"), lines=3)
+                        neg_prompt = gr.Textbox(label=t("neg_prompt_label", "zh"), placeholder=t("neg_prompt_placeholder", "zh"), lines=2)
                         
                         with gr.Row():
-                            size_text = gr.Textbox(label="📐 尺寸", placeholder="例如 1024x1024", scale=2)
-                            steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label="🔢 Steps（步数）", scale=3)
+                            size_text = gr.Textbox(label=t("size_label", "zh"), placeholder=t("size_placeholder", "zh"), scale=2)
+                            steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label=t("steps_label", "zh"), scale=3)
                         
                         with gr.Row():
-                            guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label="🎯 Guidance Scale", scale=3)
-                            seed = gr.Number(value=42, label="🎲 Seed（种子）", info="0=随机", scale=2)
+                            guidance = gr.Slider(minimum=1.0, maximum=30.0, value=7.5, step=0.1, label=t("guidance_label", "zh"), scale=3)
+                            seed = gr.Number(value=42, label=t("seed_label", "zh"), scale=2)
+                        seed_info_md = gr.Markdown(t("seed_info", "zh"))
                         
                         api_model_override = gr.Textbox(
-                            label="🔧 API Model Override（高级）", 
-                            placeholder="完整模型路径，例如 black-forest-labs/FLUX.1-dev",
-                            info="仅在自动解析的模型 ID 不正确时使用"
+                            label=t("api_model_label", "zh"), 
+                            placeholder=t("api_model_placeholder", "zh"),
                         )
+                        api_model_info_md = gr.Markdown(t("api_model_info", "zh"))
                         
-                        generate_btn = gr.Button("🎨 Generate Image", variant="primary", size="lg")
+                        generate_btn = gr.Button(t("generate_btn", "zh"), variant="primary", size="lg")
                         
                         gr.Markdown("---")
-                        gr.Markdown("### 🔐 API 认证")
-                        token_input = gr.Textbox(label="ModelScope API Token", placeholder="粘贴你的 API Token（仅本次会话有效）", type="password")
+                        auth_title_md = gr.Markdown(t("auth_title", "zh"))
+                        token_input = gr.Textbox(label=t("token_label", "zh"), placeholder=t("token_placeholder", "zh"), type="password")
                         with gr.Row():
-                            token_save = gr.Button("💾 保存 Token", variant="secondary")
-                            token_clear = gr.Button("🗑️ 清除 Token", variant="secondary")
-                        auth_md = gr.Markdown("**状态：** 未提供 Token（将使用模拟模式）")
+                            token_save = gr.Button(t("token_save", "zh"), variant="secondary")
+                            token_clear = gr.Button(t("token_clear", "zh"), variant="secondary")
+                        auth_md = gr.Markdown(t("token_status_default", "zh"))
                         token_state = gr.State(value=None)
                     with gr.Column(scale=4):
                         # Image starts hidden and shows only after generation
-                        out_image = gr.Image(label="Output", value=None, visible=False)
+                        out_image = gr.Image(label=t("output_label", "zh"), value=None, visible=False)
                         # History gallery for all generated images
-                        results_gallery = gr.Gallery(label="Generated outputs", value=None, columns=2, show_label=True, elem_id="gen_results", visible=True)
+                        results_gallery = gr.Gallery(label=t("results_label", "zh"), value=None, columns=2, show_label=True, elem_id="gen_results", visible=True)
                         job_status = gr.Markdown("")
                         last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
+
+        def _change_language(lang_choice: str):
+            """Update language for all UI components."""
+            lang = "zh" if lang_choice == "中文 (Chinese)" else "en"
+            
+            # Update language state
+            return lang
 
         def _models_for_dropdown(task_value, per_task_enabled, token):
             sel = task_value or None
@@ -186,33 +204,106 @@ def build_ui() -> None:
         def _load_initial():
             return initial_gallery_ui
 
-        demo.load(fn=_load_initial, inputs=None, outputs=gallery)
+        demo.load(fn=_load_initial, inputs=None, outputs=[gallery])
 
-        def _save_token(token, _state):
+        def _on_lang_change(lang_choice):
+            from ui.i18n import t
+            if gr is None:
+                return [None] * 25
+            lang_code = "zh" if lang_choice == "中文" else "en"
+            return (
+                gr.update(label=t("task_label", lang_code)),
+                gr.update(label=t("per_task_cache", lang_code)),
+                gr.update(value=t("refresh_btn", lang_code)),
+                gr.update(value=t("refresh_hint", lang_code)),
+                gr.update(label=t("top_loras", lang_code)),
+                gr.update(value=t("select_first", lang_code)),
+                gr.update(label=t("model_id_label", lang_code)),
+                gr.update(label=t("prompt_label", lang_code), placeholder=t("prompt_placeholder", lang_code)),
+                gr.update(label=t("neg_prompt_label", lang_code), placeholder=t("neg_prompt_placeholder", lang_code)),
+                gr.update(label=t("size_label", lang_code), placeholder=t("size_placeholder", lang_code)),
+                gr.update(label=t("steps_label", lang_code)),
+                gr.update(label=t("guidance_label", lang_code)),
+                gr.update(label=t("seed_label", lang_code)),
+                gr.update(value=t("seed_info", lang_code)),
+                gr.update(label=t("api_model_label", lang_code), placeholder=t("api_model_placeholder", lang_code)),
+                gr.update(value=t("api_model_info", lang_code)),
+                gr.update(value=t("generate_btn", lang_code)),
+                gr.update(value=t("auth_title", lang_code)),
+                gr.update(label=t("token_label", lang_code), placeholder=t("token_placeholder", lang_code)),
+                gr.update(value=t("token_save", lang_code)),
+                gr.update(value=t("token_clear", lang_code)),
+                gr.update(value=t("token_status_default", lang_code)),
+                gr.update(label=t("output_label", lang_code)),
+                gr.update(label=t("results_label", lang_code)),
+                lang_code,
+            )
+
+        lang_dropdown.change(
+            fn=_on_lang_change,
+            inputs=[lang_dropdown],
+            outputs=[
+                task_dd,
+                per_task_cb,
+                refresh_btn,
+                refresh_hint_md,
+                gallery,
+                gen_model_info,
+                selected_id_display,
+                prompt,
+                neg_prompt,
+                size_text,
+                steps,
+                guidance,
+                seed,
+                seed_info_md,
+                api_model_override,
+                api_model_info_md,
+                generate_btn,
+                auth_title_md,
+                token_input,
+                token_save,
+                token_clear,
+                auth_md,
+                out_image,
+                results_gallery,
+                lang_state,
+            ],
+        )
+
+        def _save_token(token, _state, lang):
+            from ui.i18n import t
+            lang_code = lang if lang in ("zh", "en") else "zh"
             if not token or not token.strip():
-                return "**状态：** ❌ Token 为空，未保存", None
-            return "**状态：** ✅ Token 已保存（仅本次会话有效）", token.strip()
+                return t("token_status_empty", lang_code), None
+            return t("token_status_saved", lang_code), token.strip()
 
-        def _clear_token(_state):
-            return "**状态：** 未提供 Token（将使用模拟模式）", None
+        def _clear_token(_state, lang):
+            from ui.i18n import t
+            lang_code = lang if lang in ("zh", "en") else "zh"
+            return t("token_status_cleared", lang_code), None
 
-        token_save.click(fn=_save_token, inputs=[token_input, token_state], outputs=[auth_md, token_state])
-        token_clear.click(fn=_clear_token, inputs=[token_state], outputs=[auth_md, token_state])
+        token_save.click(fn=_save_token, inputs=[token_input, token_state, lang_state], outputs=[auth_md, token_state])
+        token_clear.click(fn=_clear_token, inputs=[token_state, lang_state], outputs=[auth_md, token_state])
 
         from top_loras.inference import submit_job
         from ui.callbacks import on_gallery_select, do_generate
 
-        # Gradio pattern: SelectData is auto-injected as first parameter,
-        # followed by inputs list. We pass models_state to enable index lookup.
+        # SelectData is auto-injected by Gradio when callback param is annotated.
+        from gradio import SelectData
+
+        def _on_gallery_select(evt: SelectData, models, lang):
+            return on_gallery_select(evt, models, lang=lang)
+
         gallery.select(
-            fn=on_gallery_select,
-            inputs=[models_state],
+            fn=_on_gallery_select,
+            inputs=[models_state, lang_state],
             outputs=[selected_md, selected_state, gen_model_info, selected_id_display],
         )
 
         generate_btn.click(
             fn=do_generate,
-            inputs=[selected_state, selected_id_display, prompt, neg_prompt, size_text, steps, guidance, seed, api_model_override, token_state],
+            inputs=[selected_state, selected_id_display, prompt, neg_prompt, size_text, steps, guidance, seed, api_model_override, token_state, lang_state],
             outputs=[out_image, job_status, last_job_file, results_gallery],
         )
 

@@ -16,25 +16,44 @@ except Exception:  # pragma: no cover - optional UI dependency
 from top_loras.inference import submit_job
 
 
-def on_gallery_select(evt, models):
+def on_gallery_select(evt, models, lang="zh"):
     """Handle gallery selection.
     
     Args:
         evt: SelectData event with .index attribute (auto-injected by Gradio)
         models: models_state (list[dict]) passed from gr.State
+        lang: current language ("zh" or "en"), defaults to "zh"
     
     Returns:
         (summary_html, selected_model_dict, generate_md, model_id)
     """
+    from ui.i18n import t
+    
+    # Extract index from SelectData event
+    idx = None
+    try:
+        idx = getattr(evt, "index", None)
+        if idx is None and isinstance(evt, dict):
+            idx = evt.get("index")
+    except Exception as e:
+        print(f"[ERROR] Failed to extract index from event: {e}")
+
+    if isinstance(idx, (tuple, list)) and idx:
+        first = idx[0]
+        if isinstance(first, int):
+            idx = first
+    
+    # Ensure lang is valid
+    if lang not in ("zh", "en"):
+        lang = "zh"
+    
     model_list = list(models or [])
     models_len = len(model_list)
 
-    # Extract index from event object
-    idx = getattr(evt, 'index', None)
-
     # Validate index
     if not isinstance(idx, int) or idx < 0 or idx >= models_len:
-        return "No model selected.", None, "No model selected", ""
+        no_model_text = t("no_model_selected", lang)
+        return f"<div style='padding:12px;background:rgba(255,255,255,0.05);border-radius:8px;'><strong>⚠️ {no_model_text}</strong></div>", None, t("select_first", lang), ""
 
     selected = model_list[idx]
 
@@ -44,30 +63,41 @@ def on_gallery_select(evt, models):
     downloads = selected.get("downloads") or 0
     likes = selected.get("likes") or 0
 
+    name_label = t("model_name", lang)  # type: ignore
+    author_label = t("model_author", lang)  # type: ignore
+    stats_label = t("model_stats", lang)  # type: ignore
+    selected_label = t("model_selected", lang)  # type: ignore
+
     summary_html = f"""
 <div style="padding: 12px; border-radius: 8px; background: #1a1a2e;">
-    <h3 style="margin: 0 0 8px 0; color: #fff;">Selected Model</h3>
-    <p style="margin: 4px 0; color: #ccc;"><strong>Name:</strong> {title}</p>
-    <p style="margin: 4px 0; color: #ccc;"><strong>Author:</strong> {author}</p>
-    <p style="margin: 4px 0; color: #888;">Downloads: {downloads} · Likes: {likes}</p>
+    <h3 style="margin: 0 0 8px 0; color: #fff;">✅ {selected_label}</h3>
+    <p style="margin: 4px 0; color: #ccc;"><strong>{name_label}:</strong> {title}</p>
+    <p style="margin: 4px 0; color: #ccc;"><strong>{author_label}:</strong> {author}</p>
+    <p style="margin: 4px 0; color: #888;">{downloads} · {likes}</p>
 </div>
 """
-    gen_md = f"Selected: {title}"
+    gen_md = f"{selected_label} {title}"
 
     return summary_html, selected, gen_md, model_id
 
 
-def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token):
+def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidance_v, seed_v, api_model, token, lang="zh"):
+    from ui.i18n import t
+    
+    # Ensure lang is valid
+    if lang not in ("zh", "en"):
+        lang = "zh"
+    
     # Default updates: do NOT use a placeholder image value — leave image empty/hidden
     default_img_update = gr.update(value=None, visible=False) if gr else None
     default_gallery_update = gr.update(value=None, visible=True) if gr else None
 
     if not model_id or model_id == "None":
-        error_msg = "**错误：** 未选择模型。请先在 Selection 标签页中点击一个模型卡片。"
+        error_msg = t("error_no_model", lang)
         return default_img_update, error_msg, "", default_gallery_update
     
     if not prompt_text or not prompt_text.strip():
-        error_msg = "**错误：** Prompt 不能为空。请输入描述要生成的图像内容。"
+        error_msg = t("error_empty_prompt", lang)
         return default_img_update, error_msg, "", default_gallery_update
 
     def _derive_from_url(m: dict | None) -> str | None:
@@ -117,26 +147,26 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
     
     # Show submitting status
     if not effective_token:
-        status_md = "⚠️ **模拟模式：** 未提供 API Token，将返回模拟结果。\n\n如需真实推理，请在 Generate 页输入 ModelScope API Token 并点击 Save Token。"
+        status_md = t("status_mock_mode", lang)
     else:
-        status_md = "🔄 **提交中...** 正在向 ModelScope API 提交任务，请稍候..."
+        status_md = t("status_submitting", lang)
     
     try:
         job = submit_job(effective_model, params, token=effective_token)
     except Exception as exc:
         error_detail = str(exc)
         status_md = (
-            f"**❌ 提交失败**\n\n"
-            f"**错误信息：** {error_detail}\n\n"
-            f"**可能原因：**\n"
-            f"- 模型 ID 格式不正确（需要 `组织名/模型名` 格式）\n"
-            f"- API Token 无效或已过期\n"
-            f"- 网络连接问题\n"
-            f"- 模型不支持当前任务类型\n\n"
-            f"**建议操作：**\n"
-            f"1. 检查 'API Model (override)' 字段，确保格式为 `owner/model-name`\n"
-            f"2. 验证 API Token 是否有效\n"
-            f"3. 尝试刷新页面重新选择模型"
+            f"{t('error_submit_failed', lang)}\n\n"
+            f"{t('error_details', lang)} {error_detail}\n\n"
+            f"{t('error_reasons', lang)}\n"
+            f"{t('error_model_format', lang)}\n"
+            f"{t('error_token_invalid', lang)}\n"
+            f"{t('error_network', lang)}\n"
+            f"{t('error_task_support', lang)}\n\n"
+            f"{t('suggest_actions', lang)}\n"
+            f"{t('suggest_1', lang)}\n"
+            f"{t('suggest_2', lang)}\n"
+            f"{t('suggest_3', lang)}"
         )
         return default_img_update, status_md, "", default_gallery_update
 
@@ -170,27 +200,29 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
     is_mock = job.get('mock', False)
     job_error = job.get('error')
     
-    status_md = f"### 生成结果\n\n"
+    status_md = f"{t('status_result', lang)}\n\n"
     
     if is_mock:
-        status_md += "**模式：** 🎭 模拟模式（未提供有效 Token）\n\n"
-        status_md += "_这是一个模拟结果。要获得真实的图像生成，请提供 ModelScope API Token。_\n\n"
+        mode_text = t("status_mode_mock", lang)
+        status_md += f"{t('status_mode', lang)} {mode_text}\n\n"
+        status_md += f"_{t('status_mock_note', lang)}_\n\n"
     else:
-        status_md += f"**模式：** {'☁️ 远程推理' if is_remote else '📦 本地模拟'}\n\n"
+        mode_text = t("status_mode_remote", lang) if is_remote else t("status_mode_local", lang)
+        status_md += f"{t('status_mode', lang)} {mode_text}\n\n"
     
-    status_md += f"**任务 ID：** `{job_id}`\n\n"
-    status_md += f"**使用模型：** `{effective_model}`\n\n"
-    status_md += f"**状态：** {job.get('status', 'unknown')}\n\n"
+    status_md += f"{t('status_job_id', lang)} `{job_id}`\n\n"
+    status_md += f"{t('status_model', lang)} `{effective_model}`\n\n"
+    status_md += f"{t('status_state', lang)} {job.get('status', 'unknown')}\n\n"
     
     if incomplete:
-        status_md += "⚠️ **注意：** 模型 ID 可能不完整（缺少组织前缀）。如遇到 400 错误，请在 'API Model Override' 字段输入完整格式，例如 `black-forest-labs/FLUX.1-dev`\n\n"
+        status_md += f"{t('status_warning_incomplete', lang)}\n\n"
     
     if job_error:
-        status_md += f"**⚠️ 警告：** {job_error}\n\n"
+        status_md += f"{t('status_job_error', lang)} {job_error}\n\n"
 
     if imgs:
-        status_md += f"**生成的图片数量：** {len(imgs)}\n\n"
-        status_md += "✅ **成功！** 图像已生成，请在右侧查看。"
+        status_md += f"{t('status_generated_count', lang)} {len(imgs)}\n\n"
+        status_md += t("status_success", lang)
         gallery_update = gr.update(value=imgs, visible=True) if gr else None
         if isinstance(img, str) and img.startswith("data:"):
             img_exists = True
@@ -200,12 +232,12 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
             img_exists = False
         img_update = gr.update(value=img if img_exists else (img if isinstance(img, str) and img.startswith("http") else None), visible=bool(img)) if gr else None
     else:
-        status_md += "⚠️ **未返回图像**\n\n"
-        status_md += "可能原因：\n"
-        status_md += "- 生成任务失败\n"
-        status_md += "- API 响应格式异常\n"
-        status_md += "- 模型不支持此类任务\n\n"
-        status_md += "请检查上述错误信息或尝试其他模型。"
+        status_md += f"{t('status_no_images', lang)}\n\n"
+        status_md += f"{t('status_no_images_reasons', lang)}\n"
+        status_md += f"{t('status_reason_1', lang)}\n"
+        status_md += f"{t('status_reason_2', lang)}\n"
+        status_md += f"{t('status_reason_3', lang)}\n\n"
+        status_md += t("status_check_error", lang)
         gallery_update = default_gallery_update
         img_update = default_img_update
 

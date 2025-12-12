@@ -18,7 +18,7 @@ def test_on_gallery_select_with_valid_index():
     ]
     
     evt = MockEvent(0)
-    summary, selected, gen_md, model_id = on_gallery_select(evt, models)
+    summary, selected, gen_md, model_id = on_gallery_select(evt, models, lang="en")
     
     assert "Model One" in summary
     assert selected == models[0]
@@ -36,7 +36,7 @@ def test_on_gallery_select_with_invalid_index():
     
     # Test out of range
     evt = MockEvent(10)
-    summary, selected, gen_md, model_id = on_gallery_select(evt, models)
+    summary, selected, gen_md, model_id = on_gallery_select(evt, models, lang="en")
     
     assert "No model selected" in summary
     assert selected is None
@@ -50,7 +50,7 @@ def test_on_gallery_select_with_empty_models():
             self.index = idx
     
     evt = MockEvent(0)
-    summary, selected, gen_md, model_id = on_gallery_select(evt, [])
+    summary, selected, gen_md, model_id = on_gallery_select(evt, [], lang="en")
     
     assert "No model selected" in summary
     assert selected is None
@@ -64,7 +64,7 @@ def test_on_gallery_select_with_missing_index():
     models = [{"id": "model1", "title_en": "Model One"}]
     evt = MockEvent()
     
-    summary, selected, gen_md, model_id = on_gallery_select(evt, models)
+    summary, selected, gen_md, model_id = on_gallery_select(evt, models, lang="en")
     
     assert "No model selected" in summary
     assert selected is None
