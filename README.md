@@ -129,14 +129,14 @@ If you see an error such as "submit failed with status code: 40212", try the fol
 
 ```bash
 # verify your token works
-python scripts/test_api.py --token YOUR_TOKEN
+MODELSCOPE_DEBUG=1 python app.py
 ```
 
 Or set the environment variable and run the diagnostic script:
 
 ```bash
 export MODELSCOPE_API_TOKEN="your_token_here"
-python scripts/test_api.py
+MODELSCOPE_DEBUG=1 python app.py
 ```
 
 2) Check model ID formatting
@@ -195,10 +195,10 @@ This will print:
 
 ```bash
 # Test Stable Diffusion XL
-python scripts/test_api.py --token YOUR_TOKEN --model AI-ModelScope/stable-diffusion-xl
+MODELSCOPE_DEBUG=1 python app.py --model AI-ModelScope/stable-diffusion-xl
 
 # Test other supported models
-python scripts/test_api.py --token YOUR_TOKEN --model damo/cv_diffusion_text-to-image-synthesis_base
+MODELSCOPE_DEBUG=1 python app.py --model damo/cv_diffusion_text-to-image-synthesis_base
 ```
 
 7) Use simulation mode for UI testing
@@ -220,7 +220,7 @@ python app.py
 
 - The UI intentionally uses a conservative LoRA detection heuristic. To adjust detection, edit `top_loras/filter.py`.
 - The `cache/` directory and downloaded images are normally not committed; add `cache/` to `.gitignore` if desired.
-- For API debugging, use `python scripts/test_api.py --token YOUR_TOKEN`.
+- For API debugging, use `MODELSCOPE_DEBUG=1 python app.py
 
 ---
 
