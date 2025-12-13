@@ -120,10 +120,111 @@ pytest -q
 
 CI (GitHub Actions) is included and can be configured to run tests and optionally run scheduled fetches. In most cases CI does not need a ModelScope token because images are downloaded via public `cover_url` links; only add `MODELSCOPE_API_TOKEN` as a secret if you need to access protected resources or to run generation steps that require authentication.
 
+## 🔧 Troubleshooting / 故障排查
+
+### API 调用失败 (错误码 40212)
+
+如果你遇到 "submit failed with status code: 40212" 错误,请按以下步骤排查:
+
+#### 1. 验证 API Token
+
+```bash
+# 测试你的 Token 是否有效
+python scripts/test_api.py --token YOUR_TOKEN
+```
+
+或设置环境变量:
+
+```bash
+export MODELSCOPE_API_TOKEN="your_token_here"
+python scripts/test_api.py
+```
+
+#### 2. 检查模型 ID 格式
+
+**错误示例:**
+- ❌ `stable-diffusion-xl` (缺少 owner)
+- ❌ `models/AI-ModelScope/stable-diffusion-xl` (多余的路径)
+
+**正确格式:**
+- ✅ `AI-ModelScope/stable-diffusion-xl`
+- ✅ `damo/text-to-video-synthesis`
+
+#### 3. 常见错误原因
+
+| 错误码 | 原因 | 解决方法 |
+|-------|------|----------|
+| 40212 | 模型不支持 API 调用 | 访问模型主页确认是否支持 API |
+| 40212 | Token 权限不足 | 检查 Token 是否开通图像生成权限 |
+| 401 | Token 无效/过期 | 重新生成 Token: https://modelscope.cn/my/myaccesstoken |
+| 400 | 参数格式错误 | 检查模型 ID 格式和请求参数 |
+
+#### 4. **重要**: 检查模型是否支持 API
+
+**⚠️ Top-LoRAs 列表中的大多数模型是用户上传的 LoRA 模型，不支持标准 API！**
+
+**支持 API 的模型 (推荐使用):**
+- ✅ `AI-ModelScope/stable-diffusion-xl` 
+- ✅ `AI-ModelScope/stable-diffusion-v1-5`
+- ✅ `damo/text-to-image-synthesis`
+
+**不支持 API 的模型 (会返回 40212):**
+- ❌ `yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2` (LoRA 模型)
+- ❌ 大多数用户上传的微调模型
+- ❌ 包含 "LoRA", "FLUX", "fine-tune" 的模型
+
+**解决方法:**
+在 UI 的 "**API Model Override (高级)**" 字段中输入支持 API 的官方模型 ID，例如: `AI-ModelScope/stable-diffusion-xl`
+
+查看完整的支持模型列表: [docs/SUPPORTED_MODELS.md](docs/SUPPORTED_MODELS.md)
+
+#### 5. 开启调试模式
+
+在终端设置环境变量查看详细请求信息:
+
+```bash
+export MODELSCOPE_DEBUG=1
+python app.py
+```
+
+这会输出:
+- API 请求 URL
+- 模型 ID
+- Token 前缀
+- 完整请求体和响应
+
+#### 6. 测试推荐模型
+
+官方支持 API 的模型 (建议测试):
+
+```bash
+# 测试 Stable Diffusion XL
+python scripts/test_api.py --token YOUR_TOKEN --model AI-ModelScope/stable-diffusion-xl
+
+# 测试其他模型
+python scripts/test_api.py --token YOUR_TOKEN --model damo/cv_diffusion_text-to-image-synthesis_base
+```
+
+#### 6. 使用模拟模式
+
+如果不需要真实推理,可以不填写 Token,系统会返回模拟结果用于测试 UI:
+
+```bash
+# 不设置 Token 直接运行 (模拟模式)
+python app.py
+```
+
+### 获取帮助
+
+- ModelScope API 文档: https://modelscope.cn/docs/api-inference/intro
+- Token 管理: https://modelscope.cn/my/myaccesstoken
+- 提交 Issue: https://github.com/neverbiasu/ModelScope-Top-LoRAs/issues
+
 ## Notes
 
 - The UI intentionally uses a conservative LoRA detection heuristic. If you want to broaden or tighten detection, edit `top_loras/filter.py`.
 - Cached images and the `cache/` folder are typically not committed; add `cache/` to `.gitignore` if you want to avoid checking images in.
+- For API debugging, use the diagnostic script: `python scripts/test_api.py --token YOUR_TOKEN`
 
 ---
 

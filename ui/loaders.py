@@ -240,3 +240,49 @@ def _tasks_from_presets() -> list[str]:
         return list(presets)  # type: ignore[arg-type]
     except TypeError:
         return []
+
+
+def load_generated_images(task: str, limit: int = 40) -> list[str]:
+    """Load generated image references from persisted job files.
+
+    Reads `cache/outputs/<task>/*.json` written by `top_loras.inference.submit_job`.
+    Returns a deduplicated list of image paths/URLs sorted by most recent job first.
+    """
+    if not task:
+        return []
+
+    out_dir = Path("cache") / "outputs" / sanitize_filename(task)
+    if not out_dir.exists() or not out_dir.is_dir():
+        return []
+
+    job_files = sorted(out_dir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
+
+    images: list[str] = []
+    seen: set[str] = set()
+
+    for job_file in job_files:
+        try:
+            payload = json.loads(job_file.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+
+        result = payload.get("result") if isinstance(payload, dict) else None
+        if not isinstance(result, dict):
+            continue
+
+        # Prefer local paths if available (better UX + avoids expiring URLs)
+        candidates: list[str] = []
+        for key in ("images_local", "images", "output_images"):
+            val = result.get(key)
+            if isinstance(val, list):
+                candidates.extend([str(x) for x in val if isinstance(x, str)])
+
+        for img in candidates:
+            if not img or img in seen:
+                continue
+            seen.add(img)
+            images.append(img)
+            if limit and len(images) >= limit:
+                return images
+
+    return images

@@ -16,6 +16,7 @@ from ui.loaders import (
     sanitize_models,
     render_markdown_for_models,
     _tasks_from_presets,
+    load_generated_images,
 )
 from ui.i18n import t
 
@@ -58,18 +59,25 @@ def build_ui() -> None:
     initial_norm, initial_gallery = sanitize_models(initial_models)
     # Gallery expects items like (cover, title); keep UI values as tuples
     initial_gallery_ui = [(item.get("cover"), item.get("title")) for item in initial_gallery]
+    initial_history = load_generated_images(initial_task, limit=40)
 
-    with gr.Blocks(css="body { background: #0f1117; }") as demo:
+    with gr.Blocks(
+        fill_width=True,
+        css=(
+            "body { background: #0f1117; }\n"
+            "body .gradio-container { max-width: none !important; width: 100% !important; margin: 0 auto; padding: 20px; }\n"
+            "body .gradio-container .container { max-width: none !important; width: 100% !important; }\n"
+            "body .gradio-container .wrap { max-width: none !important; width: 100% !important; }\n"
+            "#tl-header { gap: 12px; }\n"
+            "#tl_gallery { min-height: 600px; }\n"
+            "@media (min-width: 1400px) { body .gradio-container { padding: 20px 60px; } }\n"
+        ),
+    ) as demo:
         # Language state (default to Chinese)
         lang_state = gr.State(value="zh")
         
         with gr.Row(elem_id="tl-header", variant="panel"):
-            gr.Markdown(
-                "<div style='display:flex;align-items:center;gap:8px'>"
-                "<img src='' alt='' style='width:28px;height:28px;border-radius:6px;background:#fff20;'/>"
-                "<span style='font-size:18px;font-weight:700'>Top‑LoRAs</span>"
-                "</div>"
-            )
+            gr.Markdown("<div style='font-size:18px;font-weight:700'>Top‑LoRAs</div>")
             with gr.Column(scale=1):
                 lang_dropdown = gr.Dropdown(
                     choices=["中文", "English"], 
@@ -82,7 +90,7 @@ def build_ui() -> None:
         with gr.Tabs():
             with gr.TabItem(label="Selection / 选择"):
                 with gr.Row():
-                    with gr.Column(scale=3):
+                    with gr.Column(scale=2, min_width=250):
                         task_dd = gr.Dropdown(
                             choices=tasks,
                             value=initial_task if tasks else None,
@@ -93,20 +101,20 @@ def build_ui() -> None:
                         refresh_hint_md = gr.Markdown(t("refresh_hint", "zh"))
                         selected_md = gr.HTML(f"<div style='padding:12px;background:rgba(255,255,255,0.05);border-radius:8px;'><strong>{t('selected_model', 'zh')}</strong> {t('no_model', 'zh')}</div>")
                         selected_state = gr.State(value=None)
-                    with gr.Column(scale=9):
+                    with gr.Column(scale=10):
                         gallery = gr.Gallery(
                             label=t("top_loras", "zh"),
                             value=initial_gallery_ui or None,
-                            columns=3,
+                            columns=5,
                             show_label=False,
                             elem_id="tl_gallery",
-                            height=520,
+                            height=600,
                         )
                         models_state = gr.State(value=initial_norm)
 
             with gr.TabItem(label="Generate / 生成"):
                 with gr.Row():
-                    with gr.Column(scale=8):
+                    with gr.Column(scale=7, min_width=400):
                         gen_model_info = gr.Markdown(t("select_first", "zh"))
                         # Visible field to confirm the selected model ID is propagated
                         selected_id_display = gr.Textbox(label=t("model_id_label", "zh"), value=t("no_model", "zh"), interactive=False)
@@ -114,7 +122,12 @@ def build_ui() -> None:
                         neg_prompt = gr.Textbox(label=t("neg_prompt_label", "zh"), placeholder=t("neg_prompt_placeholder", "zh"), lines=2)
                         
                         with gr.Row():
-                            size_text = gr.Textbox(label=t("size_label", "zh"), placeholder=t("size_placeholder", "zh"), scale=2)
+                            size_text = gr.Textbox(
+                                label=t("size_label", "zh"),
+                                placeholder=t("size_placeholder", "zh"),
+                                value="1024x1024",
+                                scale=2,
+                            )
                             steps = gr.Slider(minimum=1, maximum=150, value=20, step=1, label=t("steps_label", "zh"), scale=3)
                         
                         with gr.Row():
@@ -138,20 +151,13 @@ def build_ui() -> None:
                             token_clear = gr.Button(t("token_clear", "zh"), variant="secondary")
                         auth_md = gr.Markdown(t("token_status_default", "zh"))
                         token_state = gr.State(value=None)
-                    with gr.Column(scale=4):
+                    with gr.Column(scale=5, min_width=350):
                         # Image starts hidden and shows only after generation
                         out_image = gr.Image(label=t("output_label", "zh"), value=None, visible=False)
                         # History gallery for all generated images
-                        results_gallery = gr.Gallery(label=t("results_label", "zh"), value=None, columns=2, show_label=True, elem_id="gen_results", visible=True)
+                        results_gallery = gr.Gallery(label=t("results_label", "zh"), value=initial_history or None, columns=2, show_label=True, elem_id="gen_results", visible=True)
                         job_status = gr.Markdown("")
                         last_job_file = gr.Textbox(label="Job File", value="", interactive=False, visible=False)
-
-        def _change_language(lang_choice: str):
-            """Update language for all UI components."""
-            lang = "zh" if lang_choice == "中文 (Chinese)" else "en"
-            
-            # Update language state
-            return lang
 
         def _models_for_dropdown(task_value, per_task_enabled, token):
             sel = task_value or None
@@ -163,12 +169,13 @@ def build_ui() -> None:
             # to the UI; idx/id 仍保留在 item 中供回调使用。
             # gallery_items is list[dict]; Gallery expects (cover, title) tuples
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
-            return _safe_update(value=ui_items), norm
+            history = load_generated_images(sel or "", limit=40)
+            return _safe_update(value=ui_items), norm, _safe_update(value=history or None)
 
         task_dd.change(
             fn=_models_for_dropdown,
             inputs=[task_dd, per_task_cb, token_state],
-            outputs=[gallery, models_state],
+            outputs=[gallery, models_state, results_gallery],
         )
 
         def _refresh_cache(task_value, per_task_enabled, token):
@@ -193,12 +200,13 @@ def build_ui() -> None:
             models = load_results_from_cache(cache_file)
             norm, gallery_items = sanitize_models(models)
             ui_items = [(item.get("cover"), item.get("title")) for item in gallery_items]
-            return _safe_update(value=ui_items), norm
+            history = load_generated_images(sel or "", limit=40)
+            return _safe_update(value=ui_items), norm, _safe_update(value=history or None)
 
         refresh_btn.click(
             fn=_refresh_and_update,
             inputs=[task_dd, per_task_cb, token_state],
-            outputs=[gallery, models_state],
+            outputs=[gallery, models_state, results_gallery],
         )
 
         def _load_initial():
@@ -274,9 +282,15 @@ def build_ui() -> None:
         def _save_token(token, _state, lang):
             from ui.i18n import t
             lang_code = lang if lang in ("zh", "en") else "zh"
-            if not token or not token.strip():
+            if not token or not str(token).strip():
                 return t("token_status_empty", lang_code), None
-            return t("token_status_saved", lang_code), token.strip()
+            raw = str(token).strip().strip('"').strip("'")
+            if raw.lower().startswith("bearer "):
+                raw = raw.split(None, 1)[-1].strip()
+            if not raw:
+                return t("token_status_empty", lang_code), None
+            os.environ["MODELSCOPE_API_TOKEN"] = raw
+            return t("token_status_saved", lang_code), raw
 
         def _clear_token(_state, lang):
             from ui.i18n import t
@@ -284,6 +298,7 @@ def build_ui() -> None:
             return t("token_status_cleared", lang_code), None
 
         token_save.click(fn=_save_token, inputs=[token_input, token_state, lang_state], outputs=[auth_md, token_state])
+        token_input.submit(fn=_save_token, inputs=[token_input, token_state, lang_state], outputs=[auth_md, token_state])
         token_clear.click(fn=_clear_token, inputs=[token_state, lang_state], outputs=[auth_md, token_state])
 
         from top_loras.inference import submit_job
