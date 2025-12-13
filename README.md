@@ -20,42 +20,39 @@ models: #关联模型
 license: MIT License
 ---
 # Top-LoRAs
+---
+# For detailed docs see: https://modelscope.cn/docs/creatives-card
+domain: # domain: cv/nlp/audio/multi-modal/AutoML
+tags: []
+datasets:
+  evaluation: []
+  test: []
+  train: []
+models: []
+license: MIT License
+---
+
+# Top-LoRAs
 
 ## Project Summary
 
-This repository provides a pipeline and a small read-only Gradio UI to build a "Top LoRAs" leaderboard from ModelScope frontend responses. It:
+This repository provides a small pipeline and a read-only Gradio UI that builds a "Top LoRAs" leaderboard using ModelScope frontend JSON. The project:
 
-- Fetches the ModelScope frontend JSON and extracts model metadata.
-- Applies conservative LoRA detection and filtering rules to avoid false positives.
-- Caches a compact JSON file (no raw blobs) and optionally downloads cover images to `cache/`.
-- Exposes a CLI (via `python -m top_loras`) to refresh caches and tune paging/limits.
+- Fetches the ModelScope frontend JSON and extracts concise model metadata.
+- Applies conservative LoRA detection and filtering rules to reduce false positives.
+- Writes a compact cache JSON (no model blobs) and optionally downloads cover images into `cache/`.
+- Provides a CLI (`python -m top_loras`) to refresh caches and configure paging/limits.
 - Includes a lightweight Gradio app (`app.py`) that reads the cache and renders a styled card grid.
-
-
-
-
-
-
-
-
-
-
 
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
 
-*Statistics updated automatically every day*
+*Statistics are updated automatically every day.*
 
+## 🏆 Example Top Models
 
-## 🏆 Top 3 Models
-
-| # | Cover | Model | Author | Downloads | Likes |
-| --- | --- | --- | --- | --- | --- |
-| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 61,364 | 237 |
-| 2 | ![ArtAug-lora-FLUX.1dev-v1](https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg) | [ArtAug-lora-FLUX.1dev-v1](https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0) | Artiprocher | 38,582 | 74 |
-| 3 | ![MAJICFLUS-photo](https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png) | [MAJICFLUS-photo](https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0) | WANGMOON | 16,491 | 85 |
-
+This README shows example top models with their covers and metadata as captured from the ModelScope frontend. The actual leaderboard is generated from cached JSON files under `cache/`.
 
 ## Quick start
 
@@ -67,7 +64,7 @@ conda activate ms
 pip install -r requirements.txt
 ```
 
-2. Run the Gradio app (reads cache from `cache/top_loras_text-to-image-synthesis.json` by default):
+2. Run the Gradio app (it reads `cache/top_loras_text-to-image-synthesis.json` by default):
 
 ```bash
 python app.py
@@ -81,22 +78,22 @@ Open http://127.0.0.1:7860 in your browser.
 python -m top_loras --limit 20 --task text-to-image-synthesis --force-refresh
 ```
 
-Images are downloaded from each record's `cover_url` (HTTP/HTTPS) by default; in typical cases these are public URLs and do not require a ModelScope API token. The CLI supports flags like `--limit`, `--page-size`, `--max-pages`, `--no-per-task-cache`, and `--cache-file`. If a specific resource is protected (returns 401/403), you can provide `MODELSCOPE_API_TOKEN` in the environment or let CI inject it as a secret — but note that tokens are primarily used for generation workflows and are not required for normal image downloads.
+Cover images are downloaded from each record's `cover_url` when available. Most cover URLs are public and do not require a ModelScope API token. The CLI supports flags such as `--limit`, `--page-size`, `--max-pages`, `--no-per-task-cache`, and `--cache-file`. If a resource requires authentication (401/403), provide `MODELSCOPE_API_TOKEN` in the environment or configure it in CI.
 
 ## Cache schema (short)
 
-The cache JSON contains at top level a `_cached_at` timestamp and `results` array. Each result includes fields such as:
+The cache JSON contains a top-level `_cached_at` timestamp and a `results` array. Each result includes fields such as:
 
 - `id`, `title_cn`, `title_en`, `author`, `author_avatar` (optional),
 - `cover_url`, `cover_local` (if downloaded), `downloads`, `likes`,
 - `tags_cn`, `tags_en`, `base_models`, `stable_diffusion_version`,
 - `trigger_words`, `vision_foundation`, `updated_at`, `modelscope_url`.
 
-See `DATA_INTERFACE.md` for a full table of fields and extraction fallbacks.
+See `DATA_INTERFACE.md` for a full table of fields and extraction fallback rules.
 
 ## Two-remote workflow (GitHub + ModelScope)
 
-If you want to keep this repository in two remotes (for example GitHub and a ModelScope studio git), you can add both remotes locally and push to both:
+If you maintain this repository in two remotes (for example GitHub and a ModelScope studio git), you can add both remotes locally and push to both:
 
 ```bash
 # add GitHub remote
@@ -110,7 +107,7 @@ git push -u github main
 git push -u modelscope main
 ```
 
-If ModelScope does not expose a git remote, consider using GitHub Actions to upload `cache/*.json` artifacts or call ModelScope's API to publish artifacts; I can provide a workflow template if you want.
+If ModelScope does not expose a git remote, consider using GitHub Actions to upload `cache/*.json` artifacts or use ModelScope's API to publish artifacts; I can provide a workflow template on request.
 
 ## Tests and CI
 
@@ -120,114 +117,112 @@ Run tests locally with:
 pytest -q
 ```
 
-CI (GitHub Actions) is included and can be configured to run tests and optionally run scheduled fetches. In most cases CI does not need a ModelScope token because images are downloaded via public `cover_url` links; only add `MODELSCOPE_API_TOKEN` as a secret if you need to access protected resources or to run generation steps that require authentication.
+CI (GitHub Actions) is included and can be configured to run tests and scheduled fetches. In most cases CI does not need a ModelScope token because cover images are downloaded from public `cover_url` links; only add `MODELSCOPE_API_TOKEN` as a secret when needed for protected resources or for generation steps that require authentication.
 
-## 🔧 Troubleshooting / 故障排查
+## Troubleshooting
 
-### API 调用失败 (错误码 40212)
+### API submission failing with code 40212
 
-如果你遇到 "submit failed with status code: 40212" 错误,请按以下步骤排查:
+If you see an error such as "submit failed with status code: 40212", try the following steps:
 
-#### 1. 验证 API Token
+1) Validate your API token
 
 ```bash
-# 测试你的 Token 是否有效
+# verify your token works
 python scripts/test_api.py --token YOUR_TOKEN
 ```
 
-或设置环境变量:
+Or set the environment variable and run the diagnostic script:
 
 ```bash
 export MODELSCOPE_API_TOKEN="your_token_here"
 python scripts/test_api.py
 ```
 
-#### 2. 检查模型 ID 格式
+2) Check model ID formatting
 
-**错误示例:**
-- ❌ `stable-diffusion-xl` (缺少 owner)
-- ❌ `models/AI-ModelScope/stable-diffusion-xl` (多余的路径)
+Examples of incorrect and correct model IDs:
 
-**正确格式:**
-- ✅ `AI-ModelScope/stable-diffusion-xl`
-- ✅ `damo/text-to-video-synthesis`
+- Incorrect: `stable-diffusion-xl` (missing owner)
+- Incorrect: `models/AI-ModelScope/stable-diffusion-xl` (extra path)
 
-#### 3. 常见错误原因
+- Correct: `AI-ModelScope/stable-diffusion-xl`
+- Correct: `damo/text-to-video-synthesis`
 
-| 错误码 | 原因 | 解决方法 |
-|-------|------|----------|
-| 40212 | 模型不支持 API 调用 | 访问模型主页确认是否支持 API |
-| 40212 | Token 权限不足 | 检查 Token 是否开通图像生成权限 |
-| 401 | Token 无效/过期 | 重新生成 Token: https://modelscope.cn/my/myaccesstoken |
-| 400 | 参数格式错误 | 检查模型 ID 格式和请求参数 |
+3) Common causes and remedies
 
-#### 4. **重要**: 检查模型是否支持 API
+| Error | Cause | Mitigation |
+|------:|:------|:----------|
+| 40212 | Model does not support API | Check the model page to see if inference API is supported |
+| 40212 | Token lacks permission | Ensure token has image-generation permission |
+| 401 | Invalid/expired token | Recreate token: https://modelscope.cn/my/myaccesstoken |
+| 400 | Bad request parameters | Verify model ID format and request payload |
 
-**⚠️ Top-LoRAs 列表中的大多数模型是用户上传的 LoRA 模型，不支持标准 API！**
+4) Important: many Top-LoRAs are user-uploaded LoRA packages and do not support the standard inference API
 
-**支持 API 的模型 (推荐使用):**
-- ✅ `AI-ModelScope/stable-diffusion-xl` 
-- ✅ `AI-ModelScope/stable-diffusion-v1-5`
-- ✅ `damo/text-to-image-synthesis`
+Supported API models (recommended):
 
-**不支持 API 的模型 (会返回 40212):**
-- ❌ `yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2` (LoRA 模型)
-- ❌ 大多数用户上传的微调模型
-- ❌ 包含 "LoRA", "FLUX", "fine-tune" 的模型
+- `AI-ModelScope/stable-diffusion-xl`
+- `AI-ModelScope/stable-diffusion-v1-5`
+- `damo/text-to-image-synthesis`
 
-**解决方法:**
-在 UI 的 "**API Model Override (高级)**" 字段中输入支持 API 的官方模型 ID，例如: `AI-ModelScope/stable-diffusion-xl`
+Examples of models that often do NOT support API usage:
 
-查看完整的支持模型列表: [docs/SUPPORTED_MODELS.md](docs/SUPPORTED_MODELS.md)
+- `yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2` (LoRA)
+- Most user-uploaded fine-tuned models
+- Any model whose metadata contains "LoRA", "FLUX", or "fine-tune"
 
-#### 5. 开启调试模式
+If you need an API-compatible model, use the UI's "API Model Override (advanced)" field to provide a supported model ID, for example: `AI-ModelScope/stable-diffusion-xl`.
 
-在终端设置环境变量查看详细请求信息:
+See the supported models list: [docs/SUPPORTED_MODELS.md](docs/SUPPORTED_MODELS.md)
+
+5) Enable debug logging
+
+Set `MODELSCOPE_DEBUG=1` in your shell to print detailed request/response information:
 
 ```bash
 export MODELSCOPE_DEBUG=1
 python app.py
 ```
 
-这会输出:
-- API 请求 URL
-- 模型 ID
-- Token 前缀
-- 完整请求体和响应
+This will print:
+- API request URLs
+- Model IDs used
+- Partial token hints (prefixes)
+- Full request and response payloads
 
-#### 6. 测试推荐模型
-
-官方支持 API 的模型 (建议测试):
+6) Test recommended models
 
 ```bash
-# 测试 Stable Diffusion XL
+# Test Stable Diffusion XL
 python scripts/test_api.py --token YOUR_TOKEN --model AI-ModelScope/stable-diffusion-xl
 
-# 测试其他模型
+# Test other supported models
 python scripts/test_api.py --token YOUR_TOKEN --model damo/cv_diffusion_text-to-image-synthesis_base
 ```
 
-#### 6. 使用模拟模式
+7) Use simulation mode for UI testing
 
-如果不需要真实推理,可以不填写 Token,系统会返回模拟结果用于测试 UI:
+If you do not need real inference, run without a token — the app will return simulated results for UI testing:
 
 ```bash
-# 不设置 Token 直接运行 (模拟模式)
+# run without setting a token (simulation mode)
 python app.py
 ```
 
-### 获取帮助
+## Get help
 
-- ModelScope API 文档: https://modelscope.cn/docs/api-inference/intro
-- Token 管理: https://modelscope.cn/my/myaccesstoken
-- 提交 Issue: https://github.com/neverbiasu/ModelScope-Top-LoRAs/issues
+- ModelScope API docs: https://modelscope.cn/docs/api-inference/intro
+- Token management: https://modelscope.cn/my/myaccesstoken
+- Open an issue: https://github.com/neverbiasu/ModelScope-Top-LoRAs/issues
 
 ## Notes
 
-- The UI intentionally uses a conservative LoRA detection heuristic. If you want to broaden or tighten detection, edit `top_loras/filter.py`.
-- Cached images and the `cache/` folder are typically not committed; add `cache/` to `.gitignore` if you want to avoid checking images in.
-- For API debugging, use the diagnostic script: `python scripts/test_api.py --token YOUR_TOKEN`
+- The UI intentionally uses a conservative LoRA detection heuristic. To adjust detection, edit `top_loras/filter.py`.
+- The `cache/` directory and downloaded images are normally not committed; add `cache/` to `.gitignore` if desired.
+- For API debugging, use `python scripts/test_api.py --token YOUR_TOKEN`.
 
 ---
 
-If you'd like, I can commit these README changes and prepare a GitHub Actions workflow to publish cache artifacts to ModelScope (requires knowing whether ModelScope accepts git pushes or an upload API).
+If you want, I can commit this README change and prepare a GitHub Actions workflow to publish cache artifacts to ModelScope. Let me know whether you want me to push the commit or open a pull request.
+- Cached images and the `cache/` folder are typically not committed; add `cache/` to `.gitignore` if you want to avoid checking images in.
