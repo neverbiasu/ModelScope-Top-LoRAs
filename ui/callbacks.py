@@ -16,6 +16,80 @@ except Exception:  # pragma: no cover - optional UI dependency
 from top_loras.inference import submit_job
 
 
+# =============================================================================
+# Base Model 替换映射表
+# 将不支持 API 或不推荐的 base model 替换为已知可用的版本
+# =============================================================================
+BASE_MODEL_REPLACEMENTS = {
+    # FLUX.1-dev 系列 → 使用 MusePublic 的可用版本
+    "AI-ModelScope/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "ai-modelscope/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "black-forest-labs/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "black-forest-labs/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    # 可以继续添加其他替换规则...
+}
+
+# 根据 vision_foundation / stable_diffusion_version 推断默认 base model
+# 当 LoRA 没有配置 base_models 时使用
+DEFAULT_BASE_BY_FOUNDATION = {
+    "FLUX_1": "MusePublic/489_ckpt_FLUX_1",
+    "QWEN_IMAGE_20_B": "MusePublic/Qwen-image@v1",
+    # 可以继续添加...
+}
+
+
+def normalize_base_model(base: str) -> str:
+    """Apply base model replacement rules.
+    
+    Args:
+        base: Original base model ID
+    
+    Returns:
+        Replaced base model ID if a rule matches, otherwise original
+    """
+    if not base:
+        return base
+    
+    # Exact match first
+    if base in BASE_MODEL_REPLACEMENTS:
+        return BASE_MODEL_REPLACEMENTS[base]
+    
+    # Case-insensitive match
+    base_lower = base.lower()
+    for pattern, replacement in BASE_MODEL_REPLACEMENTS.items():
+        if base_lower == pattern.lower():
+            return replacement
+    
+    # Partial match for FLUX.1-dev variations (handles @version suffixes)
+    if "flux.1-dev" in base_lower or "flux.1dev" in base_lower:
+        # Check if it's NOT already a MusePublic or known working repo
+        if not base_lower.startswith("musepublic/"):
+            return "MusePublic/489_ckpt_FLUX_1"
+    
+    return base
+
+
+def infer_default_base(model: dict) -> str | None:
+    """Infer a default base model from LoRA metadata when base_models is empty.
+    
+    Args:
+        model: Model dict with vision_foundation, stable_diffusion_version, etc.
+    
+    Returns:
+        Default base model ID or None
+    """
+    if not isinstance(model, dict):
+        return None
+    
+    # Check vision_foundation first, then stable_diffusion_version
+    vf = str(model.get("vision_foundation") or "").strip().upper()
+    sd_ver = str(model.get("stable_diffusion_version") or "").strip().upper()
+    
+    foundation = vf or sd_ver
+    
+    return DEFAULT_BASE_BY_FOUNDATION.get(foundation)
+
+
 def parse_api_error(error_info: dict | str, lang: str = "zh") -> str:
     """Parse API error and return user-friendly message.
     
@@ -208,16 +282,14 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
                 candidate = str(bases[0] or "").strip()
                 if "/" in candidate:
                     base_from_meta = candidate
-
-            # FLUX LoRA: prefer the known working base checkpoint repo.
-            # Some entries may list a generic FLUX.1-dev base; use the correct MusePublic base instead.
+            
+            # If base_models is empty, try to infer from vision_foundation
+            if not base_from_meta:
+                base_from_meta = infer_default_base(model)
+            
+            # Apply base model replacement rules
             if base_from_meta:
-                sd_ver = str(model.get("stable_diffusion_version") or "").strip().upper()
-                vf = str(model.get("vision_foundation") or "").strip().upper()
-                is_flux = (sd_ver == "FLUX_1") or (vf == "FLUX_1")
-                base_l = base_from_meta.lower()
-                if is_flux and base_l.endswith("/flux.1-dev"):
-                    base_from_meta = "MusePublic/489_ckpt_FLUX_1"
+                base_from_meta = normalize_base_model(base_from_meta)
     except Exception:
         base_from_meta = None
     if base_from_meta and effective_model == selected_model_id:
