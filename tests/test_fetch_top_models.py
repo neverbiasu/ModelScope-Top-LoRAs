@@ -99,7 +99,8 @@ def test_extract_model_info_user_and_tags():
     assert info['user_profile'] == 'https://modelscope.cn/profile/12345'
     assert '写实' in info['tags_cn'] and '风格' in info['tags_cn']
     assert 'Photography' in info['tags_en'] and 'Style' in info['tags_en']
-    assert info['base_models'] == ['Qwen/Qwen-Image']
+    # base_models is normalized to MusePublic API-supported format
+    assert info['base_models'] == ['MusePublic/Qwen-image@v1']
     assert info['trigger_words'] == ['摄影', '人像']
     assert info['vision_foundation'] == 'QWEN_IMAGE_20_B'
 
