@@ -16,6 +16,61 @@ except Exception:  # pragma: no cover - optional UI dependency
 from top_loras.inference import submit_job
 
 
+def parse_api_error(error_info: dict | str, lang: str = "zh") -> str:
+    """Parse API error and return user-friendly message.
+    
+    Args:
+        error_info: Error dict from API response or error string
+        lang: Language code ("zh" or "en")
+    
+    Returns:
+        Friendly error message string
+    """
+    from ui.i18n import t
+    
+    # Convert to string for pattern matching
+    error_str = str(error_info).lower() if error_info else ""
+    
+    # Extract error code and message if dict
+    error_code = None
+    error_message = ""
+    model_id = ""
+    
+    if isinstance(error_info, dict):
+        errors = error_info.get("errors", {})
+        if isinstance(errors, dict):
+            error_code = errors.get("code")
+            error_message = errors.get("message", "")
+        model_id = error_info.get("submitted_model", "")
+    
+    # Match common error patterns
+    if "task not found" in error_str:
+        return t("err_task_not_found", lang)
+    
+    if error_code == 401 or "401" in error_str or "unauthorized" in error_str or "token" in error_str and "invalid" in error_str:
+        return t("err_token_invalid", lang)
+    
+    if error_code == 429 or "429" in error_str or "rate limit" in error_str or "too many" in error_str:
+        return t("err_rate_limit", lang)
+    
+    if error_code == 500 or "500" in error_str or "internal server error" in error_str:
+        return t("err_server_error", lang)
+    
+    if "timeout" in error_str:
+        return t("err_timeout", lang)
+    
+    if "40212" in error_str or "not support" in error_str or "not supported" in error_str:
+        msg = t("err_model_not_supported", lang)
+        if model_id:
+            msg = msg.replace("{model}", model_id)
+        else:
+            msg = msg.replace("`{model}`", "this model")
+        return msg
+    
+    # Unknown error - return generic message
+    return t("err_unknown", lang)
+
+
 def on_gallery_select(evt, models, lang="zh"):
     """Handle gallery selection.
     
@@ -299,7 +354,10 @@ def do_generate(model, model_id, prompt_text, neg_text, size_v, steps_v, guidanc
         status_md += f"{t('status_warning_incomplete', lang)}\n\n"
     
     if job_error:
-        status_md += f"{t('status_job_error', lang)} {job_error}\n\n"
+        # Parse error and show friendly message
+        friendly_error = parse_api_error(result if isinstance(result, dict) else job_error, lang)
+        status_md += f"{friendly_error}\n\n"
+        status_md += f"---\n\n<details><summary>原始错误信息 / Raw Error</summary>\n\n```\n{job_error}\n```\n\n</details>\n\n"
 
     if imgs:
         status_md += f"{t('status_generated_count', lang)} {len(imgs)}\n\n"
