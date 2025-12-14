@@ -17,24 +17,47 @@ from top_loras.inference import submit_job
 
 
 # =============================================================================
-# Base Model 替换映射表
-# 将不支持 API 或不推荐的 base model 替换为已知可用的版本
+# Base Model 替换映射表 (兼容老缓存)
+# 将不支持 API 或不推荐的 base model 替换为已知可用的 MusePublic 版本
 # =============================================================================
 BASE_MODEL_REPLACEMENTS = {
-    # FLUX.1-dev 系列 → 使用 MusePublic 的可用版本
+    # FLUX.1-dev 系列
     "AI-ModelScope/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
     "ai-modelscope/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
     "black-forest-labs/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
     "black-forest-labs/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
-    # 可以继续添加其他替换规则...
+    
+    # FLUX.1 Kontext Dev
+    "black-forest-labs/FLUX.1-Kontext-dev": "MusePublic/FLUX.1-Kontext-Dev",
+    
+    # Qwen-Image 系列
+    "Qwen/Qwen-Image": "MusePublic/Qwen-image@v1",
+    "Qwen/Qwen-Image-Edit": "MusePublic/Qwen-Image-Edit",
+    "Qwen/Qwen-Image-Edit-2509": "MusePublic/Qwen-Image-Edit",
+    
+    # SDXL 系列
+    "stabilityai/stable-diffusion-xl-base-1.0": "MusePublic/stable-diffusion-xl-base",
+    "AI-ModelScope/stable-diffusion-xl-base-1.0": "MusePublic/stable-diffusion-xl-base",
+    
+    # SD3
+    "stabilityai/stable-diffusion-3-medium": "MusePublic/stable-diffusion-3-medium",
+    "AI-ModelScope/stable-diffusion-3-medium": "MusePublic/stable-diffusion-3-medium",
+    
+    # Pony Diffusion
+    "Pony-Diffusion/pony-diffusion-v6-xl": "MusePublic/Pony_Diffusion_V6_XL_SD_XL",
+    
+    # Anything XL (万象熔炉)
+    "AI-ModelScope/anything-xl": "MusePublic/14_ckpt_SD_XL",
 }
 
 # 根据 vision_foundation / stable_diffusion_version 推断默认 base model
-# 当 LoRA 没有配置 base_models 时使用
+# 当 LoRA 没有配置 base_models 时使用 (兼容老缓存)
 DEFAULT_BASE_BY_FOUNDATION = {
     "FLUX_1": "MusePublic/489_ckpt_FLUX_1",
     "QWEN_IMAGE_20_B": "MusePublic/Qwen-image@v1",
-    # 可以继续添加...
+    "SD_XL": "MusePublic/stable-diffusion-xl-base",
+    "SD_3": "MusePublic/stable-diffusion-3-medium",
+    "PONY_V6": "MusePublic/Pony_Diffusion_V6_XL_SD_XL",
 }
 
 
@@ -42,31 +65,34 @@ def normalize_base_model(base: str) -> str:
     """Apply base model replacement rules.
     
     Args:
-        base: Original base model ID
+        base: Original base model ID (may include @version suffix)
     
     Returns:
-        Replaced base model ID if a rule matches, otherwise original
+        Replaced base model ID if a rule matches, otherwise original (with @version stripped)
     """
     if not base:
         return base
     
+    # Strip @version suffix for matching (e.g., "MusePublic/xxx@v1" -> "MusePublic/xxx")
+    base_clean = base.split("@")[0].strip() if "@" in base else base.strip()
+    
     # Exact match first
-    if base in BASE_MODEL_REPLACEMENTS:
-        return BASE_MODEL_REPLACEMENTS[base]
+    if base_clean in BASE_MODEL_REPLACEMENTS:
+        return BASE_MODEL_REPLACEMENTS[base_clean]
     
     # Case-insensitive match
-    base_lower = base.lower()
+    base_lower = base_clean.lower()
     for pattern, replacement in BASE_MODEL_REPLACEMENTS.items():
         if base_lower == pattern.lower():
             return replacement
     
-    # Partial match for FLUX.1-dev variations (handles @version suffixes)
+    # Partial match for FLUX.1-dev variations
     if "flux.1-dev" in base_lower or "flux.1dev" in base_lower:
-        # Check if it's NOT already a MusePublic or known working repo
         if not base_lower.startswith("musepublic/"):
             return "MusePublic/489_ckpt_FLUX_1"
     
-    return base
+    # Return cleaned version (without @version suffix)
+    return base_clean
 
 
 def infer_default_base(model: dict) -> str | None:

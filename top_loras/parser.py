@@ -3,6 +3,122 @@ import time as _time
 import json
 import re as _re
 
+# =============================================================================
+# Base Model 替换映射表
+# 将不支持 API 或不推荐的 base model 替换为已知可用的 MusePublic 版本
+# =============================================================================
+BASE_MODEL_REPLACEMENTS = {
+    # FLUX.1-dev 系列
+    "AI-ModelScope/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "ai-modelscope/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "black-forest-labs/FLUX.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    "black-forest-labs/flux.1-dev": "MusePublic/489_ckpt_FLUX_1",
+    
+    # FLUX.1 Kontext Dev
+    "black-forest-labs/FLUX.1-Kontext-dev": "MusePublic/FLUX.1-Kontext-Dev",
+    
+    # Qwen-Image 系列
+    "Qwen/Qwen-Image": "MusePublic/Qwen-image@v1",
+    "Qwen/Qwen-Image-Edit": "MusePublic/Qwen-Image-Edit",
+    "Qwen/Qwen-Image-Edit-2509": "MusePublic/Qwen-Image-Edit",
+    
+    # SDXL 系列
+    "stabilityai/stable-diffusion-xl-base-1.0": "MusePublic/stable-diffusion-xl-base",
+    "AI-ModelScope/stable-diffusion-xl-base-1.0": "MusePublic/stable-diffusion-xl-base",
+    
+    # SD3
+    "stabilityai/stable-diffusion-3-medium": "MusePublic/stable-diffusion-3-medium",
+    "AI-ModelScope/stable-diffusion-3-medium": "MusePublic/stable-diffusion-3-medium",
+    
+    # Pony Diffusion
+    "Pony-Diffusion/pony-diffusion-v6-xl": "MusePublic/Pony_Diffusion_V6_XL_SD_XL",
+    
+    # Anything XL (万象熔炉)
+    "AI-ModelScope/anything-xl": "MusePublic/14_ckpt_SD_XL",
+}
+
+# 根据 stable_diffusion_version / vision_foundation 推断默认 base model
+# 当 LoRA 没有配置 base_models 时使用
+DEFAULT_BASE_BY_VERSION = {
+    "FLUX_1": "MusePublic/489_ckpt_FLUX_1",
+    "QWEN_IMAGE_20_B": "MusePublic/Qwen-image@v1",
+    "SD_XL": "MusePublic/stable-diffusion-xl-base",
+    "SD_3": "MusePublic/stable-diffusion-3-medium",
+    "PONY_V6": "MusePublic/Pony_Diffusion_V6_XL_SD_XL",
+}
+
+
+def normalize_base_model(base: str) -> str:
+    """Apply base model replacement rules.
+    
+    Args:
+        base: Original base model ID (may include @version suffix)
+    
+    Returns:
+        Replaced base model ID if a rule matches, otherwise original (with @version stripped)
+    """
+    if not base:
+        return base
+    
+    # Strip @version suffix for matching (e.g., "MusePublic/xxx@v1" -> "MusePublic/xxx")
+    base_clean = base.split("@")[0].strip() if "@" in base else base.strip()
+    
+    # Exact match first
+    if base_clean in BASE_MODEL_REPLACEMENTS:
+        return BASE_MODEL_REPLACEMENTS[base_clean]
+    
+    # Case-insensitive match
+    base_lower = base_clean.lower()
+    for pattern, replacement in BASE_MODEL_REPLACEMENTS.items():
+        if base_lower == pattern.lower():
+            return replacement
+    
+    # Partial match for FLUX.1-dev variations
+    if "flux.1-dev" in base_lower or "flux.1dev" in base_lower:
+        if not base_lower.startswith("musepublic/"):
+            return "MusePublic/489_ckpt_FLUX_1"
+    
+    # Return cleaned version (without @version suffix)
+    return base_clean
+
+
+def normalize_base_models(base_models: list, sd_version: str = None, vision_foundation: str = None) -> list:
+    """Normalize and fill base_models list.
+    
+    1. Apply replacement rules to each base model
+    2. If empty, infer from sd_version or vision_foundation
+    
+    Args:
+        base_models: Original base_models list
+        sd_version: stable_diffusion_version field
+        vision_foundation: vision_foundation field
+    
+    Returns:
+        Normalized base_models list
+    """
+    result = []
+    
+    # Apply replacement rules to existing base models
+    if isinstance(base_models, (list, tuple)):
+        for base in base_models:
+            if isinstance(base, str) and base.strip():
+                normalized = normalize_base_model(base.strip())
+                if normalized and normalized not in result:
+                    result.append(normalized)
+    
+    # If still empty, infer from sd_version or vision_foundation
+    if not result:
+        version_key = (sd_version or "").strip().upper()
+        foundation_key = (vision_foundation or "").strip().upper()
+        
+        # Try sd_version first, then vision_foundation
+        default_base = DEFAULT_BASE_BY_VERSION.get(version_key) or DEFAULT_BASE_BY_VERSION.get(foundation_key)
+        if default_base:
+            result.append(default_base)
+    
+    return result
+
+
 def extract_downloads(item):
     d_raw = item.get('Downloads')
     if isinstance(d_raw, (int, float)):
@@ -182,7 +298,7 @@ def parse_model_entry(item):
                 if en:
                     tags_en.append(en)
 
-    base_models = item.get('BaseModel') or []
+    base_models_raw = item.get('BaseModel') or []
     sd_version = None
     if isinstance(muse_model, dict):
         sd_version = muse_model.get('stableDiffusionVersion') or item.get('VisionFoundation')
@@ -191,6 +307,9 @@ def parse_model_entry(item):
 
     trigger_words = item.get('TriggerWords')
     vision_foundation = item.get('VisionFoundation')
+    
+    # Normalize base_models: apply replacements and fill from sd_version if empty
+    base_models = normalize_base_models(base_models_raw, sd_version, vision_foundation)
 
     raw_modelscope = extract_modelscope_url(item)
     modelscope_url = None
