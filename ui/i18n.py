@@ -90,7 +90,7 @@ TRANSLATIONS: Dict[Language, Dict[str, str]] = {
         "status_check_error": "请检查上述错误信息或尝试其他模型。",
         
         # Common API errors with friendly messages
-        "err_task_not_found": "**❌ 任务未找到 (task not found)**\n\n这通常表示 ModelScope 后端未能正确处理任务，可能原因：\n- 所选模型不支持在线推理 API\n- 模型当前不可用或负载过高\n- LoRA 与 Base 模型不兼容\n\n**建议：** 尝试选择其他模型，或稍后重试。",
+        "err_task_not_found": "**❌ 任务未找到 (task not found)**\n\n常见原因：\n1. **LoRA 缺少可用的 Base Model** — 该 LoRA 未配置有效的基础模型，或其 Base Model 不支持在线推理\n2. **模型不支持在线推理 API** — 并非所有模型都开放了 API 接口\n3. **LoRA 与 Base Model 不兼容** — LoRA 架构与 Base 不匹配\n\n**建议：**\n- 在 **API Model Override** 字段手动指定一个支持的 Base Model，如 `AI-ModelScope/stable-diffusion-xl`\n- 或选择其他已知支持 API 的 LoRA/模型",
         "err_model_not_supported": "**❌ 模型不支持 API 推理**\n\n该模型 (`{model}`) 未开放在线推理接口。\n\n**建议：** 选择官方支持的模型如 `AI-ModelScope/stable-diffusion-xl`。",
         "err_token_invalid": "**❌ Token 无效或已过期**\n\n请检查您的 API Token 是否正确。\n\n**获取新 Token：** https://modelscope.cn/my/myaccesstoken",
         "err_rate_limit": "**⏳ 请求过于频繁**\n\n您的请求被限流，请稍后再试。",
@@ -189,7 +189,7 @@ TRANSLATIONS: Dict[Language, Dict[str, str]] = {
         "status_check_error": "Please check the above error message or try another model.",
         
         # Common API errors with friendly messages
-        "err_task_not_found": "**❌ Task Not Found**\n\nThe ModelScope backend failed to process this task. Possible causes:\n- The selected model does not support online inference API\n- Model is currently unavailable or overloaded\n- LoRA is incompatible with the base model\n\n**Suggestion:** Try a different model or retry later.",
+        "err_task_not_found": "**❌ Task Not Found**\n\nCommon causes:\n1. **LoRA missing a valid Base Model** — This LoRA has no configured base model, or its base does not support online inference\n2. **Model does not support online inference API** — Not all models have API endpoints enabled\n3. **LoRA incompatible with Base Model** — Architecture mismatch between LoRA and base\n\n**Suggestions:**\n- Manually specify a supported Base Model in the **API Model Override** field, e.g. `AI-ModelScope/stable-diffusion-xl`\n- Or try a different LoRA/model known to support API",
         "err_model_not_supported": "**❌ Model Does Not Support API Inference**\n\nThis model (`{model}`) does not have an online inference endpoint.\n\n**Suggestion:** Use an officially supported model like `AI-ModelScope/stable-diffusion-xl`.",
         "err_token_invalid": "**❌ Token Invalid or Expired**\n\nPlease check if your API Token is correct.\n\n**Get a new Token:** https://modelscope.cn/my/myaccesstoken",
         "err_rate_limit": "**⏳ Rate Limited**\n\nToo many requests. Please wait and try again.",
