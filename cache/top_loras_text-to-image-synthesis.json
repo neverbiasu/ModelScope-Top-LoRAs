@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1765682635.2264538,
+  "_cached_at": 1765760159.550057,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61368,
+      "downloads": 61370,
       "likes": 235,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38582,
+      "downloads": 38583,
       "likes": 74,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -100,6 +100,38 @@
       "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0"
     },
     {
+      "id": "LiblibAI/AWPortraitCN",
+      "title_cn": "LiblibAI/AWPortraitCN",
+      "title_en": "AWPortraitCN",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
+      "user_name": "哩布哩布AI",
+      "user_profile": "https://modelscope.cn/profile/1004206",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
+      "downloads": 15840,
+      "likes": 47,
+      "license": "other",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:03Z",
+      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
+    },
+    {
       "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
       "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
       "title_en": "Qwen-Image-Edit-F2P",
@@ -109,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 7546,
+      "downloads": 7590,
       "likes": 100,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -132,6 +164,30 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-10-17T10:14:57Z",
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1"
+    },
+    {
+      "id": "ByteDance/Hyper-SD",
+      "title_cn": null,
+      "title_en": "Hyper-SD",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/b6509fc6-ab2e-4848-864f-97ac0203185d.png",
+      "user_name": "字节跳动",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 4699,
+      "likes": 33,
+      "license": "",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-02-26T08:32:37Z",
+      "modelscope_url": "https://modelscope.cn/ByteDance/Hyper-SD"
     },
     {
       "id": "yiwanji/bigBreastsAdpterV1",
@@ -207,7 +263,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 1993,
+      "downloads": 2017,
       "likes": 207,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -294,38 +350,30 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-highresfix?revision=v1.0"
     },
     {
-      "id": "Ricky520/Flux.1-HD-SYLM-V6",
-      "title_cn": "Flux.1高清-石原里美-V6",
-      "title_en": "Flux.1-HD-SYLM-V6",
-      "author": "Ricky520",
-      "avatar": "https://resouces.modelscope.cn/avatar/e2b18dcb-0d9f-49f4-99d5-74a8da0a2e86.jpeg",
-      "user_name": "Ricky520",
-      "user_profile": "https://modelscope.cn/profile/555575",
-      "cover_url": "https://resources.modelscope.cn/cover-images/188559e5-da78-4710-b3e6-674e05526e8f.png",
-      "cover_local": "cache/images/text-to-image-synthesis/Flux.1-HD-SYLM-V6.png",
-      "downloads": 1050,
+      "id": "JokerSX/QW2509_FixAI_20Re20EP_v1",
+      "title_cn": "千问2509修复AI第一版",
+      "title_en": "QW2509_FixAI_20Re20EP_v1",
+      "author": "JokerSX",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "JokerSX",
+      "user_profile": "https://modelscope.cn/profile/1655643",
+      "cover_url": "https://modelscope.cn/models/modelscope/modelscope_aigc_default_logo/resolve/master/aigc_default_logo.png",
+      "cover_local": "cache/images/text-to-image-synthesis/QW2509_FixAI_20Re20EP_v1.png",
+      "downloads": 741,
       "likes": 0,
       "license": "Apache License 2.0",
-      "tags_cn": [
-        "CG幻想",
-        "女生",
-        "角色加强"
-      ],
-      "tags_en": [
-        "CG Fantasy",
-        "Woman",
-        "Character Strong"
-      ],
+      "tags_cn": [],
+      "tags_en": [],
       "base_models": [
-        "MusePublic/flux-high-res"
+        "MusePublic/Qwen-Image-Edit"
       ],
-      "stable_diffusion_version": "FLUX_1",
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
       "trigger_words": [
-        "HD_SYLM"
+        ""
       ],
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-12-11T10:50:52Z",
-      "modelscope_url": "https://modelscope.cn/Ricky520/Flux.1-HD-SYLM-V6?revision=20251210091606"
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-12-13T13:11:13Z",
+      "modelscope_url": "https://modelscope.cn/JokerSX/QW2509_FixAI_20Re20EP_v1?revision=20251213211103"
     },
     {
       "id": "KookYan/Kook_xieshi_Kook_Qwen",
@@ -369,7 +417,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 704,
+      "downloads": 706,
       "likes": 7,
       "license": "openrail++",
       "tags_cn": [],
@@ -393,7 +441,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 636,
+      "downloads": 644,
       "likes": 58,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -425,7 +473,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 561,
+      "downloads": 577,
       "likes": 16,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -438,6 +486,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-16T16:30:34Z",
       "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
+    },
+    {
+      "id": "AI-ModelScope/pixel_art_style_lora_z_image_turbo",
+      "title_cn": null,
+      "title_en": "pixel_art_style_lora_z_image_turbo",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 559,
+      "likes": 2,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Tongyi-MAI/Z-Image-Turbo"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-30T18:12:26Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
     },
     {
       "id": "fulan2015/Fulan_shuguang_majicflus_V1",
@@ -474,30 +546,6 @@
       "modelscope_url": "https://modelscope.cn/fulan2015/Fulan_shuguang_majicflus_V1?revision=20250325165405"
     },
     {
-      "id": "AI-ModelScope/pixel_art_style_lora_z_image_turbo",
-      "title_cn": null,
-      "title_en": "pixel_art_style_lora_z_image_turbo",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 472,
-      "likes": 2,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Tongyi-MAI/Z-Image-Turbo"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-30T18:12:26Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
-    },
-    {
       "id": "WANGMOON/qwen.pretty.v5",
       "title_cn": "麦橘王沐美人.v5",
       "title_en": "qwen.pretty.v5",
@@ -507,7 +555,7 @@
       "user_profile": "https://modelscope.cn/profile/1148327",
       "cover_url": "https://resouces.modelscope.cn/cover-images/0fdda2c0-e8ad-4268-b682-24bc633b5f1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/qwen.pretty.v5.png",
-      "downloads": 463,
+      "downloads": 464,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -560,70 +608,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-05-14T17:25:12Z",
       "modelscope_url": "https://modelscope.cn/Rainwyu/DouBaoFlux?revision=ckpt-10"
-    },
-    {
-      "id": "wmhovo/In-Context-ppt-templates",
-      "title_cn": "ppt包装设计",
-      "title_en": "In-Context-ppt-templates",
-      "author": "wmhovo",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "wmhovo",
-      "user_profile": "https://modelscope.cn/profile/1097485",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/7dde70c8-e379-47ba-9697-fa84a8784e31.png",
-      "cover_local": "cache/images/text-to-image-synthesis/In-Context-ppt-templates.png",
-      "downloads": 446,
-      "likes": 5,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "扁平抽象",
-        "食物",
-        "画面控制"
-      ],
-      "tags_en": [
-        "Flat Abstraction",
-        "Food",
-        "Picture Control"
-      ],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:07Z",
-      "modelscope_url": "https://modelscope.cn/wmhovo/In-Context-ppt-templates?revision=v1.0"
-    },
-    {
-      "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
-      "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
-      "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
-      "author": "qiyuanai",
-      "avatar": "https://resouces.modelscope.cn/avatar/c94b2986-9f13-49fb-a886-7f6603aa9592.png",
-      "user_name": "qiyuanai",
-      "user_profile": "https://modelscope.cn/profile/1605842",
-      "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
-      "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 414,
-      "likes": 5,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "插画设计",
-        "服饰"
-      ],
-      "tags_en": [
-        "Illustration Design",
-        "Clothing"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "disassemble clothes"
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-12-11T04:34:14Z",
-      "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
     }
   ]
 }
