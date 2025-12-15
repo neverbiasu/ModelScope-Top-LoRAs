@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1765760159.550057,
+  "_cached_at": 1765769116.3694034,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 7590,
+      "downloads": 7593,
       "likes": 100,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4699,
+      "downloads": 4704,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -263,7 +263,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2017,
+      "downloads": 2021,
       "likes": 207,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -295,7 +295,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1807,
+      "downloads": 1808,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -327,7 +327,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1615,
+      "downloads": 1616,
       "likes": 64,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -417,7 +417,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 706,
+      "downloads": 708,
       "likes": 7,
       "license": "openrail++",
       "tags_cn": [],
@@ -473,7 +473,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 577,
+      "downloads": 579,
       "likes": 16,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -497,7 +497,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 559,
+      "downloads": 563,
       "likes": 2,
       "license": "apache-2.0",
       "tags_cn": [],
