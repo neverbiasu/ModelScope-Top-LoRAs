@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1765846449.8428206,
+  "_cached_at": 1765855165.6393762,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61380,
+      "downloads": 61387,
       "likes": 235,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 7635,
+      "downloads": 7643,
       "likes": 100,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4714,
+      "downloads": 4716,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -200,7 +200,7 @@
       "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
       "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
       "downloads": 2374,
-      "likes": 60,
+      "likes": 61,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -263,7 +263,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2030,
+      "downloads": 2031,
       "likes": 207,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -327,7 +327,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1618,
+      "downloads": 1620,
       "likes": 64,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -374,6 +374,40 @@
       "modelscope_url": "https://modelscope.cn/iic/In-Context-LoRA"
     },
     {
+      "id": "Zoeeeeeee/qianwenmeiren10",
+      "title_cn": "千问美人",
+      "title_en": "qianwenmeiren10",
+      "author": "Zoeeeeeee",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "Zoeeeeeee",
+      "user_profile": "https://modelscope.cn/profile/1588317",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7804128c-d731-4770-8718-21631a6afd5b.png",
+      "cover_local": "cache/images/text-to-image-synthesis/qianwenmeiren10.png",
+      "downloads": 882,
+      "likes": 0,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "植物",
+        "角色加强"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Plant",
+        "Character Strong"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        "qianwenmeiren"
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-12-15T15:38:33Z",
+      "modelscope_url": "https://modelscope.cn/Zoeeeeeee/qianwenmeiren10?revision=20251215233819"
+    },
+    {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug",
       "title_cn": "美学提升 - Kontext 图像编辑 LoRA",
       "title_en": "FLUX.1-Kontext-dev-lora-ArtAug",
@@ -415,7 +449,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
-      "downloads": 727,
+      "downloads": 728,
       "likes": 41,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -471,7 +505,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 649,
+      "downloads": 651,
       "likes": 58,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -503,7 +537,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 616,
+      "downloads": 623,
       "likes": 2,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -528,7 +562,7 @@
       "cover_url": null,
       "cover_local": null,
       "downloads": 586,
-      "likes": 16,
+      "likes": 17,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -574,38 +608,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-03-25T08:54:15Z",
       "modelscope_url": "https://modelscope.cn/fulan2015/Fulan_shuguang_majicflus_V1?revision=20250325165405"
-    },
-    {
-      "id": "WANGMOON/qwen.pretty.v5",
-      "title_cn": "麦橘王沐美人.v5",
-      "title_en": "qwen.pretty.v5",
-      "author": "WANGMOON",
-      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
-      "user_name": "WANGMOON",
-      "user_profile": "https://modelscope.cn/profile/1148327",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/0fdda2c0-e8ad-4268-b682-24bc633b5f1a.png",
-      "cover_local": "cache/images/text-to-image-synthesis/qwen.pretty.v5.png",
-      "downloads": 466,
-      "likes": 56,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-10-16T17:43:55Z",
-      "modelscope_url": "https://modelscope.cn/WANGMOON/qwen.pretty.v5?revision=ckpt-20"
     }
   ]
 }
