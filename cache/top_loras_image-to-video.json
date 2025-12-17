@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1765855169.1281343,
+  "_cached_at": 1765932722.6008303,
   "results": [
     {
       "id": "morphic/Wan2.2-frames-to-video",
@@ -197,6 +197,40 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA"
     },
     {
+      "id": "qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "title_cn": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "title_en": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
+      "author": "qsdq2423432",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "qsdq2423432",
+      "user_profile": "https://modelscope.cn/profile/966199",
+      "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
+      "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
+      "downloads": 39,
+      "likes": 2,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "女生",
+        "画面控制"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Woman",
+        "Picture Control"
+      ],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": [
+        "l1v3w4llp4p3r"
+      ],
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2025-11-30T07:53:13Z",
+      "modelscope_url": "https://modelscope.cn/qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26?revision=20251130155256"
+    },
+    {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -244,40 +278,6 @@
       "vision_foundation": "",
       "updated_at": "2025-10-01T06:34:09Z",
       "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
-    },
-    {
-      "id": "qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "title_cn": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "title_en": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
-      "author": "qsdq2423432",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "qsdq2423432",
-      "user_profile": "https://modelscope.cn/profile/966199",
-      "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
-      "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 36,
-      "likes": 2,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "女生",
-        "画面控制"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Woman",
-        "Picture Control"
-      ],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": [
-        "l1v3w4llp4p3r"
-      ],
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2025-11-30T07:53:13Z",
-      "modelscope_url": "https://modelscope.cn/qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26?revision=20251130155256"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
