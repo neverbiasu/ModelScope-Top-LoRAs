@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766374044.9522343,
+  "_cached_at": 1766451213.942963,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61425,
+      "downloads": 61426,
       "likes": 237,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38588,
+      "downloads": 38590,
       "likes": 75,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15848,
+      "downloads": 15849,
       "likes": 47,
       "license": "other",
       "tags_cn": [
@@ -141,8 +141,8 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 7938,
-      "likes": 105,
+      "downloads": 8012,
+      "likes": 106,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4741,
+      "downloads": 4746,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": "https://modelscope.cn/profile/409692",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8aa7fe25-fd6e-4545-a58a-34237d4ed5b0.png",
       "cover_local": "cache/images/text-to-image-synthesis/chengxuyuan.png",
-      "downloads": 3521,
+      "downloads": 3523,
       "likes": 49,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -297,7 +297,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2071,
+      "downloads": 2075,
       "likes": 209,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -329,7 +329,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1819,
+      "downloads": 1820,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -361,7 +361,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1651,
+      "downloads": 1655,
       "likes": 65,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -382,6 +382,40 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-07-07T07:30:04Z",
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-highresfix?revision=v1.0"
+    },
+    {
+      "id": "DonRat/MAJICFLUS_SuperChinesestyleheongsam",
+      "title_cn": "MAJICFLUS_麦橘超国风旗袍",
+      "title_en": "MAJICFLUS_SuperChinesestyleheongsam",
+      "author": "DonRat",
+      "avatar": "https://resouces.modelscope.cn/avatar/5bacce66-3ffc-4721-ae15-527cea330e32.jpg",
+      "user_name": "DonRat",
+      "user_profile": "https://modelscope.cn/profile/1148323",
+      "cover_url": "https://www.modelscope.cn/models/DonRat/MAJICFLUS_SuperChinesestyleheongsam/resolve/master/_cover_images_/342508f8-1302-46f2-bbcd-08b703c19954.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS_SuperChinesestyleheongsam.png",
+      "downloads": 1286,
+      "likes": 32,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "qipao"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/DonRat/MAJICFLUS_SuperChinesestyleheongsam?revision=v1.0"
     },
     {
       "id": "zzzz2222/zjz",
@@ -427,7 +461,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 943,
+      "downloads": 994,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -451,7 +485,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 841,
+      "downloads": 843,
       "likes": 26,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -483,7 +517,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
-      "downloads": 745,
+      "downloads": 748,
       "likes": 43,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -515,8 +549,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 692,
-      "likes": 60,
+      "downloads": 697,
+      "likes": 61,
       "license": "Apache License 2.0",
       "tags_cn": [
         "人物加强",
@@ -547,7 +581,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 631,
+      "downloads": 635,
       "likes": 17,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -562,68 +596,38 @@
       "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
     },
     {
-      "id": "WANGMOON/qwen.pretty.v5",
-      "title_cn": "麦橘王沐美人.v5",
-      "title_en": "qwen.pretty.v5",
-      "author": "WANGMOON",
-      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
-      "user_name": "WANGMOON",
-      "user_profile": "https://modelscope.cn/profile/1148327",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/0fdda2c0-e8ad-4268-b682-24bc633b5f1a.png",
-      "cover_local": "cache/images/text-to-image-synthesis/qwen.pretty.v5.png",
-      "downloads": 473,
-      "likes": 57,
+      "id": "cimashiro/qwen-capybara-muse-demo",
+      "title_cn": "千问卡皮巴拉-表情包创意设计挑战赛-Muse Demo",
+      "title_en": "qwen-capybara-muse-demo",
+      "author": "cimashiro",
+      "avatar": "https://resouces.modelscope.cn/avatar/e5bfc66b-a62f-48e4-8227-20ea352728e9.png",
+      "user_name": "cimashiro",
+      "user_profile": "https://modelscope.cn/profile/571216",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/00796cbc-89f2-43b5-9fc0-3f9bac349f73.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/qwen-capybara-muse-demo.jpg",
+      "downloads": 580,
+      "likes": 3,
       "license": "Apache License 2.0",
       "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
+        "插画设计",
+        "动物",
+        "角色加强"
       ],
       "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-10-16T17:43:55Z",
-      "modelscope_url": "https://modelscope.cn/WANGMOON/qwen.pretty.v5?revision=ckpt-20"
-    },
-    {
-      "id": "Rainwyu/DouBaoFlux",
-      "title_cn": "豆包Flux",
-      "title_en": "DouBaoFlux",
-      "author": "Rainwyu",
-      "avatar": "https://resouces.modelscope.cn/avatar/f8600173-d07b-4685-9e22-64842a541672.png",
-      "user_name": "Rainwyu",
-      "user_profile": "https://modelscope.cn/profile/1333906",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/3c191cce-24f5-4593-9562-709b3a24481d.png",
-      "cover_local": "cache/images/text-to-image-synthesis/DouBaoFlux.png",
-      "downloads": 469,
-      "likes": 4,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "3d立体",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "3D",
-        "Character Enhancement",
-        "Woman"
+        "Illustration Design",
+        "Animal",
+        "Character Strong"
       ],
       "base_models": [
         "MusePublic/489_ckpt_FLUX_1"
       ],
       "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
+      "trigger_words": [
+        "qwen"
+      ],
       "vision_foundation": "FLUX_1",
-      "updated_at": "2025-05-14T17:25:12Z",
-      "modelscope_url": "https://modelscope.cn/Rainwyu/DouBaoFlux?revision=ckpt-10"
+      "updated_at": "2025-03-07T08:19:01Z",
+      "modelscope_url": "https://modelscope.cn/cimashiro/qwen-capybara-muse-demo?revision=v1.0"
     }
   ]
 }
