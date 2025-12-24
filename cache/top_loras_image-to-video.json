@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766460099.4109821,
+  "_cached_at": 1766537603.740795,
   "results": [
     {
       "id": "morphic/Wan2.2-frames-to-video",
@@ -133,7 +133,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 51,
+      "downloads": 52,
       "likes": 3,
       "license": "Apache License 2.0",
       "tags_cn": [
