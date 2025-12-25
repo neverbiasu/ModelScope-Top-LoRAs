@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766624014.2290268,
+  "_cached_at": 1766632903.8645048,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38591,
+      "downloads": 38592,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8161,
+      "downloads": 8163,
       "likes": 107,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -329,7 +329,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1823,
+      "downloads": 1826,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -427,7 +427,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1092,
+      "downloads": 1097,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -518,7 +518,7 @@
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
       "downloads": 751,
-      "likes": 44,
+      "likes": 45,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -572,6 +572,32 @@
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_zshx_v2?revision=20251111002109"
     },
     {
+      "id": "Devilworld/flj3",
+      "title_cn": "flj3",
+      "title_en": "flj3",
+      "author": "Devilworld",
+      "avatar": "https://resouces.modelscope.cn/avatar/3c950a1b-0c14-46a4-9c4e-d82b5f197f41.png",
+      "user_name": "Devilworld",
+      "user_profile": "https://modelscope.cn/profile/522086",
+      "cover_url": "https://resources.modelscope.cn/cover-images/dc9b8231-dd26-411c-be70-e6600302a708.png",
+      "cover_local": "cache/images/text-to-image-synthesis/flj3.png",
+      "downloads": 688,
+      "likes": 0,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        ""
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-12-25T01:23:07Z",
+      "modelscope_url": "https://modelscope.cn/Devilworld/flj3?revision=20251225092253"
+    },
+    {
       "id": "eigen-ai-labs/eigen-banana-qwen-image-edit",
       "title_cn": null,
       "title_en": "eigen-banana-qwen-image-edit",
@@ -594,40 +620,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-16T16:30:34Z",
       "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
-    },
-    {
-      "id": "ches2010/asian_girl_Z05",
-      "title_cn": "亚洲女孩Z05",
-      "title_en": "asian_girl_Z05",
-      "author": "ches2010",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "ches2010",
-      "user_profile": "https://modelscope.cn/profile/1157506",
-      "cover_url": "https://resources.modelscope.cn/cover-images/42e7e695-9e27-4a1b-bfe7-a696905ecc44.png",
-      "cover_local": "cache/images/text-to-image-synthesis/asian_girl_Z05.png",
-      "downloads": 644,
-      "likes": 0,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "服饰",
-        "角色加强"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Clothing",
-        "Character Strong"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "薇瑾"
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-12-18T15:35:21Z",
-      "modelscope_url": "https://modelscope.cn/ches2010/asian_girl_Z05?revision=20251218233510"
     }
   ]
 }
