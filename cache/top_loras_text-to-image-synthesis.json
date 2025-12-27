@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766719195.070007,
+  "_cached_at": 1766796737.8971186,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61457,
+      "downloads": 61459,
       "likes": 237,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38594,
+      "downloads": 38597,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -75,8 +75,8 @@
       "user_profile": "https://modelscope.cn/profile/1148327",
       "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
       "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
-      "downloads": 16497,
-      "likes": 86,
+      "downloads": 16500,
+      "likes": 87,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15853,
+      "downloads": 15858,
       "likes": 48,
       "license": "other",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8227,
+      "downloads": 8273,
       "likes": 107,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4764,
+      "downloads": 4781,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": "https://modelscope.cn/profile/409692",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8aa7fe25-fd6e-4545-a58a-34237d4ed5b0.png",
       "cover_local": "cache/images/text-to-image-synthesis/chengxuyuan.png",
-      "downloads": 3525,
+      "downloads": 3526,
       "likes": 49,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -233,7 +233,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
       "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
-      "downloads": 2383,
+      "downloads": 2389,
       "likes": 61,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -265,7 +265,7 @@
       "user_profile": "https://modelscope.cn/profile/467646",
       "cover_url": "https://resouces.modelscope.cn/cover-images/943342ba-8c5a-43e5-bc75-ffc196328715.png",
       "cover_local": "cache/images/text-to-image-synthesis/MV001.png",
-      "downloads": 2181,
+      "downloads": 2182,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -297,7 +297,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2099,
+      "downloads": 2104,
       "likes": 211,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -329,7 +329,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1830,
+      "downloads": 1833,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -361,7 +361,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1664,
+      "downloads": 1665,
       "likes": 65,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -427,7 +427,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1143,
+      "downloads": 1186,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -440,6 +440,32 @@
       "vision_foundation": "",
       "updated_at": "2025-11-30T18:12:26Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
+    },
+    {
+      "id": "Devilworld/flj3",
+      "title_cn": "flj3",
+      "title_en": "flj3",
+      "author": "Devilworld",
+      "avatar": "https://resouces.modelscope.cn/avatar/3c950a1b-0c14-46a4-9c4e-d82b5f197f41.png",
+      "user_name": "Devilworld",
+      "user_profile": "https://modelscope.cn/profile/522086",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7592201e-0158-4ec9-9077-854fed43fd87.png",
+      "cover_local": "cache/images/text-to-image-synthesis/flj3.png",
+      "downloads": 998,
+      "likes": 0,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        ""
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-12-26T21:20:48Z",
+      "modelscope_url": "https://modelscope.cn/Devilworld/flj3?revision=20251226213301"
     },
     {
       "id": "tsukiyomishion/Mio-ChenkinNoob-XL-V0.1",
@@ -485,7 +511,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 846,
+      "downloads": 847,
       "likes": 26,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -506,32 +532,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-07-04T09:55:50Z",
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug?revision=v1.0"
-    },
-    {
-      "id": "Devilworld/flj3",
-      "title_cn": "flj3",
-      "title_en": "flj3",
-      "author": "Devilworld",
-      "avatar": "https://resouces.modelscope.cn/avatar/3c950a1b-0c14-46a4-9c4e-d82b5f197f41.png",
-      "user_name": "Devilworld",
-      "user_profile": "https://modelscope.cn/profile/522086",
-      "cover_url": "https://resources.modelscope.cn/cover-images/0f4f2423-ec52-4cbb-ad51-1ffbff11daf8.png",
-      "cover_local": "cache/images/text-to-image-synthesis/flj3.png",
-      "downloads": 837,
-      "likes": 0,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        ""
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-12-25T21:28:41Z",
-      "modelscope_url": "https://modelscope.cn/Devilworld/flj3?revision=20251226052823"
     },
     {
       "id": "KookYan/Kook_xieshi_Kook_Qwen",
@@ -575,7 +575,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 740,
+      "downloads": 742,
       "likes": 7,
       "license": "openrail++",
       "tags_cn": [],
@@ -599,7 +599,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 715,
+      "downloads": 718,
       "likes": 64,
       "license": "Apache License 2.0",
       "tags_cn": [
