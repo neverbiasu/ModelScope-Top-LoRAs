@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766883624.6930122,
+  "_cached_at": 1766893339.3596978,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8322,
+      "downloads": 8328,
       "likes": 108,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4785,
+      "downloads": 4789,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -395,7 +395,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1228,
+      "downloads": 1235,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -511,7 +511,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
-      "downloads": 752,
+      "downloads": 753,
       "likes": 45,
       "license": "Apache License 2.0",
       "tags_cn": [
