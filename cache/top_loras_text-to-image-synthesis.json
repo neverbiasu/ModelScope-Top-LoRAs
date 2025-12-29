@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1766969912.8388453,
+  "_cached_at": 1766979802.7192783,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61468,
+      "downloads": 61470,
       "likes": 237,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8378,
+      "downloads": 8386,
       "likes": 108,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 8151,
+      "downloads": 8153,
       "likes": 5,
       "license": "other",
       "tags_cn": [],
@@ -223,7 +223,7 @@
       "user_profile": "https://modelscope.cn/profile/409692",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8aa7fe25-fd6e-4545-a58a-34237d4ed5b0.png",
       "cover_local": "cache/images/text-to-image-synthesis/chengxuyuan.png",
-      "downloads": 3526,
+      "downloads": 3527,
       "likes": 49,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -289,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2112,
+      "downloads": 2114,
       "likes": 213,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -419,7 +419,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1278,
+      "downloads": 1282,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -432,30 +432,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-30T18:12:26Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
-    },
-    {
-      "id": "iic/In-Context-LoRA",
-      "title_cn": null,
-      "title_en": "In-Context-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/86fc4b9c-4548-463c-8cbb-f37f68b87141.png",
-      "user_name": "通义实验室",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 1190,
-      "likes": 20,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2024-11-12T01:34:34Z",
-      "modelscope_url": "https://modelscope.cn/iic/In-Context-LoRA"
     },
     {
       "id": "shutaoyuan/Qwen-2.5Danime-v1.01-4",
@@ -582,28 +558,60 @@
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_xieshi_Kook_Qwen?revision=20250814004023"
     },
     {
-      "id": "AI-ModelScope/lcm-lora-sdxl",
+      "id": "KookYan/Kook_Qwen_zshx_v2",
+      "title_cn": "Kook_Qwen_真实幻想V2",
+      "title_en": "Kook_Qwen_zshx_v2",
+      "author": "KookYan",
+      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
+      "user_name": "KookYan",
+      "user_profile": "https://modelscope.cn/profile/1326437",
+      "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
+      "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
+      "downloads": 724,
+      "likes": 67,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "人物加强",
+        "CG幻想",
+        "女生"
+      ],
+      "tags_en": [
+        "Character Enhancement",
+        "CG Fantasy",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image@v1"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-11-12T12:48:59Z",
+      "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_zshx_v2?revision=20251111002109"
+    },
+    {
+      "id": "eigen-ai-labs/eigen-banana-qwen-image-edit",
       "title_cn": null,
-      "title_en": "lcm-lora-sdxl",
-      "author": "huangjintao",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
+      "title_en": "eigen-banana-qwen-image-edit",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/90419310-0d22-443e-b26d-33276dd7f709.webp",
+      "user_name": "eigen-ai-labs",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 747,
-      "likes": 7,
-      "license": "openrail++",
+      "downloads": 661,
+      "likes": 17,
+      "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "MusePublic/stable-diffusion-xl-base"
+        "MusePublic/Qwen-Image-Edit"
       ],
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2024-05-17T02:41:06Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/lcm-lora-sdxl"
+      "updated_at": "2025-11-16T16:30:34Z",
+      "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
     }
   ]
 }
