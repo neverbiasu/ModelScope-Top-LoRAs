@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1767056034.5136719,
+  "_cached_at": 1767064960.7846508,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61475,
+      "downloads": 61478,
       "likes": 237,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -75,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/1148327",
       "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
       "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
-      "downloads": 16501,
+      "downloads": 16502,
       "likes": 87,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15860,
+      "downloads": 15862,
       "likes": 48,
       "license": "other",
       "tags_cn": [
@@ -141,8 +141,8 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8448,
-      "likes": 108,
+      "downloads": 8456,
+      "likes": 110,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 8163,
+      "downloads": 8165,
       "likes": 5,
       "license": "other",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4796,
+      "downloads": 4797,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -289,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/467646",
       "cover_url": "https://resouces.modelscope.cn/cover-images/943342ba-8c5a-43e5-bc75-ffc196328715.png",
       "cover_local": "cache/images/text-to-image-synthesis/MV001.png",
-      "downloads": 2184,
+      "downloads": 2185,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -321,7 +321,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2116,
+      "downloads": 2117,
       "likes": 214,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -417,7 +417,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1325,
+      "downloads": 1336,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -464,6 +464,30 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-03-07T08:19:08Z",
       "modelscope_url": "https://modelscope.cn/DonRat/MAJICFLUS_SuperChinesestyleheongsam?revision=v1.0"
+    },
+    {
+      "id": "iic/In-Context-LoRA",
+      "title_cn": null,
+      "title_en": "In-Context-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/86fc4b9c-4548-463c-8cbb-f37f68b87141.png",
+      "user_name": "通义实验室",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 1194,
+      "likes": 20,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2024-11-12T01:34:34Z",
+      "modelscope_url": "https://modelscope.cn/iic/In-Context-LoRA"
     },
     {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug",
@@ -539,7 +563,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 731,
+      "downloads": 732,
       "likes": 67,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -584,38 +608,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-16T16:30:34Z",
       "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
-    },
-    {
-      "id": "Rainwyu/DouBaoFlux",
-      "title_cn": "豆包Flux",
-      "title_en": "DouBaoFlux",
-      "author": "Rainwyu",
-      "avatar": "https://resouces.modelscope.cn/avatar/f8600173-d07b-4685-9e22-64842a541672.png",
-      "user_name": "Rainwyu",
-      "user_profile": "https://modelscope.cn/profile/1333906",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/3c191cce-24f5-4593-9562-709b3a24481d.png",
-      "cover_local": "cache/images/text-to-image-synthesis/DouBaoFlux.png",
-      "downloads": 480,
-      "likes": 4,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "3d立体",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "3D",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-05-14T17:25:12Z",
-      "modelscope_url": "https://modelscope.cn/Rainwyu/DouBaoFlux?revision=ckpt-10"
     }
   ]
 }
