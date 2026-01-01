@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1767229224.9932353,
+  "_cached_at": 1767239079.5887392,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8589,
+      "downloads": 8599,
       "likes": 111,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 8180,
+      "downloads": 8181,
       "likes": 5,
       "license": "other",
       "tags_cn": [],
@@ -417,7 +417,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1412,
+      "downloads": 1414,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
