@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1767660890.968964,
+  "_cached_at": 1767669841.919453,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 8890,
+      "downloads": 8895,
       "likes": 113,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4913,
+      "downloads": 4914,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -263,7 +263,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2131,
+      "downloads": 2134,
       "likes": 216,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -359,7 +359,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1611,
+      "downloads": 1615,
       "likes": 3,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -579,7 +579,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 673,
+      "downloads": 674,
       "likes": 17,
       "license": "apache-2.0",
       "tags_cn": [],
