@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1767920144.9064858,
+  "_cached_at": 1767929123.1373923,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 9056,
+      "downloads": 9061,
       "likes": 114,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4972,
+      "downloads": 4977,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -288,6 +288,30 @@
       "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
     },
     {
+      "id": "Wuli-Art/Qwen-Image-2512-Turbo-LoRA",
+      "title_cn": null,
+      "title_en": "Qwen-Image-2512-Turbo-LoRA",
+      "author": "cimashiro",
+      "avatar": "https://resources.modelscope.cn/avatar/9bf54a8a-64a9-4669-b5d6-70c6434a3091.jpg",
+      "user_name": "Wuli-Art",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 1853,
+      "likes": 18,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Qwen/Qwen-Image-2512"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-01-08T19:32:39Z",
+      "modelscope_url": "https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA"
+    },
+    {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting",
       "title_cn": "图像外扩 - Kontext 图像编辑 LoRA",
       "title_en": "FLUX.1-Kontext-dev-lora-SuperOutpainting",
@@ -320,30 +344,6 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting?revision=v1.2"
     },
     {
-      "id": "Wuli-Art/Qwen-Image-2512-Turbo-LoRA",
-      "title_cn": null,
-      "title_en": "Qwen-Image-2512-Turbo-LoRA",
-      "author": "cimashiro",
-      "avatar": "https://resources.modelscope.cn/avatar/9bf54a8a-64a9-4669-b5d6-70c6434a3091.jpg",
-      "user_name": "Wuli-Art",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 1777,
-      "likes": 18,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Qwen/Qwen-Image-2512"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-01-08T19:32:39Z",
-      "modelscope_url": "https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA"
-    },
-    {
       "id": "AI-ModelScope/pixel_art_style_lora_z_image_turbo",
       "title_cn": null,
       "title_en": "pixel_art_style_lora_z_image_turbo",
@@ -353,7 +353,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1760,
+      "downloads": 1770,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
