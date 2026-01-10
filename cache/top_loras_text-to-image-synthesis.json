@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1767929123.1373923,
+  "_cached_at": 1768006430.2703195,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,8 +11,8 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61524,
-      "likes": 240,
+      "downloads": 61529,
+      "likes": 241,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38616,
+      "downloads": 38630,
       "likes": 77,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -75,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/1148327",
       "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
       "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
-      "downloads": 16505,
+      "downloads": 16506,
       "likes": 87,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15875,
+      "downloads": 15877,
       "likes": 49,
       "license": "other",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 9061,
+      "downloads": 9109,
       "likes": 114,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4977,
+      "downloads": 4990,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -234,7 +234,7 @@
       "cover_url": "https://resouces.modelscope.cn/cover-images/7362cc4a-6a48-40d7-861a-56a7c477f78b.png",
       "cover_local": "cache/images/text-to-image-synthesis/liaocao.png",
       "downloads": 2246,
-      "likes": 54,
+      "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
@@ -256,6 +256,30 @@
       "modelscope_url": "https://modelscope.cn/cancel13/liaocao?revision=ckpt-20"
     },
     {
+      "id": "Wuli-Art/Qwen-Image-2512-Turbo-LoRA",
+      "title_cn": null,
+      "title_en": "Qwen-Image-2512-Turbo-LoRA",
+      "author": "cimashiro",
+      "avatar": "https://resources.modelscope.cn/avatar/9bf54a8a-64a9-4669-b5d6-70c6434a3091.jpg",
+      "user_name": "Wuli-Art",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 2173,
+      "likes": 20,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Qwen/Qwen-Image-2512"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-01-08T19:32:39Z",
+      "modelscope_url": "https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA"
+    },
+    {
       "id": "merjic/majicbeauty-qwen1",
       "title_cn": "麦橘千问美人",
       "title_en": "majicbeauty-qwen1",
@@ -265,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2142,
+      "downloads": 2143,
       "likes": 217,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -286,30 +310,6 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-08-24T15:03:17Z",
       "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
-    },
-    {
-      "id": "Wuli-Art/Qwen-Image-2512-Turbo-LoRA",
-      "title_cn": null,
-      "title_en": "Qwen-Image-2512-Turbo-LoRA",
-      "author": "cimashiro",
-      "avatar": "https://resources.modelscope.cn/avatar/9bf54a8a-64a9-4669-b5d6-70c6434a3091.jpg",
-      "user_name": "Wuli-Art",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 1853,
-      "likes": 18,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Qwen/Qwen-Image-2512"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-01-08T19:32:39Z",
-      "modelscope_url": "https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA"
     },
     {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting",
@@ -353,7 +353,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1770,
+      "downloads": 1808,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -377,7 +377,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1681,
+      "downloads": 1682,
       "likes": 64,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -441,7 +441,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/a7790e20-5471-4be2-82e4-53baa8e688b8.png",
       "cover_local": "cache/images/text-to-image-synthesis/danbao-duanzhuang-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 833,
+      "downloads": 834,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -473,7 +473,7 @@
       "user_profile": "https://modelscope.cn/profile/291838",
       "cover_url": "https://resources.modelscope.cn/cover-images/e4c4efee-4173-4580-ab3d-b997ebb21209.png",
       "cover_local": "cache/images/text-to-image-synthesis/zg.png",
-      "downloads": 816,
+      "downloads": 817,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -507,7 +507,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/419d1dbb-d2ed-45b0-b189-2bc337617e8b.png",
       "cover_local": "cache/images/text-to-image-synthesis/danbao-tuqu-Z-Image-Tongyi-MAI-v1.0.png",
-      "downloads": 804,
+      "downloads": 806,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -537,8 +537,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 791,
-      "likes": 71,
+      "downloads": 793,
+      "likes": 70,
       "license": "Apache License 2.0",
       "tags_cn": [
         "人物加强",
@@ -601,7 +601,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 681,
+      "downloads": 682,
       "likes": 17,
       "license": "apache-2.0",
       "tags_cn": [],
