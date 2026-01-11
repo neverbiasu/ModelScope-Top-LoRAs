@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1768093240.8313777,
+  "_cached_at": 1768103069.5912654,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61533,
+      "downloads": 61535,
       "likes": 241,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38638,
+      "downloads": 38641,
       "likes": 77,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2291,
+      "downloads": 2312,
       "likes": 21,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -287,7 +287,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1843,
+      "downloads": 1849,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -407,7 +407,7 @@
       "user_profile": "https://modelscope.cn/profile/291838",
       "cover_url": "https://resources.modelscope.cn/cover-images/e4c4efee-4173-4580-ab3d-b997ebb21209.png",
       "cover_local": "cache/images/text-to-image-synthesis/zg.png",
-      "downloads": 819,
+      "downloads": 820,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -559,7 +559,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 613,
+      "downloads": 616,
       "likes": 18,
       "license": "Apache License 2.0",
       "tags_cn": [
