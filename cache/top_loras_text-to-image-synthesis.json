@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1768179484.4526987,
+  "_cached_at": 1768189451.7898219,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61546,
+      "downloads": 61547,
       "likes": 242,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 9180,
+      "downloads": 9182,
       "likes": 115,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5005,
+      "downloads": 5006,
       "likes": 33,
       "license": "",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2407,
+      "downloads": 2487,
       "likes": 23,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -287,7 +287,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1881,
+      "downloads": 1888,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -364,38 +364,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-07-07T07:30:04Z",
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-highresfix?revision=v1.0"
-    },
-    {
-      "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug",
-      "title_cn": "美学提升 - Kontext 图像编辑 LoRA",
-      "title_en": "FLUX.1-Kontext-dev-lora-ArtAug",
-      "author": "Artiprocher",
-      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
-      "user_name": "DiffSynth-Studio",
-      "user_profile": "https://modelscope.cn/profile/987294",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
-      "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 861,
-      "likes": 27,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/FLUX.1-Kontext-Dev"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-07-04T09:55:50Z",
-      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug?revision=v1.0"
     },
     {
       "id": "laonansheng/danbao-duanzhuang-Z-Image-Turbo-Tongyi-MAI-v1.0",
@@ -612,6 +580,38 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-12-11T04:34:14Z",
       "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
+    },
+    {
+      "id": "Rainwyu/DouBaoFlux",
+      "title_cn": "豆包Flux",
+      "title_en": "DouBaoFlux",
+      "author": "Rainwyu",
+      "avatar": "https://resouces.modelscope.cn/avatar/f8600173-d07b-4685-9e22-64842a541672.png",
+      "user_name": "Rainwyu",
+      "user_profile": "https://modelscope.cn/profile/1333906",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/3c191cce-24f5-4593-9562-709b3a24481d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/DouBaoFlux.png",
+      "downloads": 486,
+      "likes": 4,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "3d立体",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "3D",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-05-14T17:25:12Z",
+      "modelscope_url": "https://modelscope.cn/Rainwyu/DouBaoFlux?revision=ckpt-10"
     }
   ]
 }
