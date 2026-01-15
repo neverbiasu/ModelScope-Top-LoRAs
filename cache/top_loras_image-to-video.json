@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1768362111.9507236,
+  "_cached_at": 1768438404.0837655,
   "results": [
     {
       "id": "morphic/Wan2.2-frames-to-video",
@@ -84,7 +84,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 86,
+      "downloads": 88,
       "likes": 4,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -376,30 +376,6 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-left"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 16,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
@@ -422,6 +398,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:22:28Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 16,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T20:37:11Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-out",
