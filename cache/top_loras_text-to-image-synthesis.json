@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1768438400.7908382,
+  "_cached_at": 1768447546.0081398,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 9335,
+      "downloads": 9345,
       "likes": 115,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -143,8 +143,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 3420,
-      "likes": 30,
+      "downloads": 3475,
+      "likes": 31,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -167,7 +167,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2156,
+      "downloads": 2157,
       "likes": 219,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1980,
+      "downloads": 1988,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -255,7 +255,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1691,
+      "downloads": 1692,
       "likes": 65,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -413,7 +413,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc54ae5c-b18a-4d9f-8707-31c0b636472f.png",
       "cover_local": "cache/images/text-to-image-synthesis/nana-RT-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 685,
+      "downloads": 699,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -438,6 +438,30 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/nana-RT-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260110201011"
     },
     {
+      "id": "eigen-ai-labs/eigen-banana-qwen-image-edit",
+      "title_cn": null,
+      "title_en": "eigen-banana-qwen-image-edit",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/90419310-0d22-443e-b26d-33276dd7f709.webp",
+      "user_name": "eigen-ai-labs",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 686,
+      "likes": 18,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/Qwen-Image-Edit"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-16T16:30:34Z",
+      "modelscope_url": "https://modelscope.cn/eigen-ai-labs/eigen-banana-qwen-image-edit"
+    },
+    {
       "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
       "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
       "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
@@ -447,7 +471,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 660,
+      "downloads": 661,
       "likes": 18,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -479,7 +503,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/17571476-d118-4ac8-b9d1-818a6455b77d.png",
       "cover_local": "cache/images/text-to-image-synthesis/baihu-meinv-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 551,
+      "downloads": 576,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -545,8 +569,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 463,
-      "likes": 18,
+      "downloads": 471,
+      "likes": 19,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -598,32 +622,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-03-07T08:19:07Z",
       "modelscope_url": "https://modelscope.cn/wmhovo/In-Context-ppt-templates?revision=v1.0"
-    },
-    {
-      "id": "animationtj/Qwen_image_nude_pantyhose_lora",
-      "title_cn": "Qwen-image 肉色连裤袜",
-      "title_en": "Qwen_image_nude_pantyhose_lora",
-      "author": "animationtj",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "animationtj",
-      "user_profile": "https://modelscope.cn/profile/1219123",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/e37ff2da-f7cc-4534-9572-f38a807aaee2.jpeg",
-      "cover_local": "cache/images/text-to-image-synthesis/Qwen_image_nude_pantyhose_lora.jpeg",
-      "downloads": 444,
-      "likes": 26,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "肉色连裤袜 肉色丝袜 丝袜 "
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-08-19T14:48:11Z",
-      "modelscope_url": "https://modelscope.cn/animationtj/Qwen_image_nude_pantyhose_lora?revision=ckpt-20"
     }
   ]
 }
