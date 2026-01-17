@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1768611194.728286,
+  "_cached_at": 1768619855.7881465,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 61565,
+      "downloads": 61566,
       "likes": 243,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 9463,
+      "downloads": 9464,
       "likes": 116,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4030,
+      "downloads": 4039,
       "likes": 32,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -197,7 +197,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2068,
+      "downloads": 2073,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -253,7 +253,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/17571476-d118-4ac8-b9d1-818a6455b77d.png",
       "cover_local": "cache/images/text-to-image-synthesis/baihu-meinv-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 896,
+      "downloads": 898,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -351,7 +351,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc54ae5c-b18a-4d9f-8707-31c0b636472f.png",
       "cover_local": "cache/images/text-to-image-synthesis/nana-RT-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 793,
+      "downloads": 812,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -385,7 +385,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
-      "downloads": 791,
+      "downloads": 792,
       "likes": 47,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -417,7 +417,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 720,
+      "downloads": 727,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -482,7 +482,7 @@
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
       "downloads": 667,
-      "likes": 18,
+      "likes": 19,
       "license": "Apache License 2.0",
       "tags_cn": [
         "插画设计",
@@ -513,7 +513,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 545,
+      "downloads": 549,
       "likes": 24,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -603,7 +603,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 430,
+      "downloads": 434,
       "likes": 18,
       "license": "Apache License 2.0",
       "tags_cn": [
