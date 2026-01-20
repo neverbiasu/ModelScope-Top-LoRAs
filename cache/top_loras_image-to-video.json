@@ -1,30 +1,6 @@
 {
-  "_cached_at": 1768794269.585607,
+  "_cached_at": 1768870472.8032503,
   "results": [
-    {
-      "id": "morphic/Wan2.2-frames-to-video",
-      "title_cn": null,
-      "title_en": "Wan2.2-frames-to-video",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/3f29001e-96a3-41ef-a866-92ffee0e26ef.webp",
-      "user_name": "morphic",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 268,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.2-I2V-A14B"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-10-30T08:08:14Z",
-      "modelscope_url": "https://modelscope.cn/morphic/Wan2.2-frames-to-video"
-    },
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
       "title_cn": null,
@@ -494,6 +470,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 13,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:18:48Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right"
     }
   ]
 }
