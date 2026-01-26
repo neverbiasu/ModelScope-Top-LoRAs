@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1769312910.9673657,
+  "_cached_at": 1769389207.8360138,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -376,28 +376,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-left"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "id": "valiantcat/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_en": "LTX2-I2V-Smooth-LORA",
       "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
       "downloads": 16,
-      "likes": 0,
-      "license": "mit",
+      "likes": 1,
+      "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+        "Lightricks/LTX-2"
       ],
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
+      "updated_at": "2026-01-13T05:12:53Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
@@ -424,28 +424,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
     },
     {
-      "id": "valiantcat/LTX2-I2V-Smooth-LORA",
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
       "title_cn": null,
-      "title_en": "LTX2-I2V-Smooth-LORA",
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
       "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 15,
-      "likes": 1,
-      "license": "apache-2.0",
+      "downloads": 16,
+      "likes": 0,
+      "license": "mit",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "Lightricks/LTX-2"
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
       ],
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-01-13T05:12:53Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
+      "updated_at": "2025-11-26T20:37:11Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-out",
