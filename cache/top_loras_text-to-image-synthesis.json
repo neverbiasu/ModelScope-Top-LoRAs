@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1769831988.375592,
+  "_cached_at": 1769908495.9579177,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62160,
+      "downloads": 62161,
       "likes": 247,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -66,6 +66,72 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
+      "id": "WANGMOON/MAJICFLUS-photo",
+      "title_cn": "MAJICFLUS-麦橘光影约拍",
+      "title_en": "MAJICFLUS-photo",
+      "author": "WANGMOON",
+      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
+      "user_name": "WANGMOON",
+      "user_profile": "https://modelscope.cn/profile/1148327",
+      "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
+      "downloads": 16518,
+      "likes": 89,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "girl"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0"
+    },
+    {
+      "id": "LiblibAI/AWPortraitCN",
+      "title_cn": "LiblibAI/AWPortraitCN",
+      "title_en": "AWPortraitCN",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
+      "user_name": "哩布哩布AI",
+      "user_profile": "https://modelscope.cn/profile/1004206",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
+      "downloads": 15908,
+      "likes": 52,
+      "license": "other",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:03Z",
+      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
+    },
+    {
       "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
       "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
       "title_en": "Qwen-Image-Edit-F2P",
@@ -75,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10043,
+      "downloads": 10064,
       "likes": 122,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,8 +175,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4724,
-      "likes": 36,
+      "downloads": 4740,
+      "likes": 37,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -133,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2475,
+      "downloads": 2497,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -146,6 +212,38 @@
       "vision_foundation": "",
       "updated_at": "2025-11-30T18:12:26Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
+    },
+    {
+      "id": "yiwanji/bigBreastsAdpterV1",
+      "title_cn": "胸部调整",
+      "title_en": "bigBreastsAdpterV1",
+      "author": "yiwanji",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "yiwanji",
+      "user_profile": "https://modelscope.cn/profile/527727",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
+      "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
+      "downloads": 2400,
+      "likes": 63,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:20Z",
+      "modelscope_url": "https://modelscope.cn/yiwanji/bigBreastsAdpterV1?revision=20250307104624"
     },
     {
       "id": "merjic/majicbeauty-qwen1",
@@ -253,7 +351,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1352,
+      "downloads": 1367,
       "likes": 5,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -287,8 +385,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 929,
-      "likes": 35,
+      "downloads": 934,
+      "likes": 36,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -319,7 +417,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 891,
+      "downloads": 892,
       "likes": 75,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -383,8 +481,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 825,
-      "likes": 27,
+      "downloads": 832,
+      "likes": 28,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -415,7 +513,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 747,
+      "downloads": 748,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -447,8 +545,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/77e38bb5-3e18-4745-aa36-ef577cd89ad1.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/KOOK_Qwen_2512_zshx_V2.jpg",
-      "downloads": 503,
-      "likes": 14,
+      "downloads": 505,
+      "likes": 15,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -534,98 +632,6 @@
       "vision_foundation": "Z_IMAGE_TURBO",
       "updated_at": "2026-01-11T03:26:32Z",
       "modelscope_url": "https://modelscope.cn/laonansheng/xiaozhengyi-cosplay-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260111112625"
-    },
-    {
-      "id": "animationtj/Qwen_image_nude_pantyhose_lora",
-      "title_cn": "Qwen-image 肉色连裤袜",
-      "title_en": "Qwen_image_nude_pantyhose_lora",
-      "author": "animationtj",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "animationtj",
-      "user_profile": "https://modelscope.cn/profile/1219123",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/e37ff2da-f7cc-4534-9572-f38a807aaee2.jpeg",
-      "cover_local": "cache/images/text-to-image-synthesis/Qwen_image_nude_pantyhose_lora.jpeg",
-      "downloads": 457,
-      "likes": 26,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "肉色连裤袜 肉色丝袜 丝袜 "
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-08-19T14:48:11Z",
-      "modelscope_url": "https://modelscope.cn/animationtj/Qwen_image_nude_pantyhose_lora?revision=ckpt-20"
-    },
-    {
-      "id": "KookYan/KOOK_Qwen_2512_qwxs_V2",
-      "title_cn": "KOOK_Qwen_2512_千问写实_V2",
-      "title_en": "KOOK_Qwen_2512_qwxs_V2",
-      "author": "KookYan",
-      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
-      "user_name": "KookYan",
-      "user_profile": "https://modelscope.cn/profile/1326437",
-      "cover_url": "https://resources.modelscope.cn/cover-images/7f1b2e30-2392-4d9c-ba81-95f5b5c40eea.jpeg",
-      "cover_local": "cache/images/text-to-image-synthesis/KOOK_Qwen_2512_qwxs_V2.jpeg",
-      "downloads": 454,
-      "likes": 14,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "Qwen/Qwen-Image-2512"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2026-01-03T15:40:07Z",
-      "modelscope_url": "https://modelscope.cn/KookYan/KOOK_Qwen_2512_qwxs_V2?revision=20260103224121"
-    },
-    {
-      "id": "huAAUU/FixBadImage-KontextLora",
-      "title_cn": "帮你修烂图 Kontext Lora",
-      "title_en": "FixBadImage-KontextLora",
-      "author": "huAAUU",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "huAAUU",
-      "user_profile": "https://modelscope.cn/profile/567074",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/a99edd43-a668-4f39-843a-9d62b46349b9.png",
-      "cover_local": "cache/images/text-to-image-synthesis/FixBadImage-KontextLora.png",
-      "downloads": 378,
-      "likes": 31,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "电商设计",
-        "商品",
-        "画面控制"
-      ],
-      "tags_en": [
-        "E-commerce Design",
-        "Commodity",
-        "Picture Control"
-      ],
-      "base_models": [
-        "MusePublic/FLUX.1-Kontext-Dev"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": [
-        "Fix the image BAJ quality"
-      ],
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-08-23T09:54:42Z",
-      "modelscope_url": "https://modelscope.cn/huAAUU/FixBadImage-KontextLora?revision=20250818210221"
     }
   ]
 }
