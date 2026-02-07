@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1770350922.7705693,
+  "_cached_at": 1770426152.1711879,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62183,
+      "downloads": 62184,
       "likes": 247,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38754,
+      "downloads": 38755,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15917,
+      "downloads": 15918,
       "likes": 52,
       "license": "other",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10205,
+      "downloads": 10233,
       "likes": 122,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4843,
+      "downloads": 4851,
       "likes": 38,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2619,
+      "downloads": 2642,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -255,7 +255,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2206,
+      "downloads": 2207,
       "likes": 223,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -287,7 +287,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1958,
+      "downloads": 1959,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -319,7 +319,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1719,
+      "downloads": 1720,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -351,7 +351,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1485,
+      "downloads": 1509,
       "likes": 8,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -385,7 +385,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1249,
+      "downloads": 1261,
       "likes": 20,
       "license": "mit",
       "tags_cn": [],
@@ -409,7 +409,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 997,
+      "downloads": 1003,
       "likes": 37,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -442,7 +442,7 @@
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
       "downloads": 907,
-      "likes": 75,
+      "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
         "人物加强",
@@ -473,7 +473,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 880,
+      "downloads": 881,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -505,7 +505,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 875,
+      "downloads": 879,
       "likes": 31,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -569,7 +569,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 751,
+      "downloads": 754,
       "likes": 29,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -592,38 +592,38 @@
       "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
     },
     {
-      "id": "aola76/soroni2512",
-      "title_cn": "厚涂2512",
-      "title_en": "soroni2512",
-      "author": "aola76",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "aola76",
-      "user_profile": "https://modelscope.cn/profile/1269157",
-      "cover_url": "https://resources.modelscope.cn/cover-images/e37a9b3a-271c-4c78-b2c9-720b23140007.png",
-      "cover_local": "cache/images/text-to-image-synthesis/soroni2512.png",
-      "downloads": 702,
-      "likes": 2,
+      "id": "zhouwenbin1994/AnythingtoRealCharacters2511",
+      "title_cn": "Anything to Real Characters 2511 动漫转真人",
+      "title_en": "AnythingtoRealCharacters2511",
+      "author": "zhouwenbin1994",
+      "avatar": "https://resouces.modelscope.cn/avatar/21d80c53-9fae-409b-a8ec-70d1aec1ad7d.jpg",
+      "user_name": "zhouwenbin1994",
+      "user_profile": "https://modelscope.cn/profile/1572166",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
+      "downloads": 609,
+      "likes": 30,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
-        "女生",
-        "角色加强"
+        "画风加强",
+        "女生"
       ],
       "tags_en": [
         "Dimension",
-        "Woman",
-        "Character Strong"
+        "Art Style Strong",
+        "Woman"
       ],
       "base_models": [
-        "Qwen/Qwen-Image-2512"
+        "Qwen/Qwen-Image-Edit-2511"
       ],
       "stable_diffusion_version": "QWEN_IMAGE_20_B",
       "trigger_words": [
-        "soroni"
+        ""
       ],
       "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2026-01-08T23:49:40Z",
-      "modelscope_url": "https://modelscope.cn/aola76/soroni2512?revision=20260109044206"
+      "updated_at": "2026-01-09T16:32:20Z",
+      "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
     }
   ]
 }
