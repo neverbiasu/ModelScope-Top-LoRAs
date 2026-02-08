@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1770436940.1835139,
+  "_cached_at": 1770513899.9495726,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62184,
+      "downloads": 62186,
       "likes": 247,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15918,
+      "downloads": 15920,
       "likes": 52,
       "license": "other",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10237,
+      "downloads": 10261,
       "likes": 122,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4852,
+      "downloads": 4860,
       "likes": 38,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2644,
+      "downloads": 2664,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -287,7 +287,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1959,
+      "downloads": 1960,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -319,7 +319,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1721,
+      "downloads": 1722,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -351,7 +351,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1510,
+      "downloads": 1524,
       "likes": 8,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -385,7 +385,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1261,
+      "downloads": 1262,
       "likes": 20,
       "license": "mit",
       "tags_cn": [],
@@ -409,7 +409,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1006,
+      "downloads": 1015,
       "likes": 37,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -441,7 +441,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 907,
+      "downloads": 909,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -473,8 +473,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 885,
-      "likes": 31,
+      "downloads": 892,
+      "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -505,7 +505,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 881,
+      "downloads": 882,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -560,6 +560,30 @@
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_xieshi_Kook_Qwen?revision=20250814004023"
     },
     {
+      "id": "AI-ModelScope/lcm-lora-sdxl",
+      "title_cn": null,
+      "title_en": "lcm-lora-sdxl",
+      "author": "huangjintao",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 831,
+      "likes": 7,
+      "license": "openrail++",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/stable-diffusion-xl-base"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2024-05-17T02:41:06Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/lcm-lora-sdxl"
+    },
+    {
       "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
       "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
       "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
@@ -569,7 +593,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 754,
+      "downloads": 755,
       "likes": 29,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -590,40 +614,6 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-12-11T04:34:14Z",
       "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
-    },
-    {
-      "id": "zhouwenbin1994/AnythingtoRealCharacters2511",
-      "title_cn": "Anything to Real Characters 2511 动漫转真人",
-      "title_en": "AnythingtoRealCharacters2511",
-      "author": "zhouwenbin1994",
-      "avatar": "https://resouces.modelscope.cn/avatar/21d80c53-9fae-409b-a8ec-70d1aec1ad7d.jpg",
-      "user_name": "zhouwenbin1994",
-      "user_profile": "https://modelscope.cn/profile/1572166",
-      "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
-      "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 612,
-      "likes": 30,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "画风加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Art Style Strong",
-        "Woman"
-      ],
-      "base_models": [
-        "Qwen/Qwen-Image-Edit-2511"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        ""
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2026-01-09T16:32:20Z",
-      "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
     }
   ]
 }
