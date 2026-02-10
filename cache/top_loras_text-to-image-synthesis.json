@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1770610872.009345,
+  "_cached_at": 1770686295.0394192,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10288,
+      "downloads": 10319,
       "likes": 122,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,8 +175,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4866,
-      "likes": 38,
+      "downloads": 4874,
+      "likes": 39,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2686,
+      "downloads": 2701,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -255,7 +255,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2212,
+      "downloads": 2213,
       "likes": 223,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -319,7 +319,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1724,
+      "downloads": 1726,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -351,7 +351,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1537,
+      "downloads": 1547,
       "likes": 9,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -376,30 +376,6 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112041259"
     },
     {
-      "id": "iic/In-Context-LoRA",
-      "title_cn": null,
-      "title_en": "In-Context-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/86fc4b9c-4548-463c-8cbb-f37f68b87141.png",
-      "user_name": "通义实验室",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 1262,
-      "likes": 20,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2024-11-12T01:34:34Z",
-      "modelscope_url": "https://modelscope.cn/iic/In-Context-LoRA"
-    },
-    {
       "id": "KookYan/Kook_Qwen_2512_jzzs",
       "title_cn": "Kook_Qwen_2512_极致真实_V3",
       "title_en": "Kook_Qwen_2512_jzzs",
@@ -409,8 +385,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1026,
-      "likes": 38,
+      "downloads": 1033,
+      "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -441,7 +417,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 912,
+      "downloads": 916,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -473,7 +449,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 898,
+      "downloads": 905,
       "likes": 34,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -593,8 +569,8 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 757,
-      "likes": 30,
+      "downloads": 758,
+      "likes": 31,
       "license": "Apache License 2.0",
       "tags_cn": [
         "插画设计",
@@ -614,6 +590,40 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-12-11T04:34:14Z",
       "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
+    },
+    {
+      "id": "DonRat/MAJICFLUS_SuperChinesestyleillustration",
+      "title_cn": "MAJICFLUS_麦橘超中国风插画",
+      "title_en": "MAJICFLUS_SuperChinesestyleillustration",
+      "author": "DonRat",
+      "avatar": "https://resouces.modelscope.cn/avatar/5bacce66-3ffc-4721-ae15-527cea330e32.jpg",
+      "user_name": "DonRat",
+      "user_profile": "https://modelscope.cn/profile/1148323",
+      "cover_url": "https://www.modelscope.cn/models/DonRat/MAJICFLUS_SuperChinesestyleillustration/resolve/master/_cover_images_/ac4f77a1-63b9-4794-bf22-a4905920951a.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS_SuperChinesestyleillustration.png",
+      "downloads": 710,
+      "likes": 19,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "插画设计",
+        "动物",
+        "主体加强"
+      ],
+      "tags_en": [
+        "Illustration Design",
+        "Animal",
+        "Main Strong"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "shanshui"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/DonRat/MAJICFLUS_SuperChinesestyleillustration?revision=v1.0"
     }
   ]
 }
