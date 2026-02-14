@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1771031117.4230223,
+  "_cached_at": 1771041854.1519945,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10453,
+      "downloads": 10458,
       "likes": 123,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -319,7 +319,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1651,
+      "downloads": 1652,
       "likes": 10,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -353,7 +353,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1080,
+      "downloads": 1081,
       "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -374,6 +374,38 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2026-01-03T15:40:22Z",
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_2512_jzzs?revision=20260103221004"
+    },
+    {
+      "id": "KookYan/Kook_Qwen_2512_Zshx",
+      "title_cn": "Kook_Qwen_2512_真实幻想",
+      "title_en": "Kook_Qwen_2512_Zshx",
+      "author": "KookYan",
+      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
+      "user_name": "KookYan",
+      "user_profile": "https://modelscope.cn/profile/1326437",
+      "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
+      "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
+      "downloads": 934,
+      "likes": 36,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "Qwen/Qwen-Image-2512"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2026-01-06T08:13:43Z",
+      "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_2512_Zshx?revision=20260106160721"
     },
     {
       "id": "KookYan/Kook_Qwen_zshx_v2",
@@ -406,38 +438,6 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-11-12T12:48:59Z",
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_zshx_v2?revision=20251111002109"
-    },
-    {
-      "id": "KookYan/Kook_Qwen_2512_Zshx",
-      "title_cn": "Kook_Qwen_2512_真实幻想",
-      "title_en": "Kook_Qwen_2512_Zshx",
-      "author": "KookYan",
-      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
-      "user_name": "KookYan",
-      "user_profile": "https://modelscope.cn/profile/1326437",
-      "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
-      "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 932,
-      "likes": 36,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "Qwen/Qwen-Image-2512"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2026-01-06T08:13:43Z",
-      "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_2512_Zshx?revision=20260106160721"
     },
     {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug",
@@ -481,7 +481,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 839,
+      "downloads": 840,
       "likes": 7,
       "license": "openrail++",
       "tags_cn": [],
