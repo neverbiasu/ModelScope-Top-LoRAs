@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1771646450.6574304,
+  "_cached_at": 1771722462.6086197,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62245,
+      "downloads": 62249,
       "likes": 249,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38764,
+      "downloads": 38765,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10627,
+      "downloads": 10653,
       "likes": 124,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 8967,
+      "downloads": 8978,
       "likes": 5,
       "license": "other",
       "tags_cn": [],
@@ -165,7 +165,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5020,
+      "downloads": 5023,
       "likes": 42,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -178,30 +178,6 @@
       "vision_foundation": "",
       "updated_at": "2026-01-08T19:32:39Z",
       "modelscope_url": "https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA"
-    },
-    {
-      "id": "prithivMLmods/Canopus-LoRA-Flux-UltraRealism-2.0",
-      "title_cn": null,
-      "title_en": "Canopus-LoRA-Flux-UltraRealism-2.0",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/43d71ee7-d2ef-4491-a1dd-08bfaa270ce2.jpg",
-      "user_name": "prithivMLmods",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 4121,
-      "likes": 0,
-      "license": "creativeml-openrail-m",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2024-11-26T10:25:51Z",
-      "modelscope_url": "https://modelscope.cn/prithivMLmods/Canopus-LoRA-Flux-UltraRealism-2.0"
     },
     {
       "id": "Neolongx/MAJICFLUS_Story_illustration",
@@ -248,7 +224,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2795,
+      "downloads": 2805,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -261,38 +237,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-30T18:12:26Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
-    },
-    {
-      "id": "cancel13/liaocao",
-      "title_cn": "可爱潦草手绘风（一丹一世界）",
-      "title_en": "liaocao",
-      "author": "cancel13",
-      "avatar": "https://resouces.modelscope.cn/avatar/fa75dfb1-cd7f-4fc9-91d8-9fe982b96328.png",
-      "user_name": "cancel13",
-      "user_profile": "https://modelscope.cn/profile/1151283",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/7362cc4a-6a48-40d7-861a-56a7c477f78b.png",
-      "cover_local": "cache/images/text-to-image-synthesis/liaocao.png",
-      "downloads": 2260,
-      "likes": 59,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "女生"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Woman"
-      ],
-      "base_models": [
-        "MAILAND/majicflus_v1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": [
-        "liaocao"
-      ],
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:11Z",
-      "modelscope_url": "https://modelscope.cn/cancel13/liaocao?revision=ckpt-20"
     },
     {
       "id": "merjic/majicbeauty-qwen1",
@@ -325,38 +269,6 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2025-08-24T15:03:17Z",
       "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
-    },
-    {
-      "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting",
-      "title_cn": "图像外扩 - Kontext 图像编辑 LoRA",
-      "title_en": "FLUX.1-Kontext-dev-lora-SuperOutpainting",
-      "author": "mibei0804",
-      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
-      "user_name": "DiffSynth-Studio",
-      "user_profile": "https://modelscope.cn/profile/987294",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/b2334cc8-ad47-49ab-8466-1e97f9fc1a1a.png",
-      "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-SuperOutpainting.png",
-      "downloads": 1970,
-      "likes": 32,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "3d立体",
-        "动物",
-        "角色加强"
-      ],
-      "tags_en": [
-        "3D",
-        "Animal",
-        "Character Strong"
-      ],
-      "base_models": [
-        "MusePublic/FLUX.1-Kontext-Dev"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-07-08T07:48:20Z",
-      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-SuperOutpainting?revision=v1.2"
     },
     {
       "id": "DiffSynth-Studio/FLUX.1-Kontext-dev-lora-highresfix",
@@ -400,8 +312,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1727,
-      "likes": 11,
+      "downloads": 1738,
+      "likes": 12,
       "license": "Apache License 2.0",
       "tags_cn": [
         "其他风格",
@@ -425,6 +337,67 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112041259"
     },
     {
+      "id": "CyrilPilgrim/CyrilPilgrim-DigitalHuman_v1",
+      "title_cn": "科林_数字拟像",
+      "title_en": "CyrilPilgrim-DigitalHuman_v1",
+      "author": "CyrilPilgrim",
+      "avatar": "https://resouces.modelscope.cn/avatar/3f7ef190-3932-4374-9a7f-a3f334d3efe5.jpg",
+      "user_name": "CyrilPilgrim",
+      "user_profile": "https://modelscope.cn/profile/1157939",
+      "cover_url": "https://www.modelscope.cn/models/CyrilPilgrim/CyrilPilgrim-DigitalHuman_v1/resolve/master/_cover_images_/38d8b4b8-025c-434e-8441-a15330183795.png",
+      "cover_local": "cache/images/text-to-image-synthesis/CyrilPilgrim-DigitalHuman_v1.png",
+      "downloads": 1413,
+      "likes": 27,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "CyrilPilgrim",
+        "DigitalHuman"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-08-25T03:55:02Z",
+      "modelscope_url": "https://modelscope.cn/CyrilPilgrim/CyrilPilgrim-DigitalHuman_v1?revision=v1.0"
+    },
+    {
+      "id": "DonRat/MAJICFLUS_SuperChinesestyleheongsam",
+      "title_cn": "MAJICFLUS_麦橘超国风旗袍",
+      "title_en": "MAJICFLUS_SuperChinesestyleheongsam",
+      "author": "DonRat",
+      "avatar": "https://resouces.modelscope.cn/avatar/5bacce66-3ffc-4721-ae15-527cea330e32.jpg",
+      "user_name": "DonRat",
+      "user_profile": "https://modelscope.cn/profile/1148323",
+      "cover_url": "https://www.modelscope.cn/models/DonRat/MAJICFLUS_SuperChinesestyleheongsam/resolve/master/_cover_images_/342508f8-1302-46f2-bbcd-08b703c19954.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS_SuperChinesestyleheongsam.png",
+      "downloads": 1331,
+      "likes": 37,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "qipao"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/DonRat/MAJICFLUS_SuperChinesestyleheongsam?revision=v1.0"
+    },
+    {
       "id": "KookYan/Kook_Qwen_2512_jzzs",
       "title_cn": "Kook_Qwen_2512_极致真实_V3",
       "title_en": "Kook_Qwen_2512_jzzs",
@@ -434,7 +407,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1124,
+      "downloads": 1131,
       "likes": 41,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -466,7 +439,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 970,
+      "downloads": 973,
       "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -498,7 +471,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 952,
+      "downloads": 959,
       "likes": 77,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -530,7 +503,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 895,
+      "downloads": 899,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -585,6 +558,30 @@
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_xieshi_Kook_Qwen?revision=20250814004023"
     },
     {
+      "id": "AI-ModelScope/lcm-lora-sdxl",
+      "title_cn": null,
+      "title_en": "lcm-lora-sdxl",
+      "author": "huangjintao",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 846,
+      "likes": 7,
+      "license": "openrail++",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/stable-diffusion-xl-base"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2024-05-17T02:41:06Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/lcm-lora-sdxl"
+    },
+    {
       "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
       "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
       "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
@@ -594,8 +591,8 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 829,
-      "likes": 38,
+      "downloads": 836,
+      "likes": 40,
       "license": "Apache License 2.0",
       "tags_cn": [
         "插画设计",
