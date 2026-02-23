@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1771808856.4797935,
+  "_cached_at": 1771820231.7050192,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -75,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10681,
+      "downloads": 10682,
       "likes": 124,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 8983,
+      "downloads": 8985,
       "likes": 5,
       "license": "other",
       "tags_cn": [],
@@ -133,7 +133,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5030,
+      "downloads": 5032,
       "likes": 42,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -216,7 +216,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2812,
+      "downloads": 2813,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -305,7 +305,7 @@
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
       "downloads": 1768,
-      "likes": 13,
+      "likes": 14,
       "license": "Apache License 2.0",
       "tags_cn": [
         "其他风格",
@@ -402,7 +402,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 979,
+      "downloads": 980,
       "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -521,6 +521,38 @@
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_xieshi_Kook_Qwen?revision=20250814004023"
     },
     {
+      "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
+      "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
+      "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
+      "author": "qiyuanai",
+      "avatar": "https://resouces.modelscope.cn/avatar/c94b2986-9f13-49fb-a886-7f6603aa9592.png",
+      "user_name": "qiyuanai",
+      "user_profile": "https://modelscope.cn/profile/1605842",
+      "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
+      "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
+      "downloads": 838,
+      "likes": 40,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "插画设计",
+        "服饰"
+      ],
+      "tags_en": [
+        "Illustration Design",
+        "Clothing"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        "disassemble clothes"
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-12-11T04:34:14Z",
+      "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
+    },
+    {
       "id": "MAILAND/Retro_70s_MajicFlus",
       "title_cn": "麦橘超复古 MajicFlus 适配",
       "title_en": "Retro_70s_MajicFlus",
@@ -551,38 +583,6 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-03-07T08:19:08Z",
       "modelscope_url": "https://modelscope.cn/MAILAND/Retro_70s_MajicFlus?revision=v1.0"
-    },
-    {
-      "id": "qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
-      "title_cn": "Nano-Banana_爆款角色拆解衣服一键生成",
-      "title_en": "Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation",
-      "author": "qiyuanai",
-      "avatar": "https://resouces.modelscope.cn/avatar/c94b2986-9f13-49fb-a886-7f6603aa9592.png",
-      "user_name": "qiyuanai",
-      "user_profile": "https://modelscope.cn/profile/1605842",
-      "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
-      "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 837,
-      "likes": 40,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "插画设计",
-        "服饰"
-      ],
-      "tags_en": [
-        "Illustration Design",
-        "Clothing"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "disassemble clothes"
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-12-11T04:34:14Z",
-      "modelscope_url": "https://modelscope.cn/qiyuanai/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation?revision=20251206105653"
     },
     {
       "id": "zhouwenbin1994/AnythingtoRealCharacters2511",

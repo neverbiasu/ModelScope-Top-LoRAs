@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1771808858.9076602,
+  "_cached_at": 1771820234.510603,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -241,7 +241,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 38,
+      "downloads": 41,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -289,7 +289,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 34,
+      "downloads": 35,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
