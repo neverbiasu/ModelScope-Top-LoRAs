@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1772250507.4921582,
+  "_cached_at": 1772327609.764219,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62283,
+      "downloads": 62289,
       "likes": 249,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38774,
+      "downloads": 38775,
       "likes": 76,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -66,6 +66,40 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
+      "id": "WANGMOON/MAJICFLUS-photo",
+      "title_cn": "MAJICFLUS-麦橘光影约拍",
+      "title_en": "MAJICFLUS-photo",
+      "author": "WANGMOON",
+      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
+      "user_name": "WANGMOON",
+      "user_profile": "https://modelscope.cn/profile/1148327",
+      "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
+      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
+      "downloads": 16551,
+      "likes": 90,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": [
+        "girl"
+      ],
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:08Z",
+      "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0"
+    },
+    {
       "id": "LiblibAI/AWPortraitCN",
       "title_cn": "LiblibAI/AWPortraitCN",
       "title_en": "AWPortraitCN",
@@ -75,8 +109,8 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 15940,
-      "likes": 52,
+      "downloads": 15941,
+      "likes": 53,
       "license": "other",
       "tags_cn": [
         "写实摄影",
@@ -107,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 10850,
+      "downloads": 10866,
       "likes": 125,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5079,
+      "downloads": 5086,
       "likes": 43,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -165,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2872,
+      "downloads": 2881,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -180,38 +214,6 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/pixel_art_style_lora_z_image_turbo"
     },
     {
-      "id": "happy976666666/MV001",
-      "title_cn": "爆粉美女-万物有灵（一丹一世界）",
-      "title_en": "MV001",
-      "author": "happy976666666",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "happy976666666",
-      "user_profile": "https://modelscope.cn/profile/467646",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/943342ba-8c5a-43e5-bc75-ffc196328715.png",
-      "cover_local": "cache/images/text-to-image-synthesis/MV001.png",
-      "downloads": 2237,
-      "likes": 69,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MAILAND/majicflus_v1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:19Z",
-      "modelscope_url": "https://modelscope.cn/happy976666666/MV001?revision=ckpt-20"
-    },
-    {
       "id": "merjic/majicbeauty-qwen1",
       "title_cn": "麦橘千问美人",
       "title_en": "majicbeauty-qwen1",
@@ -221,8 +223,8 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2233,
-      "likes": 225,
+      "downloads": 2236,
+      "likes": 226,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -253,8 +255,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1864,
-      "likes": 19,
+      "downloads": 1881,
+      "likes": 21,
       "license": "Apache License 2.0",
       "tags_cn": [
         "其他风格",
@@ -287,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 1763,
+      "downloads": 1764,
       "likes": 68,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -319,8 +321,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1206,
-      "likes": 48,
+      "downloads": 1216,
+      "likes": 50,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -351,7 +353,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/17571476-d118-4ac8-b9d1-818a6455b77d.png",
       "cover_local": "cache/images/text-to-image-synthesis/baihu-meinv-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1206,
+      "downloads": 1207,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -385,7 +387,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1005,
+      "downloads": 1011,
       "likes": 43,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -417,7 +419,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 981,
+      "downloads": 987,
       "likes": 78,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -449,7 +451,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/bc54ae5c-b18a-4d9f-8707-31c0b636472f.png",
       "cover_local": "cache/images/text-to-image-synthesis/nana-RT-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 980,
+      "downloads": 981,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -515,7 +517,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resouces.modelscope.cn/cover-images/4b020a5a-81f7-4a5b-8b89-fc5ebca44a44.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_xieshi_Kook_Qwen.jpeg",
-      "downloads": 883,
+      "downloads": 885,
       "likes": 51,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -547,7 +549,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 852,
+      "downloads": 853,
       "likes": 45,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -579,7 +581,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 822,
+      "downloads": 829,
       "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -613,7 +615,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/77e38bb5-3e18-4745-aa36-ef577cd89ad1.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/KOOK_Qwen_2512_zshx_V2.jpg",
-      "downloads": 610,
+      "downloads": 614,
       "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [
