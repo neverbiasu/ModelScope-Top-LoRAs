@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1772932016.7584887,
+  "_cached_at": 1772942705.2346785,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62376,
+      "downloads": 62377,
       "likes": 252,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 11072,
+      "downloads": 11074,
       "likes": 127,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -165,7 +165,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2965,
+      "downloads": 2967,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -253,7 +253,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2061,
+      "downloads": 2062,
       "likes": 30,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -515,7 +515,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 910,
+      "downloads": 911,
       "likes": 51,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -579,7 +579,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 883,
+      "downloads": 884,
       "likes": 43,
       "license": "Apache License 2.0",
       "tags_cn": [
