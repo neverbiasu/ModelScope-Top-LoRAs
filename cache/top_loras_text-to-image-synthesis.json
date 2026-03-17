@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1773623754.2884724,
+  "_cached_at": 1773709665.6342483,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 62453,
+      "downloads": 62464,
       "likes": 254,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 11298,
+      "downloads": 11318,
       "likes": 131,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +175,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5217,
+      "downloads": 5301,
       "likes": 44,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 3066,
+      "downloads": 3082,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -223,7 +223,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
       "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
-      "downloads": 2445,
+      "downloads": 2446,
       "likes": 63,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -246,38 +246,6 @@
       "modelscope_url": "https://modelscope.cn/yiwanji/bigBreastsAdpterV1?revision=20250307104624"
     },
     {
-      "id": "merjic/majicbeauty-qwen1",
-      "title_cn": "麦橘千问美人",
-      "title_en": "majicbeauty-qwen1",
-      "author": "merjic",
-      "avatar": "https://resouces.modelscope.cn/avatar/5f8a4f4b-7169-43fe-ad86-df8ef521e71d.jpg",
-      "user_name": "merjic",
-      "user_profile": "https://modelscope.cn/profile/1148307",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
-      "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2286,
-      "likes": 237,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-08-24T15:03:17Z",
-      "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
-    },
-    {
       "id": "laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0",
       "title_cn": "美胸-年美-造相Z-Turbo",
       "title_en": "meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0",
@@ -287,8 +255,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2273,
-      "likes": 38,
+      "downloads": 2299,
+      "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [
         "其他风格",
@@ -312,6 +280,38 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112041259"
     },
     {
+      "id": "merjic/majicbeauty-qwen1",
+      "title_cn": "麦橘千问美人",
+      "title_en": "majicbeauty-qwen1",
+      "author": "merjic",
+      "avatar": "https://resouces.modelscope.cn/avatar/5f8a4f4b-7169-43fe-ad86-df8ef521e71d.jpg",
+      "user_name": "merjic",
+      "user_profile": "https://modelscope.cn/profile/1148307",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
+      "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
+      "downloads": 2288,
+      "likes": 238,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-08-24T15:03:17Z",
+      "modelscope_url": "https://modelscope.cn/merjic/majicbeauty-qwen1?revision=ckpt-14"
+    },
+    {
       "id": "happy976666666/MV001",
       "title_cn": "爆粉美女-万物有灵（一丹一世界）",
       "title_en": "MV001",
@@ -321,7 +321,7 @@
       "user_profile": "https://modelscope.cn/profile/467646",
       "cover_url": "https://resouces.modelscope.cn/cover-images/943342ba-8c5a-43e5-bc75-ffc196328715.png",
       "cover_local": "cache/images/text-to-image-synthesis/MV001.png",
-      "downloads": 2259,
+      "downloads": 2261,
       "likes": 71,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -353,8 +353,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 1366,
-      "likes": 56,
+      "downloads": 1375,
+      "likes": 57,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -419,8 +419,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1100,
-      "likes": 46,
+      "downloads": 1105,
+      "likes": 47,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -440,36 +440,6 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2026-01-06T08:13:43Z",
       "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_2512_Zshx?revision=20260106160721"
-    },
-    {
-      "id": "laonansheng/weilaizhanshi-Z-Image-Turbo-Tongyi-MAI-v1.0",
-      "title_cn": "未来女战士-角色扮演-造相-Z-Turbo",
-      "title_en": "weilaizhanshi-Z-Image-Turbo-Tongyi-MAI-v1.0",
-      "author": "laonansheng",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "laonansheng",
-      "user_profile": "https://modelscope.cn/profile/1478898",
-      "cover_url": "https://resources.modelscope.cn/cover-images/7360fec2-c3f5-46ef-8f68-33d6ace4f8d2.png",
-      "cover_local": "cache/images/text-to-image-synthesis/weilaizhanshi-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1090,
-      "likes": 2,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "扁平抽象"
-      ],
-      "tags_en": [
-        "Flat Abstraction"
-      ],
-      "base_models": [
-        "Tongyi-MAI/Z-Image-Turbo"
-      ],
-      "stable_diffusion_version": "Z_IMAGE_TURBO",
-      "trigger_words": [
-        ""
-      ],
-      "vision_foundation": "Z_IMAGE_TURBO",
-      "updated_at": "2026-01-11T04:46:35Z",
-      "modelscope_url": "https://modelscope.cn/laonansheng/weilaizhanshi-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260111124627"
     },
     {
       "id": "KookYan/Kook_Qwen_zshx_v2",
@@ -513,7 +483,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1006,
+      "downloads": 1011,
       "likes": 18,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -545,7 +515,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 994,
+      "downloads": 997,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -577,7 +547,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 954,
+      "downloads": 966,
       "likes": 49,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -611,7 +581,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8b452598-7094-461c-a14a-bb1ddad76896.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-ArtAug.jpg",
-      "downloads": 918,
+      "downloads": 921,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -632,6 +602,40 @@
       "vision_foundation": "FLUX_1",
       "updated_at": "2025-07-04T09:55:50Z",
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/FLUX.1-Kontext-dev-lora-ArtAug?revision=v1.0"
+    },
+    {
+      "id": "qiyuanai/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce",
+      "title_cn": "Qwen-Image_吊带美女模特_流量密码INS抖音小红书快手写真摄影电商人像",
+      "title_en": "Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce",
+      "author": "qiyuanai",
+      "avatar": "https://resouces.modelscope.cn/avatar/c94b2986-9f13-49fb-a886-7f6603aa9592.png",
+      "user_name": "qiyuanai",
+      "user_profile": "https://modelscope.cn/profile/1605842",
+      "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
+      "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
+      "downloads": 754,
+      "likes": 33,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "CG幻想",
+        "女生",
+        "角色加强"
+      ],
+      "tags_en": [
+        "CG Fantasy",
+        "Woman",
+        "Character Strong"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        "straps"
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-11-26T07:15:18Z",
+      "modelscope_url": "https://modelscope.cn/qiyuanai/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce?revision=20251126115745"
     }
   ]
 }
