@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1774239771.772052,
+  "_cached_at": 1774314246.4364052,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 193,
+      "downloads": 194,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -69,7 +69,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 138,
+      "downloads": 139,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -94,7 +94,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 103,
+      "downloads": 106,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -119,7 +119,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 99,
+      "downloads": 100,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -134,30 +134,6 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
-      "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
-      "title_cn": null,
-      "title_en": "wan2.1_I2V480P_fenshengshu_lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 85,
-      "likes": 2,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-480P"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-19T18:08:45Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
-    },
-    {
       "id": "multimodalart/plstps-lora",
       "title_cn": null,
       "title_en": "plstps-lora",
@@ -167,7 +143,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 85,
+      "downloads": 87,
       "likes": 0,
       "license": "creativeml-openrail-m",
       "tags_cn": [],
@@ -182,6 +158,30 @@
       "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
     },
     {
+      "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
+      "title_cn": null,
+      "title_en": "wan2.1_I2V480P_fenshengshu_lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 86,
+      "likes": 2,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-480P"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-19T18:08:45Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
+    },
+    {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -191,7 +191,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 75,
+      "downloads": 76,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -216,7 +216,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 75,
+      "downloads": 76,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -241,7 +241,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 56,
+      "downloads": 57,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -376,30 +376,6 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-left",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Truck-left",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 17,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T18:09:59Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-left"
-    },
-    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
@@ -494,6 +470,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 13,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:18:48Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right"
     }
   ]
 }
