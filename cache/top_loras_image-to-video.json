@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1774671186.316669,
+  "_cached_at": 1774747076.0405812,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 189,
+      "downloads": 191,
       "likes": 8,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -110,6 +110,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA"
     },
     {
+      "id": "valiantcat/LTX-2.3-Transition-LORA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 107,
+      "likes": 3,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-03-23T05:31:52Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA"
+    },
+    {
       "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
       "title_cn": null,
       "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
@@ -132,30 +156,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-05T06:07:06Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
-    },
-    {
-      "id": "valiantcat/LTX-2.3-Transition-LORA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-Transition-LORA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 98,
-      "likes": 3,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-03-23T05:31:52Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA"
     },
     {
       "id": "multimodalart/plstps-lora",
@@ -302,30 +302,6 @@
       "vision_foundation": "",
       "updated_at": "2026-01-13T05:12:53Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
-    },
-    {
-      "id": "CCP6/erwer-lora",
-      "title_cn": null,
-      "title_en": "erwer-lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "CCP6",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 38,
-      "likes": 0,
-      "license": "creativeml-openrail-m",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-10-01T06:34:09Z",
-      "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
@@ -494,6 +470,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T18:09:59Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-left"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 16,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:18:48Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right"
     }
   ]
 }
