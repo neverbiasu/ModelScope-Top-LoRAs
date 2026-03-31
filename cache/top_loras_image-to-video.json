@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1774845642.0409262,
+  "_cached_at": 1774919765.1479924,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -36,7 +36,7 @@
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
       "downloads": 191,
-      "likes": 8,
+      "likes": 9,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
@@ -94,8 +94,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 122,
-      "likes": 3,
+      "downloads": 134,
+      "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
