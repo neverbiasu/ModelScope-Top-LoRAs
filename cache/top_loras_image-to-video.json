@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1774919765.1479924,
+  "_cached_at": 1774931476.5539255,
   "results": [
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -94,7 +94,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 134,
+      "downloads": 137,
       "likes": 4,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -105,7 +105,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-03-23T05:31:52Z",
+      "updated_at": "2026-03-31T02:44:24Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA"
     },
     {
