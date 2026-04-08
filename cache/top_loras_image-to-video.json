@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1775524634.6994576,
+  "_cached_at": 1775611072.6852603,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,8 +11,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 240,
-      "likes": 4,
+      "downloads": 256,
+      "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -118,7 +118,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 114,
+      "downloads": 115,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -143,7 +143,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 105,
+      "downloads": 106,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -167,7 +167,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 97,
+      "downloads": 98,
       "likes": 0,
       "license": "creativeml-openrail-m",
       "tags_cn": [],
@@ -191,7 +191,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 91,
+      "downloads": 92,
       "likes": 2,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -206,31 +206,6 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
     },
     {
-      "id": "valiantcat/Wan2.1-Mecha-LoRA",
-      "title_cn": null,
-      "title_en": "Wan2.1-Mecha-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 82,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P",
-        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-26T18:30:26Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA"
-    },
-    {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_cn": null,
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -240,7 +215,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 81,
+      "downloads": 83,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -256,6 +231,31 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA"
     },
     {
+      "id": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_cn": null,
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 83,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-26T18:30:26Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA"
+    },
+    {
       "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
       "title_en": "LTX2-I2V-Smooth-LORA",
@@ -265,7 +265,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 63,
+      "downloads": 64,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -376,30 +376,6 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 19,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:22:28Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
-    },
-    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -428,6 +404,30 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-01-23T08:48:19Z",
       "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 19,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:22:28Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
