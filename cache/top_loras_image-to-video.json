@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1776486423.5330446,
+  "_cached_at": 1776561935.0966313,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 385,
+      "downloads": 400,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 208,
+      "downloads": 211,
       "likes": 13,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -376,6 +376,30 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
     },
     {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 20,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T21:09:10Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right"
+    },
+    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in",
@@ -400,28 +424,34 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
+      "id": "qsdq2423432/gameb",
+      "title_cn": "qsdq2423432/gameb",
+      "title_en": "gameb",
+      "author": "qsdq2423432",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "qsdq2423432",
+      "user_profile": "https://modelscope.cn/profile/966199",
+      "cover_url": "https://resources.modelscope.cn/cover-videos/a4561c88-bbb3-4a32-a14a-9b700977ff3a.mp4",
+      "cover_local": "cache/images/image-to-video/gameb.mp4",
       "downloads": 20,
       "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "女生",
+        "角色加强"
       ],
-      "stable_diffusion_version": "",
+      "tags_en": [
+        "Dimension",
+        "Woman",
+        "Character Strong"
+      ],
+      "base_models": [],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
       "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T21:09:10Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right"
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-01-23T08:48:19Z",
+      "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-left",
@@ -470,36 +500,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T20:37:11Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
-      "id": "qsdq2423432/gameb",
-      "title_cn": "qsdq2423432/gameb",
-      "title_en": "gameb",
-      "author": "qsdq2423432",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "qsdq2423432",
-      "user_profile": "https://modelscope.cn/profile/966199",
-      "cover_url": "https://resources.modelscope.cn/cover-videos/a4561c88-bbb3-4a32-a14a-9b700977ff3a.mp4",
-      "cover_local": "cache/images/image-to-video/gameb.mp4",
-      "downloads": 19,
-      "likes": 0,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "二次元",
-        "女生",
-        "角色加强"
-      ],
-      "tags_en": [
-        "Dimension",
-        "Woman",
-        "Character Strong"
-      ],
-      "base_models": [],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-01-23T08:48:19Z",
-      "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
     }
   ]
 }
