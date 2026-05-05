@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1777872511.2057316,
+  "_cached_at": 1777945646.5464058,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 604,
+      "downloads": 617,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 223,
+      "downloads": 225,
       "likes": 13,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -134,6 +134,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA"
     },
     {
+      "id": "multimodalart/plstps-lora",
+      "title_cn": null,
+      "title_en": "plstps-lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "multimodalart",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 109,
+      "likes": 0,
+      "license": "creativeml-openrail-m",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MusePublic/Qwen-image@v1"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-30T09:18:30Z",
+      "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
+    },
+    {
       "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
       "title_cn": null,
       "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
@@ -156,30 +180,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-05T06:07:06Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
-    },
-    {
-      "id": "multimodalart/plstps-lora",
-      "title_cn": null,
-      "title_en": "plstps-lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "multimodalart",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 107,
-      "likes": 0,
-      "license": "creativeml-openrail-m",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/Qwen-image@v1"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-30T09:18:30Z",
-      "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
     },
     {
       "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
