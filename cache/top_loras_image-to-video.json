@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1778303805.9986758,
+  "_cached_at": 1778377785.4854271,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 678,
+      "downloads": 689,
       "likes": 5,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,8 +35,8 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 226,
-      "likes": 13,
+      "downloads": 227,
+      "likes": 14,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
@@ -478,9 +478,9 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Dolly-in"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
       "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
       "author": "systemd",
       "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
       "user_name": "kandinskylab",
@@ -488,7 +488,7 @@
       "cover_url": null,
       "cover_local": null,
       "downloads": 20,
-      "likes": 0,
+      "likes": 1,
       "license": "mit",
       "tags_cn": [],
       "tags_en": [],
@@ -498,8 +498,8 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
+      "updated_at": "2025-11-26T22:25:04Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
     }
   ]
 }
