@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1778391114.6680026,
+  "_cached_at": 1778464638.4039757,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63041,
+      "downloads": 63044,
       "likes": 283,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -66,40 +66,6 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
-      "id": "WANGMOON/MAJICFLUS-photo",
-      "title_cn": "MAJICFLUS-麦橘光影约拍",
-      "title_en": "MAJICFLUS-photo",
-      "author": "WANGMOON",
-      "avatar": "https://resouces.modelscope.cn/avatar/dafdc283-aa02-45c0-b73e-baa856fc0dd5.jpg",
-      "user_name": "WANGMOON",
-      "user_profile": "https://modelscope.cn/profile/1148327",
-      "cover_url": "https://www.modelscope.cn/models/WANGMOON/MAJICFLUS-photo/resolve/master/_cover_images_/d1d2079f-66ef-4900-baae-4a0cb571d5e1.png",
-      "cover_local": "cache/images/text-to-image-synthesis/MAJICFLUS-photo.png",
-      "downloads": 16658,
-      "likes": 97,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": [
-        "girl"
-      ],
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:08Z",
-      "modelscope_url": "https://modelscope.cn/WANGMOON/MAJICFLUS-photo?revision=v1.0"
-    },
-    {
       "id": "LiblibAI/AWPortraitCN",
       "title_cn": "LiblibAI/AWPortraitCN",
       "title_en": "AWPortraitCN",
@@ -109,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/1004206",
       "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
       "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 16090,
+      "downloads": 16092,
       "likes": 57,
       "license": "other",
       "tags_cn": [
@@ -141,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 12676,
+      "downloads": 12696,
       "likes": 147,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -175,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 5912,
+      "downloads": 5916,
       "likes": 50,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -199,8 +165,8 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
-      "downloads": 5268,
-      "likes": 64,
+      "downloads": 5284,
+      "likes": 65,
       "license": "Apache License 2.0",
       "tags_cn": [
         "CG幻想",
@@ -233,8 +199,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 3966,
-      "likes": 6,
+      "downloads": 3978,
+      "likes": 7,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -291,8 +257,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3344,
-      "likes": 53,
+      "downloads": 3355,
+      "likes": 54,
       "license": "Apache License 2.0",
       "tags_cn": [
         "其他风格",
@@ -325,7 +291,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2767,
+      "downloads": 2794,
       "likes": 46,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -357,7 +323,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2543,
+      "downloads": 2545,
       "likes": 288,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -421,8 +387,8 @@
       "user_profile": "https://modelscope.cn/profile/1938120",
       "cover_url": "https://modelscope.cn/models/modelscope/modelscope_aigc_default_logo/resolve/master/aigc_default_logo.png",
       "cover_local": "cache/images/text-to-image-synthesis/r18_pose_real_sdxl.png",
-      "downloads": 2207,
-      "likes": 43,
+      "downloads": 2242,
+      "likes": 45,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -453,7 +419,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 2171,
+      "downloads": 2176,
       "likes": 98,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -485,8 +451,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1873,
-      "likes": 29,
+      "downloads": 1900,
+      "likes": 30,
       "license": "Apache License 2.0",
       "tags_cn": [
         "扁平抽象"
@@ -515,7 +481,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 1670,
+      "downloads": 1687,
       "likes": 97,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -581,7 +547,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1424,
+      "downloads": 1427,
       "likes": 62,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -613,8 +579,8 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 1398,
-      "likes": 66,
+      "downloads": 1404,
+      "likes": 67,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
@@ -636,6 +602,40 @@
       "vision_foundation": "QWEN_IMAGE_20_B",
       "updated_at": "2026-01-09T16:32:20Z",
       "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
+    },
+    {
+      "id": "Liudef/XB_ZIMAGE_TURBO_JK_XY",
+      "title_cn": "Z-image Turbo JK系列",
+      "title_en": "XB_ZIMAGE_TURBO_JK_XY",
+      "author": "Liudef",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "Liudef",
+      "user_profile": "https://modelscope.cn/profile/1477920",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7f29b620-2404-42cf-81d5-6d8f1364f5bf.png",
+      "cover_local": "cache/images/text-to-image-synthesis/XB_ZIMAGE_TURBO_JK_XY.png",
+      "downloads": 1315,
+      "likes": 20,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "服饰",
+        "角色加强"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Clothing",
+        "Character Strong"
+      ],
+      "base_models": [
+        "Tongyi-MAI/Z-Image-Turbo"
+      ],
+      "stable_diffusion_version": "Z_IMAGE_TURBO",
+      "trigger_words": [
+        "JK"
+      ],
+      "vision_foundation": "Z_IMAGE_TURBO",
+      "updated_at": "2026-03-26T23:01:13Z",
+      "modelscope_url": "https://modelscope.cn/Liudef/XB_ZIMAGE_TURBO_JK_XY?revision=20260327070105"
     }
   ]
 }
