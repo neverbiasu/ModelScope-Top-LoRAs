@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1779415567.704435,
+  "_cached_at": 1779429583.5325358,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 891,
+      "downloads": 893,
       "likes": 7,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -454,6 +454,30 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-left"
     },
     {
+      "id": "joyfox/LTX-2.3-Transition-LORA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "joyfox",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 20,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-05-14T13:50:49Z",
+      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA"
+    },
+    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
@@ -476,30 +500,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 20,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     }
   ]
 }
