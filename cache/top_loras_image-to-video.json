@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1779675019.2646668,
+  "_cached_at": 1779690018.1883438,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 939,
+      "downloads": 944,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -304,6 +304,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "joyfox/LTX-2.3-Transition-LORA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "joyfox",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 26,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-05-14T13:50:49Z",
+      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA"
+    },
+    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -356,30 +380,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:18:30Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
-    },
-    {
-      "id": "joyfox/LTX-2.3-Transition-LORA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-Transition-LORA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "joyfox",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 25,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-05-14T13:50:49Z",
-      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
