@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1779690015.6522224,
+  "_cached_at": 1779760864.9762926,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63183,
+      "downloads": 63188,
       "likes": 288,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/ArtAug-lora-FLUX.1dev-v1.jpg",
-      "downloads": 38932,
+      "downloads": 38936,
       "likes": 78,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -75,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 13035,
+      "downloads": 13046,
       "likes": 153,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -109,7 +109,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 6014,
+      "downloads": 6022,
       "likes": 50,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -133,7 +133,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
-      "downloads": 5578,
+      "downloads": 5595,
       "likes": 73,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -167,7 +167,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4104,
+      "downloads": 4109,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -191,7 +191,7 @@
       "user_profile": "https://modelscope.cn/profile/409692",
       "cover_url": "https://resouces.modelscope.cn/cover-images/8aa7fe25-fd6e-4545-a58a-34237d4ed5b0.png",
       "cover_local": "cache/images/text-to-image-synthesis/chengxuyuan.png",
-      "downloads": 3678,
+      "downloads": 3679,
       "likes": 54,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -225,7 +225,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3554,
+      "downloads": 3562,
       "likes": 57,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -259,7 +259,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3348,
+      "downloads": 3371,
       "likes": 52,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -291,7 +291,7 @@
       "user_profile": "https://modelscope.cn/profile/1938120",
       "cover_url": "https://modelscope.cn/models/modelscope/modelscope_aigc_default_logo/resolve/master/aigc_default_logo.png",
       "cover_local": "cache/images/text-to-image-synthesis/r18_pose_real_sdxl.png",
-      "downloads": 2740,
+      "downloads": 2768,
       "likes": 54,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -323,7 +323,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2596,
+      "downloads": 2597,
       "likes": 292,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -355,7 +355,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://resouces.modelscope.cn/cover-images/d7c4330d-6fa6-47bd-8e6c-0ee848c4a7f1.png",
       "cover_local": "cache/images/text-to-image-synthesis/bigBreastsAdpterV1.png",
-      "downloads": 2551,
+      "downloads": 2552,
       "likes": 64,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -387,8 +387,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 2364,
-      "likes": 105,
+      "downloads": 2370,
+      "likes": 107,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -419,7 +419,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2219,
+      "downloads": 2230,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -449,7 +449,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/6ec84a19-6d8d-41dc-9a98-e2f41782feab.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX.1-Kontext-dev-lora-highresfix.jpg",
-      "downloads": 2024,
+      "downloads": 2028,
       "likes": 72,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -481,8 +481,8 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 1922,
-      "likes": 105,
+      "downloads": 1943,
+      "likes": 108,
       "license": "Apache License 2.0",
       "tags_cn": [
         "插画设计",
@@ -513,8 +513,8 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1489,
-      "likes": 66,
+      "downloads": 1498,
+      "likes": 67,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -579,7 +579,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/8c59f97b-0889-4a9d-bfa1-05567870229d.png",
       "cover_local": "cache/images/text-to-image-synthesis/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1387,
+      "downloads": 1398,
       "likes": 11,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -609,7 +609,7 @@
       "user_profile": "https://modelscope.cn/profile/1286174",
       "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
       "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
-      "downloads": 1358,
+      "downloads": 1370,
       "likes": 46,
       "license": "Apache License 2.0",
       "tags_cn": [],
