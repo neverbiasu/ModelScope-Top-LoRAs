@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1780193464.3716383,
+  "_cached_at": 1780207889.457148,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63243,
+      "downloads": 63246,
       "likes": 292,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -107,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 13152,
+      "downloads": 13161,
       "likes": 154,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +141,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 6041,
+      "downloads": 6044,
       "likes": 50,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -199,7 +199,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4150,
+      "downloads": 4151,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -257,7 +257,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3613,
+      "downloads": 3615,
       "likes": 59,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -291,7 +291,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3511,
+      "downloads": 3515,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -323,7 +323,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2616,
+      "downloads": 2617,
       "likes": 296,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -387,7 +387,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 2430,
+      "downloads": 2432,
       "likes": 108,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -419,7 +419,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2295,
+      "downloads": 2296,
       "likes": 33,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -481,7 +481,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 2010,
+      "downloads": 2019,
       "likes": 111,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -604,34 +604,28 @@
       "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
     },
     {
-      "id": "laonansheng/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0",
-      "title_cn": "亚洲美女-造相Z-Turbo",
-      "title_en": "Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0",
-      "author": "laonansheng",
+      "id": "maozukao/Z-image-turbo-fun-unionunion-controlnet",
+      "title_cn": "Z-image多合一控制模型补丁--姿态/深度/线条等",
+      "title_en": "Z-image-turbo-fun-unionunion-controlnet",
+      "author": "maozukao",
       "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "laonansheng",
-      "user_profile": "https://modelscope.cn/profile/1478898",
-      "cover_url": "https://resources.modelscope.cn/cover-images/8c59f97b-0889-4a9d-bfa1-05567870229d.png",
-      "cover_local": "cache/images/text-to-image-synthesis/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1428,
-      "likes": 12,
+      "user_name": "maozukao",
+      "user_profile": "https://modelscope.cn/profile/1286174",
+      "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
+      "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
+      "downloads": 1437,
+      "likes": 52,
       "license": "Apache License 2.0",
-      "tags_cn": [
-        "扁平抽象"
-      ],
-      "tags_en": [
-        "Flat Abstraction"
-      ],
+      "tags_cn": [],
+      "tags_en": [],
       "base_models": [
-        "Tongyi-MAI/Z-Image-Turbo"
+        "langboat/Guohua-Diffusion"
       ],
       "stable_diffusion_version": "Z_IMAGE_TURBO",
-      "trigger_words": [
-        ""
-      ],
+      "trigger_words": null,
       "vision_foundation": "Z_IMAGE_TURBO",
-      "updated_at": "2026-01-17T21:52:57Z",
-      "modelscope_url": "https://modelscope.cn/laonansheng/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260118055249"
+      "updated_at": "2025-12-23T15:11:13Z",
+      "modelscope_url": "https://modelscope.cn/maozukao/Z-image-turbo-fun-unionunion-controlnet?revision=20251223231106"
     }
   ]
 }
