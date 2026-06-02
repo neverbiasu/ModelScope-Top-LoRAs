@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1780367494.5773187,
+  "_cached_at": 1780381764.7748246,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,8 +11,8 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63266,
-      "likes": 293,
+      "downloads": 63271,
+      "likes": 294,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -66,38 +66,6 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
-      "id": "LiblibAI/AWPortraitCN",
-      "title_cn": "LiblibAI/AWPortraitCN",
-      "title_en": "AWPortraitCN",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
-      "user_name": "哩布哩布AI",
-      "user_profile": "https://modelscope.cn/profile/1004206",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
-      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 16130,
-      "likes": 57,
-      "license": "other",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:03Z",
-      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
-    },
-    {
       "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
       "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
       "title_en": "Qwen-Image-Edit-F2P",
@@ -107,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 13212,
+      "downloads": 13214,
       "likes": 155,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -165,7 +133,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
-      "downloads": 5707,
+      "downloads": 5711,
       "likes": 73,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -199,7 +167,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4158,
+      "downloads": 4159,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -257,7 +225,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3555,
+      "downloads": 3562,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -353,7 +321,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 2456,
+      "downloads": 2457,
       "likes": 109,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -385,7 +353,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2305,
+      "downloads": 2306,
       "likes": 33,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -447,7 +415,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 2034,
+      "downloads": 2036,
       "likes": 112,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -479,7 +447,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1532,
+      "downloads": 1534,
       "likes": 67,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -511,7 +479,7 @@
       "user_profile": "https://modelscope.cn/profile/1477920",
       "cover_url": "https://resources.modelscope.cn/cover-images/056e0106-902d-4136-81e5-3c4c8154f8e3.png",
       "cover_local": "cache/images/text-to-image-synthesis/XB_ZIMAGE_TURBO_ECY_V2.png",
-      "downloads": 1496,
+      "downloads": 1497,
       "likes": 8,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -534,6 +502,30 @@
       "vision_foundation": "Z_IMAGE_TURBO",
       "updated_at": "2026-04-02T18:39:42Z",
       "modelscope_url": "https://modelscope.cn/Liudef/XB_ZIMAGE_TURBO_ECY_V2?revision=20260403023935"
+    },
+    {
+      "id": "maozukao/Z-image-turbo-fun-unionunion-controlnet",
+      "title_cn": "Z-image多合一控制模型补丁--姿态/深度/线条等",
+      "title_en": "Z-image-turbo-fun-unionunion-controlnet",
+      "author": "maozukao",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "maozukao",
+      "user_profile": "https://modelscope.cn/profile/1286174",
+      "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
+      "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
+      "downloads": 1466,
+      "likes": 52,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "langboat/Guohua-Diffusion"
+      ],
+      "stable_diffusion_version": "Z_IMAGE_TURBO",
+      "trigger_words": null,
+      "vision_foundation": "Z_IMAGE_TURBO",
+      "updated_at": "2025-12-23T15:11:13Z",
+      "modelscope_url": "https://modelscope.cn/maozukao/Z-image-turbo-fun-unionunion-controlnet?revision=20251223231106"
     },
     {
       "id": "zhouwenbin1994/AnythingtoRealCharacters2511",
@@ -570,30 +562,6 @@
       "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
     },
     {
-      "id": "maozukao/Z-image-turbo-fun-unionunion-controlnet",
-      "title_cn": "Z-image多合一控制模型补丁--姿态/深度/线条等",
-      "title_en": "Z-image-turbo-fun-unionunion-controlnet",
-      "author": "maozukao",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "maozukao",
-      "user_profile": "https://modelscope.cn/profile/1286174",
-      "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
-      "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
-      "downloads": 1460,
-      "likes": 52,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "langboat/Guohua-Diffusion"
-      ],
-      "stable_diffusion_version": "Z_IMAGE_TURBO",
-      "trigger_words": null,
-      "vision_foundation": "Z_IMAGE_TURBO",
-      "updated_at": "2025-12-23T15:11:13Z",
-      "modelscope_url": "https://modelscope.cn/maozukao/Z-image-turbo-fun-unionunion-controlnet?revision=20251223231106"
-    },
-    {
       "id": "laonansheng/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0",
       "title_cn": "亚洲美女-造相Z-Turbo",
       "title_en": "Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0",
@@ -603,7 +571,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/8c59f97b-0889-4a9d-bfa1-05567870229d.png",
       "cover_local": "cache/images/text-to-image-synthesis/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 1440,
+      "downloads": 1443,
       "likes": 12,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -622,6 +590,38 @@
       "vision_foundation": "Z_IMAGE_TURBO",
       "updated_at": "2026-01-17T21:52:57Z",
       "modelscope_url": "https://modelscope.cn/laonansheng/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260118055249"
+    },
+    {
+      "id": "KookYan/Kook_Qwen_zshx_v2",
+      "title_cn": "Kook_Qwen_真实幻想V2",
+      "title_en": "Kook_Qwen_zshx_v2",
+      "author": "KookYan",
+      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
+      "user_name": "KookYan",
+      "user_profile": "https://modelscope.cn/profile/1326437",
+      "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
+      "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
+      "downloads": 1324,
+      "likes": 88,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "人物加强",
+        "CG幻想",
+        "女生"
+      ],
+      "tags_en": [
+        "Character Enhancement",
+        "CG Fantasy",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/Qwen-image@v1"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": null,
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2025-11-12T12:48:59Z",
+      "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_zshx_v2?revision=20251111002109"
     }
   ]
 }
