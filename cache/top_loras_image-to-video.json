@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1780711194.3192823,
+  "_cached_at": 1780724949.7708213,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -289,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/70852204-87cc-4ccd-b88d-8cfcfb342731.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 62,
+      "downloads": 63,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
