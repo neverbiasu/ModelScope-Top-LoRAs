@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1780724949.7708213,
+  "_cached_at": 1780798554.9647183,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1104,
+      "downloads": 1116,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,8 +35,8 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 267,
-      "likes": 16,
+      "downloads": 271,
+      "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [
         "二次元",
@@ -69,7 +69,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 214,
+      "downloads": 215,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -132,30 +132,6 @@
       "vision_foundation": "",
       "updated_at": "2025-08-27T05:35:03Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA"
-    },
-    {
-      "id": "multimodalart/plstps-lora",
-      "title_cn": null,
-      "title_en": "plstps-lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "multimodalart",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 112,
-      "likes": 0,
-      "license": "creativeml-openrail-m",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MusePublic/Qwen-image@v1"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-30T09:18:30Z",
-      "modelscope_url": "https://modelscope.cn/multimodalart/plstps-lora"
     },
     {
       "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
@@ -289,7 +265,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/70852204-87cc-4ccd-b88d-8cfcfb342731.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 63,
+      "downloads": 65,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -500,6 +476,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 18,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:18:48Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Microwave-right"
     }
   ]
 }
