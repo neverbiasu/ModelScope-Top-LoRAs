@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1780885927.5829499,
+  "_cached_at": 1780900570.7119799,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,8 +11,8 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63328,
-      "likes": 294,
+      "downloads": 63329,
+      "likes": 295,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -66,38 +66,6 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
-      "id": "LiblibAI/AWPortraitCN",
-      "title_cn": "LiblibAI/AWPortraitCN",
-      "title_en": "AWPortraitCN",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
-      "user_name": "哩布哩布AI",
-      "user_profile": "https://modelscope.cn/profile/1004206",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
-      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
-      "downloads": 16140,
-      "likes": 57,
-      "license": "other",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/489_ckpt_FLUX_1"
-      ],
-      "stable_diffusion_version": "FLUX_1",
-      "trigger_words": null,
-      "vision_foundation": "FLUX_1",
-      "updated_at": "2025-03-07T08:19:03Z",
-      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
-    },
-    {
       "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
       "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
       "title_en": "Qwen-Image-Edit-F2P",
@@ -107,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 13354,
+      "downloads": 13356,
       "likes": 156,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -141,7 +109,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 6101,
+      "downloads": 6104,
       "likes": 50,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -165,7 +133,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
-      "downloads": 5823,
+      "downloads": 5826,
       "likes": 74,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -199,7 +167,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 4237,
+      "downloads": 4239,
       "likes": 8,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -223,7 +191,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3711,
+      "downloads": 3714,
       "likes": 56,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -323,7 +291,7 @@
       "user_profile": "https://modelscope.cn/profile/1148307",
       "cover_url": "https://resouces.modelscope.cn/cover-images/1a2fa271-0254-4a48-87fb-37c07fc9ee8e.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/majicbeauty-qwen1.jpeg",
-      "downloads": 2633,
+      "downloads": 2634,
       "likes": 299,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -449,7 +417,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 2078,
+      "downloads": 2080,
       "likes": 114,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -569,7 +537,7 @@
       "user_profile": "https://modelscope.cn/profile/1477920",
       "cover_url": "https://resources.modelscope.cn/cover-images/056e0106-902d-4136-81e5-3c4c8154f8e3.png",
       "cover_local": "cache/images/text-to-image-synthesis/XB_ZIMAGE_TURBO_ECY_V2.png",
-      "downloads": 1537,
+      "downloads": 1539,
       "likes": 9,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -622,6 +590,40 @@
       "vision_foundation": "Z_IMAGE_TURBO",
       "updated_at": "2026-01-17T21:52:57Z",
       "modelscope_url": "https://modelscope.cn/laonansheng/Asian-beauty-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260118055249"
+    },
+    {
+      "id": "zhouwenbin1994/AnythingtoRealCharacters2511",
+      "title_cn": "Anything to Real Characters 2511 动漫转真人",
+      "title_en": "AnythingtoRealCharacters2511",
+      "author": "zhouwenbin1994",
+      "avatar": "https://resouces.modelscope.cn/avatar/21d80c53-9fae-409b-a8ec-70d1aec1ad7d.jpg",
+      "user_name": "zhouwenbin1994",
+      "user_profile": "https://modelscope.cn/profile/1572166",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
+      "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
+      "downloads": 1476,
+      "likes": 72,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "画风加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Art Style Strong",
+        "Woman"
+      ],
+      "base_models": [
+        "Qwen/Qwen-Image-Edit-2511"
+      ],
+      "stable_diffusion_version": "QWEN_IMAGE_20_B",
+      "trigger_words": [
+        ""
+      ],
+      "vision_foundation": "QWEN_IMAGE_20_B",
+      "updated_at": "2026-05-21T05:16:41Z",
+      "modelscope_url": "https://modelscope.cn/zhouwenbin1994/AnythingtoRealCharacters2511?revision=20260108231519"
     }
   ]
 }
