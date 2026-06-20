@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1781921360.4975119,
+  "_cached_at": 1781936048.6970956,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1300,
+      "downloads": 1311,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -182,6 +182,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
     },
     {
+      "id": "joyfox/LTX-2.3-Transition-LORA",
+      "title_cn": "joyfox/LTX-2.3-Transition-LORA",
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "joyfox",
+      "user_profile": "https://modelscope.cn/profile/2316490",
+      "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
+      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
+      "downloads": 93,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "LTX_VIDEO",
+      "trigger_words": null,
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-06-17T15:24:38Z",
+      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA?revision=20260617232432"
+    },
+    {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -205,30 +229,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T23:09:02Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
-    },
-    {
-      "id": "joyfox/LTX-2.3-Transition-LORA",
-      "title_cn": "joyfox/LTX-2.3-Transition-LORA",
-      "title_en": "LTX-2.3-Transition-LORA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "joyfox",
-      "user_profile": "https://modelscope.cn/profile/2316490",
-      "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
-      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 91,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-17T15:24:38Z",
-      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA?revision=20260617232432"
     },
     {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
