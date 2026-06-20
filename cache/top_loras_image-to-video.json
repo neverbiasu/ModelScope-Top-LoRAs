@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1781852335.0825434,
+  "_cached_at": 1781921360.4975119,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,8 +11,8 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1290,
-      "likes": 8,
+      "downloads": 1300,
+      "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
@@ -69,7 +69,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 219,
+      "downloads": 220,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -118,7 +118,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/efc63bbc-3357-4946-953b-00c4be8e7363.gif",
       "cover_local": "cache/images/image-to-video/Wan2.1-Fight-LoRA.gif",
-      "downloads": 132,
+      "downloads": 134,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
