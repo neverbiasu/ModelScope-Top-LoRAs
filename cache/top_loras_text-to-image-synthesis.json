@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1782180192.890105,
+  "_cached_at": 1782194448.4745271,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63487,
+      "downloads": 63489,
       "likes": 303,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -66,6 +66,38 @@
       "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0"
     },
     {
+      "id": "LiblibAI/AWPortraitCN",
+      "title_cn": "LiblibAI/AWPortraitCN",
+      "title_en": "AWPortraitCN",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/88c2dbaf-87a2-425c-82c3-66d3f22246ef.png",
+      "user_name": "哩布哩布AI",
+      "user_profile": "https://modelscope.cn/profile/1004206",
+      "cover_url": "https://resouces.modelscope.cn/cover-images/9538065e-d4d9-4c0f-aea7-407787c5be6d.png",
+      "cover_local": "cache/images/text-to-image-synthesis/AWPortraitCN.png",
+      "downloads": 16164,
+      "likes": 58,
+      "license": "other",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "MusePublic/489_ckpt_FLUX_1"
+      ],
+      "stable_diffusion_version": "FLUX_1",
+      "trigger_words": null,
+      "vision_foundation": "FLUX_1",
+      "updated_at": "2025-03-07T08:19:03Z",
+      "modelscope_url": "https://modelscope.cn/LiblibAI/AWPortraitCN?revision=v1.0"
+    },
+    {
       "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
       "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
       "title_en": "Qwen-Image-Edit-F2P",
@@ -75,7 +107,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 13783,
+      "downloads": 13788,
       "likes": 160,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -133,7 +165,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce.png",
-      "downloads": 6083,
+      "downloads": 6085,
       "likes": 80,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -191,7 +223,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 4188,
+      "downloads": 4194,
       "likes": 61,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -223,7 +255,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3909,
+      "downloads": 3912,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -257,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 2752,
+      "downloads": 2753,
       "likes": 119,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -321,7 +353,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 2661,
+      "downloads": 2664,
       "likes": 37,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -383,7 +415,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 2286,
+      "downloads": 2287,
       "likes": 124,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -415,7 +447,7 @@
       "user_profile": "https://modelscope.cn/profile/1286174",
       "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
       "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
-      "downloads": 1834,
+      "downloads": 1836,
       "likes": 66,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -503,7 +535,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/1a893b08-7b11-4938-a26d-6ce174678f54.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_Zshx.jpeg",
-      "downloads": 1632,
+      "downloads": 1634,
       "likes": 71,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -535,7 +567,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 1545,
+      "downloads": 1546,
       "likes": 80,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -569,7 +601,7 @@
       "user_profile": "https://modelscope.cn/profile/1477920",
       "cover_url": "https://resources.modelscope.cn/cover-images/7f29b620-2404-42cf-81d5-6d8f1364f5bf.png",
       "cover_local": "cache/images/text-to-image-synthesis/XB_ZIMAGE_TURBO_JK_XY.png",
-      "downloads": 1416,
+      "downloads": 1419,
       "likes": 38,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -592,38 +624,6 @@
       "vision_foundation": "Z_IMAGE_TURBO",
       "updated_at": "2026-03-26T23:01:13Z",
       "modelscope_url": "https://modelscope.cn/Liudef/XB_ZIMAGE_TURBO_JK_XY?revision=20260327070105"
-    },
-    {
-      "id": "KookYan/Kook_Qwen_zshx_v2",
-      "title_cn": "Kook_Qwen_真实幻想V2",
-      "title_en": "Kook_Qwen_zshx_v2",
-      "author": "KookYan",
-      "avatar": "https://resouces.modelscope.cn/avatar/c5270a7d-b37c-4a57-9bd7-3aaf1a3056af.jpg",
-      "user_name": "KookYan",
-      "user_profile": "https://modelscope.cn/profile/1326437",
-      "cover_url": "https://resources.modelscope.cn/cover-images/bc165073-5ece-40ff-968f-2e8741e1efab.JPG",
-      "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_zshx_v2.JPG",
-      "downloads": 1393,
-      "likes": 90,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "人物加强",
-        "CG幻想",
-        "女生"
-      ],
-      "tags_en": [
-        "Character Enhancement",
-        "CG Fantasy",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-image@v1"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": null,
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-11-12T12:48:59Z",
-      "modelscope_url": "https://modelscope.cn/KookYan/Kook_Qwen_zshx_v2?revision=20251111002109"
     }
   ]
 }
