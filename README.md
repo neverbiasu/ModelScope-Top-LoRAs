@@ -426,6 +426,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -437,9 +439,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,487 | 303 |
-| 2 | ![ArtAug-lora-FLUX.1dev-v1](https://resouces.modelscope.cn/cover-images/1db17e27-74ab-45e2-b2dc-1ed105ac5fe2.jpg) | [ArtAug-lora-FLUX.1dev-v1](https://modelscope.cn/DiffSynth-Studio/ArtAug-lora-FLUX.1dev-v1?revision=v1.0) | Artiprocher | 38,997 | 79 |
-| 3 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 13,783 | 160 |
+| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,503 | 304 |
+| 2 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 13,803 | 160 |
+| 3 | ![Qwen-Image-2512-Turbo-LoRA](https://resources.modelscope.cn/cover-images/297d11dd-e199-46ff-aea2-f763a062ee60.jpeg) | [Qwen-Image-2512-Turbo-LoRA](https://modelscope.cn/Wuli-Art/Qwen-Image-2512-Turbo-LoRA?revision=20260617014952) | cimashiro | 6,194 | 52 |
 
 
 ## Quick start

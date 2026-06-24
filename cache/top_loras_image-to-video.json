@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1782194452.3357608,
+  "_cached_at": 1782266701.154537,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1361,
+      "downloads": 1366,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -69,7 +69,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/8cc5a0d7-9482-4529-ae4a-efa55f13b178.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 268,
+      "downloads": 271,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -81,7 +81,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-22T23:12:21Z",
+      "updated_at": "2026-06-23T22:53:46Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260621084748"
     },
     {
@@ -216,7 +216,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 95,
+      "downloads": 97,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -353,6 +353,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "CCP6/erwer-lora",
+      "title_cn": null,
+      "title_en": "erwer-lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "CCP6",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 38,
+      "likes": 0,
+      "license": "creativeml-openrail-m",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-10-01T06:34:09Z",
+      "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
+    },
+    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
@@ -477,30 +501,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Truck-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 22,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T21:09:10Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right"
     }
   ]
 }
