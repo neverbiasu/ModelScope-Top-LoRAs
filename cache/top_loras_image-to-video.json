@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1782367185.8912628,
+  "_cached_at": 1782439646.436239,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1372,
+      "downloads": 1387,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -69,7 +69,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/8cc5a0d7-9482-4529-ae4a-efa55f13b178.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 271,
+      "downloads": 272,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -81,7 +81,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-24T22:16:14Z",
+      "updated_at": "2026-06-26T00:32:23Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260621084748"
     },
     {
@@ -183,6 +183,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
+      "id": "joyfox/LTX-2.3-Transition-LORA",
+      "title_cn": "joyfox/LTX-2.3-Transition-LORA",
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "joyfox",
+      "user_profile": "https://modelscope.cn/profile/2316490",
+      "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
+      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
+      "downloads": 103,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "LTX_VIDEO",
+      "trigger_words": null,
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-06-17T15:24:38Z",
+      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA?revision=20260617232432"
+    },
+    {
       "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
       "title_cn": null,
       "title_en": "wan2.1_I2V480P_fenshengshu_lora",
@@ -205,30 +229,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-19T18:08:45Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
-    },
-    {
-      "id": "joyfox/LTX-2.3-Transition-LORA",
-      "title_cn": "joyfox/LTX-2.3-Transition-LORA",
-      "title_en": "LTX-2.3-Transition-LORA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "joyfox",
-      "user_profile": "https://modelscope.cn/profile/2316490",
-      "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
-      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 98,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-17T15:24:38Z",
-      "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA?revision=20260617232432"
     },
     {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
@@ -338,7 +338,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 56,
+      "downloads": 57,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
