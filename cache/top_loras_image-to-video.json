@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1782453871.5352757,
+  "_cached_at": 1782525743.0967824,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1389,
+      "downloads": 1397,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 281,
+      "downloads": 283,
       "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -69,7 +69,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/8cc5a0d7-9482-4529-ae4a-efa55f13b178.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 274,
+      "downloads": 276,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -81,7 +81,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-26T00:32:23Z",
+      "updated_at": "2026-06-27T00:58:07Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260621084748"
     },
     {
@@ -240,7 +240,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/8a892860-ef11-416c-9cc3-4e7f96aa1bf6.jpeg",
       "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 95,
+      "downloads": 97,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
