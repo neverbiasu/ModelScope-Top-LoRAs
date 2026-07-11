@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1783663024.5982738,
+  "_cached_at": 1783733154.5987546,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1610,
+      "downloads": 1624,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/8cc5a0d7-9482-4529-ae4a-efa55f13b178.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 305,
+      "downloads": 309,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -47,7 +47,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-07-08T22:22:49Z",
+      "updated_at": "2026-07-10T19:38:31Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260621084748"
     },
     {
@@ -94,7 +94,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 234,
+      "downloads": 236,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -118,7 +118,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 197,
+      "downloads": 213,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -362,7 +362,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 44,
+      "downloads": 45,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -401,6 +401,30 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
+      "id": "fal/ltx2.3-audio-reactive-lora",
+      "title_cn": "fal/ltx2.3-audio-reactive-lora",
+      "title_en": "ltx2.3-audio-reactive-lora",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": "https://modelscope.cn/profile/1536262",
+      "cover_url": "https://resources.modelscope.cn/cover-images/c57cb969-2aea-437e-83c4-53ed34545e84.gif",
+      "cover_local": "cache/images/image-to-video/ltx2.3-audio-reactive-lora.gif",
+      "downloads": 32,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "LTX_VIDEO",
+      "trigger_words": null,
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-06-16T18:21:42Z",
+      "modelscope_url": "https://modelscope.cn/fal/ltx2.3-audio-reactive-lora?revision=20260613025310"
+    },
+    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -429,30 +453,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-01-23T08:48:19Z",
       "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
-    },
-    {
-      "id": "fal/ltx2.3-audio-reactive-lora",
-      "title_cn": "fal/ltx2.3-audio-reactive-lora",
-      "title_en": "ltx2.3-audio-reactive-lora",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": "https://modelscope.cn/profile/1536262",
-      "cover_url": "https://resources.modelscope.cn/cover-images/c57cb969-2aea-437e-83c4-53ed34545e84.gif",
-      "cover_local": "cache/images/image-to-video/ltx2.3-audio-reactive-lora.gif",
-      "downloads": 30,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-16T18:21:42Z",
-      "modelscope_url": "https://modelscope.cn/fal/ltx2.3-audio-reactive-lora?revision=20260613025310"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
