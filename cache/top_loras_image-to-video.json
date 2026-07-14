@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1783991866.871541,
+  "_cached_at": 1784004288.7368276,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1658,
+      "downloads": 1659,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -94,7 +94,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 254,
+      "downloads": 255,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -362,7 +362,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 48,
+      "downloads": 49,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -373,7 +373,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-07-08T20:57:07Z",
+      "updated_at": "2026-07-14T04:44:40Z",
       "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
