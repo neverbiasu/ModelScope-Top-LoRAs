@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1784165057.3054607,
+  "_cached_at": 1784177671.6811335,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1695,
+      "downloads": 1698,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/8cc5a0d7-9482-4529-ae4a-efa55f13b178.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 318,
+      "downloads": 319,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -47,7 +47,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-07-14T18:48:58Z",
+      "updated_at": "2026-07-16T01:40:16Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260621084748"
     },
     {
@@ -94,7 +94,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 271,
+      "downloads": 274,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -479,28 +479,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
+      "id": "hf/SyFeee-LTX2.3-Dual-Character-en",
+      "title_cn": "hf/SyFeee-LTX2.3-Dual-Character-en",
+      "title_en": "SyFeee-LTX2.3-Dual-Character-en",
       "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": "https://modelscope.cn/profile/1828803",
+      "cover_url": "https://resources.modelscope.cn/cover-images/b4db52c2-dcac-452a-90bc-95e9db6a981d.png",
+      "cover_local": "cache/images/image-to-video/SyFeee-LTX2.3-Dual-Character-en.png",
       "downloads": 26,
       "likes": 0,
-      "license": "mit",
+      "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+        "Lightricks/LTX-2.3"
       ],
-      "stable_diffusion_version": "",
+      "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:36:53Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-06-16T14:29:29Z",
+      "modelscope_url": "https://modelscope.cn/hf/SyFeee-LTX2.3-Dual-Character-en?revision=20260616222923"
     }
   ]
 }
