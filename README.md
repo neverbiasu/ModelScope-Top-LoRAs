@@ -462,6 +462,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -473,9 +475,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,687 | 314 |
-| 2 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 14,276 | 162 |
-| 3 | ![Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce](https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png) | [Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce](https://modelscope.cn/qiyuanai/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce?revision=20251126115745) | qiyuanai | 6,331 | 85 |
+| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,701 | 314 |
+| 2 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 14,301 | 162 |
+| 3 | ![Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce](https://resources.modelscope.cn/cover-images/1aef9184-c27b-4d10-bef2-ef190a432625.png) | [Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce](https://modelscope.cn/qiyuanai/Qwen_Image_Strapless_Beauty_Model_Traffic_Code_INS_Douyin_Xiaohongshu_Kuaishou_Portrait_Photography_E_commerce?revision=20251126115745) | qiyuanai | 6,335 | 85 |
 
 
 ## Quick start
