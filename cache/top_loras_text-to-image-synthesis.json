@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1784517014.5425835,
+  "_cached_at": 1784525562.174664,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 14362,
+      "downloads": 14363,
       "likes": 162,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -111,7 +111,7 @@
       "user_profile": "https://modelscope.cn/profile/1898355",
       "cover_url": "https://resources.modelscope.cn/cover-images/297d11dd-e199-46ff-aea2-f763a062ee60.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-2512-Turbo-LoRA.jpeg",
-      "downloads": 6342,
+      "downloads": 6343,
       "likes": 52,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -415,7 +415,7 @@
       "user_profile": "https://modelscope.cn/profile/942750",
       "cover_url": "https://resources.modelscope.cn/cover-images/8c92037d-10a9-4b65-b145-7f3a88096401.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea-2-Turbo-zishi.png",
-      "downloads": 1436,
+      "downloads": 1437,
       "likes": 53,
       "license": "Apache License 2.0",
       "tags_cn": [
