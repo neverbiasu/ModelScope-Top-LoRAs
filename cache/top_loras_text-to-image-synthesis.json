@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1784597111.239096,
+  "_cached_at": 1784610871.0434713,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 14377,
+      "downloads": 14381,
       "likes": 162,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -239,7 +239,7 @@
       "user_profile": "https://modelscope.cn/profile/1605842",
       "cover_url": "https://resources.modelscope.cn/cover-images/3a440478-b834-44fd-b991-fd2239927f04.png",
       "cover_local": "cache/images/text-to-image-synthesis/Nano-Banana_Trending_Disassemble_Clothes_One-Click-Generation.png",
-      "downloads": 2476,
+      "downloads": 2487,
       "likes": 131,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -357,7 +357,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 1692,
+      "downloads": 1694,
       "likes": 86,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -391,7 +391,7 @@
       "user_profile": "https://modelscope.cn/profile/942750",
       "cover_url": "https://resources.modelscope.cn/cover-images/8c92037d-10a9-4b65-b145-7f3a88096401.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea-2-Turbo-zishi.png",
-      "downloads": 1523,
+      "downloads": 1527,
       "likes": 54,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -457,7 +457,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resouces.modelscope.cn/cover-images/f8223023-abd3-43f4-acbb-0b6cce1a46f5.png",
       "cover_local": "cache/images/text-to-image-synthesis/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0.png",
-      "downloads": 1066,
+      "downloads": 1067,
       "likes": 23,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -491,7 +491,7 @@
       "user_profile": "https://modelscope.cn/profile/940551",
       "cover_url": "https://resources.modelscope.cn/cover-images/0e60bc2d-a1b4-4269-b303-20890d99e885.png",
       "cover_local": "cache/images/text-to-image-synthesis/allin-suiyuan1-krea2-turbo.png",
-      "downloads": 698,
+      "downloads": 699,
       "likes": 11,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -517,7 +517,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/9f685231-8e7c-4abb-96df-c26278352dda.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/3DChineseStyle.jpg",
-      "downloads": 552,
+      "downloads": 553,
       "likes": 28,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -611,7 +611,7 @@
       "user_profile": "https://modelscope.cn/profile/940551",
       "cover_url": "https://resources.modelscope.cn/cover-images/d97a2b3d-6fd5-4b76-af6f-9c6f55e8dd36.png",
       "cover_local": "cache/images/text-to-image-synthesis/allin-rh1-krea2-turbo.png",
-      "downloads": 448,
+      "downloads": 449,
       "likes": 11,
       "license": "Apache License 2.0",
       "tags_cn": [],
