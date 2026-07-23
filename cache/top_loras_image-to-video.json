@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1784697223.798907,
+  "_cached_at": 1784771034.415986,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1776,
+      "downloads": 1781,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 352,
+      "downloads": 359,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -254,6 +254,31 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T23:09:02Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
+    },
+    {
+      "id": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": "https://modelscope.cn/profile/1631750",
+      "cover_url": "https://resources.modelscope.cn/cover-images/d5500c79-3eca-4bb7-a962-be0e9e4dedb1.jpeg",
+      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
+      "downloads": 89,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T20:12:59Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
     },
     {
       "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
@@ -476,30 +501,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 26,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:36:53Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
     }
   ]
 }
