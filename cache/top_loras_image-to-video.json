@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785116938.7725277,
+  "_cached_at": 1785130951.7143555,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1838,
+      "downloads": 1841,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 408,
+      "downloads": 410,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -479,28 +479,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
+      "id": "hf/SyFeee-LTX2.3-Dual-Character-en",
+      "title_cn": "hf/SyFeee-LTX2.3-Dual-Character-en",
+      "title_en": "SyFeee-LTX2.3-Dual-Character-en",
       "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 26,
-      "likes": 1,
-      "license": "mit",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": "https://modelscope.cn/profile/1828803",
+      "cover_url": "https://resources.modelscope.cn/cover-images/b4db52c2-dcac-452a-90bc-95e9db6a981d.png",
+      "cover_local": "cache/images/image-to-video/SyFeee-LTX2.3-Dual-Character-en.png",
+      "downloads": 27,
+      "likes": 0,
+      "license": "apache-2.0",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+        "Lightricks/LTX-2.3"
       ],
-      "stable_diffusion_version": "",
+      "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:25:04Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-06-16T14:29:29Z",
+      "modelscope_url": "https://modelscope.cn/hf/SyFeee-LTX2.3-Dual-Character-en?revision=20260616222923"
     }
   ]
 }
