@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785043492.083479,
+  "_cached_at": 1785116938.7725277,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1822,
+      "downloads": 1838,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 397,
+      "downloads": 408,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -118,7 +118,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 253,
+      "downloads": 254,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -207,6 +207,31 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
+      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": "https://modelscope.cn/profile/76061",
+      "cover_url": "https://resources.modelscope.cn/cover-images/8a892860-ef11-416c-9cc3-4e7f96aa1bf6.jpeg",
+      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
+      "downloads": 102,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T23:09:02Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
+    },
+    {
       "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
       "title_cn": null,
       "title_en": "wan2.1_I2V480P_fenshengshu_lora",
@@ -229,31 +254,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-19T18:08:45Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
-    },
-    {
-      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
-      "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
-      "title_en": "Wan2.1-Mecha-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": "https://modelscope.cn/profile/76061",
-      "cover_url": "https://resources.modelscope.cn/cover-images/8a892860-ef11-416c-9cc3-4e7f96aa1bf6.jpeg",
-      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 101,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P",
-        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-06-16T23:09:02Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
     },
     {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
@@ -329,6 +329,30 @@
       "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
     },
     {
+      "id": "fal/LTX-2.3-3DREAL-LoRA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-3DREAL-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 59,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-Video"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-07-14T04:44:40Z",
+      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
+    },
+    {
       "id": "valiantcat/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
       "title_en": "LTX2-I2V-Smooth-LORA",
@@ -351,30 +375,6 @@
       "vision_foundation": "",
       "updated_at": "2026-01-13T05:12:53Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
-    },
-    {
-      "id": "fal/LTX-2.3-3DREAL-LoRA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-3DREAL-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 54,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-Video"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-07-14T04:44:40Z",
-      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
@@ -410,7 +410,7 @@
       "user_profile": "https://modelscope.cn/profile/1536262",
       "cover_url": "https://resources.modelscope.cn/cover-images/c57cb969-2aea-437e-83c4-53ed34545e84.gif",
       "cover_local": "cache/images/image-to-video/ltx2.3-audio-reactive-lora.gif",
-      "downloads": 35,
+      "downloads": 36,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
