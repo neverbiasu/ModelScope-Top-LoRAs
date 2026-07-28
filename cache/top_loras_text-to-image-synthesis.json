@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785201772.1197019,
+  "_cached_at": 1785214671.0379198,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63755,
+      "downloads": 63758,
       "likes": 317,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 14509,
+      "downloads": 14512,
       "likes": 162,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -111,7 +111,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 5312,
+      "downloads": 5323,
       "likes": 73,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -143,7 +143,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 4308,
+      "downloads": 4309,
       "likes": 72,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -177,7 +177,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3306,
+      "downloads": 3307,
       "likes": 43,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -207,7 +207,7 @@
       "user_profile": "https://modelscope.cn/profile/1286174",
       "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
       "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
-      "downloads": 2230,
+      "downloads": 2231,
       "likes": 87,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -231,7 +231,7 @@
       "user_profile": "https://modelscope.cn/profile/942750",
       "cover_url": "https://resources.modelscope.cn/cover-images/8c92037d-10a9-4b65-b145-7f3a88096401.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea-2-Turbo-zishi.png",
-      "downloads": 1942,
+      "downloads": 1973,
       "likes": 74,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -331,7 +331,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resouces.modelscope.cn/cover-images/f8223023-abd3-43f4-acbb-0b6cce1a46f5.png",
       "cover_local": "cache/images/text-to-image-synthesis/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0.png",
-      "downloads": 1114,
+      "downloads": 1115,
       "likes": 23,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -365,8 +365,8 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-TM-GreatFigure.png",
-      "downloads": 782,
-      "likes": 31,
+      "downloads": 795,
+      "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -431,7 +431,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/9affefb2-ce60-4c40-ba04-c943ea744bf8.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-FQWZ-ArtStyle.png",
-      "downloads": 600,
+      "downloads": 607,
       "likes": 27,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -463,7 +463,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/41bdf904-2add-428f-a1e1-83c6116a5b33.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-CcFQWZ-Portrait.png",
-      "downloads": 578,
+      "downloads": 580,
       "likes": 29,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -563,7 +563,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/a96ea282-4f91-4ac9-83f6-ec7cec9f29e6.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-MJ-FilterStyle.png",
-      "downloads": 463,
+      "downloads": 466,
       "likes": 22,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -595,7 +595,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/5490de9a-bcb8-44d5-b886-82ec717d6f45.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-glnz-test.png",
-      "downloads": 450,
+      "downloads": 452,
       "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -621,7 +621,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/88a6a42a-4623-495d-a7db-7ebb9d6a4117.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-dlrb-test.png",
-      "downloads": 444,
+      "downloads": 446,
       "likes": 11,
       "license": "Apache License 2.0",
       "tags_cn": [],
