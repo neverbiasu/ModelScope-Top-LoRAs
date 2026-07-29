@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785214675.9783628,
+  "_cached_at": 1785288234.1004891,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1850,
+      "downloads": 1863,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 416,
+      "downloads": 423,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -434,7 +434,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/a4561c88-bbb3-4a32-a14a-9b700977ff3a.mp4",
       "cover_local": "cache/images/image-to-video/gameb.mp4",
-      "downloads": 34,
+      "downloads": 35,
       "likes": 0,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -479,28 +479,28 @@
       "modelscope_url": "https://modelscope.cn/hf/SyFeee-LTX2.3-Dual-Character-en?revision=20260616222923"
     },
     {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
+      "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
+      "title_cn": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
+      "title_en": "LTX-2.3-22b-LoRA-Cinemagraph",
       "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": "https://modelscope.cn/profile/1228295",
+      "cover_url": "https://resources.modelscope.cn/cover-images/86732401-2848-42d3-9776-efa8e4b79d5d.jpeg",
+      "cover_local": "cache/images/image-to-video/LTX-2.3-22b-LoRA-Cinemagraph.jpeg",
       "downloads": 27,
       "likes": 0,
-      "license": "mit",
+      "license": "other",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+        "Lightricks/LTX-2.3"
       ],
-      "stable_diffusion_version": "",
+      "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:18:30Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-07-28T17:27:03Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     }
   ]
 }
