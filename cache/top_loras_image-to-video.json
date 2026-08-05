@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785819453.9620118,
+  "_cached_at": 1785893092.0194783,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1922,
+      "downloads": 1929,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 473,
+      "downloads": 481,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -281,6 +281,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "fal/LTX-2.3-3DREAL-LoRA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-3DREAL-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 67,
+      "likes": 1,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-Video"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-07-14T04:44:40Z",
+      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
+    },
+    {
       "id": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
       "title_cn": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
       "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -303,30 +327,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T15:52:40Z",
       "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
-    },
-    {
-      "id": "fal/LTX-2.3-3DREAL-LoRA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-3DREAL-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 66,
-      "likes": 1,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-Video"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-07-14T04:44:40Z",
-      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
       "id": "valiantcat/LTX2-I2V-Smooth-LORA",
