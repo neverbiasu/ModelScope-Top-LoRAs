@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1785905940.7665493,
+  "_cached_at": 1785979343.390132,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1930,
+      "downloads": 1939,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 481,
+      "downloads": 487,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -118,7 +118,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 258,
+      "downloads": 260,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -353,6 +353,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
+      "title_cn": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
+      "title_en": "LTX-2.3-22b-LoRA-Cinemagraph",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": "https://modelscope.cn/profile/1228295",
+      "cover_url": "https://resources.modelscope.cn/cover-images/86732401-2848-42d3-9776-efa8e4b79d5d.jpeg",
+      "cover_local": "cache/images/image-to-video/LTX-2.3-22b-LoRA-Cinemagraph.jpeg",
+      "downloads": 39,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "LTX_VIDEO",
+      "trigger_words": null,
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-07-28T17:27:03Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
+    },
+    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -405,30 +429,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T20:37:11Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
-      "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
-      "title_cn": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
-      "title_en": "LTX-2.3-22b-LoRA-Cinemagraph",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
-      "user_profile": "https://modelscope.cn/profile/1228295",
-      "cover_url": "https://resources.modelscope.cn/cover-images/86732401-2848-42d3-9776-efa8e4b79d5d.jpeg",
-      "cover_local": "cache/images/image-to-video/LTX-2.3-22b-LoRA-Cinemagraph.jpeg",
-      "downloads": 37,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-07-28T17:27:03Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     },
     {
       "id": "fal/ltx2.3-audio-reactive-lora",
