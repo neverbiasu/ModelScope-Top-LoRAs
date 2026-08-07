@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1786068105.8715131,
+  "_cached_at": 1786076452.6991653,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/987294",
       "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 14680,
+      "downloads": 14681,
       "likes": 165,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -293,7 +293,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-TM-GreatFigure.png",
-      "downloads": 1423,
+      "downloads": 1427,
       "likes": 65,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -325,7 +325,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resouces.modelscope.cn/cover-images/f8223023-abd3-43f4-acbb-0b6cce1a46f5.png",
       "cover_local": "cache/images/text-to-image-synthesis/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0.png",
-      "downloads": 1208,
+      "downloads": 1210,
       "likes": 25,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -359,7 +359,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/9affefb2-ce60-4c40-ba04-c943ea744bf8.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-FQWZ-ArtStyle.png",
-      "downloads": 992,
+      "downloads": 996,
       "likes": 46,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -391,7 +391,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/41bdf904-2add-428f-a1e1-83c6116a5b33.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-CcFQWZ-Portrait.png",
-      "downloads": 901,
+      "downloads": 903,
       "likes": 40,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -457,7 +457,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/a96ea282-4f91-4ac9-83f6-ec7cec9f29e6.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-MJ-FilterStyle.png",
-      "downloads": 675,
+      "downloads": 679,
       "likes": 32,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -489,7 +489,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/88a6a42a-4623-495d-a7db-7ebb9d6a4117.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-dlrb-test.png",
-      "downloads": 570,
+      "downloads": 573,
       "likes": 16,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -515,7 +515,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/5490de9a-bcb8-44d5-b886-82ec717d6f45.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-glnz-test.png",
-      "downloads": 544,
+      "downloads": 546,
       "likes": 20,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -575,7 +575,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/861dca70-3ee7-492b-9c4a-4e98623fe442.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-fbb-test.png",
-      "downloads": 431,
+      "downloads": 432,
       "likes": 15,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -601,7 +601,7 @@
       "user_profile": "https://modelscope.cn/profile/1850204",
       "cover_url": "https://resources.modelscope.cn/cover-images/32e7e89b-3c9c-4f9e-86f1-c7844c5d6047.png",
       "cover_local": "cache/images/text-to-image-synthesis/gyyv2-krea.png",
-      "downloads": 389,
+      "downloads": 390,
       "likes": 9,
       "license": "Apache License 2.0",
       "tags_cn": [],
