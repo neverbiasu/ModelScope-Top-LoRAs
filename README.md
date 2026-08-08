@@ -506,6 +506,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -517,9 +519,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,811 | 317 |
-| 2 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 14,680 | 165 |
-| 3 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 5,459 | 74 |
+| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 63,813 | 317 |
+| 2 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 14,696 | 166 |
+| 3 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 5,477 | 74 |
 
 
 ## Quick start
