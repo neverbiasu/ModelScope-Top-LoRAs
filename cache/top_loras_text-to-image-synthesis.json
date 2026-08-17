@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1786848799.554057,
+  "_cached_at": 1786926826.1174676,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 63858,
+      "downloads": 63862,
       "likes": 320,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -34,40 +34,6 @@
       "modelscope_url": "https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0"
     },
     {
-      "id": "DiffSynth-Studio/Qwen-Image-Edit-F2P",
-      "title_cn": "Qwen-Image-Edit-F2P 人脸生成图像",
-      "title_en": "Qwen-Image-Edit-F2P",
-      "author": "Artiprocher",
-      "avatar": "https://resouces.modelscope.cn/avatar/54ebab57-445d-4525-b466-c94af58a899f.png",
-      "user_name": "DiffSynth-Studio",
-      "user_profile": "https://modelscope.cn/profile/987294",
-      "cover_url": "https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg",
-      "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-Edit-F2P.jpg",
-      "downloads": 14823,
-      "likes": 168,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "MusePublic/Qwen-Image-Edit"
-      ],
-      "stable_diffusion_version": "QWEN_IMAGE_20_B",
-      "trigger_words": [
-        "摄影"
-      ],
-      "vision_foundation": "QWEN_IMAGE_20_B",
-      "updated_at": "2025-10-17T10:14:57Z",
-      "modelscope_url": "https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1"
-    },
-    {
       "id": "laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0",
       "title_cn": "软情-造相Z-Turbo",
       "title_en": "ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0",
@@ -77,8 +43,8 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 5624,
-      "likes": 79,
+      "downloads": 5647,
+      "likes": 80,
       "license": "Apache License 2.0",
       "tags_cn": [
         "扁平抽象",
@@ -109,7 +75,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png",
       "cover_local": "cache/images/text-to-image-synthesis/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 4555,
+      "downloads": 4565,
       "likes": 79,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -143,7 +109,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/47272226-b386-48a9-bd46-2351380cbb78.png",
       "cover_local": "cache/images/text-to-image-synthesis/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 3556,
+      "downloads": 3564,
       "likes": 51,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -173,7 +139,7 @@
       "user_profile": "https://modelscope.cn/profile/1326437",
       "cover_url": "https://resources.modelscope.cn/cover-images/75155092-723c-4ebc-a997-2b82308d1d5b.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Kook_Qwen_2512_jzzs.jpeg",
-      "downloads": 3160,
+      "downloads": 3165,
       "likes": 128,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -205,7 +171,7 @@
       "user_profile": "https://modelscope.cn/profile/1286174",
       "cover_url": "https://resources.modelscope.cn/cover-images/2bde0374-870b-45d7-9a3a-4dc07bdd2e10.png",
       "cover_local": "cache/images/text-to-image-synthesis/Z-image-turbo-fun-unionunion-controlnet.png",
-      "downloads": 2377,
+      "downloads": 2383,
       "likes": 91,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -229,7 +195,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-TM-GreatFigure.png",
-      "downloads": 1952,
+      "downloads": 2008,
       "likes": 85,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -261,7 +227,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/7584e8e7-aad8-4f30-a725-9af4e7d668f5.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/AnythingtoRealCharacters2511.jpg",
-      "downloads": 1829,
+      "downloads": 1834,
       "likes": 98,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -295,7 +261,7 @@
       "user_profile": "https://modelscope.cn/profile/1964602",
       "cover_url": "https://resources.modelscope.cn/cover-images/70bca153-f099-491c-a044-a7943ba40d4c.jpeg",
       "cover_local": "cache/images/text-to-image-synthesis/Z-Image-realistic_portrait-roleplay-prop_detail-1770363034.962795.jpeg",
-      "downloads": 1510,
+      "downloads": 1514,
       "likes": 38,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -327,8 +293,8 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/9affefb2-ce60-4c40-ba04-c943ea744bf8.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-FQWZ-ArtStyle.png",
-      "downloads": 1296,
-      "likes": 56,
+      "downloads": 1344,
+      "likes": 57,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -350,6 +316,38 @@
       "modelscope_url": "https://modelscope.cn/yan303145427/krea2-Cc-FQWZ-ArtStyle?revision=20260716204803"
     },
     {
+      "id": "yan303145427/krea2-CcFQWZ-Portrait",
+      "title_cn": "krea2-Cc风情万种",
+      "title_en": "krea2-CcFQWZ-Portrait",
+      "author": "yan303145427",
+      "avatar": "https://resources.modelscope.cn/avatar/91ca7ac2-b5ab-4451-8516-5477ecb9ce78.jpg",
+      "user_name": "yan303145427",
+      "user_profile": "https://modelscope.cn/profile/1927256",
+      "cover_url": "https://resources.modelscope.cn/cover-images/41bdf904-2add-428f-a1e1-83c6116a5b33.png",
+      "cover_local": "cache/images/text-to-image-synthesis/krea2-CcFQWZ-Portrait.png",
+      "downloads": 1245,
+      "likes": 49,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "人物加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Character Enhancement",
+        "Woman"
+      ],
+      "base_models": [
+        "krea/Krea-2-Turbo"
+      ],
+      "stable_diffusion_version": "KREA_2",
+      "trigger_words": null,
+      "vision_foundation": "KREA_2",
+      "updated_at": "2026-07-07T04:43:47Z",
+      "modelscope_url": "https://modelscope.cn/yan303145427/krea2-CcFQWZ-Portrait?revision=20260707124329"
+    },
+    {
       "id": "laonansheng/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0",
       "title_cn": "Pony-写实逼真纯欲美女-SDXL-v1.0",
       "title_en": "Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0",
@@ -359,7 +357,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resouces.modelscope.cn/cover-images/f8223023-abd3-43f4-acbb-0b6cce1a46f5.png",
       "cover_local": "cache/images/text-to-image-synthesis/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0.png",
-      "downloads": 1243,
+      "downloads": 1245,
       "likes": 25,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -384,38 +382,6 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/Pony_Realistic-Pure-Desire-Beauty-SDXL_v1.0?revision=ckpt-20"
     },
     {
-      "id": "yan303145427/krea2-CcFQWZ-Portrait",
-      "title_cn": "krea2-Cc风情万种",
-      "title_en": "krea2-CcFQWZ-Portrait",
-      "author": "yan303145427",
-      "avatar": "https://resources.modelscope.cn/avatar/91ca7ac2-b5ab-4451-8516-5477ecb9ce78.jpg",
-      "user_name": "yan303145427",
-      "user_profile": "https://modelscope.cn/profile/1927256",
-      "cover_url": "https://resources.modelscope.cn/cover-images/41bdf904-2add-428f-a1e1-83c6116a5b33.png",
-      "cover_local": "cache/images/text-to-image-synthesis/krea2-CcFQWZ-Portrait.png",
-      "downloads": 1202,
-      "likes": 48,
-      "license": "Apache License 2.0",
-      "tags_cn": [
-        "写实摄影",
-        "人物加强",
-        "女生"
-      ],
-      "tags_en": [
-        "Photography",
-        "Character Enhancement",
-        "Woman"
-      ],
-      "base_models": [
-        "krea/Krea-2-Turbo"
-      ],
-      "stable_diffusion_version": "KREA_2",
-      "trigger_words": null,
-      "vision_foundation": "KREA_2",
-      "updated_at": "2026-07-07T04:43:47Z",
-      "modelscope_url": "https://modelscope.cn/yan303145427/krea2-CcFQWZ-Portrait?revision=20260707124329"
-    },
-    {
       "id": "yan303145427/krea2-Cc-MJ-FilterStyle",
       "title_cn": "krea2-Cc-MJ风格滤镜",
       "title_en": "krea2-Cc-MJ-FilterStyle",
@@ -425,7 +391,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/a96ea282-4f91-4ac9-83f6-ec7cec9f29e6.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-MJ-FilterStyle.png",
-      "downloads": 837,
+      "downloads": 868,
       "likes": 36,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -491,7 +457,7 @@
       "user_profile": "https://modelscope.cn/profile/1974422",
       "cover_url": "https://resources.modelscope.cn/cover-images/5490de9a-bcb8-44d5-b886-82ec717d6f45.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2-glnz-test.png",
-      "downloads": 586,
+      "downloads": 588,
       "likes": 22,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -517,7 +483,7 @@
       "user_profile": "https://modelscope.cn/profile/1637748",
       "cover_url": "https://resources.modelscope.cn/cover-images/437f3edb-9089-4c15-aa49-8aed176763a1.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea-2-Turbo-SF-SNZX.png",
-      "downloads": 512,
+      "downloads": 520,
       "likes": 18,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -534,32 +500,6 @@
       "modelscope_url": "https://modelscope.cn/taeny1314/Krea-2-Turbo-SF-SNZX?revision=20260720114222"
     },
     {
-      "id": "asd547877752/jujingyikera2",
-      "title_cn": "鞠婧祎",
-      "title_en": "jujingyikera2",
-      "author": "asd547877752",
-      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
-      "user_name": "asd547877752",
-      "user_profile": "https://modelscope.cn/profile/2091238",
-      "cover_url": "https://resources.modelscope.cn/cover-images/aa209e08-c669-4ee9-9945-da07ae400fad.png",
-      "cover_local": "cache/images/text-to-image-synthesis/jujingyikera2.png",
-      "downloads": 454,
-      "likes": 14,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "krea/Krea-2-Turbo"
-      ],
-      "stable_diffusion_version": "KREA_2",
-      "trigger_words": [
-        "jujingyi"
-      ],
-      "vision_foundation": "KREA_2",
-      "updated_at": "2026-07-05T04:41:37Z",
-      "modelscope_url": "https://modelscope.cn/asd547877752/jujingyikera2?revision=20260705124126"
-    },
-    {
       "id": "pkadam/gyyv2-krea",
       "title_cn": "高圆圆v2-krea",
       "title_en": "gyyv2-krea",
@@ -569,7 +509,7 @@
       "user_profile": "https://modelscope.cn/profile/1850204",
       "cover_url": "https://resources.modelscope.cn/cover-images/32e7e89b-3c9c-4f9e-86f1-c7844c5d6047.png",
       "cover_local": "cache/images/text-to-image-synthesis/gyyv2-krea.png",
-      "downloads": 449,
+      "downloads": 463,
       "likes": 9,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -586,6 +526,32 @@
       "modelscope_url": "https://modelscope.cn/pkadam/gyyv2-krea?revision=20260718120915"
     },
     {
+      "id": "asd547877752/jujingyikera2",
+      "title_cn": "鞠婧祎",
+      "title_en": "jujingyikera2",
+      "author": "asd547877752",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "asd547877752",
+      "user_profile": "https://modelscope.cn/profile/2091238",
+      "cover_url": "https://resources.modelscope.cn/cover-images/aa209e08-c669-4ee9-9945-da07ae400fad.png",
+      "cover_local": "cache/images/text-to-image-synthesis/jujingyikera2.png",
+      "downloads": 458,
+      "likes": 14,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "krea/Krea-2-Turbo"
+      ],
+      "stable_diffusion_version": "KREA_2",
+      "trigger_words": [
+        "jujingyi"
+      ],
+      "vision_foundation": "KREA_2",
+      "updated_at": "2026-07-05T04:41:37Z",
+      "modelscope_url": "https://modelscope.cn/asd547877752/jujingyikera2?revision=20260705124126"
+    },
+    {
       "id": "Liudef/XB_KREA_2_TURBO_CG",
       "title_cn": "Krea-2-Turbo CG画风",
       "title_en": "XB_KREA_2_TURBO_CG",
@@ -595,7 +561,7 @@
       "user_profile": "https://modelscope.cn/profile/1477920",
       "cover_url": "https://resources.modelscope.cn/cover-images/104e27a0-6266-426d-b491-c43cdd673c4d.png",
       "cover_local": "cache/images/text-to-image-synthesis/XB_KREA_2_TURBO_CG.png",
-      "downloads": 400,
+      "downloads": 406,
       "likes": 16,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -610,6 +576,40 @@
       "vision_foundation": "KREA_2",
       "updated_at": "2026-06-29T14:07:38Z",
       "modelscope_url": "https://modelscope.cn/Liudef/XB_KREA_2_TURBO_CG?revision=20260629220718"
+    },
+    {
+      "id": "zhouwenbin1994/Krea2_DreamCos_Realism",
+      "title_cn": "Krea2_幻光真实Coser",
+      "title_en": "Krea2_DreamCos_Realism",
+      "author": "zhouwenbin1994",
+      "avatar": "https://resouces.modelscope.cn/avatar/21d80c53-9fae-409b-a8ec-70d1aec1ad7d.jpg",
+      "user_name": "zhouwenbin1994",
+      "user_profile": "https://modelscope.cn/profile/1572166",
+      "cover_url": "https://resources.modelscope.cn/cover-images/7bec69ec-a9d9-419e-8957-e590ee469ccf.png",
+      "cover_local": "cache/images/text-to-image-synthesis/Krea2_DreamCos_Realism.png",
+      "downloads": 362,
+      "likes": 8,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "写实摄影",
+        "画风加强",
+        "女生"
+      ],
+      "tags_en": [
+        "Photography",
+        "Art Style Strong",
+        "Woman"
+      ],
+      "base_models": [
+        "krea/Krea-2-Turbo"
+      ],
+      "stable_diffusion_version": "KREA_2",
+      "trigger_words": [
+        ""
+      ],
+      "vision_foundation": "KREA_2",
+      "updated_at": "2026-07-26T10:24:55Z",
+      "modelscope_url": "https://modelscope.cn/zhouwenbin1994/Krea2_DreamCos_Realism?revision=20260726073752"
     }
   ]
 }
