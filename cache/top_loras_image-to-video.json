@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1787366857.523187,
+  "_cached_at": 1787445395.3274293,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 1988,
+      "downloads": 1990,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -376,6 +376,30 @@
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     },
     {
+      "id": "AI-ModelScope/LTX-2.3-Transition-LORA",
+      "title_cn": "AI-ModelScope/LTX-2.3-Transition-LORA",
+      "title_en": "LTX-2.3-Transition-LORA",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": "https://modelscope.cn/profile/76061",
+      "cover_url": "https://resources.modelscope.cn/cover-images/5de9d7ec-39d3-4040-975a-cfa8c8a78a52.png",
+      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
+      "downloads": 39,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.3"
+      ],
+      "stable_diffusion_version": "LTX_VIDEO",
+      "trigger_words": null,
+      "vision_foundation": "LTX_VIDEO",
+      "updated_at": "2026-07-20T05:13:28Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
+    },
+    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -404,30 +428,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-01-23T08:48:19Z",
       "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
-    },
-    {
-      "id": "AI-ModelScope/LTX-2.3-Transition-LORA",
-      "title_cn": "AI-ModelScope/LTX-2.3-Transition-LORA",
-      "title_en": "LTX-2.3-Transition-LORA",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": "https://modelscope.cn/profile/76061",
-      "cover_url": "https://resources.modelscope.cn/cover-images/5de9d7ec-39d3-4040-975a-cfa8c8a78a52.png",
-      "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 37,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-07-20T05:13:28Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
     },
     {
       "id": "fal/ltx2.3-audio-reactive-lora",
