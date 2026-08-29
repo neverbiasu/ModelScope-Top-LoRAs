@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1787924306.9694145,
+  "_cached_at": 1787978228.7282794,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2009,
+      "downloads": 2010,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 534,
+      "downloads": 535,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -430,6 +430,30 @@
       "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
     },
     {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 38,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T20:37:11Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
+    },
+    {
       "id": "hf/SyFeee-LTX2.3-Dual-Character-en",
       "title_cn": "hf/SyFeee-LTX2.3-Dual-Character-en",
       "title_en": "SyFeee-LTX2.3-Dual-Character-en",
@@ -463,7 +487,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 27,
+      "downloads": 33,
       "likes": 0,
       "license": "mit",
       "tags_cn": [],
@@ -476,30 +500,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T21:09:10Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Truck-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 27,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:18:30Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     }
   ]
 }
