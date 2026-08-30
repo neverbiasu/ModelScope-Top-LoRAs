@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1787992180.3615794,
+  "_cached_at": 1788055733.0963144,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 535,
+      "downloads": 536,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 427,
+      "downloads": 428,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
