@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1788163067.5720565,
+  "_cached_at": 1788229516.0306368,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2013,
+      "downloads": 2016,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -410,7 +410,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/5de9d7ec-39d3-4040-975a-cfa8c8a78a52.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 41,
+      "downloads": 44,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -479,28 +479,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
-      "id": "hf/SyFeee-LTX2.3-Dual-Character-en",
-      "title_cn": "hf/SyFeee-LTX2.3-Dual-Character-en",
-      "title_en": "SyFeee-LTX2.3-Dual-Character-en",
+      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "title_cn": null,
+      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
       "author": "systemd",
       "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
       "user_name": "hf",
-      "user_profile": "https://modelscope.cn/profile/1828803",
-      "cover_url": "https://resources.modelscope.cn/cover-images/b4db52c2-dcac-452a-90bc-95e9db6a981d.png",
-      "cover_local": "cache/images/image-to-video/SyFeee-LTX2.3-Dual-Character-en.png",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
       "downloads": 34,
       "likes": 0,
-      "license": "apache-2.0",
+      "license": "other",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "Lightricks/LTX-2.3"
+        "MiniMaxAI/MiniMax-H3"
       ],
-      "stable_diffusion_version": "LTX_VIDEO",
+      "stable_diffusion_version": "",
       "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-16T14:29:29Z",
-      "modelscope_url": "https://modelscope.cn/hf/SyFeee-LTX2.3-Dual-Character-en?revision=20260616222923"
+      "vision_foundation": "",
+      "updated_at": "2026-08-31T18:20:02Z",
+      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     }
   ]
 }
