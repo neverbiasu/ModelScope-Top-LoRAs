@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1788246210.2935069,
+  "_cached_at": 1788313591.8487883,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2016,
+      "downloads": 2024,
       "likes": 9,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 537,
+      "downloads": 539,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -353,6 +353,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "title_cn": null,
+      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 60,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-01T14:54:24Z",
+      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
+    },
+    {
       "id": "valiantcat/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
       "title_en": "LTX2-I2V-Smooth-LORA",
@@ -397,7 +421,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-07-28T17:27:03Z",
+      "updated_at": "2026-09-01T16:22:14Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     },
     {
@@ -477,30 +501,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T20:37:11Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
-      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "title_cn": null,
-      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "hf",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 34,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-08-31T18:20:02Z",
-      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     }
   ]
 }
