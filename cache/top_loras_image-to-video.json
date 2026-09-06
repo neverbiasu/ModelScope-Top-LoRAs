@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1788590053.387105,
+  "_cached_at": 1788658898.5379646,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2029,
+      "downloads": 2032,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -158,6 +158,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Divine-Power-LoRA?revision=20260616225626"
     },
     {
+      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "title_cn": null,
+      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 152,
+      "likes": 4,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-05T14:07:06Z",
+      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
+    },
+    {
       "id": "valiantcat/Wan2.1-Fight-LoRA",
       "title_cn": "valiantcat/Wan2.1-Fight-LoRA",
       "title_en": "Wan2.1-Fight-LoRA",
@@ -181,30 +205,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T18:40:30Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA?revision=20260617024023"
-    },
-    {
-      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "title_cn": null,
-      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "hf",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 121,
-      "likes": 3,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-09-02T12:57:52Z",
-      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
       "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
@@ -425,6 +425,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
     },
     {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 38,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T20:37:11Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
+    },
+    {
       "id": "qsdq2423432/gameb",
       "title_cn": "qsdq2423432/gameb",
       "title_en": "gameb",
@@ -453,30 +477,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-01-23T08:48:19Z",
       "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 38,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
       "id": "fal/ltx2.3-audio-reactive-lora",
