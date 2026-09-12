@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1789109564.230125,
+  "_cached_at": 1789178208.060291,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2057,
+      "downloads": 2058,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 452,
+      "downloads": 455,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -142,7 +142,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 198,
+      "downloads": 206,
       "likes": 7,
       "license": "other",
       "tags_cn": [],
@@ -153,7 +153,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-09-10T13:20:28Z",
+      "updated_at": "2026-09-11T13:26:38Z",
       "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
@@ -256,30 +256,6 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
     },
     {
-      "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
-      "title_cn": null,
-      "title_en": "wan2.1_I2V480P_fenshengshu_lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 102,
-      "likes": 2,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-480P"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-19T18:08:45Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
-    },
-    {
       "id": "fal/LTX-2.3-3DREAL-LoRA",
       "title_cn": null,
       "title_en": "LTX-2.3-3DREAL-LoRA",
@@ -351,6 +327,30 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T15:52:40Z",
       "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
+    },
+    {
+      "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
+      "title_cn": null,
+      "title_en": "LTX2-I2V-Smooth-LORA",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 70,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-01-13T05:11:00Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
     },
     {
       "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
@@ -449,6 +449,36 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
+      "id": "qsdq2423432/gameb",
+      "title_cn": "qsdq2423432/gameb",
+      "title_en": "gameb",
+      "author": "qsdq2423432",
+      "avatar": "https://img.alicdn.com/imgextra/i1/O1CN01yhHrHg1Pdl3UKPhGc_!!6000000001864-2-tps-88-88.png",
+      "user_name": "qsdq2423432",
+      "user_profile": "https://modelscope.cn/profile/966199",
+      "cover_url": "https://resources.modelscope.cn/cover-videos/a4561c88-bbb3-4a32-a14a-9b700977ff3a.mp4",
+      "cover_local": "cache/images/image-to-video/gameb.mp4",
+      "downloads": 38,
+      "likes": 0,
+      "license": "Apache License 2.0",
+      "tags_cn": [
+        "二次元",
+        "女生",
+        "角色加强"
+      ],
+      "tags_en": [
+        "Dimension",
+        "Woman",
+        "Character Strong"
+      ],
+      "base_models": [],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-01-23T08:48:19Z",
+      "modelscope_url": "https://modelscope.cn/qsdq2423432/gameb?revision=20260123162321"
+    },
+    {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
       "title_cn": null,
       "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
@@ -471,30 +501,6 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:36:53Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
-    },
-    {
-      "id": "hf/SyFeee-LTX2.3-Dual-Character-en",
-      "title_cn": "hf/SyFeee-LTX2.3-Dual-Character-en",
-      "title_en": "SyFeee-LTX2.3-Dual-Character-en",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "hf",
-      "user_profile": "https://modelscope.cn/profile/1828803",
-      "cover_url": "https://resources.modelscope.cn/cover-images/b4db52c2-dcac-452a-90bc-95e9db6a981d.png",
-      "cover_local": "cache/images/image-to-video/SyFeee-LTX2.3-Dual-Character-en.png",
-      "downloads": 35,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.3"
-      ],
-      "stable_diffusion_version": "LTX_VIDEO",
-      "trigger_words": null,
-      "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-06-16T14:29:29Z",
-      "modelscope_url": "https://modelscope.cn/hf/SyFeee-LTX2.3-Dual-Character-en?revision=20260616222923"
     }
   ]
 }
