@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1789178208.060291,
+  "_cached_at": 1789195471.7674563,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -207,6 +207,31 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA?revision=20260617024023"
     },
     {
+      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": "https://modelscope.cn/profile/76061",
+      "cover_url": "https://resources.modelscope.cn/cover-images/8a892860-ef11-416c-9cc3-4e7f96aa1bf6.jpeg",
+      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
+      "downloads": 110,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T23:09:02Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
+    },
+    {
       "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
       "title_cn": null,
       "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
@@ -229,31 +254,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-05T06:07:06Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
-    },
-    {
-      "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
-      "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
-      "title_en": "Wan2.1-Mecha-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": "https://modelscope.cn/profile/76061",
-      "cover_url": "https://resources.modelscope.cn/cover-images/8a892860-ef11-416c-9cc3-4e7f96aa1bf6.jpeg",
-      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 109,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P",
-        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-06-16T23:09:02Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
     },
     {
       "id": "fal/LTX-2.3-3DREAL-LoRA",
