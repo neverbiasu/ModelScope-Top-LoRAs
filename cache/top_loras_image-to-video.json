@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1789351627.296444,
+  "_cached_at": 1789370712.9172032,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2060,
+      "downloads": 2061,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -256,6 +256,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
+      "id": "fal/LTX-2.3-3DREAL-LoRA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-3DREAL-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 104,
+      "likes": 1,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-Video"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-07-14T04:44:40Z",
+      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
+    },
+    {
       "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
       "title_cn": null,
       "title_en": "wan2.1_I2V480P_fenshengshu_lora",
@@ -278,30 +302,6 @@
       "vision_foundation": "",
       "updated_at": "2025-09-19T18:08:45Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
-    },
-    {
-      "id": "fal/LTX-2.3-3DREAL-LoRA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-3DREAL-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 101,
-      "likes": 1,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-Video"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-07-14T04:44:40Z",
-      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
@@ -362,7 +362,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 70,
+      "downloads": 72,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
