@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1789370712.9172032,
+  "_cached_at": 1789438536.8071935,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2061,
+      "downloads": 2070,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -142,7 +142,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 214,
+      "downloads": 218,
       "likes": 7,
       "license": "other",
       "tags_cn": [],
@@ -207,6 +207,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA?revision=20260617024023"
     },
     {
+      "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
+      "title_cn": null,
+      "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 111,
+      "likes": 1,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-480P"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-05T06:07:06Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
+    },
+    {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_cn": "AI-ModelScope/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -230,30 +254,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T23:09:02Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
-    },
-    {
-      "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
-      "title_cn": null,
-      "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 110,
-      "likes": 1,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-480P"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-05T06:07:06Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
     },
     {
       "id": "fal/LTX-2.3-3DREAL-LoRA",
@@ -289,7 +289,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 102,
+      "downloads": 103,
       "likes": 2,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -410,7 +410,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 59,
+      "downloads": 60,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -434,7 +434,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/5de9d7ec-39d3-4040-975a-cfa8c8a78a52.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 45,
+      "downloads": 46,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
