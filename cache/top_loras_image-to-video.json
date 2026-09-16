@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1789455713.056897,
+  "_cached_at": 1789524417.1773562,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2070,
+      "downloads": 2072,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -142,7 +142,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 220,
+      "downloads": 227,
       "likes": 7,
       "license": "other",
       "tags_cn": [],
@@ -191,7 +191,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/efc63bbc-3357-4946-953b-00c4be8e7363.gif",
       "cover_local": "cache/images/image-to-video/Wan2.1-Fight-LoRA.gif",
-      "downloads": 147,
+      "downloads": 153,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -401,6 +401,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "CCP6/erwer-lora",
+      "title_cn": null,
+      "title_en": "erwer-lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "CCP6",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 70,
+      "likes": 0,
+      "license": "creativeml-openrail-m",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-10-01T06:34:09Z",
+      "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
+    },
+    {
       "id": "valiantcat/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
       "title_en": "LTX2-I2V-Smooth-LORA",
@@ -425,6 +449,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
     },
     {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 50,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T20:37:11Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
+    },
+    {
       "id": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_cn": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_en": "LTX-2.3-Transition-LORA",
@@ -447,54 +495,6 @@
       "vision_foundation": "LTX_VIDEO",
       "updated_at": "2026-07-20T05:13:28Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 44,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T20:37:11Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-left",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 40,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:36:53Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-left"
     }
   ]
 }
