@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1790043182.819712,
+  "_cached_at": 1790060871.6812124,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -59,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 493,
+      "downloads": 499,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 326,
+      "downloads": 330,
       "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -142,7 +142,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 263,
+      "downloads": 264,
       "likes": 10,
       "license": "other",
       "tags_cn": [],
@@ -280,6 +280,30 @@
       "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
+      "id": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "title_cn": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "lovis93",
+      "user_profile": "https://modelscope.cn/profile/1848168",
+      "cover_url": "https://resources.modelscope.cn/cover-images/637bcedf-6169-4906-a76b-29b54875c78a.png",
+      "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
+      "downloads": 100,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T15:52:40Z",
+      "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
+    },
+    {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -305,30 +329,6 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
     },
     {
-      "id": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "title_cn": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "lovis93",
-      "user_profile": "https://modelscope.cn/profile/1848168",
-      "cover_url": "https://resources.modelscope.cn/cover-images/637bcedf-6169-4906-a76b-29b54875c78a.png",
-      "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 94,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-06-16T15:52:40Z",
-      "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
-    },
-    {
       "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
       "title_cn": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
       "title_en": "LTX-2.3-22b-LoRA-Cinemagraph",
@@ -338,7 +338,7 @@
       "user_profile": "https://modelscope.cn/profile/1228295",
       "cover_url": "https://resources.modelscope.cn/cover-images/86732401-2848-42d3-9776-efa8e4b79d5d.jpeg",
       "cover_local": "cache/images/image-to-video/LTX-2.3-22b-LoRA-Cinemagraph.jpeg",
-      "downloads": 84,
+      "downloads": 95,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -458,7 +458,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/5de9d7ec-39d3-4040-975a-cfa8c8a78a52.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 46,
+      "downloads": 47,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
