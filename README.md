@@ -614,6 +614,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -625,9 +627,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 15,502 | 172 |
-| 2 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 6,225 | 92 |
-| 3 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 5,236 | 217 |
+| 1 | ![Qwen-Image-Edit-F2P](https://resouces.modelscope.cn/cover-images/60690951-d47a-48c6-aee8-c6f845de2c75.jpg) | [Qwen-Image-Edit-F2P](https://modelscope.cn/DiffSynth-Studio/Qwen-Image-Edit-F2P?revision=v1) | Artiprocher | 15,516 | 172 |
+| 2 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 6,243 | 92 |
+| 3 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 5,292 | 218 |
 
 
 ## Quick start
