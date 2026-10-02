@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1790841982.3238432,
+  "_cached_at": 1790909743.69349,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2126,
+      "downloads": 2129,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 523,
+      "downloads": 526,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 350,
+      "downloads": 354,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -95,7 +95,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-09-29T13:34:51Z",
+      "updated_at": "2026-10-01T13:24:31Z",
       "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
@@ -191,7 +191,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/7a1bb479-72eb-410f-b126-e7e06ddbaa28.png",
       "cover_local": "cache/images/image-to-video/Wan2.1-Divine-Power-LoRA.png",
-      "downloads": 164,
+      "downloads": 165,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
