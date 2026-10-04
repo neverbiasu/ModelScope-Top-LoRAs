@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1791083669.7841928,
+  "_cached_at": 1791099480.5504045,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -99,6 +99,30 @@
       "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
+      "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "title_cn": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
+      "author": "Cherrytest",
+      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
+      "user_name": "为AI成魔",
+      "user_profile": "https://modelscope.cn/profile/76061",
+      "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
+      "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
+      "downloads": 335,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T23:07:43Z",
+      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260617070738"
+    },
+    {
       "id": "qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
       "title_cn": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
       "title_en": "livewallpaper_wan22_14b_i2v_low_model_0_1_e26",
@@ -131,30 +155,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2025-11-30T07:53:13Z",
       "modelscope_url": "https://modelscope.cn/qsdq2423432/livewallpaper_wan22_14b_i2v_low_model_0_1_e26?revision=20251130155256"
-    },
-    {
-      "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "title_cn": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "title_en": "Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
-      "author": "Cherrytest",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": "https://modelscope.cn/profile/76061",
-      "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
-      "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 329,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-06-16T23:07:43Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260617070738"
     },
     {
       "id": "valiantcat/Wan2.1-Fight-LoRA",
