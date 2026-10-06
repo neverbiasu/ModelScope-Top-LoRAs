@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1791187356.8440323,
+  "_cached_at": 1791257955.00627,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2134,
+      "downloads": 2135,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 544,
+      "downloads": 551,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 380,
+      "downloads": 384,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -95,7 +95,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-10-01T13:24:31Z",
+      "updated_at": "2026-10-05T16:10:51Z",
       "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
@@ -108,7 +108,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 338,
+      "downloads": 339,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -132,7 +132,7 @@
       "user_profile": "https://modelscope.cn/profile/966199",
       "cover_url": "https://resources.modelscope.cn/cover-videos/63de9e71-4756-4c6f-b23d-3545f9ce28a1.mp4",
       "cover_local": "cache/images/image-to-video/livewallpaper_wan22_14b_i2v_low_model_0_1_e26.mp4",
-      "downloads": 332,
+      "downloads": 335,
       "likes": 17,
       "license": "Apache License 2.0",
       "tags_cn": [
