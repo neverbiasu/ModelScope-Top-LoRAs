@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1791447250.0176592,
+  "_cached_at": 1791516456.7320526,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2145,
+      "downloads": 2148,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 592,
+      "downloads": 600,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 401,
+      "downloads": 408,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -108,7 +108,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 339,
+      "downloads": 340,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -216,7 +216,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 122,
+      "downloads": 123,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -229,6 +229,31 @@
       "vision_foundation": "",
       "updated_at": "2026-07-14T04:44:40Z",
       "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
+    },
+    {
+      "id": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
+      "title_en": "Wan2.1-Mecha-LoRA",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": "https://modelscope.cn/profile/1631750",
+      "cover_url": "https://resources.modelscope.cn/cover-images/d5500c79-3eca-4bb7-a962-be0e9e4dedb1.jpeg",
+      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
+      "downloads": 120,
+      "likes": 0,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-720P",
+        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
+      ],
+      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "trigger_words": null,
+      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
+      "updated_at": "2026-06-16T20:12:59Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
     },
     {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
@@ -254,31 +279,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T23:09:02Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Mecha-LoRA?revision=20260617070858"
-    },
-    {
-      "id": "valiantcat/Wan2.1-Mecha-LoRA",
-      "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
-      "title_en": "Wan2.1-Mecha-LoRA",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": "https://modelscope.cn/profile/1631750",
-      "cover_url": "https://resources.modelscope.cn/cover-images/d5500c79-3eca-4bb7-a962-be0e9e4dedb1.jpeg",
-      "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 114,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-720P",
-        "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers"
-      ],
-      "stable_diffusion_version": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "trigger_words": null,
-      "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
-      "updated_at": "2026-06-16T20:12:59Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
     },
     {
       "id": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",

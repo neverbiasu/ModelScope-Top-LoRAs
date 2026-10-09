@@ -630,6 +630,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -641,9 +643,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 6,310 | 96 |
-| 2 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 5,684 | 228 |
-| 3 | ![meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png) | [meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112041259) | laonansheng | 5,187 | 96 |
+| 1 | ![ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png) | [ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112011159) | laonansheng | 6,316 | 96 |
+| 2 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 5,737 | 229 |
+| 3 | ![meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0](https://resources.modelscope.cn/cover-images/e8bdd176-a875-42ad-ba9a-df78d7af1688.png) | [meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0](https://modelscope.cn/laonansheng/meixiong-niannian-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260112041259) | laonansheng | 5,201 | 96 |
 
 
 ## Quick start
