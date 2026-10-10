@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1791533732.7168782,
+  "_cached_at": 1791601639.6087317,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 600,
+      "downloads": 607,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -60,7 +60,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 577,
+      "downloads": 579,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 408,
+      "downloads": 441,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -329,30 +329,6 @@
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     },
     {
-      "id": "valiantcat/wan21_i2v_480P_smoke_change_clothes_lora",
-      "title_cn": null,
-      "title_en": "wan21_i2v_480P_smoke_change_clothes_lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "valiantcat",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 111,
-      "likes": 1,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Wan-AI/Wan2.1-I2V-14B-480P"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-09-05T06:07:06Z",
-      "modelscope_url": "https://modelscope.cn/valiantcat/wan21_i2v_480P_smoke_change_clothes_lora"
-    },
-    {
       "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
       "title_cn": null,
       "title_en": "wan2.1_I2V480P_fenshengshu_lora",
@@ -495,6 +471,30 @@
       "vision_foundation": "LTX_VIDEO",
       "updated_at": "2026-07-20T05:13:28Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 54,
+      "likes": 1,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:25:04Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
     }
   ]
 }
