@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1792046941.256439,
+  "_cached_at": 1792116092.638711,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2171,
+      "downloads": 2172,
       "likes": 10,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 515,
+      "downloads": 518,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -207,30 +207,6 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Divine-Power-LoRA?revision=20260616225626"
     },
     {
-      "id": "fal/LTX-2.3-3DREAL-LoRA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-3DREAL-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 128,
-      "likes": 1,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-Video"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-07-14T04:44:40Z",
-      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
-    },
-    {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -240,7 +216,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/d5500c79-3eca-4bb7-a962-be0e9e4dedb1.jpeg",
       "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 126,
+      "downloads": 133,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -254,6 +230,30 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T20:12:59Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
+    },
+    {
+      "id": "fal/LTX-2.3-3DREAL-LoRA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-3DREAL-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 129,
+      "likes": 1,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-Video"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-07-14T04:44:40Z",
+      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
       "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
@@ -401,30 +401,6 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
-      "id": "CCP6/erwer-lora",
-      "title_cn": null,
-      "title_en": "erwer-lora",
-      "author": "Cherrytest",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "CCP6",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 70,
-      "likes": 0,
-      "license": "creativeml-openrail-m",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-10-01T06:34:09Z",
-      "modelscope_url": "https://modelscope.cn/CCP6/erwer-lora"
-    },
-    {
       "id": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_cn": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_en": "LTX-2.3-Transition-LORA",
@@ -495,6 +471,30 @@
       "vision_foundation": "",
       "updated_at": "2025-11-26T22:25:04Z",
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
+    },
+    {
+      "id": "Lightricks/LTX-2.5-22b-LoRA-Cinemagraph",
+      "title_cn": null,
+      "title_en": "LTX-2.5-22b-LoRA-Cinemagraph",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 52,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.5"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-11T02:00:50Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
     }
   ]
 }
