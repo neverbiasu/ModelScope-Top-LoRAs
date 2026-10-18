@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1792288501.228858,
+  "_cached_at": 1792306258.1597714,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -84,7 +84,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 537,
+      "downloads": 540,
       "likes": 13,
       "license": "other",
       "tags_cn": [],
@@ -473,28 +473,28 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
     },
     {
-      "id": "Lightricks/LTX-2.5-22b-LoRA-Cinemagraph",
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
       "title_cn": null,
-      "title_en": "LTX-2.5-22b-LoRA-Cinemagraph",
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
       "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 53,
+      "downloads": 57,
       "likes": 0,
-      "license": "other",
+      "license": "mit",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "Lightricks/LTX-2.5"
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
       ],
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-09-11T02:00:50Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
+      "updated_at": "2025-11-26T22:18:30Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     }
   ]
 }
