@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1792652104.9634616,
+  "_cached_at": 1792722077.2212808,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2178,
+      "downloads": 2179,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 642,
+      "downloads": 646,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -60,7 +60,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 591,
+      "downloads": 600,
       "likes": 13,
       "license": "other",
       "tags_cn": [],
@@ -276,7 +276,7 @@
       "stable_diffusion_version": "LTX_VIDEO",
       "trigger_words": null,
       "vision_foundation": "LTX_VIDEO",
-      "updated_at": "2026-09-01T16:22:14Z",
+      "updated_at": "2026-10-22T15:41:20Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph?revision=20260710102508"
     },
     {
@@ -434,7 +434,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 63,
+      "downloads": 64,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -445,7 +445,7 @@
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-09-11T02:00:50Z",
+      "updated_at": "2026-10-22T15:40:15Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
     },
     {
