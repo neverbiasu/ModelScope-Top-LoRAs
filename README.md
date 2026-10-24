@@ -660,6 +660,8 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 
 
+
+
 ## 📊 Daily Statistics
 
 ![Daily Stats](docs/daily_stats.png)
@@ -671,9 +673,9 @@ This repository provides a small pipeline and a read-only Gradio UI that builds 
 
 | # | Cover | Model | Author | Downloads | Likes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 64,243 | 340 |
-| 2 | ![qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://resources.modelscope.cn/cover-images/2017d99c-99a0-4946-bdfe-99efec57f923.jpg) | [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://modelscope.cn/LAAASSS/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors?revision=20260820113805) | LAAASSS | 7,253 | 45 |
-| 3 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 6,642 | 265 |
+| 1 | ![FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png) | [FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2](https://modelscope.cn/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2?revision=v1.0) | yiwanji | 64,252 | 340 |
+| 2 | ![qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://resources.modelscope.cn/cover-images/2017d99c-99a0-4946-bdfe-99efec57f923.jpg) | [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://modelscope.cn/LAAASSS/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors?revision=20260820113805) | LAAASSS | 7,429 | 47 |
+| 3 | ![krea2-Cc-TM-GreatFigure](https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png) | [krea2-Cc-TM-GreatFigure](https://modelscope.cn/yan303145427/krea2-Cc-TM-GreatFigure?revision=20260716203342) | yan303145427 | 6,714 | 267 |
 
 
 ## Quick start
