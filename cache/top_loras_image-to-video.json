@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1792824259.3649058,
+  "_cached_at": 1792893951.4464939,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2181,
+      "downloads": 2183,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -60,7 +60,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 610,
+      "downloads": 613,
       "likes": 14,
       "license": "other",
       "tags_cn": [],
@@ -84,7 +84,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 591,
+      "downloads": 592,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -108,7 +108,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 355,
+      "downloads": 356,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -207,6 +207,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Divine-Power-LoRA?revision=20260616225626"
     },
     {
+      "id": "fal/LTX-2.3-3DREAL-LoRA",
+      "title_cn": null,
+      "title_en": "LTX-2.3-3DREAL-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "fal",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 137,
+      "likes": 1,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-Video"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-07-14T04:44:40Z",
+      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
+    },
+    {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -230,30 +254,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T20:12:59Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
-    },
-    {
-      "id": "fal/LTX-2.3-3DREAL-LoRA",
-      "title_cn": null,
-      "title_en": "LTX-2.3-3DREAL-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "fal",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 134,
-      "likes": 1,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-Video"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-07-14T04:44:40Z",
-      "modelscope_url": "https://modelscope.cn/fal/LTX-2.3-3DREAL-LoRA"
     },
     {
       "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
@@ -289,7 +289,7 @@
       "user_profile": "https://modelscope.cn/profile/1848168",
       "cover_url": "https://resources.modelscope.cn/cover-images/637bcedf-6169-4906-a76b-29b54875c78a.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 121,
+      "downloads": 123,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -434,7 +434,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 68,
+      "downloads": 69,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -447,6 +447,30 @@
       "vision_foundation": "",
       "updated_at": "2026-10-22T15:40:15Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
+    },
+    {
+      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "title_cn": null,
+      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 63,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.5"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-18T18:31:00Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
     },
     {
       "id": "valiantcat/LTX2-I2V-Smooth-LORA",
@@ -471,30 +495,6 @@
       "vision_foundation": "",
       "updated_at": "2026-01-13T05:12:53Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
-    },
-    {
-      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "title_cn": null,
-      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 61,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.5"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-09-18T18:31:00Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
     }
   ]
 }
