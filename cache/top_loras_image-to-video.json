@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793173629.4861014,
+  "_cached_at": 1793243771.4998007,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2191,
+      "downloads": 2193,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -60,7 +60,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 634,
+      "downloads": 642,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -240,7 +240,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/d5500c79-3eca-4bb7-a962-be0e9e4dedb1.jpeg",
       "cover_local": "cache/images/image-to-video/Wan2.1-Mecha-LoRA.jpeg",
-      "downloads": 147,
+      "downloads": 148,
       "likes": 0,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -401,30 +401,6 @@
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
     },
     {
-      "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
-      "title_cn": null,
-      "title_en": "LTX2-I2V-Smooth-LORA",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 73,
-      "likes": 0,
-      "license": "apache-2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-01-13T05:11:00Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
-    },
-    {
       "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
       "title_cn": null,
       "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
@@ -434,7 +410,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 67,
+      "downloads": 68,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -495,6 +471,30 @@
       "vision_foundation": "",
       "updated_at": "2026-01-13T05:12:53Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX2-I2V-Smooth-LORA"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
+      "title_cn": null,
+      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
+      "user_name": "kandinskylab",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 61,
+      "likes": 0,
+      "license": "mit",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-11-26T22:18:30Z",
+      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     }
   ]
 }
