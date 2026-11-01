@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793433019.7019184,
+  "_cached_at": 1793501887.8818026,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2194,
+      "downloads": 2196,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -26,6 +26,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA?revision=20260616223636"
     },
     {
+      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "title_cn": null,
+      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 667,
+      "likes": 15,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-10-05T16:10:51Z",
+      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
+    },
+    {
       "id": "Alissonerdx/BFS-Best-Face-Swap-Video",
       "title_cn": "Alissonerdx/BFS-Best-Face-Swap-Video",
       "title_en": "BFS-Best-Face-Swap-Video",
@@ -35,7 +59,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 659,
+      "downloads": 660,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -49,30 +73,6 @@
       "vision_foundation": "LTX_VIDEO",
       "updated_at": "2026-09-23T18:39:49Z",
       "modelscope_url": "https://modelscope.cn/Alissonerdx/BFS-Best-Face-Swap-Video?revision=20260827063806"
-    },
-    {
-      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "title_cn": null,
-      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "hf",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 654,
-      "likes": 15,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-10-05T16:10:51Z",
-      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
       "id": "joyfox/LTX-2.3-Transition-LORA",
@@ -265,7 +265,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 139,
+      "downloads": 142,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
