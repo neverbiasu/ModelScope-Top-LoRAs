@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793501881.6940603,
+  "_cached_at": 1793521831.1296747,
   "results": [
     {
       "id": "yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/527727",
       "cover_url": "https://www.modelscope.cn/models/yiwanji/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2/resolve/master/_cover_images_/ee17cac0-5da3-4adc-a052-7d3b187b3609.png",
       "cover_local": "cache/images/text-to-image-synthesis/FLUX_xiao_hong_shu_ji_zhi_zhen_shi_V2.png",
-      "downloads": 64297,
+      "downloads": 64298,
       "likes": 345,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -43,7 +43,7 @@
       "user_profile": "https://modelscope.cn/profile/1161446",
       "cover_url": "https://resources.modelscope.cn/cover-images/2017d99c-99a0-4946-bdfe-99efec57f923.jpg",
       "cover_local": "cache/images/text-to-image-synthesis/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors.jpg",
-      "downloads": 10431,
+      "downloads": 10790,
       "likes": 57,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -67,8 +67,8 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/25b1873e-d709-427d-879c-0d614a1b8e04.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-TM-GreatFigure.png",
-      "downloads": 7150,
-      "likes": 299,
+      "downloads": 7160,
+      "likes": 300,
       "license": "Apache License 2.0",
       "tags_cn": [
         "写实摄影",
@@ -99,7 +99,7 @@
       "user_profile": "https://modelscope.cn/profile/2681902",
       "cover_url": "https://resources.modelscope.cn/cover-images/94b95b5d-b093-4c2a-ae50-18160fdf74c2.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-2.1-viggle-turbo.png",
-      "downloads": 6547,
+      "downloads": 6571,
       "likes": 26,
       "license": "other",
       "tags_cn": [],
@@ -123,7 +123,7 @@
       "user_profile": "https://modelscope.cn/profile/1478898",
       "cover_url": "https://resources.modelscope.cn/cover-images/96d19866-07d0-4633-86e7-d9dddcb52ec5.png",
       "cover_local": "cache/images/text-to-image-synthesis/ruanqing-Z-Image-Turbo-Tongyi-MAI-v1.0.png",
-      "downloads": 6529,
+      "downloads": 6530,
       "likes": 103,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -210,6 +210,30 @@
       "modelscope_url": "https://modelscope.cn/laonansheng/naixi-girl-Z-Image-Turbo-Tongyi-MAI-v1.0?revision=20260122171858"
     },
     {
+      "id": "gordonz/Excellent-Loras-for-MossImage",
+      "title_cn": "Excellent-Loras-for-MossImage",
+      "title_en": "Excellent-Loras-for-MossImage",
+      "author": "gordonz",
+      "avatar": "https://resources.modelscope.cn/avatar/50289b0c-697f-4399-89a5-2f5cd17631b9.jpg",
+      "user_name": "Gordon_Z",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 4847,
+      "likes": 16,
+      "license": "Apache License 2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Comfy-Org/MOSS-Image"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-11-01T02:09:26Z",
+      "modelscope_url": "https://modelscope.cn/gordonz/Excellent-Loras-for-MossImage"
+    },
+    {
       "id": "yan303145427/krea2-Cc-FQWZ-ArtStyle",
       "title_cn": "krea2-Cc风情万种-风格",
       "title_en": "krea2-Cc-FQWZ-ArtStyle",
@@ -219,7 +243,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/9affefb2-ce60-4c40-ba04-c943ea744bf8.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-FQWZ-ArtStyle.png",
-      "downloads": 4751,
+      "downloads": 4759,
       "likes": 177,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -242,30 +266,6 @@
       "modelscope_url": "https://modelscope.cn/yan303145427/krea2-Cc-FQWZ-ArtStyle?revision=20260716204803"
     },
     {
-      "id": "gordonz/Excellent-Loras-for-MossImage",
-      "title_cn": "Excellent-Loras-for-MossImage",
-      "title_en": "Excellent-Loras-for-MossImage",
-      "author": "gordonz",
-      "avatar": "https://resources.modelscope.cn/avatar/50289b0c-697f-4399-89a5-2f5cd17631b9.jpg",
-      "user_name": "Gordon_Z",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 4397,
-      "likes": 16,
-      "license": "Apache License 2.0",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Comfy-Org/MOSS-Image"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-11-01T02:09:26Z",
-      "modelscope_url": "https://modelscope.cn/gordonz/Excellent-Loras-for-MossImage"
-    },
-    {
       "id": "yan303145427/krea2-CcFQWZ-Portrait",
       "title_cn": "krea2-Cc风情万种",
       "title_en": "krea2-CcFQWZ-Portrait",
@@ -275,7 +275,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/41bdf904-2add-428f-a1e1-83c6116a5b33.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-CcFQWZ-Portrait.png",
-      "downloads": 4339,
+      "downloads": 4347,
       "likes": 174,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -307,7 +307,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/a96ea282-4f91-4ac9-83f6-ec7cec9f29e6.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-MJ-FilterStyle.png",
-      "downloads": 3977,
+      "downloads": 3987,
       "likes": 129,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -339,7 +339,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/707939f5-70d1-4f82-a7d8-1ab47cf610b7.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-FY-portrait.png",
-      "downloads": 2603,
+      "downloads": 2618,
       "likes": 113,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -371,7 +371,7 @@
       "user_profile": "https://modelscope.cn/profile/2363110",
       "cover_url": "https://resources.modelscope.cn/cover-images/9f21c4c4-3020-4e26-a01e-a23ee3537d4a.png",
       "cover_local": "cache/images/text-to-image-synthesis/Qwen-Image-2.1_yuwang.png",
-      "downloads": 1951,
+      "downloads": 1964,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -397,7 +397,7 @@
       "user_profile": "https://modelscope.cn/profile/1927256",
       "cover_url": "https://resources.modelscope.cn/cover-images/3403b54b-095f-49dc-bda2-b4b5da0b45c3.png",
       "cover_local": "cache/images/text-to-image-synthesis/krea2-Cc-Ins-portrait.png",
-      "downloads": 1932,
+      "downloads": 1936,
       "likes": 75,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -429,7 +429,7 @@
       "user_profile": "https://modelscope.cn/profile/1637748",
       "cover_url": "https://resources.modelscope.cn/cover-images/437f3edb-9089-4c15-aa49-8aed176763a1.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea-2-Turbo-SF-SNZX.png",
-      "downloads": 1895,
+      "downloads": 1896,
       "likes": 60,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -455,7 +455,7 @@
       "user_profile": "https://modelscope.cn/profile/940551",
       "cover_url": "https://resources.modelscope.cn/cover-images/0c4506b3-1796-4d07-96b5-c53580b41125.png",
       "cover_local": "cache/images/text-to-image-synthesis/allin-baitai1-krea2-turbo.png",
-      "downloads": 1871,
+      "downloads": 1874,
       "likes": 60,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -481,7 +481,7 @@
       "user_profile": "https://modelscope.cn/profile/2140074",
       "cover_url": "https://resources.modelscope.cn/cover-images/027ba752-e344-4038-82c4-4f401acf9390.png",
       "cover_local": "cache/images/text-to-image-synthesis/stockings_Krea2_lora.png",
-      "downloads": 1328,
+      "downloads": 1330,
       "likes": 39,
       "license": "Apache License 2.0",
       "tags_cn": [],
@@ -507,7 +507,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/594174f0-efca-40cc-9682-10e3100d9345.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2_CyberStructure_Isometric.png",
-      "downloads": 1241,
+      "downloads": 1242,
       "likes": 58,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -541,7 +541,7 @@
       "user_profile": "https://modelscope.cn/profile/940551",
       "cover_url": "https://resources.modelscope.cn/cover-images/0e60bc2d-a1b4-4269-b303-20890d99e885.png",
       "cover_local": "cache/images/text-to-image-synthesis/allin-suiyuan1-krea2-turbo.png",
-      "downloads": 1225,
+      "downloads": 1227,
       "likes": 55,
       "license": "Apache License 2.0",
       "tags_cn": [
@@ -575,7 +575,7 @@
       "user_profile": "https://modelscope.cn/profile/1572166",
       "cover_url": "https://resources.modelscope.cn/cover-images/045aa28f-9d3b-40ee-b44c-6ed048e5115f.png",
       "cover_local": "cache/images/text-to-image-synthesis/Krea2_Fine_Art_Portraiture.png",
-      "downloads": 1083,
+      "downloads": 1096,
       "likes": 36,
       "license": "Apache License 2.0",
       "tags_cn": [],

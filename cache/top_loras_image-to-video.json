@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793501887.8818026,
+  "_cached_at": 1793521836.3173292,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -35,7 +35,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 667,
+      "downloads": 672,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -108,7 +108,7 @@
       "user_profile": "https://modelscope.cn/profile/76061",
       "cover_url": "https://resources.modelscope.cn/cover-images/32db9d82-e3b5-45c1-a22d-79fef55428c2.png",
       "cover_local": "cache/images/image-to-video/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V.png",
-      "downloads": 357,
+      "downloads": 358,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
