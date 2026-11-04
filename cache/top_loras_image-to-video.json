@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793695998.0645876,
+  "_cached_at": 1793763750.793663,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2205,
+      "downloads": 2207,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -26,6 +26,30 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA?revision=20260616223636"
     },
     {
+      "id": "Pika-Labs/Pika-H3-Flex",
+      "title_cn": "Pika-Labs/Pika-H3-Flex",
+      "title_en": "Pika-H3-Flex",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "Pika-Labs",
+      "user_profile": "https://modelscope.cn/profile/2857778",
+      "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
+      "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
+      "downloads": 1319,
+      "likes": 20,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "MINIMAX_H3",
+      "trigger_words": null,
+      "vision_foundation": "MINIMAX_H3",
+      "updated_at": "2026-11-03T15:07:30Z",
+      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex?revision=20261103105737"
+    },
+    {
       "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
       "title_cn": null,
       "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
@@ -35,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 689,
+      "downloads": 693,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -59,7 +83,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 673,
+      "downloads": 677,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -191,7 +215,7 @@
       "user_profile": "https://modelscope.cn/profile/1228295",
       "cover_url": "https://resources.modelscope.cn/cover-images/86732401-2848-42d3-9776-efa8e4b79d5d.jpeg",
       "cover_local": "cache/images/image-to-video/LTX-2.3-22b-LoRA-Cinemagraph.jpeg",
-      "downloads": 167,
+      "downloads": 168,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -265,7 +289,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 144,
+      "downloads": 145,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -302,6 +326,34 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T15:52:40Z",
       "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
+    },
+    {
+      "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+      "title_cn": null,
+      "title_en": "Pika-H3-Flex-Turbo-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "Pika-Labs",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 125,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Pika-Labs/Pika-H3-Flex",
+        "lightx2v/Minimax-h3-Turbo",
+        "MiniMaxAI/MiniMax-H3",
+        "WarmBloodAban/Minimax-h3_Singularity",
+        "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-11-03T05:38:40Z",
+      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
     },
     {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
@@ -401,6 +453,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
     },
     {
+      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "title_cn": null,
+      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 73,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.5"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-18T18:31:00Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
+    },
+    {
       "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
       "title_cn": null,
       "title_en": "LTX2-I2V-Smooth-LORA",
@@ -423,78 +499,6 @@
       "vision_foundation": "",
       "updated_at": "2026-01-13T05:11:00Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
-    },
-    {
-      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "title_cn": null,
-      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 72,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.5"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-09-18T18:31:00Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 70,
-      "likes": 1,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Pro-sft-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:25:04Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Microwave-right"
-    },
-    {
-      "id": "kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
-      "title_cn": null,
-      "title_en": "Kandinsky-5.0-I2V-Lite-LoRa-Arc-right",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/352385d0-9656-46c1-a50f-8e47a98336dd.webp",
-      "user_name": "kandinskylab",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 68,
-      "likes": 0,
-      "license": "mit",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "kandinskylab/Kandinsky-5.0-I2V-Lite-5s"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2025-11-26T22:18:30Z",
-      "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Lite-LoRa-Arc-right"
     }
   ]
 }
