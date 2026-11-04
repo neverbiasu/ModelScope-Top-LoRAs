@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793763750.793663,
+  "_cached_at": 1793780579.3646793,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2207,
+      "downloads": 2208,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 1319,
+      "downloads": 1372,
       "likes": 20,
       "license": "other",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 693,
+      "downloads": 695,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -206,6 +206,34 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Fight-LoRA?revision=20260617024023"
     },
     {
+      "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+      "title_cn": null,
+      "title_en": "Pika-H3-Flex-Turbo-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "Pika-Labs",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 175,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Pika-Labs/Pika-H3-Flex",
+        "lightx2v/Minimax-h3-Turbo",
+        "MiniMaxAI/MiniMax-H3",
+        "WarmBloodAban/Minimax-h3_Singularity",
+        "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-11-03T05:38:40Z",
+      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
+    },
+    {
       "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
       "title_cn": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
       "title_en": "LTX-2.3-22b-LoRA-Cinemagraph",
@@ -326,34 +354,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T15:52:40Z",
       "modelscope_url": "https://modelscope.cn/lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V?revision=20260616235230"
-    },
-    {
-      "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
-      "title_cn": null,
-      "title_en": "Pika-H3-Flex-Turbo-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "Pika-Labs",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 125,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Pika-Labs/Pika-H3-Flex",
-        "lightx2v/Minimax-h3-Turbo",
-        "MiniMaxAI/MiniMax-H3",
-        "WarmBloodAban/Minimax-h3_Singularity",
-        "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-11-03T05:38:40Z",
-      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
     },
     {
       "id": "AI-ModelScope/Wan2.1-Mecha-LoRA",
