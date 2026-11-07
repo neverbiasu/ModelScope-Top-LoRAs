@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1793954972.0191255,
+  "_cached_at": 1794022450.4354362,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2216,
+      "downloads": 2217,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 1701,
+      "downloads": 1881,
       "likes": 24,
       "license": "other",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 720,
+      "downloads": 729,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -72,6 +72,34 @@
       "vision_foundation": "",
       "updated_at": "2026-10-05T16:10:51Z",
       "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
+    },
+    {
+      "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+      "title_cn": null,
+      "title_en": "Pika-H3-Flex-Turbo-LoRA",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "Pika-Labs",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 725,
+      "likes": 3,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Pika-Labs/Pika-H3-Flex",
+        "lightx2v/Minimax-h3-Turbo",
+        "MiniMaxAI/MiniMax-H3",
+        "WarmBloodAban/Minimax-h3_Singularity",
+        "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-11-03T05:38:40Z",
+      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
     },
     {
       "id": "Alissonerdx/BFS-Best-Face-Swap-Video",
@@ -121,34 +149,6 @@
       "vision_foundation": "LTX_VIDEO",
       "updated_at": "2026-06-17T15:24:38Z",
       "modelscope_url": "https://modelscope.cn/joyfox/LTX-2.3-Transition-LORA?revision=20260617232432"
-    },
-    {
-      "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
-      "title_cn": null,
-      "title_en": "Pika-H3-Flex-Turbo-LoRA",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "Pika-Labs",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 543,
-      "likes": 2,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Pika-Labs/Pika-H3-Flex",
-        "lightx2v/Minimax-h3-Turbo",
-        "MiniMaxAI/MiniMax-H3",
-        "WarmBloodAban/Minimax-h3_Singularity",
-        "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-11-03T05:38:40Z",
-      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
     },
     {
       "id": "AI-ModelScope/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -414,7 +414,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 86,
+      "downloads": 88,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -462,7 +462,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 75,
+      "downloads": 76,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -477,28 +477,28 @@
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
     },
     {
-      "id": "AI-ModelScope/LTX2-I2V-Smooth-LORA",
+      "id": "taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs",
       "title_cn": null,
-      "title_en": "LTX2-I2V-Smooth-LORA",
+      "title_en": "MiniMax-H3-PTD-RefAsymOPD-LoRAs",
       "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/3469e540-6383-4d34-87c8-3e5406a0b567.png",
-      "user_name": "为AI成魔",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "taobao-content-ai",
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
       "downloads": 73,
       "likes": 0,
-      "license": "apache-2.0",
+      "license": "other",
       "tags_cn": [],
       "tags_en": [],
       "base_models": [
-        "Lightricks/LTX-2"
+        "MiniMaxAI/MiniMax-H3"
       ],
       "stable_diffusion_version": "",
       "trigger_words": null,
       "vision_foundation": "",
-      "updated_at": "2026-01-13T05:11:00Z",
-      "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX2-I2V-Smooth-LORA"
+      "updated_at": "2026-10-26T17:07:08Z",
+      "modelscope_url": "https://modelscope.cn/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs"
     }
   ]
 }
