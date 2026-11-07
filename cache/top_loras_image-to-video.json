@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1794022450.4354362,
+  "_cached_at": 1794038715.3016734,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2217,
+      "downloads": 2218,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,8 +35,8 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 1881,
-      "likes": 24,
+      "downloads": 1915,
+      "likes": 25,
       "license": "other",
       "tags_cn": [],
       "tags_en": [],
@@ -50,30 +50,6 @@
       "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex?revision=20261103105737"
     },
     {
-      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "title_cn": null,
-      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "hf",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 729,
-      "likes": 15,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-10-05T16:10:51Z",
-      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
-    },
-    {
       "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
       "title_cn": null,
       "title_en": "Pika-H3-Flex-Turbo-LoRA",
@@ -83,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 725,
+      "downloads": 760,
       "likes": 3,
       "license": "other",
       "tags_cn": [],
@@ -100,6 +76,30 @@
       "vision_foundation": "",
       "updated_at": "2026-11-03T05:38:40Z",
       "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
+    },
+    {
+      "id": "hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "title_cn": null,
+      "title_en": "Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "hf",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 731,
+      "likes": 15,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-10-05T16:10:51Z",
+      "modelscope_url": "https://modelscope.cn/hf/Jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
     },
     {
       "id": "Alissonerdx/BFS-Best-Face-Swap-Video",
@@ -462,7 +462,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 76,
+      "downloads": 79,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
