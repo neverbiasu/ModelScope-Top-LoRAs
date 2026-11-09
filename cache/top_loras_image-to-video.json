@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1794194784.2816792,
+  "_cached_at": 1794214525.6188114,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2228,
+      "downloads": 2231,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 2101,
+      "downloads": 2133,
       "likes": 26,
       "license": "other",
       "tags_cn": [],
@@ -59,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 994,
+      "downloads": 1011,
       "likes": 12,
       "license": "other",
       "tags_cn": [],
@@ -87,7 +87,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 749,
+      "downloads": 750,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -111,7 +111,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 680,
+      "downloads": 681,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
@@ -136,7 +136,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 639,
+      "downloads": 640,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -390,7 +390,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 105,
+      "downloads": 106,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -453,6 +453,30 @@
       "modelscope_url": "https://modelscope.cn/kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right"
     },
     {
+      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "title_cn": null,
+      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 80,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.5"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-09-18T18:31:00Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
+    },
+    {
       "id": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_cn": "AI-ModelScope/LTX-2.3-Transition-LORA",
       "title_en": "LTX-2.3-Transition-LORA",
@@ -475,30 +499,6 @@
       "vision_foundation": "LTX_VIDEO",
       "updated_at": "2026-07-20T05:13:28Z",
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/LTX-2.3-Transition-LORA?revision=20260720131307"
-    },
-    {
-      "id": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "title_cn": null,
-      "title_en": "LTX-2.5-22b-LoRA-Slow-Motion-Control",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 79,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.5"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-09-18T18:31:00Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
     }
   ]
 }
