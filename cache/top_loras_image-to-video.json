@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1794126298.8737779,
+  "_cached_at": 1794194784.2816792,
   "results": [
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/1631750",
       "cover_url": "https://resources.modelscope.cn/cover-images/a005016e-1180-4a8c-ae99-e0d94f4ebe4c.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 2224,
+      "downloads": 2228,
       "likes": 11,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 1995,
+      "downloads": 2101,
       "likes": 26,
       "license": "other",
       "tags_cn": [],
@@ -46,7 +46,7 @@
       "stable_diffusion_version": "MINIMAX_H3",
       "trigger_words": null,
       "vision_foundation": "MINIMAX_H3",
-      "updated_at": "2026-11-03T15:07:30Z",
+      "updated_at": "2026-11-08T14:44:21Z",
       "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex?revision=20261103105737"
     },
     {
@@ -59,8 +59,8 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 895,
-      "likes": 4,
+      "downloads": 994,
+      "likes": 12,
       "license": "other",
       "tags_cn": [],
       "tags_en": [],
@@ -136,7 +136,7 @@
       "user_profile": "https://modelscope.cn/profile/2316490",
       "cover_url": "https://resources.modelscope.cn/cover-images/bf7ba518-e0cb-4cb9-adcc-21344994dbe7.png",
       "cover_local": "cache/images/image-to-video/LTX-2.3-Transition-LORA.png",
-      "downloads": 638,
+      "downloads": 639,
       "likes": 1,
       "license": "apache-2.0",
       "tags_cn": [],
@@ -292,7 +292,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 162,
+      "downloads": 163,
       "likes": 1,
       "license": "other",
       "tags_cn": [],
@@ -390,7 +390,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 103,
+      "downloads": 105,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
@@ -403,6 +403,30 @@
       "vision_foundation": "",
       "updated_at": "2026-10-22T15:40:15Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
+    },
+    {
+      "id": "valiantcat/wan2.1_I2V480P_fenshengshu_lora",
+      "title_cn": null,
+      "title_en": "wan2.1_I2V480P_fenshengshu_lora",
+      "author": "Cherrytest",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "valiantcat",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 103,
+      "likes": 2,
+      "license": "apache-2.0",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Wan-AI/Wan2.1-I2V-14B-480P"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2025-09-19T18:08:45Z",
+      "modelscope_url": "https://modelscope.cn/valiantcat/wan2.1_I2V480P_fenshengshu_lora"
     },
     {
       "id": "kandinskylab/Kandinsky-5.0-I2V-Pro-LoRa-Arc-right",
@@ -475,30 +499,6 @@
       "vision_foundation": "",
       "updated_at": "2026-09-18T18:31:00Z",
       "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control"
-    },
-    {
-      "id": "taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs",
-      "title_cn": null,
-      "title_en": "MiniMax-H3-PTD-RefAsymOPD-LoRAs",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "taobao-content-ai",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 75,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-10-26T17:07:08Z",
-      "modelscope_url": "https://modelscope.cn/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs"
     }
   ]
 }
