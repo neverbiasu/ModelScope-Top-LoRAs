@@ -1,6 +1,30 @@
 {
-  "_cached_at": 1794286844.0864165,
+  "_cached_at": 1794301305.7375176,
   "results": [
+    {
+      "id": "Pika-Labs/Pika-H3-Flex",
+      "title_cn": "Pika-Labs/Pika-H3-Flex",
+      "title_en": "Pika-H3-Flex",
+      "author": "systemd",
+      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+      "user_name": "Pika-Labs",
+      "user_profile": "https://modelscope.cn/profile/2857778",
+      "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
+      "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
+      "downloads": 2233,
+      "likes": 29,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "MiniMaxAI/MiniMax-H3"
+      ],
+      "stable_diffusion_version": "MINIMAX_H3",
+      "trigger_words": null,
+      "vision_foundation": "MINIMAX_H3",
+      "updated_at": "2026-11-08T14:44:21Z",
+      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex?revision=20261103105737"
+    },
     {
       "id": "valiantcat/LTX-2.3-Transition-LORA",
       "title_cn": "valiantcat/LTX-2.3-Transition-LORA",
@@ -26,30 +50,6 @@
       "modelscope_url": "https://modelscope.cn/valiantcat/LTX-2.3-Transition-LORA?revision=20260616223636"
     },
     {
-      "id": "Pika-Labs/Pika-H3-Flex",
-      "title_cn": "Pika-Labs/Pika-H3-Flex",
-      "title_en": "Pika-H3-Flex",
-      "author": "systemd",
-      "avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
-      "user_name": "Pika-Labs",
-      "user_profile": "https://modelscope.cn/profile/2857778",
-      "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
-      "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 2220,
-      "likes": 29,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "MiniMaxAI/MiniMax-H3"
-      ],
-      "stable_diffusion_version": "MINIMAX_H3",
-      "trigger_words": null,
-      "vision_foundation": "MINIMAX_H3",
-      "updated_at": "2026-11-08T14:44:21Z",
-      "modelscope_url": "https://modelscope.cn/Pika-Labs/Pika-H3-Flex?revision=20261103105737"
-    },
-    {
       "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
       "title_cn": null,
       "title_en": "Pika-H3-Flex-Turbo-LoRA",
@@ -59,7 +59,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 1121,
+      "downloads": 1139,
       "likes": 13,
       "license": "other",
       "tags_cn": [],
@@ -87,7 +87,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 766,
+      "downloads": 778,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -111,7 +111,7 @@
       "user_profile": "https://modelscope.cn/profile/1511383",
       "cover_url": "https://resources.modelscope.cn/cover-images/66bdc00f-2626-4eed-b9f5-778cea1d5a82.png",
       "cover_local": "cache/images/image-to-video/BFS-Best-Face-Swap-Video.png",
-      "downloads": 681,
+      "downloads": 693,
       "likes": 2,
       "license": "other",
       "tags_cn": [],
