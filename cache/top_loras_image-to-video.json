@@ -1,5 +1,5 @@
 {
-  "_cached_at": 1795586155.4659424,
+  "_cached_at": 1795603483.026295,
   "results": [
     {
       "id": "Pika-Labs/Pika-H3-Flex",
@@ -11,7 +11,7 @@
       "user_profile": "https://modelscope.cn/profile/2857778",
       "cover_url": "https://resources.modelscope.cn/cover-images/b1ac13b7-16eb-4472-9879-c00f1a718cd9.webp",
       "cover_local": "cache/images/image-to-video/Pika-H3-Flex.webp",
-      "downloads": 3431,
+      "downloads": 3470,
       "likes": 37,
       "license": "other",
       "tags_cn": [],
@@ -35,7 +35,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 2825,
+      "downloads": 2858,
       "likes": 17,
       "license": "other",
       "tags_cn": [],
@@ -87,7 +87,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 940,
+      "downloads": 948,
       "likes": 15,
       "license": "other",
       "tags_cn": [],
@@ -307,6 +307,30 @@
       "modelscope_url": "https://modelscope.cn/AI-ModelScope/Wan2.1-Divine-Power-LoRA?revision=20260616225626"
     },
     {
+      "id": "Lightricks/LTX-2.5-22b-LoRA-Cinemagraph",
+      "title_cn": null,
+      "title_en": "LTX-2.5-22b-LoRA-Cinemagraph",
+      "author": "systemd",
+      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
+      "user_name": "Lightricks",
+      "user_profile": null,
+      "cover_url": null,
+      "cover_local": null,
+      "downloads": 173,
+      "likes": 0,
+      "license": "other",
+      "tags_cn": [],
+      "tags_en": [],
+      "base_models": [
+        "Lightricks/LTX-2.5"
+      ],
+      "stable_diffusion_version": "",
+      "trigger_words": null,
+      "vision_foundation": "",
+      "updated_at": "2026-10-22T15:40:15Z",
+      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
+    },
+    {
       "id": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_cn": "valiantcat/Wan2.1-Mecha-LoRA",
       "title_en": "Wan2.1-Mecha-LoRA",
@@ -330,30 +354,6 @@
       "vision_foundation": "WAN_VIDEO_2_2_I2V_A_14_B",
       "updated_at": "2026-06-16T20:12:59Z",
       "modelscope_url": "https://modelscope.cn/valiantcat/Wan2.1-Mecha-LoRA?revision=20260617041254"
-    },
-    {
-      "id": "Lightricks/LTX-2.5-22b-LoRA-Cinemagraph",
-      "title_cn": null,
-      "title_en": "LTX-2.5-22b-LoRA-Cinemagraph",
-      "author": "systemd",
-      "avatar": "https://resouces.modelscope.cn/avatar/bb3bb4a6-604f-45b1-98ff-2a8bff557f65.png",
-      "user_name": "Lightricks",
-      "user_profile": null,
-      "cover_url": null,
-      "cover_local": null,
-      "downloads": 152,
-      "likes": 0,
-      "license": "other",
-      "tags_cn": [],
-      "tags_en": [],
-      "base_models": [
-        "Lightricks/LTX-2.5"
-      ],
-      "stable_diffusion_version": "",
-      "trigger_words": null,
-      "vision_foundation": "",
-      "updated_at": "2026-10-22T15:40:15Z",
-      "modelscope_url": "https://modelscope.cn/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph"
     },
     {
       "id": "lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V",
@@ -414,7 +414,7 @@
       "user_profile": null,
       "cover_url": null,
       "cover_local": null,
-      "downloads": 121,
+      "downloads": 122,
       "likes": 0,
       "license": "other",
       "tags_cn": [],
